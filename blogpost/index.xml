@@ -11,10 +11,10 @@
     
     <item>
       <title>Reflecting on Reactive Programming</title>
-      <link>http://rocketpages.github.io/blogpost/reflecting-on-reactive-programming/</link>
+      <link>http://rocketpages.github.io/reflecting-on-reactive-programming</link>
       <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/reflecting-on-reactive-programming/</guid>
+      <guid>http://rocketpages.github.io/reflecting-on-reactive-programming</guid>
       <description>&lt;p&gt;The past year has been a wonderful period of learning and reflection on this exciting new development paradigm. I’ve written about reactive application development on Medium (&lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc&#34;&gt;What is Reactive Programming?&lt;/a&gt;), and contributed to articles for both ReadWrite (&lt;a href=&#34;http://readwrite.com/2015/03/12/reactive-programming-conductr-kevin-webber&#34;&gt;&amp;ldquo;Reactive&amp;rdquo; Systems: Easy To Program, Now Easier To Manage&lt;/a&gt;) and InfoQ (&lt;a href=&#34;http://www.infoq.com/news/2014/09/what-is-reactive-programming&#34;&gt;Actor-based Concurrency for Reactive Systems&lt;/a&gt;). Another high note is that &lt;a href=&#34;http://www.meetup.com/Reactive-TO&#34;&gt;Reactive Programming Toronto&lt;/a&gt; is closing in on 300 members, and new reactive programming groups are forming all over the world. It&amp;rsquo;s an exciting time to be a developer who cares about their craft, as I strongly feel we&amp;rsquo;re at the beginning of a major paradigm shift. I believe the reactive paradigm will drive the next major innovation in how software is crafted for the web, to meet the expectations of both end-users and organizations who are looking for ever increasing ways to secure a competitive advantage online.&lt;/p&gt;
 
 &lt;p&gt;Reactive applications are at the heart of a new breed of system that embraces modern infrastructure. Gone are the days of a single monolithic application running in a single data center. Not only does this type of application not scale to meet the ever-increasing stress placed on a modern web application, but it provides very little room for future growth; if your data center goes down, your system goes down; if your business requirements evolve, you must modify, test, and deploy a singular, complex monolithic system, and hope that all of the coupled and tangled logic within holds up under the changes you&amp;rsquo;ve made. In order to combat the challenges of keeping monolithic systems up and making risky changes to them, we create ever-more complex business and technical processes to protect ourselves. The cycle repeats, and the system grows in both risk and complexity. The system must be rewritten. And the cycle repeats again. Why do we as software developers allow these cycles to continue?&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Retrospective: A Night of Reactive Programming</title>
-      <link>http://rocketpages.github.io/blogpost/retrospective-a-night-of-reactive-programming/</link>
+      <link>http://rocketpages.github.io/retrospective-a-night-of-reactive-programming</link>
       <pubDate>Wed, 06 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/retrospective-a-night-of-reactive-programming/</guid>
+      <guid>http://rocketpages.github.io/retrospective-a-night-of-reactive-programming</guid>
       <description>
 
 &lt;p&gt;I hosted the first event for &lt;a href=&#34;http://meetup.com/reactive-to&#34;&gt;ReactiveTO&lt;/a&gt; on July 24th. It was fantastic evening filled with great talks on Reactive programming principles, microservices, Akka, and ReactiveCocoa.&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>Agile and Waterfall can live together in harmony</title>
-      <link>http://rocketpages.github.io/blogpost/agile-and-waterfall-together/</link>
+      <link>http://rocketpages.github.io/agile-and-waterfall-together</link>
       <pubDate>Fri, 15 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/agile-and-waterfall-together/</guid>
+      <guid>http://rocketpages.github.io/agile-and-waterfall-together</guid>
       <description>&lt;p&gt;Agile is challenging to use on certain projects, like those bound by fixed-price, fixed-date contracts. Agencies, governments, and other organizations who are bound by contracts struggle to implement Agile effectively. Contracts force software developers to adopt less flexible approaches to development in order to satisfy negotiated requirements and deadlines. Even worse than taking an alternate approach is to use the wrong approach entirely. This can manifest itself as a completely bastardized version of Agile, which is unfortunately the most common version in use today.&lt;/p&gt;
 
 &lt;p&gt;###Understanding the history of Agile and Waterfall
@@ -116,10 +116,10 @@ Firm release dates always present a challenge. The less flexible a release date 
     
     <item>
       <title>Migrating to Git, Part 3: Moving your code to Git</title>
-      <link>http://rocketpages.github.io/blogpost/migrating-to-git-part-3-moving-your-code-to-git/</link>
+      <link>http://rocketpages.github.io/migrating-to-git-part-3-moving-your-code-to-git</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/migrating-to-git-part-3-moving-your-code-to-git/</guid>
+      <guid>http://rocketpages.github.io/migrating-to-git-part-3-moving-your-code-to-git</guid>
       <description>
 
 &lt;p&gt;This is the third and final part in a three part series about migrating to Git. I recommend reading part one and part two if you haven&amp;rsquo;t already. Migrating to Git is worth it, but it&amp;rsquo;s not a trivial decision.&lt;/p&gt;
@@ -242,10 +242,10 @@ Is it worth it? Absolutely. After the intial learning curve with Git, our SPM me
     
     <item>
       <title>Migrating to Git, Part 2: Prerequisites</title>
-      <link>http://rocketpages.github.io/blogpost/migrating-to-git-part-2-prerequisites/</link>
+      <link>http://rocketpages.github.io/migrating-to-git-part-2-prerequisites</link>
       <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/migrating-to-git-part-2-prerequisites/</guid>
+      <guid>http://rocketpages.github.io/migrating-to-git-part-2-prerequisites</guid>
       <description>&lt;p&gt;This is the second part of a three part series about migrating to Git. If you haven&amp;rsquo;t read part one and are unfamiliar with the advantages of Git, you should check it out.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://kevinwebber.ca/migrating-to-git-part-1-advantages/&#34;&gt;Migrating to Git, Part 1: Advantages&lt;/a&gt;&lt;/p&gt;
@@ -309,10 +309,10 @@ If you&amp;rsquo;re confident and ready to migrate to Git, check out the final p
     
     <item>
       <title>Migrating to Git, Part 1: Advantages</title>
-      <link>http://rocketpages.github.io/blogpost/migrating-to-git-part-1-advantages/</link>
+      <link>http://rocketpages.github.io/migrating-to-git-part-1-advantages</link>
       <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/migrating-to-git-part-1-advantages/</guid>
+      <guid>http://rocketpages.github.io/migrating-to-git-part-1-advantages</guid>
       <description>&lt;p&gt;Git is unlike typical version control systems. Sure, Git is used to version files, but how is that any different than SVN or SourceSafe or ClearCase?&lt;/p&gt;
 
 &lt;p&gt;Git expects developers to understand how it works under the hood. It expects developers to be comfortable with the command line to get the most out of it. It provides very little in the way of convention and expects you to design your own workflow simply by using it as another tool in your arsenal. Git is not an out-of-the box solution. If you plan to transition to Git you also need to set aside time to examine your overall development process. You won&amp;rsquo;t get the most out of it otherwise and will possibly experience a challenging migration.&lt;/p&gt;
@@ -368,10 +368,10 @@ Are you excited about Git? I am, and so are a lot of other developers!&lt;/p&gt;
     
     <item>
       <title>Joy at QCon New York</title>
-      <link>http://rocketpages.github.io/blogpost/joy-at-qcon-new-york/</link>
+      <link>http://rocketpages.github.io/joy-at-qcon-new-york</link>
       <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/joy-at-qcon-new-york/</guid>
+      <guid>http://rocketpages.github.io/joy-at-qcon-new-york</guid>
       <description>
 
 &lt;p&gt;I recently travelled to New York City to attend QCon.&lt;/p&gt;
@@ -444,10 +444,10 @@ Just as Sherpas help climbers reach the top of Everest, technical Sherpas can he
     
     <item>
       <title>Multiplayer tic-tac-toe in Java using the WebSocket API, Netty (NIO), and jQuery</title>
-      <link>http://rocketpages.github.io/blogpost/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</link>
+      <link>http://rocketpages.github.io/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</guid>
+      <guid>http://rocketpages.github.io/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery</guid>
       <description>
 
 &lt;p&gt;What does this game of tic-tac-toe and Twitter have in common? Both have been implemented using relatively the same technologies: Java and Netty. It was big news in 2010 when Twitter &lt;a href=&#34;http://engineering.twitter.com/2011/04/twitter-search-is-now-3x-faster_1656.html&#34;&gt;migrated their search from Ruby on Rails to Java-based Netty&lt;/a&gt;. Not only was it big in the news department, but it was also big in the results department: Twitter reported their search performance increased by 3x.&lt;/p&gt;
@@ -821,10 +821,10 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
     
     <item>
       <title>Fixing Fancybox with AJAX (and Wicket)</title>
-      <link>http://rocketpages.github.io/blogpost/fixing-fancybox-with-ajax-and-wicket/</link>
+      <link>http://rocketpages.github.io/fixing-fancybox-with-ajax-and-wicket</link>
       <pubDate>Tue, 28 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/fixing-fancybox-with-ajax-and-wicket/</guid>
+      <guid>http://rocketpages.github.io/fixing-fancybox-with-ajax-and-wicket</guid>
       <description>&lt;p&gt;A personal project I&amp;rsquo;m working on uses the jQuery &lt;a class=&#34;offsite-link-inline&#34; href=&#34;http://fancybox.net&#34; target=&#34;_blank&#34;&gt;Fancybox&lt;/a&gt; library to display images. It&amp;rsquo;s a great lightbox, except for one small problem: AJAX refreshes break it.&lt;/p&gt;
 
 &lt;p&gt;A page I&amp;rsquo;m working on accepts multiple image uploads. Once the images are successfully processed asynchronously on the server, an image panel on the same page is automatically refreshed. The AJAX callback works fine and updates the panel view with the newly uploaded photos, but the net result is that Fancybox stops working completely.&lt;/p&gt;
@@ -917,10 +917,10 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
     
     <item>
       <title>Connection pooling with Hibernate 3.3.x and C3P0</title>
-      <link>http://rocketpages.github.io/blogpost/connection-pooling-with-hibernate-3-3-x-and-c3p0/</link>
+      <link>http://rocketpages.github.io/connection-pooling-with-hibernate-3-3-x-and-c3p0</link>
       <pubDate>Sun, 26 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/connection-pooling-with-hibernate-3-3-x-and-c3p0/</guid>
+      <guid>http://rocketpages.github.io/connection-pooling-with-hibernate-3-3-x-and-c3p0</guid>
       <description>
 
 &lt;p&gt;Hibernate uses it&amp;rsquo;s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.&lt;/p&gt;
@@ -992,10 +992,10 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
     <item>
       <title>Beyond Java</title>
-      <link>http://rocketpages.github.io/blogpost/beyond-java/</link>
+      <link>http://rocketpages.github.io/beyond-java</link>
       <pubDate>Mon, 13 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/beyond-java/</guid>
+      <guid>http://rocketpages.github.io/beyond-java</guid>
       <description>
 
 &lt;p&gt;A recent post by Mike Gualtieri of Forrester caught my attention. Mike strongly asserts that &lt;a class=&#34;offsite-link-inline&#34; href=&#34;http://blogs.forrester.com/mike_gualtieri/10-11-23-java_is_a_dead_end_for_enterprise_app_development&#34; target=&#34;_blank&#34;&gt;Java is a dead end for enterprises&lt;/a&gt; and business software should be built with &lt;em&gt;something else&lt;/em&gt;. Mike mentions a few different options, but mainly promotes 4GL tools such as Powerbuilder and &amp;ldquo;all in one&amp;rdquo; business infrastructure software such as SoftwareAG webMethods. He also touches on BPM and event processing, and by event processing I&amp;rsquo;m pretty sure he means CEP tools such as Esper.&lt;/p&gt;
@@ -1060,10 +1060,10 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
     <item>
       <title>The future of Java in the enterprise</title>
-      <link>http://rocketpages.github.io/blogpost/the-future-of-java-in-the-enterprise/</link>
+      <link>http://rocketpages.github.io/the-future-of-java-in-the-enterprise</link>
       <pubDate>Mon, 15 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/the-future-of-java-in-the-enterprise/</guid>
+      <guid>http://rocketpages.github.io/the-future-of-java-in-the-enterprise</guid>
       <description>&lt;p&gt;It’s been a busy few years in the Java world. Oracle’s acquisition of Sun is obviously the largest piece of news and has a significant impact on the future of Java. Oracle’s new position as owner and commander-in-chief now places Java squarely in the enterprise realm alongside Oracle’s other products. Java has &lt;strong&gt;always &lt;/strong&gt;been an enterprise technology, but &lt;a class=&#34;offsite-link-inline&#34; href=&#34;http://gee.cs.oswego.edu/dl/html/jcp22oct10.html&#34; target=&#34;_blank&#34;&gt;without the JCP promoting collaborative innovation&lt;/a&gt;, who knows what kind of traction Java would have made in the world? Appealing to both academia and industry helped push Java forward and attract a lot of new blood in the early years.&lt;/p&gt;
 
 &lt;p&gt;Fast forward to 2010. Java is a utilitarian, status-quo ecosystem for getting things done, albeit not very quickly. This is actually a good thing. Instead of worrying about sharp edges, developers get to work with a very stable, very slow moving target. This won&amp;rsquo;t change as Oracle&amp;rsquo;s only motivation is to sell support licenses and create other fee-based streams of revenue. Major improvements to Java are not on the agenda. Innovation from the &lt;em&gt;core &lt;/em&gt;Java team will almost certainly slow down and Java will move deeper into a stabilization and maturity phase. Anything considered an &lt;strong&gt;official spec&lt;/strong&gt; is almost certainly going to see a reduced adoption rate as only the largest of the large corporations stick with pure Java standards. As business goes on as usual, everyone is anxiously waiting for a true Java successor to emerge. Will it be Scala? Google Go? Neither are even on the radar of most corporate cubicle farms.&lt;/p&gt;
@@ -1078,10 +1078,10 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
     <item>
       <title>Desire paths</title>
-      <link>http://rocketpages.github.io/blogpost/desire-paths/</link>
+      <link>http://rocketpages.github.io/desire-paths</link>
       <pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/desire-paths/</guid>
+      <guid>http://rocketpages.github.io/desire-paths</guid>
       <description>&lt;p&gt;&lt;span class=&#34;full-image-block ssNonEditable&#34;&gt;A &lt;a class=&#34;offsite-link-inline&#34; href=&#34;http://findsubstance.com/2010/07/06/desire-paths/&#34; target=&#34;_blank&#34;&gt;desire path&lt;/a&gt; is what a person wants rather than what an architect builds. The term &lt;em&gt;desire path &lt;/em&gt;originated from landscape architecture, but it&amp;rsquo;s an increasingly important concept for software architects to grasp. If you understand desire paths, you understand the future of software development.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;A desire path represents the evolutionary nature of how people interact with their environment. An engineer designs a concrete path, but people find it more convenient to create their own. Software isn&amp;rsquo;t any different. Users bump up against the limitation of an application but find their own workaround through sheer necessity. The next generation of software won&amp;rsquo;t dictate to users, it will listen to them, and let them guide design rather than the other way around. Anyone who keeps this in the back of their mind is already ahead of the curve and ready for the changing software landscape.&lt;/p&gt;
@@ -1108,10 +1108,10 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
     <item>
       <title>The greatest line of code ever</title>
-      <link>http://rocketpages.github.io/blogpost/the-greatest-line-of-code-ever/</link>
+      <link>http://rocketpages.github.io/the-greatest-line-of-code-ever</link>
       <pubDate>Sun, 22 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/the-greatest-line-of-code-ever/</guid>
+      <guid>http://rocketpages.github.io/the-greatest-line-of-code-ever</guid>
       <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (statusIsNotValid.&lt;span style=&#34;color: #FF0000&#34;&gt;compareTo&lt;/span&gt;( Boolean.&lt;span style=&#34;color: #FF0000&#34;&gt;FALSE&lt;/span&gt; ) != &lt;span style=&#34;color: #0000FF&#34;&gt;0&lt;/span&gt;) skipValidation = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;false&lt;/span&gt;;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -1124,10 +1124,10 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
     <item>
       <title>Integrating Uploadify with Java using Apache Wicket</title>
-      <link>http://rocketpages.github.io/blogpost/integrating-uploadify-with-java-using-apache-wicket/</link>
+      <link>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket</link>
       <pubDate>Fri, 30 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/blogpost/integrating-uploadify-with-java-using-apache-wicket/</guid>
+      <guid>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket</guid>
       <description>
 
 &lt;p&gt;One of the most requested features on any site that accepts file submissions is the ability to handle multiple uploads elegantly. The current HTML standard only permits one file upload at a time, which makes transferring a large number of files quite tedious.&lt;/p&gt;
