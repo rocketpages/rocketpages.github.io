@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/home/</link>
-    <description>Recent content in Homes on My New Hugo Site</description>
+    <title>Homes on Kevin Webber</title>
+    <link>http://rocketpages.github.io/home/</link>
+    <description>Recent content in Homes on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Mar 2016 15:09:06 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rocketpages.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>intro</title>
-      <link>http://replace-this-with-your-hugo-site.com/home/intro/</link>
+      <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/home/intro/</guid>
+      <guid>http://rocketpages.github.io/home/intro/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;

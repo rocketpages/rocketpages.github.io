@@ -2,208 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <loc>http://rocketpages.github.io/</loc>
     <lastmod>2016-03-17T20:39:06-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/publications/</loc>
+    <loc>http://rocketpages.github.io/publications/</loc>
     <lastmod>2016-03-17T20:39:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/articles/</loc>
+    <loc>http://rocketpages.github.io/articles/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/videos/</loc>
+    <loc>http://rocketpages.github.io/videos/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinars/</loc>
+    <loc>http://rocketpages.github.io/webinars/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blog/</loc>
+    <loc>http://rocketpages.github.io/blog/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/home/intro/</loc>
+    <loc>http://rocketpages.github.io/home/intro/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/resume/</loc>
+    <loc>http://rocketpages.github.io/resume/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</loc>
+    <loc>http://rocketpages.github.io/webinar/legacy-java-monolith/</loc>
     <lastmod>2016-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</loc>
+    <loc>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</loc>
+    <loc>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</loc>
     <lastmod>2016-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</loc>
+    <loc>http://rocketpages.github.io/article/diving-into-akka-streams/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</loc>
+    <loc>http://rocketpages.github.io/webinar/revitalized-with-microservices/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</loc>
+    <loc>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</loc>
     <lastmod>2015-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</loc>
+    <loc>http://rocketpages.github.io/article/a-journey-into-reactive-streams/</loc>
     <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</loc>
+    <loc>http://rocketpages.github.io/webinar/forrester-going-reactive/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/reflecting-on-reactive-programming/</loc>
+    <loc>http://rocketpages.github.io/blogpost/reflecting-on-reactive-programming/</loc>
     <lastmod>2015-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinar/play-activator-deep-dive/</loc>
+    <loc>http://rocketpages.github.io/webinar/play-activator-deep-dive/</loc>
     <lastmod>2015-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/video/go-reactive-geecon/</loc>
+    <loc>http://rocketpages.github.io/video/go-reactive-geecon/</loc>
     <lastmod>2014-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/retrospective-a-night-of-reactive-programming/</loc>
+    <loc>http://rocketpages.github.io/blogpost/retrospective-a-night-of-reactive-programming/</loc>
     <lastmod>2014-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/article/what-is-reactive-programming/</loc>
+    <loc>http://rocketpages.github.io/article/what-is-reactive-programming/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/video/what-is-reactive-programming/</loc>
+    <loc>http://rocketpages.github.io/video/what-is-reactive-programming/</loc>
     <lastmod>2014-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/webinar/play-all-day/</loc>
+    <loc>http://rocketpages.github.io/webinar/play-all-day/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/article/transitioning-to-scala/</loc>
+    <loc>http://rocketpages.github.io/article/transitioning-to-scala/</loc>
     <lastmod>2014-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/agile-and-waterfall-together/</loc>
+    <loc>http://rocketpages.github.io/blogpost/agile-and-waterfall-together/</loc>
     <lastmod>2013-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/migrating-to-git-part-3-moving-your-code-to-git/</loc>
+    <loc>http://rocketpages.github.io/blogpost/migrating-to-git-part-3-moving-your-code-to-git/</loc>
     <lastmod>2012-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/migrating-to-git-part-2-prerequisites/</loc>
+    <loc>http://rocketpages.github.io/blogpost/migrating-to-git-part-2-prerequisites/</loc>
     <lastmod>2012-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/migrating-to-git-part-1-advantages/</loc>
+    <loc>http://rocketpages.github.io/blogpost/migrating-to-git-part-1-advantages/</loc>
     <lastmod>2012-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/joy-at-qcon-new-york/</loc>
+    <loc>http://rocketpages.github.io/blogpost/joy-at-qcon-new-york/</loc>
     <lastmod>2012-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</loc>
+    <loc>http://rocketpages.github.io/blogpost/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/fixing-fancybox-with-ajax-and-wicket/</loc>
+    <loc>http://rocketpages.github.io/blogpost/fixing-fancybox-with-ajax-and-wicket/</loc>
     <lastmod>2010-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/connection-pooling-with-hibernate-3-3-x-and-c3p0/</loc>
+    <loc>http://rocketpages.github.io/blogpost/connection-pooling-with-hibernate-3-3-x-and-c3p0/</loc>
     <lastmod>2010-12-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/beyond-java/</loc>
+    <loc>http://rocketpages.github.io/blogpost/beyond-java/</loc>
     <lastmod>2010-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/the-future-of-java-in-the-enterprise/</loc>
+    <loc>http://rocketpages.github.io/blogpost/the-future-of-java-in-the-enterprise/</loc>
     <lastmod>2010-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/desire-paths/</loc>
+    <loc>http://rocketpages.github.io/blogpost/desire-paths/</loc>
     <lastmod>2010-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/the-greatest-line-of-code-ever/</loc>
+    <loc>http://rocketpages.github.io/blogpost/the-greatest-line-of-code-ever/</loc>
     <lastmod>2010-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/integrating-uploadify-with-java-using-apache-wicket/</loc>
+    <loc>http://rocketpages.github.io/blogpost/integrating-uploadify-with-java-using-apache-wicket/</loc>
     <lastmod>2010-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/be-a-revolutionary/</loc>
+    <loc>http://rocketpages.github.io/blogpost/be-a-revolutionary/</loc>
     <lastmod>2010-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/apache-aries-osgi-for-the-enterprise/</loc>
+    <loc>http://rocketpages.github.io/blogpost/apache-aries-osgi-for-the-enterprise/</loc>
     <lastmod>2009-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/dont-forget-team-structure/</loc>
+    <loc>http://rocketpages.github.io/blogpost/dont-forget-team-structure/</loc>
     <lastmod>2009-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/blogpost/is-soa-doomed/</loc>
+    <loc>http://rocketpages.github.io/blogpost/is-soa-doomed/</loc>
     <lastmod>2009-08-10T00:00:00+00:00</lastmod>
   </url>
   

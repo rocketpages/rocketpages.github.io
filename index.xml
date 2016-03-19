@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Kevin Webber</title>
+    <link>http://rocketpages.github.io/</link>
+    <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Mar 2016 20:39:06 -0400</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>publications</title>
-      <link>http://replace-this-with-your-hugo-site.com/publications/</link>
+      <link>http://rocketpages.github.io/publications/</link>
       <pubDate>Thu, 17 Mar 2016 20:39:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/publications/</guid>
+      <guid>http://rocketpages.github.io/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>articles</title>
-      <link>http://replace-this-with-your-hugo-site.com/articles/</link>
+      <link>http://rocketpages.github.io/articles/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/articles/</guid>
+      <guid>http://rocketpages.github.io/articles/</guid>
       <description>
 
 &lt;h1 id=&#34;articles-on-medium:6a2ba1727aacb7eb91a9d62e76e05618&#34;&gt;Articles on Medium&lt;/h1&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>articles</title>
-      <link>http://replace-this-with-your-hugo-site.com/videos/</link>
+      <link>http://rocketpages.github.io/videos/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/videos/</guid>
+      <guid>http://rocketpages.github.io/videos/</guid>
       <description>
 
 &lt;h1 id=&#34;videos:a45b24697a235d080c581c0ce5a9b90b&#34;&gt;Videos&lt;/h1&gt;
@@ -48,10 +48,10 @@
     
     <item>
       <title>articles</title>
-      <link>http://replace-this-with-your-hugo-site.com/webinars/</link>
+      <link>http://rocketpages.github.io/webinars/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/webinars/</guid>
+      <guid>http://rocketpages.github.io/webinars/</guid>
       <description>
 
 &lt;h1 id=&#34;webinars:a8e8702a9f623cfeaba422b659c90bfe&#34;&gt;Webinars&lt;/h1&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>blog</title>
-      <link>http://replace-this-with-your-hugo-site.com/blog/</link>
+      <link>http://rocketpages.github.io/blog/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/blog/</guid>
+      <guid>http://rocketpages.github.io/blog/</guid>
       <description>
 
 &lt;h1 id=&#34;blog:e95c7dc8eefee7d0e25121cd7f0007ae&#34;&gt;Blog&lt;/h1&gt;
@@ -76,10 +76,10 @@
     
     <item>
       <title>intro</title>
-      <link>http://replace-this-with-your-hugo-site.com/home/intro/</link>
+      <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/home/intro/</guid>
+      <guid>http://rocketpages.github.io/home/intro/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;
@@ -92,10 +92,10 @@
     
     <item>
       <title>resume</title>
-      <link>http://replace-this-with-your-hugo-site.com/resume/</link>
+      <link>http://rocketpages.github.io/resume/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/resume/</guid>
+      <guid>http://rocketpages.github.io/resume/</guid>
       <description>
 
 &lt;h1 id=&#34;resume:c59a67a3c7bc5faa453847420267045e&#34;&gt;Resume&lt;/h1&gt;
@@ -134,40 +134,40 @@
     
     <item>
       <title>Modernizing your Monolith with Microservices</title>
-      <link>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</link>
+      <link>http://rocketpages.github.io/webinar/legacy-java-monolith/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</guid>
+      <guid>http://rocketpages.github.io/webinar/legacy-java-monolith/</guid>
       <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>How does a compiler, interpreter, and CPU work?</title>
-      <link>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</link>
+      <link>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</guid>
+      <guid>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</guid>
       <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Software is Eating the World</title>
-      <link>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</link>
+      <link>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</link>
       <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</guid>
+      <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
       <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Diving into Akka Streams</title>
-      <link>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</link>
+      <link>http://rocketpages.github.io/article/diving-into-akka-streams/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</guid>
+      <guid>http://rocketpages.github.io/article/diving-into-akka-streams/</guid>
       <description>&lt;p&gt;Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.&lt;/p&gt;
 
 &lt;p&gt;Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.&lt;/p&gt;
@@ -176,30 +176,30 @@
     
     <item>
       <title>Revitalizing Aging Architectures with Microservices</title>
-      <link>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</link>
+      <link>http://rocketpages.github.io/webinar/revitalized-with-microservices/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</guid>
+      <guid>http://rocketpages.github.io/webinar/revitalized-with-microservices/</guid>
       <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
-      <link>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</link>
+      <link>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</link>
       <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</guid>
+      <guid>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</guid>
       <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A Journey into Reactive Streams</title>
-      <link>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</link>
+      <link>http://rocketpages.github.io/article/a-journey-into-reactive-streams/</link>
       <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</guid>
+      <guid>http://rocketpages.github.io/article/a-journey-into-reactive-streams/</guid>
       <description>&lt;p&gt;As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.&lt;/p&gt;
 
 &lt;p&gt;In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.&lt;/p&gt;
@@ -208,10 +208,10 @@
     
     <item>
       <title>Forrester: What Architects Need To Know About Going Reactive</title>
-      <link>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</link>
+      <link>http://rocketpages.github.io/webinar/forrester-going-reactive/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</guid>
+      <guid>http://rocketpages.github.io/webinar/forrester-going-reactive/</guid>
       <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
 </description>
     </item>
