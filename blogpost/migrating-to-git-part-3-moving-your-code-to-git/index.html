@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/uikit.min.js"></script>        
+</head>
+
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">
+        Kevin Webber
+    </a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <li>
+            <a href="/blog">Blog</a>
+        </li>
+        <li>
+            <a href="/videos">Videos</a>
+        </li>
+        <li>
+            <a href="/webinars">Webinars</a>
+        </li>                
+        <li>
+            <a href="/resume">Resume</a>
+        </li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
+</nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>Migrating to Git, Part 3: Moving your code to Git</span></li>
+                        </ul>
+                    </div>
+                    
+                    <h1>Migrating to Git, Part 3: Moving your code to Git</h1>
+                    <p class="uk-text-muted">2012-09-11</p>
+                    
+
+<p>This is the third and final part in a three part series about migrating to Git. I recommend reading part one and part two if you haven&rsquo;t already. Migrating to Git is worth it, but it&rsquo;s not a trivial decision.</p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-1-advantages/">Migrating to Git, Part 1: Advantages</a></p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-2-prerequisites/">Migrating to Git, Part 2: Prerequisites</a></p>
+
+<p>If you&rsquo;re ready to proceed with a migration to Git, congratulations! You&rsquo;re about to start using one of the best development tools available today.</p>
+
+<h2 id="pre-migration-steps:0261b231e905d6607b9c6335989d58e2">Pre-migration steps</h2>
+
+<p><h3>1. Do you need to maintain commit history?</h3>
+If you&rsquo;re moving from SVN to Git, the migration to Git is greatly simplified if you don&rsquo;t need to retain revision history. Otherwise, you&rsquo;ll need to explore SubGit or git-svn.
+<h4>Some of the steps required for git-svn are:</h4>
+<ul>
+    <li>Retrieve a list of SVN committers and transform them to Git users (name, e-mail)</li>
+    <li>Clone the SVN repo using git-svn</li>
+    <li>Convert svn:ignore to .gitignore</li>
+    <li>Push the SVN repo to a bare Git repo</li>
+    <li>Rename &ldquo;trunk&rdquo; to &ldquo;master&rdquo;</li>
+    <li>Clean up branches and tags</li>
+</ul>
+These aren&rsquo;t the most time consuming tasks, but they&rsquo;re not quick either. If you&rsquo;re unconcerned about porting over history, I highly recommend skipping most of the steps above. We simply kept historical data in FishEye and instructed developers to query it if they had any questions about pre-Git revisions. Other version control systems will have their own tools to help with the migration, but convering each different VCS is beyond the scope of this series.
+<h3>2a. Install Git and other dependencies on the central Git server</h3>
+At a bare minimum you&rsquo;ll need to install Git. I&rsquo;m assuming you&rsquo;ll be using a Linux server, so this is an easy step. You may also need to install an up-to-date version of Java or Ruby (depending on what repository management tool you choose below).
+<h3>2b. Set up a repository management tool</h3>
+It&rsquo;s easy to initially set up Git by hand, but it becomes more and more of a burden to maintain a central Git repository without an easy-to-use management tool. Popular repository management tools include:
+<ul>
+    <li><a class="offsite-link-inline" href="https://enterprise.github.com/" target="_blank">GitHub Enterprise</a> (<strong>$$$</strong>)</li>
+    <li><a class="offsite-link-inline" href="http://www.atlassian.com/software/stash/overview" target="_blank">Atlassian Stash</a> (<strong>$</strong>)</li>
+    <li><a class="offsite-link-inline" href="http://gitlabhq.com/" target="_blank">GITLAB</a> (<strong>free</strong>)</li>
+    <li><a class="offsite-link-inline" href="http://www.accurev.com/kando" target="_blank">AccuRev Kando</a> (<strong>?</strong>)</li>
+</ul>
+My personal favourite is <strong>GitHub Enterprise</strong>, but the cost is hard to justify. GitHub Enterprise would cost our team of over 20 developers $10,000 per year in licensing. Ouch.</p>
+
+<p>We&rsquo;re using <strong>Atlassian Stash</strong> at the moment instead, and while it&rsquo;s frustringly bare-bones, it provides the bare minimum of what we need and is much cheaper. We&rsquo;re banking on it gaining features as it matures.</p>
+
+<p><strong>Kando</strong> adds workflow functionality similar to ClearCase. Depending on your existing workflow it may be too prescriptive for your needs or it may be exactly what you need.
+<h3>2c. Select and install a Git client and additional developer tools</h3>
+<a class="offsite-link-inline" href="http://code.google.com/p/msysgit/" target="_blank">msysgit</a> is a no brainer for those in a Windows environment. This should be installed on all developer workstations before the migration, and each developer should create a local repository as a test to make sure it&rsquo;s set up properly. This will help to avoid any day-of-migration surprises that will kill velocity.
+<h4>Other helpful tools include:</h4>
+<ul>
+    <li>An advanced three-way diff and merge tool such as <a class="offsite-link-inline" href="http://www.scootersoftware.com/" target="_blank">Beyond Compare</a>.</li>
+    <li>A UI tool such as:
+<ul>
+    <li><a class="offsite-link-inline" href="http://code.google.com/p/tortoisegit/" target="_blank">TortoiseGit</a> (Windows)</li>
+    <li><a class="offsite-link-inline" href="http://www.syntevo.com/smartgit/index.html" target="_blank">SmartGit</a> (Windows)</li>
+    <li><a class="offsite-link-inline" href="http://www.git-tower.com/" target="_blank">Git Tower</a> (Mac)</li>
+</ul></li>
+</ul></p>
+
+<p>Our developers are in a Windows environment, and we use Beyond Compare, TortoiseGit, and bash. For the most part we&rsquo;re happy, but I&rsquo;ve also heard good things about SmartGit. I&rsquo;ve also heard <em>amazing </em>things about Tower, and I would not hesitate to switch to it if our developers used OSX.
+<h3>2d. Code review and other tools</h3>
+It&rsquo;s worth the time to stop and identify areas of weakness in your current process. Opportunities for improvement may exist with support from the right choice of tools. This is an especially good opportunity to identify a solid code review tool, which will also force the team to decide on a post-commit or pre-commit workflow.
+<ul>
+    <li><strong>Post-commit workflow</strong>: Review code after it has been pushed and merged to the development branch.</li>
+    <li><strong>Pre-commit workflow</strong>: Review code before it is merged. <em>Pull requests </em>rather than pushing are an example of a pre-commit workflow.</li>
+</ul>
+<h4>Some decent code review tools for Git include:</h4>
+<ul>
+    <li><a class="offsite-link-inline" href="http://getbarkeep.org/" target="_blank">Barkeep</a> (post-commit workflow)</li>
+    <li><a class="offsite-link-inline" href="http://code.google.com/p/gerrit/" target="_blank">Gerritt</a> (pre-commit workflow)</li>
+    <li><a class="offsite-link-inline" href="http://www.atlassian.com/software/crucible/" target="_blank">Crucible</a> (post-commit workflow)</li>
+    <li><em>Pull requests</em> in your repository management tool</li>
+</ul>
+As of version 1.3 <strong>Stash</strong> supports pull requests, which are an excellent choice for code reviews. <strong>GitHub Enterprise</strong> and <strong>GITLAB</strong> also support pull requests, so it&rsquo;s not always necessary to augment your Git management tool with an external review tool. You should evaluate each and decide which works the best for your team. One thing to keep in mind is that pull requests only help to review code that has yet to be merged.
+<h3>3. SSH authentication</h3>
+Developers will most likely authenticate with remote Git repositories using SSH. This will require all developers to generate a private/public SSH key pair and add their public key to the Git server (in the authorized_keys file or adding the public key to the Git repository management tool). Using a repository management tool like GitHub Enterprise will make maintaining SSH keys a much more streamlined process rather than manually adding them to the authorized_keys file.
+<h3>4. Inventory all SVN-related scripts</h3>
+Custom scripts with SVN references should be identified as these will obviously break after the migration. This is typically the most time consuming task if a lot of SVN scripts and hooks exist as part of the current development workflow.
+<h2>Migration steps</h2>
+The migration itself is fairly straightforward if you aren&rsquo;t preserving SVN history. If you need to port history this list will look slightly more complicated and you should look into using <a class="offsite-link-inline" href="http://subgit.com/book/index.html#installation" target="_blank">SubGit</a>.
+<h3>1. Design a new repository structure</h3>
+We had a single large SVN repository with every single application in our organization. Rather than port our monolithic SVN repository to Git, we decided to break it into smaller repositories that better fit with the conceptual and logical view of our applications.</p>
+
+<p>We created a separate repository for our:
+<ul>
+    <li>Application code</li>
+    <li>Application configuration artefacts</li>
+    <li>Back-end processing jobs</li>
+    <li>Static web resources and Apache configuration</li>
+</ul>
+<h3>2. Create the new Git repositories locally</h3>
+We grabbed the latest version of our code from SVN and split our monolithic repository into four separate local folders. We had to clean the SVN kruft from each folder, which was incredibly fun. After all of this was done we initialized each folder as a new Git repository.
+<h3>3. Add content to Git before building applications</h3>
+We added all of our files to Git first <strong><em>before</em></strong> performing a full-build or even importing our applications into an IDE. This made it easy to create our .gitignore files, because we performed a commit of what&rsquo;s in SVN and nothing else (such as compiled resources or IDE project configuration files).
+<h3>4. Build applications and configure .gitignore</h3>
+Perform a full build of each application after you have all of your files committed to Git. You&rsquo;ll immediately be able to identify all the generated build artefacts that shouldn&rsquo;t be versioned. These artefacts can safely be added to .gitignore. Remember to add and commit your .gitignore file(s) too!
+<h3>5. Update tooling and scripts to switch from SVN to Git</h3>
+This is arguably one of the most time consuming tasks of the migration. For instance, Jenkins/Hudson users will need to update all of their scripts to pull from Git instead of SVN. All custom SVN-related scripts will need to be updated.
+<h3>6. Create central repositories and push local commits</h3>
+If you&rsquo;re using a tool like Stash or GitHub Enterprise, you&rsquo;ll manage the creation of new repositories through the tool&rsquo;s UI. Otherwise, you will need to create <em>bare</em> repositories on the Git server.
+<h3>7. Every developer should clone, commit, push, pull</h3>
+It&rsquo;s fairly important for all developers to clone the repo(s) right away and push code to identify any issues that may have cropped up during the migration. It&rsquo;s recommended that the person leading the migration create a throw-away branch and instruct all developers to check it out and perform a few <em>smoke-test</em> changes.
+<h4>At the very least the entire team should be able to:</h4>
+<ul>
+    <li>Build their environments locally</li>
+    <li>Switch branches</li>
+    <li>Make a small throw-away change</li>
+    <li>Push their change</li>
+    <li>Pull everyone else&rsquo;s changes</li>
+    <li>Switch branches back to the master (or release) branch</li>
+</ul>
+If you&rsquo;re feeling brave, you can even set things up so a change forces merge conflicts. This will get the team used to using the difftool and mergetool commands.
+<h3>8. Application(s) should be built in a test environment and shaken-down</h3>
+Once developers are fairly happy that they&rsquo;re set up and ready to go, the version of code now on the central repositories should be built and deployed to test environments. Presumably this will be done using a continuous integration tool and the fancy new Git scripts that were updated during pre-migration.
+<h2>Retrospective</h2>
+Most of the issues that come up during post-migration are related to the rationalization for switching to Git in the first place. During our transition we experienced very few technical issues with our code, but we experienced the natural frustration of learning a new tool and a new development process all at the same time.
+<h4>Be prepared to deal with:</h4>
+<ul>
+    <li>Build script failures after the modification of SVN scripts to support Git</li>
+    <li>Learning curve of using Git for the first time</li>
+    <li>Resistance from fans of the status quo</li>
+    <li>Questions from management as to the return on investment</li>
+</ul>
+Is it worth it? Absolutely. After the intial learning curve with Git, our SPM metric (smiles per minute) has gone up by at least one million percent.</p>
+
+                </div>
+            </div>
+            
+            <hr class="uk-grid-divider">
+            
+<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in meeting?</h5>
+        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
+
+        <ul>
+            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
+            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in chatting?</h5>
+        <p>I'm located in <strong>Toronto, Canada</strong>. If you'd like to work together or simply have a coffee and chat about technology, feel free to contact me at the link below.</p>
+        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
+        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
+    </div>
+
+</div>
+
+        </div>    
+
+        <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="webinars.html">Webinars</a>
+            </li>                
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+    </body>
+    
+</html>

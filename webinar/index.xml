@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webinars on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/webinar/</link>
+    <description>Recent content in Webinars on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/webinar/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Modernizing your Monolith with Microservices</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</guid>
+      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</guid>
+      <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Forrester: What Architects Need To Know About Going Reactive</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</guid>
+      <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deep Dive into the Typesafe Reactive Platform</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/play-activator-deep-dive/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/play-activator-deep-dive/</guid>
+      <description>&lt;p&gt;Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enterprise Web Development with Play and Scala</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/play-all-day/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/play-all-day/</guid>
+      <description>&lt;p&gt;The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

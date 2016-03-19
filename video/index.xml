@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Videos on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/video/</link>
+    <description>Recent content in Videos on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How does a compiler, interpreter, and CPU work?</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</guid>
+      <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software is Eating the World</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</guid>
+      <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</guid>
+      <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go Reactive! Reactive web application development with Scala, Play, and Akka</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/go-reactive-geecon/</link>
+      <pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/go-reactive-geecon/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Reactive Programming?</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/what-is-reactive-programming/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/what-is-reactive-programming/</guid>
+      <description>&lt;p&gt;Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/uikit.min.js"></script>        
+</head>
+
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">
+        Kevin Webber
+    </a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <li>
+            <a href="/blog">Blog</a>
+        </li>
+        <li>
+            <a href="/videos">Videos</a>
+        </li>
+        <li>
+            <a href="/webinars">Webinars</a>
+        </li>                
+        <li>
+            <a href="/resume">Resume</a>
+        </li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
+</nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>Migrating to Git, Part 1: Advantages</span></li>
+                        </ul>
+                    </div>
+                    
+                    <h1>Migrating to Git, Part 1: Advantages</h1>
+                    <p class="uk-text-muted">2012-09-09</p>
+                    <p>Git is unlike typical version control systems. Sure, Git is used to version files, but how is that any different than SVN or SourceSafe or ClearCase?</p>
+
+<p>Git expects developers to understand how it works under the hood. It expects developers to be comfortable with the command line to get the most out of it. It provides very little in the way of convention and expects you to design your own workflow simply by using it as another tool in your arsenal. Git is not an out-of-the box solution. If you plan to transition to Git you also need to set aside time to examine your overall development process. You won&rsquo;t get the most out of it otherwise and will possibly experience a challenging migration.</p>
+
+<p>Doesn&rsquo;t that sound dreamy?</p>
+
+<p>Before you become discouraged, let me explain that Git is not <strong><em>just</em></strong> a version control tool. It&rsquo;s also a development workflow design tool. It&rsquo;s also a quality control tool. It&rsquo;s also a productivity tool.</p>
+
+<p>Git is simply one of the best things that&rsquo;s happened to the development workflow in a decade; <em>if you choose to master it</em>. If you&rsquo;re not willing or able to put in the amount of time needed to properly learn a new tool and are simply looking for a place to dump your code, stick with your current VCS or consider migrating to something other than Git.
+<h2>Three advantages of Git over SVN</h2>
+SVN is a <em>centralized</em> version control system (CVCS), while Git is a <em>distributed</em> version control system (DVCS).</p>
+
+<p>What&rsquo;s the difference between a CVCS like SVN and a DVCS like Git?
+<h3>1. Stability of shared repositories</h3>
+<ul>
+    <li><strong>SVN:</strong> All developers commit work-in-progress code to shared repositories.</li>
+    <li><strong>Git:</strong> Developers commit code to local repositories first. Local repositories are later synced with shared repositories. The workflow looks like this: <em>clone -&gt; pull -&gt; add -&gt; commit -&gt; push</em>. Until a git user executes a <em>push</em>, commits are kept safe and sound in their local repository.</li>
+</ul>
+<h4>Why does this matter?</h4>
+<em><strong>Speed:</strong> </em>Developers using Git commit freely as their work does not immediately impact the rest of the team. They experiment in branches, committing code or stashing changes throughout the day. Nothing is permanent and every mistake can be reversed without impacting the entire team. They can throw everything away and start from scratch if necessary. Not only that, but Git commands are blazing fast because they don&rsquo;t involve network traffic to a centralized server. Only <em>fetch</em>, <em>pull</em>, and <em>push</em> involve any network traffic. Every other command operates on the user&rsquo;s local repository.</p>
+
+<p><strong><em>Confidence:</em></strong> The Git workflow removes fear and builds confidence. Over time a team is more and more willing to take on work they may have deemed too scary when using a VCS like SVN. Why is this? They don&rsquo;t need to struggle between the lesser of two evils: not committing code, or sharing code that isn&rsquo;t fully tested. Git lets a developer have the best of both worlds; keeping their code in version control, and only sharing changes when they are ready to be <em>pushed</em> to the team. It&rsquo;s nice knowing that your code is safely version but that you are not permanently impacting your team if you make a mistake.</p>
+
+<p><strong><em>Collaboration:</em></strong> One may argue that collaboration is hampered because code is kept in local repositories until finished or stable. Keep in mind that nothing stops multiple developers from <em>remoting</em> to each other&rsquo;s repositories to share work-in-progress code. Other options for collaboration include <em>pushing</em> work in progress code to a code review repository before pushing it to a stable, public repository. Collaboration options are limited only the imagination of your team.
+<h3>2. Branching</h3>
+<ul>
+    <li><strong>SVN:</strong> Developers often perform bulk commits towards the end of feature development. Work-in-progress code is often left unversioned to avoid negatively impacting the rest of the team.</li>
+    <li><strong>Git:</strong> Branches are created and destroyed rapidly and locally to support new features or experimental code. Local branches are pushed to various remote repos for <em>team collaboration</em>. The risk of unversioned code is severely mitigated with private repositories and the ease of pushing branches to shared servers.</li>
+</ul>
+<h4>Why does this matter?</h4>
+<em><strong>Integration:</strong> </em>Developers using Git don&rsquo;t impact the entire team with individual commits being shared before an entire story (or feature) is stable and tested. Developers create branches and merge changes when a feature is ready for integration. Branching is possible with SVN, but it isn&rsquo;t used in the same fashion as in Git, because branches in SVN are expensive to create.</p>
+
+<p><strong><em>Process and workflow:</em></strong> Git is just as much a workflow tool as it is a source control tool. Rapid branching makes working on more than one feature an incredibly flexible process. Merging in SVN is often a nail-biting experience because it&rsquo;s such a potentially destructive process. By contrast a developer using Git can create a new branch, merge multiple branches into it, resolve conflicts, and test locally <strong>before</strong> <em>squashing</em> the individual commits and integrating it with a main release branch. The worst case scenario in Git is starting over again locally without any impact to the team. The worst case scenario in SVN is corrupting the central repository and getting fired.
+<h3>3. Task switching</h3>
+<ul>
+    <li><strong>SVN:</strong> Switching between branches is painful. It&rsquo;s essentially like copying and pasting an entire directory structure and having multiple local copies of your project.</li>
+    <li><strong>Git:</strong> Git handles switching branches by simply updating the contents of a working folder with the contents of the branch you specify. There are no folders to duplicate or other steps that impede your workflow.</li>
+</ul>
+<h4>Why does this matter?</h4>
+<em><strong>Productivity:</strong> </em>Developers using Git simply commit (or stash) their work-in-progress code and <em>checkout</em> the alternate branch they&rsquo;d like to work on. Their working directory is updated in place with the correct code and they continue to work uninterrupted. When they finish their task they simply <em>pull -&gt; commit -&gt; push</em> and then <em>checkout</em> the previous branch they were working on.
+<h2>To be continued</h2>
+Are you excited about Git? I am, and so are a lot of other developers!</p>
+
+<p>If you&rsquo;re interested in learning more about the tasks involved in migrating to Git, please continue to read the next two instalments of my <strong>Migrating to Git</strong> series.</p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-2-prerequisites/">Migrating to Git, Part 2: Prerequisites</a></p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-3-moving-your-code-to-git/">Migrating to Git, Part 3: Moving your code to Git</a></p>
+
+<p>&nbsp;</p>
+
+                </div>
+            </div>
+            
+            <hr class="uk-grid-divider">
+            
+<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in meeting?</h5>
+        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
+
+        <ul>
+            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
+            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in chatting?</h5>
+        <p>I'm located in <strong>Toronto, Canada</strong>. If you'd like to work together or simply have a coffee and chat about technology, feel free to contact me at the link below.</p>
+        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
+        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
+    </div>
+
+</div>
+
+        </div>    
+
+        <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="webinars.html">Webinars</a>
+            </li>                
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/uikit.min.js"></script>        
+</head>
+
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">
+        Kevin Webber
+    </a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <li>
+            <a href="/blog">Blog</a>
+        </li>
+        <li>
+            <a href="/videos">Videos</a>
+        </li>
+        <li>
+            <a href="/webinars">Webinars</a>
+        </li>                
+        <li>
+            <a href="/resume">Resume</a>
+        </li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
+</nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>Connection pooling with Hibernate 3.3.x and C3P0</span></li>
+                        </ul>
+                    </div>
+                    
+                    <h1>Connection pooling with Hibernate 3.3.x and C3P0</h1>
+                    <p class="uk-text-muted">2010-12-26</p>
+                    
+
+<p>Hibernate uses it&rsquo;s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.</p>
+
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not <span style="color: #000080; font-weight: bold">for</span> production use!)
+INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
+</pre></div>
+
+
+<p>A few minor problems creep up with this default configuration left alone, such as the inability for Hibernate to reconnect closed connections. MySQL closes unused connections after 8 hours by default, which causes problems for low-volume applications that may not experience any database usage overnight.</p>
+
+<p>One solution is to use <a class="offsite-link-inline" href="http://www.mchange.com/projects/c3p0/index.html" target="_blank">C3P0</a>, an incredibly simple library that augments the standard JDBC drivers essentially making them &ldquo;enterprise-ready&rdquo;. One of the main features of C3P0 is:</p>
+
+<blockquote>
+<p>Transparent pooling of Connection and PreparedStatements behind DataSources which can &ldquo;wrap&rdquo; around traditional drivers or arbitrary unpooled DataSources.</p>
+</blockquote>
+
+<p>In other words, you don&rsquo;t have to change any of your code to use C3P0 connection pools if you&rsquo;re using Hibernate. C3P0 takes care of maintaining the pool and testing connections, so your code stays in tact.</p>
+
+<h2 id="configuring-c3p0:d5fc04781c41afb22bbef911d13dae43">Configuring C3P0</h2>
+
+<h3 id="1-add-the-c3p0-jar-to-your-classpath-if-you-re-using-maven-simply-add-the-following-to-your-pom-xml-file:d5fc04781c41afb22bbef911d13dae43">1. Add the C3P0 jar to your classpath. If you&rsquo;re using Maven, simply add the following to your pom.xml file:</h3>
+
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;dependency&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;groupId&gt;</span>org.hibernate<span style="color: #000080; font-weight: bold">&lt;/groupId&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;artifactId&gt;</span>hibernate-c3p0<span style="color: #000080; font-weight: bold">&lt;/artifactId&gt;</span>
+    <span style="color: #000080; font-weight: bold">&lt;version&gt;</span>3.3.2.GA<span style="color: #000080; font-weight: bold">&lt;/version&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;/dependency&gt;</span>
+</pre></div>
+
+
+<h3 id="2-make-the-following-changes-to-your-hibernate-cfg-xml-file:d5fc04781c41afb22bbef911d13dae43">2. Make the following changes to your hibernate.cfg.xml file:</h3>
+
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.url&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>jdbc:mysql://127.0.0.1/your_db<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.username&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>your_username<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.driver_class&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>com.mysql.jdbc.Driver<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;dialect&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>org.hibernate.dialect.MySQLDialect<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;hibernate.connection.provider_class&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>org.hibernate.connection.C3P0ConnectionProvider<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+
+<span style="color: #008800; font-style: italic">&lt;!-- JDBC connection pool (C3P0) --&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.min_size&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>5<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.max_size&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>20<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.timeout&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>1800<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.max_statements&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>50<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+</pre></div>
+
+
+<p>Pay special attention to the <strong>provider_class</strong> property. Previous versions did not require this property, so most of the tutorials on the net are missing this key piece of info.</p>
+
+<h3 id="3-create-a-c3p0-properties-file:d5fc04781c41afb22bbef911d13dae43">3. Create a c3p0.properties file</h3>
+
+<p>In order to configure C3P0 for your specific needs, you&rsquo;ll need a <strong>c3p0.properties</strong> file on the classpath. Take a look <a class="offsite-link-inline" href="http://www.mchange.com/projects/c3p0/index.html#configuration_files" target="_blank">here</a> for all the available settings you can tweak. Here&rsquo;s an example that ensures any closed connection is tested and re-opened rather than MySQL throwing an exception:</p>
+
+<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #FF0000">c3p0.testConnectionOnCheckout</span>=<span style="color: #0000FF">true</span>
+</pre></div>
+</p>
+
+<h2 id="verifying-it-worked:d5fc04781c41afb22bbef911d13dae43">Verifying it worked</h2>
+
+<p>Configuring C3P0 is pretty simple! If everything works correctly, you&rsquo;ll see the following in your logs:</p>
+
+<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+INFO C3P0ConnectionProvider:103 - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/your_db
+INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=****}
+</pre></div>
+</p>
+
+                </div>
+            </div>
+            
+            <hr class="uk-grid-divider">
+            
+<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in meeting?</h5>
+        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
+
+        <ul>
+            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
+            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in chatting?</h5>
+        <p>I'm located in <strong>Toronto, Canada</strong>. If you'd like to work together or simply have a coffee and chat about technology, feel free to contact me at the link below.</p>
+        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
+        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
+    </div>
+
+</div>
+
+        </div>    
+
+        <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="webinars.html">Webinars</a>
+            </li>                
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+    </body>
+    
+</html>

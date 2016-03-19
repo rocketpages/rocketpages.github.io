@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Mar 2016 20:39:06 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>publications</title>
+      <link>http://replace-this-with-your-hugo-site.com/publications/</link>
+      <pubDate>Thu, 17 Mar 2016 20:39:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>articles</title>
+      <link>http://replace-this-with-your-hugo-site.com/articles/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/articles/</guid>
+      <description>
+
+&lt;h1 id=&#34;articles-on-medium:6a2ba1727aacb7eb91a9d62e76e05618&#34;&gt;Articles on Medium&lt;/h1&gt;
+
+&lt;p&gt;The articles below cover technical subjects in depth, focusing on areas of distributed systems such as &lt;em&gt;reactive programming&lt;/em&gt; and &lt;em&gt;event-based architectures&lt;/em&gt;. The articles below have accumulated well over 100,000 views since 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>articles</title>
+      <link>http://replace-this-with-your-hugo-site.com/videos/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/videos/</guid>
+      <description>
+
+&lt;h1 id=&#34;videos:a45b24697a235d080c581c0ce5a9b90b&#34;&gt;Videos&lt;/h1&gt;
+
+&lt;p&gt;Presentations and educational videos on mostly technical subjects, with a few personal video logs (vlogs) thrown into the mix. If you have any ideas for future content, please get in touch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>articles</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinars/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinars/</guid>
+      <description>
+
+&lt;h1 id=&#34;webinars:a8e8702a9f623cfeaba422b659c90bfe&#34;&gt;Webinars&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m a regular presenter for Lightbend, touching on subjects from microservices to stream processing to enterprise architecture.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>http://replace-this-with-your-hugo-site.com/blog/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/blog/</guid>
+      <description>
+
+&lt;h1 id=&#34;blog:e95c7dc8eefee7d0e25121cd7f0007ae&#34;&gt;Blog&lt;/h1&gt;
+
+&lt;p&gt;A collection of blog posts and personal anecdotes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>intro</title>
+      <link>http://replace-this-with-your-hugo-site.com/home/intro/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/home/intro/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences and private business events around the world, from Gartner AADI to GeeCON to various private CTO roundtables in Canada, the United States, and Europe.&lt;/p&gt;
+
+&lt;p&gt;Kevin is the global Enterprise Advocate for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>http://replace-this-with-your-hugo-site.com/resume/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/resume/</guid>
+      <description>
+
+&lt;h1 id=&#34;resume:c59a67a3c7bc5faa453847420267045e&#34;&gt;Resume&lt;/h1&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about any area of expertise listed below, please &lt;a href=&#34;http://goo.gl/forms/Ox9cGw4Ohw&#34;&gt;get in touch&lt;/a&gt;. I&amp;rsquo;d be happy to meet over Skype or in-person in downtown Toronto.&lt;/p&gt;
+
+&lt;h2 id=&#34;highlights:c59a67a3c7bc5faa453847420267045e&#34;&gt;Highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Experienced public speaker&lt;/em&gt;, presenting at meetups, conferences, and to private businesses around the world about modern software development, architecture, and process&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Over 15 years of development and architecture experience&lt;/em&gt; with JVM technologies, having performed in architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Proficient technical writer&lt;/em&gt;, regularly contributing to various publications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;skills:c59a67a3c7bc5faa453847420267045e&#34;&gt;Skills&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; — Domain-Driven Design (DDD), OOA/D, requirements gathering and analysis&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt; — Scala, Java, JavaScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frameworks&lt;/strong&gt; — Play, Akka, Spring&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt; — Vagrant, Puppet, Kubernetes, ConductR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ops&lt;/strong&gt; — Implementing cloud and hybrid-cloud topologies for clustered, scalable, resilient systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;areas-of-interest:c59a67a3c7bc5faa453847420267045e&#34;&gt;Areas of interest&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Modernization of legacy systems to microservices and distributed systems&lt;/li&gt;
+&lt;li&gt;Hybrid object-oriented and functional programming in Scala&lt;/li&gt;
+&lt;li&gt;Emerging architecture patterns for event-driven, reactive systems&lt;/li&gt;
+&lt;li&gt;Stream processing with Akka Streams, especially related to batch/ETL applications&lt;/li&gt;
+&lt;li&gt;Building scalable, resilient web systems and mobile APIs using Play and Akka&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modernizing your Monolith with Microservices</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/legacy-java-monolith/</guid>
+      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How does a compiler, interpreter, and CPU work?</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/e2-compiler-interpreter-cpu/</guid>
+      <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software is Eating the World</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/e1-software-is-eating-the-world/</guid>
+      <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diving into Akka Streams</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</guid>
+      <description>&lt;p&gt;Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.&lt;/p&gt;
+
+&lt;p&gt;Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/revitalized-with-microservices/</guid>
+      <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <link>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/video/gartner-aadi-walmart-web-scale/</guid>
+      <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</guid>
+      <description>&lt;p&gt;As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.&lt;/p&gt;
+
+&lt;p&gt;In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Forrester: What Architects Need To Know About Going Reactive</title>
+      <link>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/webinar/forrester-going-reactive/</guid>
+      <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/article/</link>
+    <description>Recent content in Articles on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/article/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Diving into Akka Streams</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/diving-into-akka-streams/</guid>
+      <description>&lt;p&gt;Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.&lt;/p&gt;
+
+&lt;p&gt;Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/a-journey-into-reactive-streams/</guid>
+      <description>&lt;p&gt;As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.&lt;/p&gt;
+
+&lt;p&gt;In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Reactive Programming?</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/what-is-reactive-programming/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/what-is-reactive-programming/</guid>
+      <description>&lt;p&gt;There’s a wealth of knowledge at our disposal gained over decades of research in computing. Reactive programming is an attempt to capture that knowledge in order to apply it to a new generation of software.&lt;/p&gt;
+
+&lt;p&gt;The main selling feature of Java was the ability to “write once, run anywhere”, but anywhere was in the context of which operating system the JVM was installed on, not concepts like the cloud or the massive number of concurrent connections that we’re designing for in the age of the Internet of Things.&lt;/p&gt;
+
+&lt;p&gt;In this article we discuss the four principles of reactive software development: responsiveness, resilience, elasticity, and messages. We frame how to apply these principles to software development and architecture, regardless of tool or framework, to build indestructable systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transitioning to Scala</title>
+      <link>http://replace-this-with-your-hugo-site.com/article/transitioning-to-scala/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/article/transitioning-to-scala/</guid>
+      <description>&lt;p&gt;What started as a proof-of-concept micro e-commerce site to internally demonstrate the simplicity of Scala code and developer productivity of Play eventually gained traction and became the foundation of Walmart Canada’s new e-commerce platform.&lt;/p&gt;
+
+&lt;p&gt;This is not a Scala programming tutorial. This is a collection of advice geared towards developers, team leads, and managers who are thinking of transitioning their teams to Scala. The advice is based on my own personal experience as a team lead on an enterprise Scala project.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

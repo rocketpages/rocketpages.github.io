@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/home/</link>
+    <description>Recent content in Homes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Mar 2016 15:09:06 -0400</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>intro</title>
+      <link>http://replace-this-with-your-hugo-site.com/home/intro/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/home/intro/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences and private business events around the world, from Gartner AADI to GeeCON to various private CTO roundtables in Canada, the United States, and Europe.&lt;/p&gt;
+
+&lt;p&gt;Kevin is the global Enterprise Advocate for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

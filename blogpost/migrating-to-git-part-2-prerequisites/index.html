@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/uikit.min.js"></script>        
+</head>
+
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">
+        Kevin Webber
+    </a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <li>
+            <a href="/blog">Blog</a>
+        </li>
+        <li>
+            <a href="/videos">Videos</a>
+        </li>
+        <li>
+            <a href="/webinars">Webinars</a>
+        </li>                
+        <li>
+            <a href="/resume">Resume</a>
+        </li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
+</nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>Migrating to Git, Part 2: Prerequisites</span></li>
+                        </ul>
+                    </div>
+                    
+                    <h1>Migrating to Git, Part 2: Prerequisites</h1>
+                    <p class="uk-text-muted">2012-09-10</p>
+                    <p>This is the second part of a three part series about migrating to Git. If you haven&rsquo;t read part one and are unfamiliar with the advantages of Git, you should check it out.</p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-1-advantages/">Migrating to Git, Part 1: Advantages</a></p>
+
+<p>If you already understand the benefits of Git, or have already read part one, welcome to part two in the series! We&rsquo;re going to discuss certain pre-conditions of a migration to Git and make sure your team is ready for the transition.</p>
+
+<p><h2>Prerequisites</h2>
+Before migrating to Git, you should make sure your team is <em>ready</em> to migrate. Changing version control systems (especially in a large team) is not a trivial undertaking, and certain technical debt should not exist in your code base to ensure a smooth transition.</p>
+
+<p>Here&rsquo;s a rough guide to help you evaluate whether you&rsquo;re ready to migrate:
+<h3>1. Ensure your code base is buildable and stable</h3>
+If you can&rsquo;t perform a clean, full build of your application, you should absolutely delay your migrations plans and pay down technical debt before attempting <em>any</em> large scale project (let alone something is risky as migrating to a different version control system). Post-migration, the entire application will need to be completely rebuilt and regression tested. This seems like an obvious prerequisite, but not every organization performs full builds on a regular basis, especially with legacy applications. Being unable to build your application or lacking confidence in your build is a recipe for disaster.
+<h3>2. Set up a continuous integration server</h3>
+It&rsquo;s a good idea to implement a CI solution in order to get up-to-date feedback on build issues as developers begin to use Git for the first time. It&rsquo;s amazing the types of issues that crop up in the first few days post-migration. Most issues are minor if they&rsquo;re caught early enough.
+<h3>3. Prepare a regression test plan or implement automated testing</h3>
+Changing version control systems is quite disruptive. Prepare for a number of things to go wrong. At the very minimum, you should plan for a full regression test of your application <strong>immediately</strong> after migration and before developers begin committing code. This window should be minimized to avoid syncing nightmares.</p>
+
+<p>If you don&rsquo;t have an automated test suite, this may be a burden to your QA team. There may be a temptation to piggy-back the Git migration onto a major release and kill two testing birds with one stone, but I caution against this as it will be hard to track down the root cause of defects.</p>
+
+<p>If you work in a team that practices Kanban or Scrum, it&rsquo;s a good idea to plan for a loss of velocity during the migration period. This loss of productivity should be minimal if the migration is planned properly. For instance, if your team practices Scrum, it may be a good idea to consider the migration iteration zero and release the product (fully tested) at the end of the sprint. A full sprint is unnecessary, but a short sprint (of a week or less) is also a good opportunity to pay down any kind of technical debt that is a blocker of the migration to Git.
+<h3>4. Plan for training</h3>
+Our team attempted to train grassroots-style&hellip; and it was tough. Budget for at least a full day of training to ensure your developers are comfortable with core Git and DVCS concepts.</p>
+
+<p>It also helps that developers understand the rationale for switching version control systems, as any impedance to velocity will be met with frustration. If they understand the long-term benefits, it will make the short-term frustrations easier to deal with.
+<h3>5. Identify an evangelist to lead the migration and post-migration support</h3>
+At least one member of the team should be very familiar with Git in order to ensure a smooth migration.</p>
+
+<p>Certain questions will come up, like:
+<ul>
+    <li>What&rsquo;s the team&rsquo;s branching strategy?</li>
+    <li>How will the team collaborate?</li>
+    <li>What merge strategy will be used? (Squash merges? Fast-forward merges?)</li>
+    <li>How often should merges take place from feature branches to a release branch?</li>
+    <li>Will we use sprint branches? Release branches? Or integration directly into a master branch?</li>
+</ul>
+It&rsquo;s helpful for one person to take ownership of the migration and establish a developer workflow before the migration. The workflow will evolve, but it helps to have a starting point and a rough objective. The evangelist will guide the team through the initial learning curve, and after the entire team is comfortable with Git the decision making process will naturally become more democratic (and decentralized, just like Git).</p>
+
+<p>Speaking from personal experience, it&rsquo;s helpful (but not required) that the evangelist is not distracted with development tasks immediately after post-migration. I recommend considering them a <em>build manager</em> or a DevOps resource for a finite period of time post-migration to ensure capacity for support.
+<h3>6. Make a list of why you&rsquo;re migrating to Git in the first place</h3>
+This the least technical prerequisite and more of a return-on-investment analysis exercise.</p>
+
+<p>It&rsquo;s important to come up with a justification for the migration. If you&rsquo;re unable to make this list and be prepared to justify it, you probably don&rsquo;t have someone on the team that understands the benefits of Git well enough to support the migration through the often challenging transitional period. Simply put, if you&rsquo;re unable to justify the expense and disruption of a VCS migration, don&rsquo;t bother. Wait around until you&rsquo;re about to create a reasonable business case and that you have specific measurable goals to revisit during the post-migration retrospective.
+<h4>This list may include items such as:</h4>
+<ul>
+    <li>Increased developer productivity</li>
+    <li>Encouraging exploration and refactoring through rapid branching</li>
+    <li>Reducing errors during branch merges (shaking down merges locally)</li>
+    <li>More naturally supporting team and release workflow</li>
+    <li>Supporting workers who aren&rsquo;t always on the network</li>
+    <li>Developer happiness</li>
+    <li>Etcetera</li>
+</ul>
+<h2>The final steps</h2>
+If you&rsquo;re confident and ready to migrate to Git, check out the final part of my Migrating to Git series.</p>
+
+<p><a href="http://kevinwebber.ca/migrating-to-git-part-3-moving-your-code-to-git/">Migrating to Git, Part 3: Moving your code to Git</a></p>
+
+<p>&nbsp;</p>
+
+                </div>
+            </div>
+            
+            <hr class="uk-grid-divider">
+            
+<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in meeting?</h5>
+        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
+
+        <ul>
+            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
+            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in chatting?</h5>
+        <p>I'm located in <strong>Toronto, Canada</strong>. If you'd like to work together or simply have a coffee and chat about technology, feel free to contact me at the link below.</p>
+        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
+        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
+    </div>
+
+</div>
+
+        </div>    
+
+        <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="webinars.html">Webinars</a>
+            </li>                
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+    </body>
+    
+</html>

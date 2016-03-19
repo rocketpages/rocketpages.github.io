@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/uikit.min.js"></script>        
+</head>
+
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">
+        Kevin Webber
+    </a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <li>
+            <a href="/blog">Blog</a>
+        </li>
+        <li>
+            <a href="/videos">Videos</a>
+        </li>
+        <li>
+            <a href="/webinars">Webinars</a>
+        </li>                
+        <li>
+            <a href="/resume">Resume</a>
+        </li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
+</nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-2-3">
+                    
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>Is SOA doomed?</span></li>
+                        </ul>
+                    </div>
+                    
+                    <h1>Is SOA doomed?</h1>
+                    <p class="uk-text-muted">2009-08-10</p>
+                    
+
+<p>Don&rsquo;t get me wrong, I think the <em>spirit</em> of SOA is fantastic. Adaptable, flexible, maintainable, loosely-coupled applications supported by open governance, strong relationships between business and technology folks, and co-operation across all silos and levels of an organization. What&rsquo;s not to love?</p>
+
+<p>SOA has become one of the most commonly-heard buzzwords around the water-cooler over the past few years. It seems like everyone is talking about SOA these days. Architects, developers, business folks, management, non-management, and everyone in-between. I hear about SOA more than I hear about AJAX and Web 2.0 put together. I wouldn&rsquo;t be surprised if my Dad calls me up out of the blue to chat about SOA — and he sells shopping carts, <em>the real ones made of metal</em>, not the electronic ones.</p>
+
+<p>I love nothing more than applying an elegant solution to a difficult problem, but I&rsquo;m concerned when a misunderstood solution is applied to an unknown problem.</p>
+
+<h2 id="what-is-soa:6dcde588e25f3993d912bb1e63d2ab72">What is SOA?</h2>
+
+<p>At the root of SOA are some extremely useful technologies. An average SOA stack includes:</p>
+
+<ul>
+<li>Services</li>
+<li>A service registry</li>
+<li>Some form of service orchestration</li>
+<li>Data transportation and transformation (whether done with an ESB or not)</li>
+<li>Persistence</li>
+<li>Authentication and authorization</li>
+<li>Administration</li>
+<li>Event notification</li>
+<li>Business intelligence (BI)</li>
+<li>Governance</li>
+</ul>
+
+<p>You may disagree with my above list.</p>
+
+<blockquote>
+<p>Are you kidding, ESB <strong>is</strong> SOA!</p>
+
+<p>Why didn&rsquo;t you mention Quality of Service?</p>
+
+<p>Are you sure you mean orchestration, or do you mean choreography?</p>
+</blockquote>
+
+<p>Those are all potentially valid points. The thing is I&rsquo;m not really all that concerned about what SOA <em>should</em> be, but whether or not SOA, pieces of SOA, or something entirely different is the most appropriate technical solution to a given business opportunity.</p>
+
+<p>I&rsquo;m by no means an SOA expert. I&rsquo;ve been involved in a number of WS initiatives, and one project with the SOA label applied to it. I also spent a month attending training sessions provided by <a href="http://www.softwareag.com/corporate/default.asp">Software AG</a> on their <a href="http://www.softwareag.com/corporate/products/wm/default.asp">webMethods</a> product. I&rsquo;ve also attended a number of strategy sessions to come up with an SOA migration plan for our department.</p>
+
+<h2 id="what-soa-isn-t:6dcde588e25f3993d912bb1e63d2ab72">What SOA isn&rsquo;t</h2>
+
+<ul>
+<li>A silver bullet</li>
+<li>An easy way to pay off years of accumulated technical debt</li>
+<li>The answer to all your prayers</li>
+<li>A way to double your business in 24 hours</li>
+<li>A way to get rich quick</li>
+<li>The magic diet that will help you lose weight but still allow you to eat as much pie as you want</li>
+<li>Something you <strong>must</strong> deliver</li>
+</ul>
+
+<p>Yet, when I speak with friends and colleagues about SOA, this is how it&rsquo;s being communicated. Interestingly enough, in some cases it&rsquo;s being pushed by business rather than the technical staff. At first glance this may sound reasonable; after all, it&rsquo;s a good thing for a business case to exist when spending millions of dollars. But the scary thing is the <em>way</em> it&rsquo;s being marketed.</p>
+
+<blockquote>
+<p>Company X just unveiled their SOA solution, so we need one to stay competitive.</p>
+</blockquote>
+
+<p>If you take a look at the technology stack I listed above, none of the concepts or technologies are particularly complex or difficult to implement on their own, but wiring them together to accomplish a specific business objective is definitely complicated; especially when crossing organizational boundaries. Based on my limited SOA experience, I believe the most difficult aspect of a SOA project to get right is governance. It&rsquo;s the one that I&rsquo;m shocked to see so overlooked.</p>
+
+<p>Is true SOA simply too ambitious for most companies to deliver? Is it a clash of paradigms? Most organizations undertaking SOA initiatives are, at their heart, stove-piped; siloed departments with siloed applications and processes. Can an architecture whose goal is to promote rapid adaptation to changing business conditions and flexibility work in an organization whose entire structure is reluctant to adapt and inflexible by nature? These are questions I can&rsquo;t answer, but questions I&rsquo;m surprised more people aren&rsquo;t asking.</p>
+
+<h2 id="conclusion:6dcde588e25f3993d912bb1e63d2ab72">Conclusion</h2>
+
+<p>My opinion is this: unless the stakeholders of an SOA initiative can provide clear and reasonable ROI estimates at specific milestones of an SOA migration, the project is most likely doomed to failure. If I bought a bus ticket and the destination read, &ldquo;you&rsquo;ll know when you get there&rdquo;, I&rsquo;d ask for a refund.</p>
+
+<p>Unfortunately, SOA itself will be blamed for the failure of SOA initiatives. Until the SOA buzzword became so hot I&rsquo;d never heard of a project funded without specific business objectives, such as reducing support costs, preparing for increased usage, providing a new business feature that would generate <em>x</em> number of new customers, generating <em>x</em> amount of new revenue per customer, and so forth. On the flip side, I&rsquo;ve chatted with a number of friends who are involved in SOA projects and most of them can&rsquo;t figure out what the actual, concrete, measurable goals of their SOA initiatives are.</p>
+
+<p>I think SOA will become a dirty word sooner or later. Next time someone mentions SOA, focus less on the acronym and more on the spirit of what they&rsquo;re trying to accomplish. Paying attention to the latest and greatest buzz is important, but just be careful not to commit <em>design by buzzword</em>.</p>
+
+                </div>
+            </div>
+            
+            <hr class="uk-grid-divider">
+            
+<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in meeting?</h5>
+        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
+
+        <ul>
+            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
+            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-width-medium-1-2">
+        <h5>Interested in chatting?</h5>
+        <p>I'm located in <strong>Toronto, Canada</strong>. If you'd like to work together or simply have a coffee and chat about technology, feel free to contact me at the link below.</p>
+        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
+        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
+    </div>
+
+</div>
+
+        </div>    
+
+        <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="webinars.html">Webinars</a>
+            </li>                
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+    </body>
+    
+</html>
