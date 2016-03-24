@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photos on Kevin Webber</title>
+    <link>http://rocketpages.github.io/photo/</link>
+    <description>Recent content in Photos on Kevin Webber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://rocketpages.github.io/photo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://rocketpages.github.io/photo/thomson-reuters/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/photo/thomson-reuters/</guid>
+      <description>&lt;p&gt;Speaking at Thomson Reuters about Reactive Streams.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://rocketpages.github.io/photo/san-francisco/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/photo/san-francisco/</guid>
+      <description>&lt;p&gt;Exploring San Francisco after a visit to Lightbend HQ.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

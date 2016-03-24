@@ -164,6 +164,16 @@
     </item>
     
     <item>
+      <title></title>
+      <link>http://rocketpages.github.io/photo/thomson-reuters/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/photo/thomson-reuters/</guid>
+      <description>&lt;p&gt;Speaking at Thomson Reuters about Reactive Streams.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Diving into Akka Streams</title>
       <link>http://rocketpages.github.io/article/diving-into-akka-streams/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
@@ -204,16 +214,6 @@
       <description>&lt;p&gt;As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.&lt;/p&gt;
 
 &lt;p&gt;In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Forrester: What Architects Need To Know About Going Reactive</title>
-      <link>http://rocketpages.github.io/webinar/forrester-going-reactive/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/webinar/forrester-going-reactive/</guid>
-      <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
 </description>
     </item>
     

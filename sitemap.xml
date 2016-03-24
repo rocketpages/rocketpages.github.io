@@ -58,6 +58,11 @@
   </url>
   
   <url>
+    <loc>http://rocketpages.github.io/photo/thomson-reuters/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rocketpages.github.io/article/diving-into-akka-streams/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -85,6 +90,11 @@
   <url>
     <loc>http://rocketpages.github.io/reflecting-on-reactive-programming</loc>
     <lastmod>2015-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rocketpages.github.io/photo/san-francisco/</loc>
+    <lastmod>2015-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
