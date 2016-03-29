@@ -12,7 +12,116 @@
     <script src="/js/jquery-2.2.1.min.js"></script>
     <script src="/js/uikit.min.js"></script>      
     <script src="/js/components/slideshow.min.js"></script>
+    <script src="https://use.typekit.net/ecv7ait.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
+
+<style>
+    
+    body {
+        color: #60646D;
+        font-family: "proxima-nova", sans-serif;
+    }
+    
+    p {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
+    
+    ul {
+        line-height: 150%;
+    }
+    
+    em {
+        font-family: "baskerville-urw", sans-serif;
+        font-size: 1.15em;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .uk-breadcrumb {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+    }
+    
+    .uk-navbar-brand {
+        font-weight: 700;
+    }
+    
+    .uk-navbar-brand,
+    .uk-navbar-nav>li>a,
+    .uk-navbar-nav>li {
+        height: 44px;
+    }
+    
+    .larger {
+        font-size: 1.1em;
+    }
+    
+    .headline {
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: "futura-pt", sans-serif;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-family: "source-code-pro", sans-serif;
+    }
+    
+    .uk-text-muted {
+        color: #9E9D9B;
+    }
+    
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    .wf-loading h5,
+    .wf-loading p,
+    .wf-loading nav,
+    .wf-loading ul,
+    .wf-loading ul li,
+    .wf-loading li,
+    .wf-loading .uk-breadcrumb {
+      visibility: hidden
+    }
+    
+    .section-heading {
+        margin-top: 0em;
+        text-transform: uppercase; font-weight: 700
+    }
+    
+    .uk-panel p {
+        font-size: 1em;
+    }
+    
+    .uk-panel p.date {
+        font-size: 0.8em;
+    }
+    
+</style>
 
     <body>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
@@ -55,15 +164,19 @@
                     
                     <h1>The future of Java in the enterprise</h1>
                     <p class="uk-text-muted">2010-11-15</p>
-                    <p>It’s been a busy few years in the Java world. Oracle’s acquisition of Sun is obviously the largest piece of news and has a significant impact on the future of Java. Oracle’s new position as owner and commander-in-chief now places Java squarely in the enterprise realm alongside Oracle’s other products. Java has <strong>always </strong>been an enterprise technology, but <a class="offsite-link-inline" href="http://gee.cs.oswego.edu/dl/html/jcp22oct10.html" target="_blank">without the JCP promoting collaborative innovation</a>, who knows what kind of traction Java would have made in the world? Appealing to both academia and industry helped push Java forward and attract a lot of new blood in the early years.</p>
+                    <p>It’s been a busy few years in the Java world. Oracle’s acquisition of Sun is obviously the largest piece of news and has a significant impact on the future of Java. Oracle’s new position as owner and commander-in-chief now places Java squarely in the enterprise realm alongside Oracle’s other products. Java has always been an enterprise technology, but <a href="http://gee.cs.oswego.edu/dl/html/jcp22oct10.html" title="without the JCP promoting collaborative innovation">without the JCP promoting collaborative innovation</a>, who knows what kind of traction Java would have made in the world? Appealing to both academia and industry helped push Java forward and attract a lot of new blood in the early years.</p>
 
-<p>Fast forward to 2010. Java is a utilitarian, status-quo ecosystem for getting things done, albeit not very quickly. This is actually a good thing. Instead of worrying about sharp edges, developers get to work with a very stable, very slow moving target. This won&rsquo;t change as Oracle&rsquo;s only motivation is to sell support licenses and create other fee-based streams of revenue. Major improvements to Java are not on the agenda. Innovation from the <em>core </em>Java team will almost certainly slow down and Java will move deeper into a stabilization and maturity phase. Anything considered an <strong>official spec</strong> is almost certainly going to see a reduced adoption rate as only the largest of the large corporations stick with pure Java standards. As business goes on as usual, everyone is anxiously waiting for a true Java successor to emerge. Will it be Scala? Google Go? Neither are even on the radar of most corporate cubicle farms.</p>
+<p>Fast forward to 2010.</p>
 
-<p>Contrary to the belief of Java-contrarians, Java will not die any time soon, nor should it. Java is well suited to organizations that span many silos with many integration points as Java integrates so well with other technologies. The language itself is also well suited to large development teams; not only does it have a massive library of utilities available to Java developers, but its statically typed nature makes refactoring relatively easy. A counter point is that dynamically typed languages result in less of a need to refactor, but that&rsquo;s another post entirely.</p>
+<p>Java is a utilitarian, status-quo ecosystem for getting things done, albeit not very quickly. This is actually a good thing. Instead of worrying about sharp edges, developers get to work with a very stable, very slow moving target. This won&rsquo;t change as Oracle&rsquo;s only motivation is to sell support licenses and create other fee-based streams of revenue. Major improvements to Java are not on the agenda. Innovation from the core Java team will almost certainly slow down and Java will move deeper into a stabilization and maturity phase. Anything considered an official spec is almost certainly going to see a reduced adoption rate as only the largest of the large corporations stick with pure Java standards.</p>
 
-<p>In my opinion Java will actually experience a period of growth as IT spending increases with the (slowly) rebounding economy. Even if the economy takes another nosedive, organizations realize that mass cost savings can be realized through superior technology, and Java&rsquo;s place as a mature and stable language position it as a reasonable choice for a risk-adverse economic climate. Maturity and stability, not innovation, is what the enterprise values most. (I would wager that there are <strong>many </strong>more lines of COBOL currently in production than lines of Ruby.) Even though Java is mature, most corporations haven’t leveraged even a fraction of what Java is capable of. The problem in many shops isn’t even the language itself; a powerful shiny new language won’t fix the process problems that plague most corporate development shops, a powerful shiny new language would most likely just exacerbate them. Java on Android is also a big deal for Java developers considering that <a class="offsite-link-inline" href="http://news.techworld.com/mobile-wireless/3239798/google-android-overtakes-windows-mobile-market-share/?olo=rss" target="_blank">Android recently surpassed iOS</a> in terms of mobile OS market share. Unless Google declares war on Java, the trend is growth.</p>
+<p>As business goes on as usual, everyone is anxiously waiting for a true Java successor to emerge. Will it be Scala? Go? Neither are yet on the radar of most corporate cubicle farms.</p>
 
-<p>Over the next decade expect mainframe systems to slowly be retired and legacy Java applications be refactored into client-centric enterprise portals. The simple fact is that Java as an ecosystem (language + tools + frameworks + runtime environment + <em>etc</em>) is a fantastic choice for system integration projects and <em>some</em> new development in large organizations. Java is rock-solid and <strong>proven</strong>.</p>
+<p>Contrary to the belief of Java-contrarians, Java will not die any time soon, nor should it. Java is well suited to organizations that span many silos with many integration points as Java integrates so well with other technologies. The language itself is also well suited to large development teams; not only does it have a massive library of utilities available to Java developers, but its statically typed nature makes refactoring relatively easy.</p>
+
+<p>In my opinion Java will actually experience a period of growth as IT spending increases with the (slowly) rebounding economy. Even if the economy takes another nosedive, organizations realize that mass cost savings can be realized through superior technology, and Java&rsquo;s place as a mature and stable language position it as a reasonable choice for a risk-adverse economic climate. Maturity and stability, not innovation, is what the enterprise values most. (I would wager that there are many more lines of COBOL currently in production than lines of Ruby.) Even though Java is mature, most corporations haven’t leveraged even a fraction of what Java is capable of. The problem in many shops isn’t even the language itself; a powerful shiny new language won’t fix the process problems that plague most corporate development shops, a powerful shiny new language would most likely just exacerbate them. Java on Android is also a big deal for Java developers considering that Android recently surpassed iOS in terms of mobile OS market share. Unless Google declares war on Java, the trend is growth.</p>
+
+<p>Over the next decade expect mainframe systems to slowly be retired and legacy Java applications be refactored into client-centric enterprise portals. The simple fact is that Java as an ecosystem (language + tools + frameworks + runtime environment) is a fantastic choice for system integration projects and some new development in large organizations. Java is rock-solid and proven.</p>
 
                 </div>
             </div>
@@ -73,17 +186,18 @@
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in meeting?</h5>
+        <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 
-        <ul>
+        <ul style="line-height:200%; font-size: 1.1em;">
             <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
             <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
         </ul>
+        
     </div>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in chatting?</h5>
+        <h3>Interested in chatting?</h3>
         <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
         <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
         <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>

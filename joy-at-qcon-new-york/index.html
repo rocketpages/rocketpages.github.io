@@ -12,7 +12,116 @@
     <script src="/js/jquery-2.2.1.min.js"></script>
     <script src="/js/uikit.min.js"></script>      
     <script src="/js/components/slideshow.min.js"></script>
+    <script src="https://use.typekit.net/ecv7ait.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
+
+<style>
+    
+    body {
+        color: #60646D;
+        font-family: "proxima-nova", sans-serif;
+    }
+    
+    p {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
+    
+    ul {
+        line-height: 150%;
+    }
+    
+    em {
+        font-family: "baskerville-urw", sans-serif;
+        font-size: 1.15em;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .uk-breadcrumb {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+    }
+    
+    .uk-navbar-brand {
+        font-weight: 700;
+    }
+    
+    .uk-navbar-brand,
+    .uk-navbar-nav>li>a,
+    .uk-navbar-nav>li {
+        height: 44px;
+    }
+    
+    .larger {
+        font-size: 1.1em;
+    }
+    
+    .headline {
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: "futura-pt", sans-serif;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-family: "source-code-pro", sans-serif;
+    }
+    
+    .uk-text-muted {
+        color: #9E9D9B;
+    }
+    
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    .wf-loading h5,
+    .wf-loading p,
+    .wf-loading nav,
+    .wf-loading ul,
+    .wf-loading ul li,
+    .wf-loading li,
+    .wf-loading .uk-breadcrumb {
+      visibility: hidden
+    }
+    
+    .section-heading {
+        margin-top: 0em;
+        text-transform: uppercase; font-weight: 700
+    }
+    
+    .uk-panel p {
+        font-size: 1em;
+    }
+    
+    .uk-panel p.date {
+        font-size: 0.8em;
+    }
+    
+</style>
 
     <body>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
@@ -65,9 +174,13 @@
 
 <p>A decade ago we watched a grim-faced Peter Gibbons in the movie Office Space commiserate about his mind-numbing job of churning out Y2K patches for the cold and heartless Initech Corporation. Today we watch Mark Zuckerburg in The Social Network conquer the world in a hoodie. While Mark Zuckerburg may not be the software developer that geeks around the world aspire to become, it does signal a rapid change in popular culture.</p>
 
-<p>In the past a programming job was to be endured until something better came along. Today being a talented hands-on software developer is something to aspire to. A decade ago mediocrity flourished, encouraged by heavy-handed processes and endless bureaucracy, driving frustrated developers into other roles and professions. Today engineers rapidly imagine and create everything from new businesses to entirely new business domains. <em>The cloud</em>, SaaS, PaaS, the App Store, the Marketplace. A decade ago businesses could afford a technological misstep. Today businesses are ruthlessly judged on their technical prowess by a generation of people who look at a magazine as a broken iPad.
-<h2>Highlights</h2>
-For me, the highlight of QCon was meeting so many other developers who are just as passionate about technology as I am. From the CTOs of companies like Etsy to fellow hands-on developers from Toronto, everyone I spoke with at QCon had an educated and informed opinion about the reality of developing software in 2012. Surprisingly, most of the people I met were not focused on the nitty gritty low-level details of implementing code, but instead focused on how people interact with each other and how people interact with software. Does what we build make people happy? Is the environment we work at positive? Can we build better software and be even happier in the process?</p>
+<p>In the past a programming job was to be endured until something better came along. Today being a talented hands-on software developer is something to aspire to. A decade ago mediocrity flourished, encouraged by heavy-handed processes and endless bureaucracy, driving frustrated developers into other roles and professions. Today engineers rapidly imagine and create everything from new businesses to entirely new business domains.</p>
+
+<p>The “cloud”, SaaS, PaaS, the App Store, the Marketplace. A decade ago businesses could afford a technological misstep. Today businesses are ruthlessly judged on their technical prowess by a generation of people who look at a magazine as a broken iPad.</p>
+
+<h2 id="highlights:ff85ae7433da3a71c2c35e91c6358c8f">Highlights</h2>
+
+<p>For me, the highlight of QCon was meeting so many other developers who are just as passionate about technology as I am. From the CTOs of companies like Etsy to fellow hands-on developers from Toronto, everyone I spoke with at QCon had an educated and informed opinion about the reality of developing software in 2012. Surprisingly, most of the people I met were not focused on the nitty gritty low-level details of implementing code, but instead focused on how people interact with each other and how people interact with software. Does what we build make people happy? Is the environment we work at positive? Can we build better software and be even happier in the process?</p>
 
 <p>Software developers are people who build software for other people. It&rsquo;s amazingly simple, but so often overlooked. As a profession we spend enormous amounts of time thinking about how to optimize our processes to suit machines, but often spend too little time thinking about how to optimize our processes to suit people. The result? Many software developers find themselves working in lonely conditions with little chance to interact with the people they build for.</p>
 
@@ -87,9 +200,13 @@ For me, the highlight of QCon was meeting so many other developers who are just 
 
 <h3 id="2-empathetic-development:ff85ae7433da3a71c2c35e91c6358c8f">2. Empathetic development</h3>
 
-<p>The inspirational <a class="offsite-link-inline" href="http://www.menloinnovations.com/our-story/partners">Richard Sheridan</a> put it so eloquently.
-<blockquote>We work in an industry full of pyromaniacs.</blockquote>
-Firefighting. Being thrown into the fire. Burn-down. Burnout.</p>
+<p>The inspirational <a href="http://www.menloinnovations.com/our-story/partners" title="Richard Sheridan">Richard Sheridan</a> put it so eloquently.</p>
+
+<blockquote>
+<p>We work in an industry full of pyromaniacs.</p>
+</blockquote>
+
+<p>Firefighting. Being thrown into the fire. Burn-down. Burnout.</p>
 
 <p>There&rsquo;s a certain macho geek swagger associated with the analogies used in tech. Maybe this is why so few hands-on developers are female and we&rsquo;re pretty much the most non-diverse profession in the world. As an industry we take pride in weeding out the weak with ruthless nerd rage. Every working developer has a memory of a failed software project and the satisfied smirk of co-workers who enjoyed watching the meltdown.</p>
 
@@ -103,17 +220,21 @@ Firefighting. Being thrown into the fire. Burn-down. Burnout.</p>
 
 <h3 id="3-innovation-days:ff85ae7433da3a71c2c35e91c6358c8f">3. Innovation days</h3>
 
-<p>Top companies seek out innovators. There&rsquo;s a big difference between talking about innovation and investing in innovation. How much time do you allocate for your team to explore their own ideas? None? <strong>You&rsquo;re not an innovator</strong>.</p>
+<p>Top companies seek out innovators. There&rsquo;s a big difference between talking about innovation and investing in innovation. How much time do you allocate for your team to explore their own ideas? None? You&rsquo;re not an innovator.</p>
 
 <p>The best, most disruptive, most lucrative ideas are often not in the official plan. Your clients don&rsquo;t want to pay for them yet. They&rsquo;re simply ideas swimming in the heads of your team. Not all of these ideas pay off, but some of them have turned into the most ubiquitous technologies we use today, like Google Maps and Facebook Timeline.</p>
 
 <h3 id="4-experienced-developers-are-sherpas-not-pack-mules:ff85ae7433da3a71c2c35e91c6358c8f">4. Experienced developers are Sherpas, not pack mules</h3>
 
-<p>Most companies struggle to provide a career path for their most senior hands-on technical talent. To paraphrase <a class="offsite-link-inline" href="http://laribee.com/">David Laribee</a> of VersionOne, many senior developers reach a point of becoming a <strong>pack mule</strong>. They become so specialized in version 8.1.4.9 of RandomTechnology that they can never escape it, and the rest of their days are spent in quiet desperation pushing around packs of commodity code.</p>
+<p>Most companies struggle to provide a career path for their most senior hands-on technical talent. To paraphrase <a href="http://laribee.com/" title="David Laribee">David Laribee</a> of VersionOne, many senior developers reach a point of becoming a pack mule. They become so specialized in version 8.1.4.9 of RandomTechnology that they can never escape it, and the rest of their days are spent in quiet desperation pushing around packs of commodity code.</p>
 
-<p>What&rsquo;s the difference between a junior team member and a senior team member? Is it years of service? Of course not, it&rsquo;s the transition from student to teacher.
-<blockquote>The cheerful smiles and legendary strength of the Sherpas have been an integral part of Everest climbing expeditions from the very beginning. Indeed, very few significant successes have been achieved without them.</blockquote>
-Just as Sherpas help climbers reach the top of Everest, technical Sherpas can help entire teams navigate the most specialized, complex, brittle, and least-documented areas of code. Rather than continue to utilize them as pack mules, they can instead transition to the role of advisor and teacher of current-state technology.</p>
+<p>What&rsquo;s the difference between a junior team member and a senior team member? Is it years of service? Of course not, it&rsquo;s the transition from student to teacher.</p>
+
+<blockquote>
+<p>The cheerful smiles and legendary strength of the Sherpas have been an integral part of Everest climbing expeditions from the very beginning. Indeed, very few significant successes have been achieved without them.</p>
+</blockquote>
+
+<p>Just as Sherpas help climbers reach the top of Everest, technical Sherpas can help entire teams navigate the most specialized, complex, brittle, and least-documented areas of code. Rather than continue to utilize them as pack mules, they can instead transition to the role of advisor and teacher of current-state technology.</p>
 
 <p>Some organizations are great facilitators of this transition through mentoring and career coaching. Not all technical talent is extroverted, and without support they can very naturally slip into the role of pack mule. Don&rsquo;t allow this to happen. Eliminate silos of knowledge by helping your most experienced team members pass their experience along to the next generation.</p>
 
@@ -131,17 +252,18 @@ Just as Sherpas help climbers reach the top of Everest, technical Sherpas can he
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in meeting?</h5>
+        <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 
-        <ul>
+        <ul style="line-height:200%; font-size: 1.1em;">
             <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
             <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
         </ul>
+        
     </div>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in chatting?</h5>
+        <h3>Interested in chatting?</h3>
         <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
         <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
         <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>

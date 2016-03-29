@@ -12,7 +12,116 @@
     <script src="/js/jquery-2.2.1.min.js"></script>
     <script src="/js/uikit.min.js"></script>      
     <script src="/js/components/slideshow.min.js"></script>
+    <script src="https://use.typekit.net/ecv7ait.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
+
+<style>
+    
+    body {
+        color: #60646D;
+        font-family: "proxima-nova", sans-serif;
+    }
+    
+    p {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
+    
+    ul {
+        line-height: 150%;
+    }
+    
+    em {
+        font-family: "baskerville-urw", sans-serif;
+        font-size: 1.15em;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .uk-breadcrumb {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+    }
+    
+    .uk-navbar-brand {
+        font-weight: 700;
+    }
+    
+    .uk-navbar-brand,
+    .uk-navbar-nav>li>a,
+    .uk-navbar-nav>li {
+        height: 44px;
+    }
+    
+    .larger {
+        font-size: 1.1em;
+    }
+    
+    .headline {
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: "futura-pt", sans-serif;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-family: "source-code-pro", sans-serif;
+    }
+    
+    .uk-text-muted {
+        color: #9E9D9B;
+    }
+    
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    .wf-loading h5,
+    .wf-loading p,
+    .wf-loading nav,
+    .wf-loading ul,
+    .wf-loading ul li,
+    .wf-loading li,
+    .wf-loading .uk-breadcrumb {
+      visibility: hidden
+    }
+    
+    .section-heading {
+        margin-top: 0em;
+        text-transform: uppercase; font-weight: 700
+    }
+    
+    .uk-panel p {
+        font-size: 1em;
+    }
+    
+    .uk-panel p.date {
+        font-size: 0.8em;
+    }
+    
+</style>
 
     <body>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
@@ -61,15 +170,15 @@
 
 <p>This tutorial will show how to painlessly integrate Uploadify and Java using Apache Wicket. You should have at least beginner-level knowledge of Wicket before moving forward, but feel free to dive right in even if you&rsquo;ve never used Wicket before. (If you haven&rsquo;t used Wicket before, I can&rsquo;t suggest it strongly enough for developing stateful Java-based web applications.)</p>
 
-<p>A number of excellent Flash-based multiple file upload plugins are available, including the excellent <a href="http://www.uploadify.com/" target="_blank">Uploadify</a>. Uploadify is essentially a jQuery wrapper for <a href="http://www.swfupload.org/">SWFUpload</a>. I already use jQuery quite extensively so I chose Uploadify as my multiple upload plugin, but if you use a different JavaScript framework or simply prefer plain old JavaScript, SWFUpload might be a better choice.</p>
+<p>A number of excellent Flash-based multiple file upload plugins are available, including the excellent <a href="http://www.uploadify.com/" title="Uploadify">Uploadify</a>. Uploadify is essentially a jQuery wrapper for <a href="http://www.swfupload.org/" title="SWFUpload">SWFUpload</a>. I already use jQuery quite extensively so I chose Uploadify as my multiple upload plugin. If you use a different JavaScript framework or simply prefer plain old JavaScript, SWFUpload might be a better choice.</p>
 
 <p>The only catch is that most of these plugins are geared towards PHP developers/apps and not all that intuitive to integrate with Java-based solutions.</p>
 
 <h2 id="a-few-things-to-consider:290f227844d358fa3bf865e1af926742">A few things to consider</h2>
 
-<p>Before jumping in with both feet, the use of Flash is a stopgap measure until HTML5 is more widely supported. HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, offering true native multiple file upload support. Also, with Apple fully <a href="http://news.cnet.com/8301-30685_3-20003739-264.html" target="_blank">throwing its weight behind HTML5 and actively attacking Flash</a>, it&rsquo;s only a matter of time before Flash-based solutions go the way of the bond market in Greece.</p>
+<p>Before jumping in with both feet, the use of Flash is a stopgap measure until HTML5 is more widely supported. HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, offering true native multiple file upload support. Also, with Apple fully <a href="http://news.cnet.com/8301-30685_3-20003739-264.html" title="throwing its weight behind HTML5 and actively attacking Flash">throwing its weight behind HTML5 and actively attacking Flash</a>, it&rsquo;s only a matter of time before Flash-based solutions go the way of the bond market in Greece.</p>
 
-<p>While HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, browser support for HTML5 is far from ubiquitous. To make matters worse, <a href="http://www.webmonkey.com/2008/09/html_5_won_t_be_ready_until_2022dot_yes__2022dot/" target="_blank">the HTML5 standard won&rsquo;t officially be signed off on until 2022</a>. Yes, 12 more years, and yes, it&rsquo;s completely insane, but you know how design-by-committee works.</p>
+<p>While HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, browser support for HTML5 is far from ubiquitous. To make matters worse, <a href="http://www.webmonkey.com/2008/09/html_5_won_t_be_ready_until_2022dot_yes__2022dot/" title="the HTML5 standard won't officially be signed off on until 2022">the HTML5 standard won&rsquo;t officially be signed off on until 2022</a>. Yes, 12 more years. Yes, it&rsquo;s completely ridiculous. That’s how design-by-committee works.</p>
 
 <h2 id="getting-started:290f227844d358fa3bf865e1af926742">Getting Started</h2>
 
@@ -81,17 +190,17 @@
 
 <h3 id="2-re-usable-html:290f227844d358fa3bf865e1af926742">2. Re-usable HTML</h3>
 
-<p>The next step is to create the HTML for our Panel. Create a new file called <strong>UploadifyPanel.html </strong>with the following source:</p>
+<p>The next step is to create the HTML for our Panel. Create a new file called <em>UploadifyPanel.html</em> with the following source:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>&lt;wicket:panel&gt;
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>&lt;<span style="color: #000080; font-weight: bold">wicket:panel</span>&gt;
 
-&lt;div id=<span style="color: #0000FF">&quot;fileQueue&quot;</span>&gt;
-	&lt;p&gt;&lt;strong&gt;Click browse to <span style="color: #000080; font-weight: bold">select</span> files <span style="color: #000080; font-weight: bold">for</span> uploading.&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;&lt;em&gt;To <span style="color: #000080; font-weight: bold">select</span> more than one file, hold down control or shift.&lt;/em&gt;&lt;/p&gt;
-	&lt;p&gt;&lt;input type=<span style="color: #0000FF">&quot;file&quot;</span> name=<span style="color: #0000FF">&quot;uploadify&quot;</span> id=<span style="color: #0000FF">&quot;uploadify&quot;</span> /&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;<span style="color: #000080; font-weight: bold">div</span> <span style="color: #FF0000">id</span>=<span style="color: #0000FF">&quot;fileQueue&quot;</span>&gt;
+	&lt;<span style="color: #000080; font-weight: bold">p</span>&gt;&lt;<span style="color: #000080; font-weight: bold">strong</span>&gt;Click browse to select files for uploading.&lt;/<span style="color: #000080; font-weight: bold">strong</span>&gt;&lt;/<span style="color: #000080; font-weight: bold">p</span>&gt;
+	&lt;<span style="color: #000080; font-weight: bold">p</span>&gt;&lt;<span style="color: #000080; font-weight: bold">em</span>&gt;To select more than one file, hold down control or shift.&lt;/<span style="color: #000080; font-weight: bold">em</span>&gt;&lt;/<span style="color: #000080; font-weight: bold">p</span>&gt;
+	&lt;<span style="color: #000080; font-weight: bold">p</span>&gt;&lt;<span style="color: #000080; font-weight: bold">input</span> <span style="color: #FF0000">type</span>=<span style="color: #0000FF">&quot;file&quot;</span> <span style="color: #FF0000">name</span>=<span style="color: #0000FF">&quot;uploadify&quot;</span> <span style="color: #FF0000">id</span>=<span style="color: #0000FF">&quot;uploadify&quot;</span> /&gt;&lt;/<span style="color: #000080; font-weight: bold">p</span>&gt;
+&lt;/<span style="color: #000080; font-weight: bold">div</span>&gt;
 
-&lt;/wicket:panel&gt;
+&lt;/<span style="color: #000080; font-weight: bold">wicket:panel</span>&gt;
 </pre></div>
 
 
@@ -110,26 +219,26 @@
 
 <span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyPanel <span style="color: #000080; font-weight: bold">extends</span> Panel {
 	<span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">static</span> <span style="color: #000080; font-weight: bold">final</span> <span style="color: #000080; font-weight: bold">long</span> serialVersionUID = <span style="color: #0000FF">1L</span>;
-
-    <span style="color: #000080; font-weight: bold">public</span> UploadifyPanel(String id, UploadifyPanelBehaviour behaviour) {
+	
+	<span style="color: #000080; font-weight: bold">public</span> UploadifyPanel(String id, UploadifyPanelBehaviour behaviour) {
 	    <span style="color: #000080; font-weight: bold">super</span>(id);
-
+	
 	    add(JavascriptPackageResource.<span style="color: #FF0000">getHeaderContribution</span>(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;scripts/swfobject.js&quot;</span>));   
 	    add(JavascriptPackageResource.<span style="color: #FF0000">getHeaderContribution</span>(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;scripts/jquery.uploadify.v2.1.0.js&quot;</span>));
-
+	
 	    <span style="color: #008800; font-style: italic">/* TextTemplateHeaderContributor performs text substitution of values located</span>
 <span style="color: #008800; font-style: italic">	     in multiupload.js with the values obtained from the behaviour, and</span>
 <span style="color: #008800; font-style: italic">	     inserts the processed .js in the header. */</span>
 	    add(TextTemplateHeaderContributor.<span style="color: #FF0000">forJavaScript</span>(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;multiupload.js&quot;</span>, behaviour.<span style="color: #FF0000">getVariables</span>()));
 	    add(CSSPackageResource.<span style="color: #FF0000">getHeaderContribution</span>(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;css/uploadify.css&quot;</span>));
-    }   
+	}   
 }
 </pre></div>
 
 
 <p>For those of you familiar with Wicket, most of this will look straightforward enough. We&rsquo;re encapsulating all of our configuration variables in a behaviour, which keeps our code clean and generic. Of special interest is the call to <em>TextTemplateHeaderContributor.forJavaScript()</em>. This is a handy little method that allows you to pass in a Map of variables (key/value) and a reference to a JavaScript file. This results in token substitution in the JavaScript file based on the values in the Map. It&rsquo;s much more simple than performing manual string concatenation to achieve the same result.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyPanelBehaviour <span style="color: #000080; font-weight: bold">implements</span> Serializable {
+<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyPanelBehaviour <span style="color: #000080; font-weight: bold">implements</span> Serializable {
 	<span style="color: #000080; font-weight: bold">private</span> String fileExt = <span style="color: #0000FF">&quot;&quot;</span>;
 	<span style="color: #000080; font-weight: bold">private</span> String fileDesc = <span style="color: #0000FF">&quot;&quot;</span>;
 	<span style="color: #000080; font-weight: bold">private</span> String sizeLimit = <span style="color: #0000FF">&quot;&quot;</span>;
@@ -146,146 +255,148 @@
 		<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">formTokenId</span> = tokenId;
 	}
 
-    <span style="color: #008800; font-style: italic">/**</span>
-<span style="color: #008800; font-style: italic">     * Sets the valid file extensions for the uploader.</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * Do not include leading or trailing quotes, only semi-colon</span>
-<span style="color: #008800; font-style: italic">     * separated wildcards. </span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * Example usage:</span>
-<span style="color: #008800; font-style: italic">     * *.doc;*.docx;*.pdf;*.jpg;*.png;*.zip</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * @param validExts</span>
-<span style="color: #008800; font-style: italic">     */</span>
-    <span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setFileExt(String validExts)
-    {
-    	<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">fileExt</span> = validExts;
-    }
-    
-    <span style="color: #008800; font-style: italic">/**</span>
-<span style="color: #008800; font-style: italic">     * Sets the message to be displayed when selecting files.</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * Example message:</span>
-<span style="color: #008800; font-style: italic">     * Select files of type .doc, .pdf, .jpg, .png, or .zip</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * @param fileDesc</span>
-<span style="color: #008800; font-style: italic">     */</span>
-    <span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setFileDesc(String fileDesc)
-    {
-    	<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">fileDesc</span> = fileDesc;
-    }
-    
-    <span style="color: #008800; font-style: italic">/**</span>
-<span style="color: #008800; font-style: italic">     * Sets the size limit, in bytes.</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * Example: 3072000</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * @param sizeLimit</span>
-<span style="color: #008800; font-style: italic">     */</span>
-    <span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setSizeLimit(String sizeLimit)
-    {
-    	<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">sizeLimit</span> = sizeLimit;
-    }
-    
-    <span style="color: #008800; font-style: italic">/**</span>
-<span style="color: #008800; font-style: italic">     * Builds a variables model in order to perform text substitution</span>
-<span style="color: #008800; font-style: italic">     * on values located in JavaScript (multiupload.js)</span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * The key values in the Map must match the tokens in the .js file. </span>
-<span style="color: #008800; font-style: italic">     * </span>
-<span style="color: #008800; font-style: italic">     * @return</span>
-<span style="color: #008800; font-style: italic">     */</span>
-    <span style="color: #000080; font-weight: bold">protected</span> IModel getVariables() {
-    	IModel variablesModel = <span style="color: #000080; font-weight: bold">new</span> AbstractReadOnlyModel() {
-    		<span style="color: #000080; font-weight: bold">public</span> Map getObject() {
-    			Map&lt;String, CharSequence&gt; variables = <span style="color: #000080; font-weight: bold">new</span> HashMap&lt;String, CharSequence&gt;();
+	<span style="color: #008800; font-style: italic">/**</span>
+<span style="color: #008800; font-style: italic">	 * Sets the valid file extensions for the uploader.</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * Do not include leading or trailing quotes, only semi-colon</span>
+<span style="color: #008800; font-style: italic">	 * separated wildcards. </span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * Example usage:</span>
+<span style="color: #008800; font-style: italic">	 * *.doc;*.docx;*.pdf;*.jpg;*.png;*.zip</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * @param validExts</span>
+<span style="color: #008800; font-style: italic">	 */</span>
+	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setFileExt(String validExts)
+	{
+		<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">fileExt</span> = validExts;
+	}
+	
+	<span style="color: #008800; font-style: italic">/**</span>
+<span style="color: #008800; font-style: italic">	 * Sets the message to be displayed when selecting files.</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * Example message:</span>
+<span style="color: #008800; font-style: italic">	 * Select files of type .doc, .pdf, .jpg, .png, or .zip</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * @param fileDesc</span>
+<span style="color: #008800; font-style: italic">	 */</span>
+	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setFileDesc(String fileDesc)
+	{
+		<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">fileDesc</span> = fileDesc;
+	}
+	
+	<span style="color: #008800; font-style: italic">/**</span>
+<span style="color: #008800; font-style: italic">	 * Sets the size limit, in bytes.</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * Example: 3072000</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * @param sizeLimit</span>
+<span style="color: #008800; font-style: italic">	 */</span>
+	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> setSizeLimit(String sizeLimit)
+	{
+		<span style="color: #000080; font-weight: bold">this</span>.<span style="color: #FF0000">sizeLimit</span> = sizeLimit;
+	}
+	
+	<span style="color: #008800; font-style: italic">/**</span>
+<span style="color: #008800; font-style: italic">	 * Builds a variables model in order to perform text substitution</span>
+<span style="color: #008800; font-style: italic">	 * on values located in JavaScript (multiupload.js)</span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * The key values in the Map must match the tokens in the .js file. </span>
+<span style="color: #008800; font-style: italic">	 * </span>
+<span style="color: #008800; font-style: italic">	 * @return</span>
+<span style="color: #008800; font-style: italic">	 */</span>
+	<span style="color: #000080; font-weight: bold">protected</span> IModel getVariables() {
+		IModel variablesModel = <span style="color: #000080; font-weight: bold">new</span> AbstractReadOnlyModel() {
+			<span style="color: #000080; font-weight: bold">public</span> Map getObject() {
+				Map&lt;String, CharSequence&gt; variables = <span style="color: #000080; font-weight: bold">new</span> HashMap&lt;String, CharSequence&gt;();
 
 				<span style="color: #008800; font-style: italic">//Mandatory configuration</span>
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;uploader&quot;</span>, RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(<span style="color: #000080; font-weight: bold">new</span> CompressedResourceReference(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;scripts/uploadify.swf&quot;</span>)).<span style="color: #FF0000">toString</span>());
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;cancelImg&quot;</span>, RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(<span style="color: #000080; font-weight: bold">new</span> CompressedResourceReference(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;cancel.png&quot;</span>)).<span style="color: #FF0000">toString</span>());
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;script&quot;</span>, <span style="color: #0000FF">&quot;;jsessionid=&quot;</span> + formSessionId + RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(fileProcessPageClass, <span style="color: #000080; font-weight: bold">null</span>));
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;tokenId&quot;</span>, formTokenId);
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;uploader&quot;</span>, RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(<span style="color: #000080; font-weight: bold">new</span> CompressedResourceReference(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;scripts/uploadify.swf&quot;</span>)).<span style="color: #FF0000">toString</span>());
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;cancelImg&quot;</span>, RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(<span style="color: #000080; font-weight: bold">new</span> CompressedResourceReference(UploadifyPanel.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;cancel.png&quot;</span>)).<span style="color: #FF0000">toString</span>());
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;script&quot;</span>, <span style="color: #0000FF">&quot;;jsessionid=&quot;</span> + formSessionId + RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">urlFor</span>(fileProcessPageClass, <span style="color: #000080; font-weight: bold">null</span>));
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;tokenId&quot;</span>, formTokenId);
 
 				<span style="color: #008800; font-style: italic">//Optional configuration</span>
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;fileExt&quot;</span>, fileExt);
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;fileDesc&quot;</span>, fileDesc);
-    			variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;sizeLimit&quot;</span>, sizeLimit);
-
-    			<span style="color: #000080; font-weight: bold">return</span> variables;
-    		}
-    	};
-
-    	<span style="color: #000080; font-weight: bold">return</span> variablesModel;
-    }
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;fileExt&quot;</span>, fileExt);
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;fileDesc&quot;</span>, fileDesc);
+				variables.<span style="color: #FF0000">put</span>(<span style="color: #0000FF">&quot;sizeLimit&quot;</span>, sizeLimit);
+	
+				<span style="color: #000080; font-weight: bold">return</span> variables;
+			}
+		};
+	
+		<span style="color: #000080; font-weight: bold">return</span> variablesModel;
+	}
 }
 </pre></div>
-
+</p>
 
 <p>The behaviour captures configuration options, which correspond to the available options within Uploadify. You can add more configuration options (or remove some) depending on your specific requirements.</p>
 
-<p>Another quirk to pay attention to is the token and session id values. This is a kludge we&rsquo;ve added to avoid the messy problem of Flash <em>losing a reference to the HttpSession</em>. Because the end result of this script will be a call to a stateless page to process our uploads, we&rsquo;ll need some way to retrieve the user&rsquo;s session. Because of this, we need to include the session ID as a value in the JavaScript file and pass this as a parameter to our stateless file processing page.</p>
+<p>Another quirk to pay attention to is the token and session id values. This is a kludge we&rsquo;ve added to avoid the messy problem of Flash losing a reference to the HttpSession. Because the end result of this script will be a call to a stateless page to process our uploads, we&rsquo;ll need some way to retrieve the user&rsquo;s session. Because of this, we need to include the session ID as a value in the JavaScript file and pass this as a parameter to our stateless file processing page.</p>
 
 <p>Finally, make special note of the class we&rsquo;re passing to our behaviour object. We do this because Wicket needs to &ldquo;mount&rdquo; our stateless file processing page so it can be accessed by the plugin. Wicket instantiates the page &ldquo;just in time&rdquo;, not before, otherwise it would hang around in memory doing nothing (kinda like a TTC collector). Note the call to RequestCycle.get().urlFor().</p>
 
 <p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">abstract</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyFileProcessPage <span style="color: #000080; font-weight: bold">extends</span> WebPage {
 
 	<span style="color: #000080; font-weight: bold">protected</span> User user;
-
+	
 	<span style="color: #000080; font-weight: bold">public</span> UploadifyFileProcessPage(PageParameters params) {
-		HttpServletRequest r = ((WebRequest) RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">getRequest</span>()).<span style="color: #FF0000">getHttpServletRequest</span>();
-		<span style="color: #000080; font-weight: bold">try</span>
-		{
-			MultipartServletWebRequest r2 = <span style="color: #000080; font-weight: bold">new</span> MultipartServletWebRequest(r, Bytes.<span style="color: #FF0000">MAX</span>);
-			Map paramMap = r2.<span style="color: #FF0000">getParameterMap</span>();
-			String[] tokenIdParms = (String[]) paramMap.<span style="color: #FF0000">get</span>(<span style="color: #0000FF">&quot;tokenId&quot;</span>);
-			String tokenId = tokenIdParms[<span style="color: #0000FF">0</span>];
-			UserSession session = (UserSession) Session.<span style="color: #FF0000">get</span>();
-			FormToken token = session.<span style="color: #FF0000">getFormToken</span>();
-
-			<span style="color: #000080; font-weight: bold">if</span> (token.<span style="color: #FF0000">isValid</span>(tokenId, r.<span style="color: #FF0000">getRemoteAddr</span>()))
-			{
-				<span style="color: #000080; font-weight: bold">long</span> userId = session.<span style="color: #FF0000">getUser</span>().<span style="color: #FF0000">getId</span>();
-				user = <span style="color: #000080; font-weight: bold">new</span> UserServiceImpl().<span style="color: #FF0000">getUser</span>(userId);
-
-				<span style="color: #000080; font-weight: bold">for</span> (FileItem fi : r2.<span style="color: #FF0000">getFiles</span>().<span style="color: #FF0000">values</span>())
-				{
-					processFileItem(fi);
-					fi.<span style="color: #FF0000">delete</span>();
-				}
-			}
-			<span style="color: #000080; font-weight: bold">else</span>
-			{
-				<span style="color: #000080; font-weight: bold">throw</span> <span style="color: #000080; font-weight: bold">new</span> Exception(<span style="color: #0000FF">&quot;Invalid token!&quot;</span>);
-			}
-		}
-		<span style="color: #000080; font-weight: bold">catch</span> (Exception e)
-		{
-			e.<span style="color: #FF0000">printStackTrace</span>();
-		}
+	    HttpServletRequest r = ((WebRequest) RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">getRequest</span>()).<span style="color: #FF0000">getHttpServletRequest</span>();
+	    <span style="color: #000080; font-weight: bold">try</span>
+	    {
+	        MultipartServletWebRequest r2 = <span style="color: #000080; font-weight: bold">new</span> MultipartServletWebRequest(r, Bytes.<span style="color: #FF0000">MAX</span>);
+	        Map paramMap = r2.<span style="color: #FF0000">getParameterMap</span>();
+	        String[] tokenIdParms = (String[]) paramMap.<span style="color: #FF0000">get</span>(<span style="color: #0000FF">&quot;tokenId&quot;</span>);
+	        String tokenId = tokenIdParms[<span style="color: #0000FF">0</span>];
+	        UserSession session = (UserSession) Session.<span style="color: #FF0000">get</span>();
+	        FormToken token = session.<span style="color: #FF0000">getFormToken</span>();
+	
+	        <span style="color: #000080; font-weight: bold">if</span> (token.<span style="color: #FF0000">isValid</span>(tokenId, r.<span style="color: #FF0000">getRemoteAddr</span>()))
+	        {
+	            <span style="color: #000080; font-weight: bold">long</span> userId = session.<span style="color: #FF0000">getUser</span>().<span style="color: #FF0000">getId</span>();
+	            user = <span style="color: #000080; font-weight: bold">new</span> UserServiceImpl().<span style="color: #FF0000">getUser</span>(userId);
+	
+	            <span style="color: #000080; font-weight: bold">for</span> (FileItem fi : r2.<span style="color: #FF0000">getFiles</span>().<span style="color: #FF0000">values</span>())
+	            {
+	                processFileItem(fi);
+	                fi.<span style="color: #FF0000">delete</span>();
+	            }
+	        }
+	        <span style="color: #000080; font-weight: bold">else</span>
+	        {
+	            <span style="color: #000080; font-weight: bold">throw</span> <span style="color: #000080; font-weight: bold">new</span> Exception(<span style="color: #0000FF">&quot;Invalid token!&quot;</span>);
+	        }
+	    }
+	    <span style="color: #000080; font-weight: bold">catch</span> (Exception e)
+	    {
+	        e.<span style="color: #FF0000">printStackTrace</span>();
+	    }
 	}
-
+	
 	<span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">abstract</span> <span style="color: #000080; font-weight: bold">void</span> processFileItem(FileItem fileItem) <span style="color: #000080; font-weight: bold">throws</span> Exception;
 }
 </pre></div>
 </p>
 
-<p>In order to bridge our plugin with Java, we&rsquo;re creating a stateless page by extending WebPage. This base code is fairly straightforward, pulling out the file data from the request, and passing it to the yet-to-be-defined abstract method <em>processFileItem()</em>. The only other thing to note is the <em>token</em> logic. This is simply an example/placeholder to draw your attention to security when dealing with <strong>jsessionid</strong> directly. This leaves a small window open for hackers to perform a session hijacking, so in our scenario, we associate a jsessionid with an IP address and an additional token value.</p>
+<p>In order to bridge our plugin with Java, we&rsquo;re creating a stateless page by extending WebPage. This base code is fairly straightforward, pulling out the file data from the request, and passing it to the yet-to-be-defined abstract method <em>processFileItem()</em>.</p>
+
+<p>The only other thing to note is the token logic. This is simply an example/placeholder to draw your attention to security when dealing with <em>jsessionid</em> directly. This leaves a small window open for hackers to perform a session hijacking, so in our scenario, we associate a jsessionid with an IP address and an additional token value.</p>
 
 <p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$(document).ready(<span style="color: #000080; font-weight: bold">function</span>() { 
 	$(<span style="color: #0000FF">&#39;#uploadify&#39;</span>).uploadify({ 
-		<span style="color: #0000FF">&#39;uploader&#39;</span>:  <span style="color: #0000FF">&#39;${uploader}&#39;</span>, 
-		<span style="color: #0000FF">&#39;script&#39;</span>:	<span style="color: #0000FF">&#39;${script}&#39;</span>,
-		<span style="color: #0000FF">&#39;scriptData&#39;</span>: {<span style="color: #0000FF">&#39;tokenId&#39;</span>: <span style="color: #0000FF">&#39;${tokenId}&#39;</span>}, 
-		<span style="color: #0000FF">&#39;folder&#39;</span>: <span style="color: #0000FF">&#39;/var/photos/stuffahoy&#39;</span>, 
-		<span style="color: #0000FF">&#39;cancelImg&#39;</span>: <span style="color: #0000FF">&#39;${cancelImg}&#39;</span>,
-		<span style="color: #0000FF">&#39;fileExt&#39;</span> : <span style="color: #0000FF">&#39;${fileExt}&#39;</span>,
-		<span style="color: #0000FF">&#39;fileDesc&#39;</span> : <span style="color: #0000FF">&#39;${fileDesc}&#39;</span>,
-		<span style="color: #0000FF">&#39;sizeLimit&#39;</span> : <span style="color: #0000FF">&#39;${sizeLimit}&#39;</span>,
-		<span style="color: #0000FF">&#39;auto&#39;</span>: <span style="color: #000080; font-weight: bold">true</span>,
-		<span style="color: #0000FF">&#39;multi&#39;</span>: <span style="color: #000080; font-weight: bold">true</span>,
-		onAllComplete: <span style="color: #000080; font-weight: bold">function</span>(event, queueID, fileObj, response, data) {
-			uploadCompleted(); 
-		}
+	    <span style="color: #0000FF">&#39;uploader&#39;</span>:  <span style="color: #0000FF">&#39;${uploader}&#39;</span>, 
+	    <span style="color: #0000FF">&#39;script&#39;</span>:   <span style="color: #0000FF">&#39;${script}&#39;</span>,
+	    <span style="color: #0000FF">&#39;scriptData&#39;</span>: {<span style="color: #0000FF">&#39;tokenId&#39;</span>: <span style="color: #0000FF">&#39;${tokenId}&#39;</span>}, 
+	    <span style="color: #0000FF">&#39;folder&#39;</span>: <span style="color: #0000FF">&#39;/var/photos/stuffahoy&#39;</span>, 
+	    <span style="color: #0000FF">&#39;cancelImg&#39;</span>: <span style="color: #0000FF">&#39;${cancelImg}&#39;</span>,
+	    <span style="color: #0000FF">&#39;fileExt&#39;</span> : <span style="color: #0000FF">&#39;${fileExt}&#39;</span>,
+	    <span style="color: #0000FF">&#39;fileDesc&#39;</span> : <span style="color: #0000FF">&#39;${fileDesc}&#39;</span>,
+	    <span style="color: #0000FF">&#39;sizeLimit&#39;</span> : <span style="color: #0000FF">&#39;${sizeLimit}&#39;</span>,
+	    <span style="color: #0000FF">&#39;auto&#39;</span>: <span style="color: #000080; font-weight: bold">true</span>,
+	    <span style="color: #0000FF">&#39;multi&#39;</span>: <span style="color: #000080; font-weight: bold">true</span>,
+	    onAllComplete: <span style="color: #000080; font-weight: bold">function</span>(event, queueID, fileObj, response, data) {
+	        uploadCompleted(); 
+	    }
 	}); 
 });
 </pre></div>
@@ -298,19 +409,19 @@
 <p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosProcessingPage <span style="color: #000080; font-weight: bold">extends</span> UploadifyFileProcessPage {
 	<span style="color: #000080; font-weight: bold">public</span> AddPhotosProcessingPage(PageParameters params)
 	{
-		<span style="color: #000080; font-weight: bold">super</span>(params);
+	    <span style="color: #000080; font-weight: bold">super</span>(params);
 	}
-
+	
 	@Override
 	<span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">void</span> processFileItem(FileItem fileItem) <span style="color: #000080; font-weight: bold">throws</span> Exception
 	{
-		<span style="color: #008800; font-style: italic">//Wrap the Apache Commons FileItem type in a Wicket FileUpload type</span>
-		FileUpload upload = <span style="color: #000080; font-weight: bold">new</span> FileUpload(fileItem);
-		<span style="color: #008800; font-style: italic">//Get a service reference, store the photo, and create a new Photo record</span>
-		PhotoService photoService = <span style="color: #000080; font-weight: bold">new</span> PhotoServiceImpl();
-		Photo photo = photoService.<span style="color: #FF0000">saveUploadedPhoto</span>(upload, <span style="color: #000080; font-weight: bold">true</span>);
-		photo.<span style="color: #FF0000">setUser</span>(user);
-		photoService.<span style="color: #FF0000">savePhoto</span>(photo);
+	    <span style="color: #008800; font-style: italic">//Wrap the Apache Commons FileItem type in a Wicket FileUpload type</span>
+	    FileUpload upload = <span style="color: #000080; font-weight: bold">new</span> FileUpload(fileItem);
+	    <span style="color: #008800; font-style: italic">//Get a service reference, store the photo, and create a new Photo record</span>
+	    PhotoService photoService = <span style="color: #000080; font-weight: bold">new</span> PhotoServiceImpl();
+	    Photo photo = photoService.<span style="color: #FF0000">saveUploadedPhoto</span>(upload, <span style="color: #000080; font-weight: bold">true</span>);
+	    photo.<span style="color: #FF0000">setUser</span>(user);
+	    photoService.<span style="color: #FF0000">savePhoto</span>(photo);
 	}
 }
 </pre></div>
@@ -320,78 +431,78 @@
 
 <p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosPage <span style="color: #000080; font-weight: bold">extends</span> UserRoleSuperPage {
 	<span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">static</span> <span style="color: #000080; font-weight: bold">final</span> <span style="color: #000080; font-weight: bold">long</span> serialVersionUID = <span style="color: #0000FF">1L</span>;
-
+	
 	<span style="color: #000080; font-weight: bold">private</span> Label noPhotosLabel;
-
+	
 	<span style="color: #000080; font-weight: bold">public</span> AddPhotosPage(<span style="color: #000080; font-weight: bold">final</span> PageParameters parameters) {
-		<span style="color: #000080; font-weight: bold">this</span>();
+	    <span style="color: #000080; font-weight: bold">this</span>();
 	}
-
+	
 	<span style="color: #000080; font-weight: bold">public</span> AddPhotosPage() {
-		<span style="color: #000080; font-weight: bold">super</span>(<span style="color: #000080; font-weight: bold">null</span>);
-
-		add(CSSPackageResource.<span style="color: #FF0000">getHeaderContribution</span>(AddPhotosPage.<span style="color: #FF0000">class</span>, 
-			<span style="color: #0000FF">&quot;css/AddPhotosPage.css&quot;</span>));
-
-		UserSession session = (UserSession) Session.<span style="color: #FF0000">get</span>();
-		<span style="color: #000080; font-weight: bold">long</span> userId = session.<span style="color: #FF0000">getUser</span>().<span style="color: #FF0000">getId</span>();
-
-		HttpServletRequest r = ((WebRequest) RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">getRequest</span>()).<span style="color: #FF0000">getHttpServletRequest</span>();
-		session.<span style="color: #FF0000">createFormToken</span>(r.<span style="color: #FF0000">getRemoteAddr</span>());
-
-		String tokenId = session.<span style="color: #FF0000">getFormToken</span>().<span style="color: #FF0000">getToken</span>();
-		String sessionId = session.<span style="color: #FF0000">getId</span>();
-
-		<span style="color: #008800; font-style: italic">// Configure the panel</span>
-		UploadifyPanelBehaviour behaviour = <span style="color: #000080; font-weight: bold">new</span> UploadifyPanelBehaviour(AddPhotosProcessingPage.<span style="color: #FF0000">class</span>, tokenId, sessionId);
-		behaviour.<span style="color: #FF0000">setFileExt</span>(<span style="color: #0000FF">&quot;*.jpg;*.jpeg;*.gif;*.png&quot;</span>);
-		behaviour.<span style="color: #FF0000">setFileDesc</span>(<span style="color: #0000FF">&quot;Select files of type *.jpg, *.jpeg, *.gif, *.png&quot;</span>);
-		behaviour.<span style="color: #FF0000">setSizeLimit</span>(<span style="color: #0000FF">&quot;3000000&quot;</span>);
-
-		add(<span style="color: #000080; font-weight: bold">new</span> UploadifyPanel(<span style="color: #0000FF">&quot;uploads&quot;</span>, behaviour));
-
-		<span style="color: #000080; font-weight: bold">final</span> UnprocessedPhotosPanel unprocessedPanel;
-		add(unprocessedPanel = <span style="color: #000080; font-weight: bold">new</span> UnprocessedPhotosPanel(<span style="color: #0000FF">&quot;unprocessedPhotos&quot;</span>, userId));
-		unprocessedPanel.<span style="color: #FF0000">setOutputMarkupId</span>(<span style="color: #000080; font-weight: bold">true</span>);
-
-		<span style="color: #000080; font-weight: bold">final</span> Label noPhotosLabel;
-		add(noPhotosLabel = <span style="color: #000080; font-weight: bold">new</span> Label(<span style="color: #0000FF">&quot;noPhotosLabel&quot;</span>, <span style="color: #0000FF">&quot;You haven&#39;t uploaded any new photos!&quot;</span>));
-		noPhotosLabel.<span style="color: #FF0000">setOutputMarkupId</span>(<span style="color: #000080; font-weight: bold">true</span>);
-
-		<span style="color: #000080; font-weight: bold">if</span> (unprocessedPanel.<span style="color: #FF0000">getUnprocessedPhotosCount</span>() &gt; <span style="color: #0000FF">0</span>) {
-			noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">false</span>);
-		}
-		<span style="color: #000080; font-weight: bold">else</span> {
-			noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">true</span>);
-		}
-
-		<span style="color: #000080; font-weight: bold">final</span> IBehavior repaintBehavior = <span style="color: #000080; font-weight: bold">new</span> AbstractDefaultAjaxBehavior() {
-			@Override
-			<span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">void</span> respond(AjaxRequestTarget target)
-			{
-				<span style="color: #000080; font-weight: bold">if</span> (unprocessedPanel.<span style="color: #FF0000">getUnprocessedPhotosCount</span>() &gt; <span style="color: #0000FF">0</span>) {
-					noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">false</span>);
-				}
-				<span style="color: #000080; font-weight: bold">else</span> {
-					noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">true</span>);
-				}
-
-				target.<span style="color: #FF0000">addComponent</span>(noPhotosLabel);
-				target.<span style="color: #FF0000">addComponent</span>(unprocessedPanel);
-			}
-
-			@Override
-			<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> renderHead(IHeaderResponse response)
-			{
-				<span style="color: #000080; font-weight: bold">super</span>.<span style="color: #FF0000">renderHead</span>(response);
-				CharSequence callback = getCallbackScript();
-				response.<span style="color: #FF0000">renderJavascript</span>(<span style="color: #0000FF">&quot;function uploadCompleted() { &quot;</span> + callback + <span style="color: #0000FF">&quot;}&quot;</span>, <span style="color: #0000FF">&quot;customUploadCompleted&quot;</span>);
-			}
-		};
-
-		add(repaintBehavior);
-
-		add(<span style="color: #000080; font-weight: bold">new</span> Image(<span style="color: #0000FF">&quot;easy&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> ResourceReference(AddPhotosPage.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;easy.png&quot;</span>)));	
+	    <span style="color: #000080; font-weight: bold">super</span>(<span style="color: #000080; font-weight: bold">null</span>);
+	
+	    add(CSSPackageResource.<span style="color: #FF0000">getHeaderContribution</span>(AddPhotosPage.<span style="color: #FF0000">class</span>, 
+	        <span style="color: #0000FF">&quot;css/AddPhotosPage.css&quot;</span>));
+	
+	    UserSession session = (UserSession) Session.<span style="color: #FF0000">get</span>();
+	    <span style="color: #000080; font-weight: bold">long</span> userId = session.<span style="color: #FF0000">getUser</span>().<span style="color: #FF0000">getId</span>();
+	
+	    HttpServletRequest r = ((WebRequest) RequestCycle.<span style="color: #FF0000">get</span>().<span style="color: #FF0000">getRequest</span>()).<span style="color: #FF0000">getHttpServletRequest</span>();
+	    session.<span style="color: #FF0000">createFormToken</span>(r.<span style="color: #FF0000">getRemoteAddr</span>());
+	
+	    String tokenId = session.<span style="color: #FF0000">getFormToken</span>().<span style="color: #FF0000">getToken</span>();
+	    String sessionId = session.<span style="color: #FF0000">getId</span>();
+	
+	    <span style="color: #008800; font-style: italic">// Configure the panel</span>
+	    UploadifyPanelBehaviour behaviour = <span style="color: #000080; font-weight: bold">new</span> UploadifyPanelBehaviour(AddPhotosProcessingPage.<span style="color: #FF0000">class</span>, tokenId, sessionId);
+	    behaviour.<span style="color: #FF0000">setFileExt</span>(<span style="color: #0000FF">&quot;*.jpg;*.jpeg;*.gif;*.png&quot;</span>);
+	    behaviour.<span style="color: #FF0000">setFileDesc</span>(<span style="color: #0000FF">&quot;Select files of type *.jpg, *.jpeg, *.gif, *.png&quot;</span>);
+	    behaviour.<span style="color: #FF0000">setSizeLimit</span>(<span style="color: #0000FF">&quot;3000000&quot;</span>);
+	
+	    add(<span style="color: #000080; font-weight: bold">new</span> UploadifyPanel(<span style="color: #0000FF">&quot;uploads&quot;</span>, behaviour));
+	
+	    <span style="color: #000080; font-weight: bold">final</span> UnprocessedPhotosPanel unprocessedPanel;
+	    add(unprocessedPanel = <span style="color: #000080; font-weight: bold">new</span> UnprocessedPhotosPanel(<span style="color: #0000FF">&quot;unprocessedPhotos&quot;</span>, userId));
+	    unprocessedPanel.<span style="color: #FF0000">setOutputMarkupId</span>(<span style="color: #000080; font-weight: bold">true</span>);
+	
+	    <span style="color: #000080; font-weight: bold">final</span> Label noPhotosLabel;
+	    add(noPhotosLabel = <span style="color: #000080; font-weight: bold">new</span> Label(<span style="color: #0000FF">&quot;noPhotosLabel&quot;</span>, <span style="color: #0000FF">&quot;You haven&#39;t uploaded any new photos!&quot;</span>));
+	    noPhotosLabel.<span style="color: #FF0000">setOutputMarkupId</span>(<span style="color: #000080; font-weight: bold">true</span>);
+	
+	    <span style="color: #000080; font-weight: bold">if</span> (unprocessedPanel.<span style="color: #FF0000">getUnprocessedPhotosCount</span>() &gt; <span style="color: #0000FF">0</span>) {
+	        noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">false</span>);
+	    }
+	    <span style="color: #000080; font-weight: bold">else</span> {
+	        noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">true</span>);
+	    }
+	
+	    <span style="color: #000080; font-weight: bold">final</span> IBehavior repaintBehavior = <span style="color: #000080; font-weight: bold">new</span> AbstractDefaultAjaxBehavior() {
+	        @Override
+	        <span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">void</span> respond(AjaxRequestTarget target)
+	        {
+	            <span style="color: #000080; font-weight: bold">if</span> (unprocessedPanel.<span style="color: #FF0000">getUnprocessedPhotosCount</span>() &gt; <span style="color: #0000FF">0</span>) {
+	                noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">false</span>);
+	            }
+	            <span style="color: #000080; font-weight: bold">else</span> {
+	                noPhotosLabel.<span style="color: #FF0000">setVisible</span>(<span style="color: #000080; font-weight: bold">true</span>);
+	            }
+	
+	            target.<span style="color: #FF0000">addComponent</span>(noPhotosLabel);
+	            target.<span style="color: #FF0000">addComponent</span>(unprocessedPanel);
+	        }
+	
+	        @Override
+	        <span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> renderHead(IHeaderResponse response)
+	        {
+	            <span style="color: #000080; font-weight: bold">super</span>.<span style="color: #FF0000">renderHead</span>(response);
+	            CharSequence callback = getCallbackScript();
+	            response.<span style="color: #FF0000">renderJavascript</span>(<span style="color: #0000FF">&quot;function uploadCompleted() { &quot;</span> + callback + <span style="color: #0000FF">&quot;}&quot;</span>, <span style="color: #0000FF">&quot;customUploadCompleted&quot;</span>);
+	        }
+	    };
+	
+	    add(repaintBehavior);
+	
+	    add(<span style="color: #000080; font-weight: bold">new</span> Image(<span style="color: #0000FF">&quot;easy&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> ResourceReference(AddPhotosPage.<span style="color: #FF0000">class</span>, <span style="color: #0000FF">&quot;easy.png&quot;</span>))); 
 	}
 }
 </pre></div>
@@ -413,17 +524,18 @@
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in meeting?</h5>
+        <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 
-        <ul>
+        <ul style="line-height:200%; font-size: 1.1em;">
             <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
             <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
         </ul>
+        
     </div>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in chatting?</h5>
+        <h3>Interested in chatting?</h3>
         <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
         <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
         <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>

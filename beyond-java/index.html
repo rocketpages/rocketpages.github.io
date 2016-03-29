@@ -12,7 +12,116 @@
     <script src="/js/jquery-2.2.1.min.js"></script>
     <script src="/js/uikit.min.js"></script>      
     <script src="/js/components/slideshow.min.js"></script>
+    <script src="https://use.typekit.net/ecv7ait.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
+
+<style>
+    
+    body {
+        color: #60646D;
+        font-family: "proxima-nova", sans-serif;
+    }
+    
+    p {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
+    
+    ul {
+        line-height: 150%;
+    }
+    
+    em {
+        font-family: "baskerville-urw", sans-serif;
+        font-size: 1.15em;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .uk-breadcrumb {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+    }
+    
+    .uk-navbar-brand {
+        font-weight: 700;
+    }
+    
+    .uk-navbar-brand,
+    .uk-navbar-nav>li>a,
+    .uk-navbar-nav>li {
+        height: 44px;
+    }
+    
+    .larger {
+        font-size: 1.1em;
+    }
+    
+    .headline {
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: "futura-pt", sans-serif;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-family: "source-code-pro", sans-serif;
+    }
+    
+    .uk-text-muted {
+        color: #9E9D9B;
+    }
+    
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    .wf-loading h5,
+    .wf-loading p,
+    .wf-loading nav,
+    .wf-loading ul,
+    .wf-loading ul li,
+    .wf-loading li,
+    .wf-loading .uk-breadcrumb {
+      visibility: hidden
+    }
+    
+    .section-heading {
+        margin-top: 0em;
+        text-transform: uppercase; font-weight: 700
+    }
+    
+    .uk-panel p {
+        font-size: 1em;
+    }
+    
+    .uk-panel p.date {
+        font-size: 0.8em;
+    }
+    
+</style>
 
     <body>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
@@ -57,55 +166,47 @@
                     <p class="uk-text-muted">2010-12-13</p>
                     
 
-<p>A recent post by Mike Gualtieri of Forrester caught my attention. Mike strongly asserts that <a class="offsite-link-inline" href="http://blogs.forrester.com/mike_gualtieri/10-11-23-java_is_a_dead_end_for_enterprise_app_development" target="_blank">Java is a dead end for enterprises</a> and business software should be built with <em>something else</em>. Mike mentions a few different options, but mainly promotes 4GL tools such as Powerbuilder and &ldquo;all in one&rdquo; business infrastructure software such as SoftwareAG webMethods. He also touches on BPM and event processing, and by event processing I&rsquo;m pretty sure he means CEP tools such as Esper.</p>
+<p>A recent post by Mike Gualtieri of Forrester caught my attention. Mike strongly asserts that <a href="http://blogs.forrester.com/mike_gualtieri/10-11-23-java_is_a_dead_end_for_enterprise_app_development" title="Java is a dead end for enterprises">Java is a dead end for enterprises</a> and business software should be built with something else. Mike mentions a few different options, but mainly promotes 4GL tools such as Powerbuilder and “all in one” business infrastructure software such as <a href="http://www.softwareag.com/corporate/products/az/webmethods/default.asp" title="SoftwareAG webMethods">SoftwareAG webMethods</a>. He also touches on BPM and event processing, and by event processing I&rsquo;m pretty sure he means CEP tools such as <a href="http://www.espertech.com/products/esper.php" title="Esper">Esper</a>.</p>
 
 <p>I&rsquo;ve worked with Java for 10 years. I&rsquo;ve also worked briefly with FoxPro. I recently spent a few months at a client site digging through SAS code that&rsquo;s being migrated to Java. I spent almost a month on a SoftwareAG training course to learn the &ldquo;webMethods way&rdquo; of doing things. I&rsquo;ve seen 4GLs in action and I&rsquo;ve seen Java in action.</p>
 
-<p>Is Mike really advocating the use of proprietary, niche languages such as <a class="offsite-link-inline" href="http://en.wikipedia.org/wiki/WebMethods_Flow" target="_blank">webMethods Flow</a> over Java? I&rsquo;m not an analyst at Forrester, but I&rsquo;ve been turning Powerpoint slides into functioning software for long enough that I feel just about qualified enough to chime in on the subject.</p>
+<p>Is Mike really advocating the use of proprietary, niche languages such as <a href="http://en.wikipedia.org/wiki/WebMethods_Flow" title="webMethods Flow">webMethods Flow</a> over Java? I&rsquo;m not an analyst at Forrester, but I&rsquo;ve been turning Powerpoint slides into functioning software for long enough that I feel just about qualified enough to chime in on the subject.</p>
 
 <p>I agree with the spirit of Mike&rsquo;s post. Java can be a real pain to build typical business software with. The problem isn&rsquo;t Java itself, the problem is that businesses use it for <em>everything</em>.</p>
-
-<p>Stop me if this sounds familiar.</p>
-
-<blockquote>
-<p>Want yet another custom time tracking intranet site? Let&rsquo;s build it with JEE!</p>
-
-<p>How about a utility that counts the number of ponies in our database? Hell yeah&hellip; it&rsquo;s Java time!</p>
-
-<p>What about a UI heavy site with super-complex UX workflow? I&rsquo;ve got a fever and the only prescription is JSF, SPRING, and HIBERNATE!</p>
-</blockquote>
 
 <h2 id="4gls-and-dead-ends:676d3bca1d69bb7c78928bbaf25861c2">4GLs and dead-ends</h2>
 
 <p>People have tried for decades to move away from third-generation languages like Java and towards the nirvana of business folks creating their own apps with some kind of flow-charting tool. One of the first guys I worked with - he had punch cards in his drawer that <em>he</em> punched - told me all about it. It&rsquo;s the longest running punch line in IT. Mike&rsquo;s post may have been titled &ldquo;Java is a dead end&rdquo;, but it really should have been titled &ldquo;third-generation languages are a dead end&rdquo;. And the date of the article could easily have been 1980 or 1990. The dead end is not third-generation languages; languages are merely a tool.</p>
 
-<ul>
-<li><strong>The dead end is producing horrible software and expecting to keep up with the rest of the world.</strong></li>
-<li>The dead end is promoting a stock trader or pony salesman or MBA-type to head up your IT department just because he or she really knows their way around office politics.</li>
-<li>The dead end is misusing a language or technology for years and <em>blaming the technology and blaming your developers</em> rather than <em>hiring the right people to come up with your strategy and empowering your developers</em>.</li>
-</ul>
+<p>The dead end is producing horrible software and expecting to keep up with the rest of the world.</p>
+
+<p>The dead end is promoting a stock trader or pony salesman or MBA-type to head up your IT department just because he or she really knows their way around office politics.</p>
+
+<p>The dead end is misusing a language or technology for years and <em>blaming the technology</em> and <em>blaming your developers</em> rather than hiring the right people to come up with your strategy and <em>empowering</em> your developers.</p>
+
+<p>Leaders create leaders.</p>
 
 <p>The only reason these strategies worked in the past is because <strong>everyone</strong> was producing garbage software, but nothing lasts forever.</p>
 
 <h2 id="staying-competitive:676d3bca1d69bb7c78928bbaf25861c2">Staying competitive</h2>
 
-<p>Here&rsquo;s a hands-on developer&rsquo;s opinion on the whole &ldquo;Java is dead&rdquo; debate.</p>
+<p>Here&rsquo;s a hands-on developer&rsquo;s opinion on the whole “Java is dead” debate.</p>
 
 <p>Java is no more of a dead end than C, C++, or MATLAB. They all have their uses, but using Java for everything is just as poor of a strategy as trying to use MATLAB for everything.</p>
 
 <p>If you want to build great software, you need to hire great software developers. There&rsquo;s no magic tool that will allow your business folks to put together fantastic software all by themselves. These ideas look fantastic in a Powerpoint slide or Forrester report, but fall flat in the real world.</p>
 
-<p>How do you hire great software developers?</p>
+<h3 id="how-do-you-hire-great-software-developers:676d3bca1d69bb7c78928bbaf25861c2">How do you hire great software developers?</h3>
 
-<p><strong>Be a great team to work for.</strong> </p>
+<ol>
+<li><p>Understand what&rsquo;s important to top-tier developers. Here&rsquo;s a <a href="http://www.joelonsoftware.com/articles/fog0000000043.html" title="good place to start">good place to start</a>. This was written 10 years ago and most companies aren&rsquo;t even close to a perfect score.</p></li>
 
-<p>Understand what&rsquo;s important to top-tier developers. Here&rsquo;s a <a class="offsite-link-inline" href="http://www.joelonsoftware.com/articles/fog0000000043.html" target="_blank">good place to start</a> (this was written 10 years ago and most companies <em>still</em> aren&rsquo;t close).</p>
+<li><p>Treat software development as a first-class citizen of your business if you&rsquo;re going to bother building software. Otherwise, stop <em>building</em> and start <em>buying</em>; find a trusted partner to build for you. There&rsquo;s nothing wrong with leaning on third-party firms to focus on the technology while you focus on your core business.</p></li>
 
-<p>Treat software development as a first-class citizen of your business if you&rsquo;re going to bother building software. Otherwise, stop <em>building</em> and start <em>buying</em>; find a trusted partner to build for you. There&rsquo;s nothing wrong with leaning on third-party firms to focus on the technology while you focus on your core business.</p>
+<li><p>If you&rsquo;ve got a department writing software that operates like anything other than a <em>software</em> business, you&rsquo;ve got a bunch of problems that no tool in the world will ever fix. There&rsquo;s nothing worse in the world than software decisions made by companies who treat software as a necessary evil rather than a driver of growth.</p></li>
 
-<p>If you&rsquo;ve got a department writing software that operates like anything other than a <em>software</em> business, you&rsquo;ve got a bunch of problems that no tool in the world will ever fix. There&rsquo;s nothing worse in the world than software decisions made by companies who treat software as a necessary evil rather than a driver of growth.</p>
-
-<p>Stop putting stock traders and accountants and lawyers in charge of your IT department. They may be smart folks, and that kind of strategy may work in politics, but it&rsquo;s painful to watch the decisions these people make day in and day out. Decisions like outsourcing a project to India with almost no oversight and wondering why it looks like a box of pudding when it finally gets delivered. Or having a budget of $100mil and not bothering to hire UX and UI professionals.</p>
+<li><p>Stop putting stock traders and accountants and lawyers in charge of your IT department. They may be smart folks, and that kind of strategy may work in politics, but it&rsquo;s painful to watch the decisions these people make day in and day out. Decisions like outsourcing a project to India with almost no oversight and wondering why it looks like a box of pudding when it finally gets delivered. Or having a budget of $100mm and not bothering to hire UX and UI professionals.</p></li>
+</ol>
 
 <h2 id="conclusion:676d3bca1d69bb7c78928bbaf25861c2">Conclusion</h2>
 
@@ -123,17 +224,18 @@
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in meeting?</h5>
+        <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 
-        <ul>
+        <ul style="line-height:200%; font-size: 1.1em;">
             <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
             <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
         </ul>
+        
     </div>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in chatting?</h5>
+        <h3>Interested in chatting?</h3>
         <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
         <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
         <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>

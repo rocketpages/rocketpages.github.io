@@ -10,18 +10,14 @@
     <atom:link href="http://rocketpages.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>intro</title>
+      <title>Introduction</title>
       <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>
+      <description>&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences around the world, from Gartner AADI to GeeCON. He specializes in systems modernization, microservices, stream processing, and developer productivity.&lt;/p&gt;
 
-&lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences and private business events around the world, from Gartner AADI to GeeCON to various private CTO roundtables in Canada, the United States, and Europe.&lt;/p&gt;
-
-&lt;p&gt;Kevin is the global Enterprise Advocate for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
+&lt;p&gt;Kevin is currently the global &lt;em&gt;Enterprise Advocate&lt;/em&gt; for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
 </description>
     </item>
     

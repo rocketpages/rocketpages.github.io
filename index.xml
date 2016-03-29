@@ -10,101 +10,59 @@
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>articles</title>
+      <title>Articles on Medium</title>
       <link>http://rocketpages.github.io/articles/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/articles/</guid>
-      <description>
-
-&lt;h1 id=&#34;articles-on-medium:6a2ba1727aacb7eb91a9d62e76e05618&#34;&gt;Articles on Medium&lt;/h1&gt;
-
-&lt;p&gt;The articles below cover technical subjects in depth, focusing on areas of distributed systems such as &lt;em&gt;reactive programming&lt;/em&gt; and &lt;em&gt;event-based architectures&lt;/em&gt;. The articles below have accumulated well over 100,000 views since 2014.&lt;/p&gt;
+      <description>&lt;p&gt;The articles below cover technical subjects in depth, focusing on areas of distributed systems such as &lt;em&gt;reactive programming&lt;/em&gt; and &lt;em&gt;event-based architectures&lt;/em&gt;. The articles below have accumulated well over 100,000 views since 2014.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>articles</title>
-      <link>http://rocketpages.github.io/videos/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/videos/</guid>
-      <description>
-
-&lt;h1 id=&#34;videos:a45b24697a235d080c581c0ce5a9b90b&#34;&gt;Videos&lt;/h1&gt;
-
-&lt;p&gt;Presentations and educational videos on mostly technical subjects, with a few personal video logs (vlogs) thrown into the mix. If you have any ideas for future content, please get in touch.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>articles</title>
-      <link>http://rocketpages.github.io/webinars/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/webinars/</guid>
-      <description>
-
-&lt;h1 id=&#34;webinars:a8e8702a9f623cfeaba422b659c90bfe&#34;&gt;Webinars&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;m a regular presenter for Lightbend, touching on subjects from microservices to enterprise architecture.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>blog</title>
+      <title>Blog</title>
       <link>http://rocketpages.github.io/blog/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/blog/</guid>
-      <description>
-
-&lt;h1 id=&#34;blog:e95c7dc8eefee7d0e25121cd7f0007ae&#34;&gt;Blog&lt;/h1&gt;
-
-&lt;p&gt;A collection of blog posts and personal anecdotes.&lt;/p&gt;
+      <description>&lt;p&gt;A collection of blog posts and personal anecdotes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>intro</title>
+      <title>Introduction</title>
       <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>
+      <description>&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences around the world, from Gartner AADI to GeeCON. He specializes in systems modernization, microservices, stream processing, and developer productivity.&lt;/p&gt;
 
-&lt;h1 id=&#34;introduction:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences and private business events around the world, from Gartner AADI to GeeCON to various private CTO roundtables in Canada, the United States, and Europe.&lt;/p&gt;
-
-&lt;p&gt;Kevin is the global Enterprise Advocate for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
+&lt;p&gt;Kevin is currently the global &lt;em&gt;Enterprise Advocate&lt;/em&gt; for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>resume</title>
+      <title>Resume</title>
       <link>http://rocketpages.github.io/resume/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/resume/</guid>
       <description>
 
-&lt;h1 id=&#34;resume:c59a67a3c7bc5faa453847420267045e&#34;&gt;Resume&lt;/h1&gt;
-
 &lt;p&gt;If you&amp;rsquo;re interested in learning more about any area of expertise listed below, please &lt;a href=&#34;http://goo.gl/forms/Ox9cGw4Ohw&#34;&gt;get in touch&lt;/a&gt;. I&amp;rsquo;d be happy to meet over Skype or in-person in downtown Toronto.&lt;/p&gt;
 
 &lt;h2 id=&#34;highlights:c59a67a3c7bc5faa453847420267045e&#34;&gt;Highlights&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Experienced public speaker&lt;/em&gt;, presenting at meetups, conferences, and to private businesses around the world about modern software development, architecture, and process&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Over 15 years of development and architecture experience&lt;/em&gt; with JVM technologies, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Proficient technical writer&lt;/em&gt;, regularly contributing to various publications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Over 15 years of development and architecture experience&lt;/strong&gt; — Significant experience within the JVM and Java ecosystem, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experienced public speaker&lt;/strong&gt; — Presenting at meetups, conferences, and to private businesses around the world about modern software development, architecture, and process&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proficient technical writer&lt;/strong&gt; — Regularly contributing to various publications such as Medium, InfoQ, and TechRepublic&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;skills:c59a67a3c7bc5faa453847420267045e&#34;&gt;Skills&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; - Acting as an advisory architect for systems modernization projects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; — Acting as an advisory architect for systems modernization projects&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; — Domain-Driven Design (DDD), OOA/D, distributed systems architecture&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt; — Scala, Java, JavaScript&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Frameworks&lt;/strong&gt; — Play, Akka, Spring&lt;/li&gt;
@@ -115,12 +73,32 @@
 &lt;h2 id=&#34;areas-of-interest:c59a67a3c7bc5faa453847420267045e&#34;&gt;Areas of interest&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Modernization of legacy systems to microservices and distributed systems&lt;/li&gt;
-&lt;li&gt;Hybrid object-oriented and functional programming in Scala&lt;/li&gt;
-&lt;li&gt;Emerging architecture patterns for event-driven, reactive systems&lt;/li&gt;
-&lt;li&gt;Stream processing with Akka Streams, especially related to batch/ETL applications&lt;/li&gt;
-&lt;li&gt;Building scalable, resilient web systems and mobile APIs using Play and Akka&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; of legacy systems to &lt;em&gt;microservices&lt;/em&gt; and &lt;em&gt;distributed systems&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming&lt;/strong&gt; in hybrid object-oriented and functional style using &lt;em&gt;Scala&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; of non-trivial systems; solving the hard problems using emerging patterns to build event-driven, reactive systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stream processing&lt;/strong&gt; with &lt;em&gt;Akka Streams&lt;/em&gt;, &lt;em&gt;Spark&lt;/em&gt;, and &lt;em&gt;Kafka&lt;/em&gt;, especially related to batch/ETL modernization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalable, resilient web systems development&lt;/strong&gt; using &lt;em&gt;Play&lt;/em&gt; and &lt;em&gt;Akka&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>http://rocketpages.github.io/videos/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://rocketpages.github.io/videos/</guid>
+      <description>&lt;p&gt;Presentations and educational videos on mostly technical subjects, with a few personal vlogs thrown into the mix. If you have any ideas for future content, please get in touch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webinars</title>
+      <link>http://rocketpages.github.io/webinars/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://rocketpages.github.io/webinars/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a regular presenter for Lightbend, touching on subjects from microservices to enterprise architecture.&lt;/p&gt;
 </description>
     </item>
     

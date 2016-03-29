@@ -12,7 +12,116 @@
     <script src="/js/jquery-2.2.1.min.js"></script>
     <script src="/js/uikit.min.js"></script>      
     <script src="/js/components/slideshow.min.js"></script>
+    <script src="https://use.typekit.net/ecv7ait.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
+
+<style>
+    
+    body {
+        color: #60646D;
+        font-family: "proxima-nova", sans-serif;
+    }
+    
+    p {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
+    
+    ul {
+        line-height: 150%;
+    }
+    
+    em {
+        font-family: "baskerville-urw", sans-serif;
+        font-size: 1.15em;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .uk-breadcrumb {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 400;
+    }
+    
+    .uk-navbar-brand {
+        font-weight: 700;
+    }
+    
+    .uk-navbar-brand,
+    .uk-navbar-nav>li>a,
+    .uk-navbar-nav>li {
+        height: 44px;
+    }
+    
+    .larger {
+        font-size: 1.1em;
+    }
+    
+    .headline {
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: "futura-pt", sans-serif;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-family: "source-code-pro", sans-serif;
+    }
+    
+    .uk-text-muted {
+        color: #9E9D9B;
+    }
+    
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    .wf-loading h5,
+    .wf-loading p,
+    .wf-loading nav,
+    .wf-loading ul,
+    .wf-loading ul li,
+    .wf-loading li,
+    .wf-loading .uk-breadcrumb {
+      visibility: hidden
+    }
+    
+    .section-heading {
+        margin-top: 0em;
+        text-transform: uppercase; font-weight: 700
+    }
+    
+    .uk-panel p {
+        font-size: 1em;
+    }
+    
+    .uk-panel p.date {
+        font-size: 0.8em;
+    }
+    
+</style>
 
     <body>
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
@@ -55,7 +164,7 @@
                     
                     <h1>Fixing Fancybox with AJAX (and Wicket)</h1>
                     <p class="uk-text-muted">2010-12-28</p>
-                    <p>A personal project I&rsquo;m working on uses the jQuery <a class="offsite-link-inline" href="http://fancybox.net" target="_blank">Fancybox</a> library to display images. It&rsquo;s a great lightbox, except for one small problem: AJAX refreshes break it.</p>
+                    <p>A personal project I&rsquo;m working on uses the jQuery <a href="http://fancybox.net" title="Fancybox">Fancybox</a> library to display images. It&rsquo;s a great lightbox, except for one small problem: AJAX refreshes break it.</p>
 
 <p>A page I&rsquo;m working on accepts multiple image uploads. Once the images are successfully processed asynchronously on the server, an image panel on the same page is automatically refreshed. The AJAX callback works fine and updates the panel view with the newly uploaded photos, but the net result is that Fancybox stops working completely.</p>
 
@@ -67,26 +176,26 @@
 	@Override
 	<span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">void</span> respond(AjaxRequestTarget target)
 	{
-		ThingModel thingModel = <span style="color: #000080; font-weight: bold">new</span> ThingModel(thingId);
-		UnprocessedPhotosModel photosModel = <span style="color: #000080; font-weight: bold">new</span> UnprocessedPhotosModel(getCurrentUser().<span style="color: #FF0000">getId</span>(), tokenId);
-		List photos = photosModel.<span style="color: #FF0000">getObject</span>();
-
-		<span style="color: #000080; font-weight: bold">for</span> (Photo photo : photos)
-		{
-			photo.<span style="color: #FF0000">setThing</span>(thingModel.<span style="color: #FF0000">getObject</span>());
-			ServiceFactory.<span style="color: #FF0000">getPhotoService</span>().<span style="color: #FF0000">savePhoto</span>(photo);
-		}
-
-		target.<span style="color: #FF0000">addComponent</span>(photosPanel);
-		target.<span style="color: #FF0000">appendJavascript</span>(<span style="color: #0000FF">&quot;$.fancyboxResetBusy(); reinitFancybox();&quot;</span>);
+	    ThingModel thingModel = <span style="color: #000080; font-weight: bold">new</span> ThingModel(thingId);
+	    UnprocessedPhotosModel photosModel = <span style="color: #000080; font-weight: bold">new</span> UnprocessedPhotosModel(getCurrentUser().<span style="color: #FF0000">getId</span>(), tokenId);
+	    List photos = photosModel.<span style="color: #FF0000">getObject</span>();
+	
+	    <span style="color: #000080; font-weight: bold">for</span> (Photo photo : photos)
+	    {
+	        photo.<span style="color: #FF0000">setThing</span>(thingModel.<span style="color: #FF0000">getObject</span>());
+	        ServiceFactory.<span style="color: #FF0000">getPhotoService</span>().<span style="color: #FF0000">savePhoto</span>(photo);
+	    }
+	
+	    target.<span style="color: #FF0000">addComponent</span>(photosPanel);
+	    target.<span style="color: #FF0000">appendJavascript</span>(<span style="color: #0000FF">&quot;$.fancyboxResetBusy(); reinitFancybox();&quot;</span>);
 	}
-
+	
 	@Override
 	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> renderHead(IHeaderResponse response)
 	{
-		<span style="color: #000080; font-weight: bold">super</span>.<span style="color: #FF0000">renderHead</span>(response);
-		CharSequence callback = getCallbackScript();
-		response.<span style="color: #FF0000">renderJavascript</span>(<span style="color: #0000FF">&quot;function uploadCompleted() { &quot;</span> + callback + <span style="color: #0000FF">&quot;}&quot;</span>, <span style="color: #0000FF">&quot;customUploadCompleted&quot;</span>);
+	    <span style="color: #000080; font-weight: bold">super</span>.<span style="color: #FF0000">renderHead</span>(response);
+	    CharSequence callback = getCallbackScript();
+	    response.<span style="color: #FF0000">renderJavascript</span>(<span style="color: #0000FF">&quot;function uploadCompleted() { &quot;</span> + callback + <span style="color: #0000FF">&quot;}&quot;</span>, <span style="color: #0000FF">&quot;customUploadCompleted&quot;</span>);
 	}
 };
 </pre></div>
@@ -94,27 +203,28 @@
 
 <p>For those who aren&rsquo;t familiar with Wicket, the <strong>renderHead</strong> method is rendering a custom JavaScript function in the view. The multiple upload Flash component I use invokes the rendered JS function after it finishes processing the images. When the Flash uploader invokes <strong>uploadCompleted</strong>, Wicket handles all the AJAX plumbing and executes the Java code in the <strong>respond</strong> method above.</p>
 
-<p>The two most important lines of code are the calls to <em><strong>target</strong></em>. <em>target.addComponent</em> instructs Wicket to refresh the photo panel, and <em>target.appendJavascript</em> instructs Wicket to invoke the functions in the String parameter after the panel is refreshed.</p>
+<p>The two most important lines of code are the calls to <em>target</em>. <em>target.addComponent</em> instructs Wicket to refresh the photo panel, and <em>target.appendJavascript</em> instructs Wicket to invoke the functions in the String parameter after the panel is refreshed.</p>
 
-<p>Let&rsquo;s take a look at the <strong>reinitFancybox</strong> JS function which gets invoked after the panel is refreshed.
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">function</span> reinitFancybox() {    
+<p>Let&rsquo;s take a look at the <strong>reinitFancybox</strong> function which gets invoked after the panel is refreshed.</p>
+
+<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">function</span> reinitFancybox() {  
     <span style="color: #008800; font-style: italic">// CSS</span>
-    $(<span style="color: #0000FF">&quot;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).css(<span style="color: #0000FF">&quot;opacity&quot;</span>, <span style="color: #0000FF">&quot;1&quot;</span>);
-
-    <span style="color: #008800; font-style: italic">// ON MOUSE OVER</span>
-    $(<span style="color: #0000FF">&quot;.gallery img, .portfolio-list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).hover(<span style="color: #000080; font-weight: bold">function</span> () {
-        <span style="color: #008800; font-style: italic">// SET OPACITY TO 100%</span>
-        $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">0.5</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
-    },
-    <span style="color: #008800; font-style: italic">// ON MOUSE OUT</span>
-    <span style="color: #000080; font-weight: bold">function</span> () {
-        <span style="color: #008800; font-style: italic">// SET OPACITY BACK TO 100%</span>
-        $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">1</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
-    });
-    <span style="color: #008800; font-style: italic">// INIT FANCYBOX</span>
-    $(<span style="color: #0000FF">&quot;li.image a, a.fancy, .portfolio.grid li a.folio-zoom, .portfolio-list.image a&quot;</span>).fancybox({
-        <span style="color: #0000FF">&#39;titlePosition&#39;</span>     : <span style="color: #0000FF">&#39;over&#39;</span>
-    });
+	$(<span style="color: #0000FF">&quot;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).css(<span style="color: #0000FF">&quot;opacity&quot;</span>, <span style="color: #0000FF">&quot;1&quot;</span>);
+	
+	<span style="color: #008800; font-style: italic">// ON MOUSE OVER</span>
+	$(<span style="color: #0000FF">&quot;.gallery img, .portfolio-list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).hover(<span style="color: #000080; font-weight: bold">function</span> () {
+	    <span style="color: #008800; font-style: italic">// SET OPACITY TO 100%</span>
+	    $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">0.5</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
+	},
+	<span style="color: #008800; font-style: italic">// ON MOUSE OUT</span>
+	<span style="color: #000080; font-weight: bold">function</span> () {
+	    <span style="color: #008800; font-style: italic">// SET OPACITY BACK TO 100%</span>
+	    $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">1</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
+	});
+	<span style="color: #008800; font-style: italic">// INIT FANCYBOX</span>
+	$(<span style="color: #0000FF">&quot;li.image a, a.fancy, .portfolio.grid li a.folio-zoom, .portfolio-list.image a&quot;</span>).fancybox({
+	    <span style="color: #0000FF">&#39;titlePosition&#39;</span>     : <span style="color: #0000FF">&#39;over&#39;</span>
+	});
 }
 </pre></div>
 </p>
@@ -123,11 +233,11 @@
 
 <p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancybox = <span style="color: #000080; font-weight: bold">function</span>(obj) {
 	<span style="color: #000080; font-weight: bold">if</span> (busy) {
-		<span style="color: #000080; font-weight: bold">return</span>;
+	    <span style="color: #000080; font-weight: bold">return</span>;
 	}
-
+	
 	busy = <span style="color: #000080; font-weight: bold">true</span>;
-
+	
 	<span style="color: #008800; font-style: italic">// ...</span>
 };
 </pre></div>
@@ -151,17 +261,18 @@
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in meeting?</h5>
+        <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 
-        <ul>
+        <ul style="line-height:200%; font-size: 1.1em;">
             <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
             <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
         </ul>
+        
     </div>
 
     <div class="uk-width-medium-1-2">
-        <h5>Interested in chatting?</h5>
+        <h3>Interested in chatting?</h3>
         <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
         <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
         <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
