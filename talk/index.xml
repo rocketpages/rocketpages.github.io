@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Kevin Webber</title>
+    <link>http://rocketpages.github.io/talk/</link>
+    <description>Recent content in Talks on Kevin Webber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://rocketpages.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reactive Streams: The Glue of the Real-time Organization</title>
+      <link>http://rocketpages.github.io/talk/2016-03-21/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-03-21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The 6 Rules for Modernizing your Aging Java Monolith with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-03-10/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-01-20/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-01-20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <link>http://rocketpages.github.io/talk/2015-12-01/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-12-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2015-10-22/</link>
+      <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-10-22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2015-09-24/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-09-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Streams and Akka Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-09-09/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-09-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-08-06/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-08-06/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-08-05/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-08-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Reactive Streams with Akka</title>
+      <link>http://rocketpages.github.io/talk/2015-07-22/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-07-22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Reactive Streams with Akka</title>
+      <link>http://rocketpages.github.io/talk/2015-07-09/</link>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-07-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forrester: Modernizing Your Aging Architecture</title>
+      <link>http://rocketpages.github.io/talk/2015-06-24/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-06-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Going Reactive</title>
+      <link>http://rocketpages.github.io/talk/2015-05-31/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-31/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Web Development with Play</title>
+      <link>http://rocketpages.github.io/talk/2015-05-19/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Web Development with Play</title>
+      <link>http://rocketpages.github.io/talk/2015-05-14/</link>
+      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

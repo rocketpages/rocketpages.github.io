@@ -6,8 +6,29 @@
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Mar 2016 15:09:06 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reactive Streams: The Glue of the Real-Time Organization</title>
+      <link>http://rocketpages.github.io/deck/reactive-streams-glue/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/deck/reactive-streams-glue/</guid>
+      <description>&lt;p&gt;The &amp;ldquo;real-time organization&amp;rdquo; reacts to information now rather than basing critical decisions on stale data. This requires reimagining how data flows through your organization, moving away from data at rest and moving towards a completely event-based streaming architecture. Events become the lifeblood of the organization, while analytics becomes the brain. Organizations that successfully harness the power of real-time event streaming can transform analytical latencies from hours to seconds.&lt;/p&gt;
+
+&lt;p&gt;This session will describe a reference architecture using the Lightbend Reactive Platform and other tools that can be used to build out the real-time organization, leveraging real-time data to produce analytics that result in immediate, actionable insights.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reactive Streams: The Glue of the Real-time Organization</title>
+      <link>http://rocketpages.github.io/talk/2016-03-21/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-03-21/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Articles on Medium</title>
@@ -37,7 +58,7 @@
       <guid>http://rocketpages.github.io/home/intro/</guid>
       <description>&lt;p&gt;Kevin Webber is an analyst, architect, developer, and technical speaker from Toronto, Canada. He has presented at conferences around the world, from Gartner AADI to GeeCON. He specializes in systems modernization, microservices, stream processing, and developer productivity.&lt;/p&gt;
 
-&lt;p&gt;Kevin is currently the global &lt;em&gt;Enterprise Advocate&lt;/em&gt; for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
+&lt;p&gt;Kevin is the global &lt;em&gt;Enterprise Advocate&lt;/em&gt; for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the Scala programming language, Akka distributed systems framework, Play! MVC framework, and Lagom microservices framework. In this role Kevin works as an analyst and advisor to major enterprises - commonly referred to as the Global 2000 by Forbes - on systems modernization projects. His passion for the craft of architecture, dedication to developer happiness, and attention to detail have helped major corporations around the world achieve significant business upside.&lt;/p&gt;
 </description>
     </item>
     
@@ -83,6 +104,16 @@
     </item>
     
     <item>
+      <title>Talks</title>
+      <link>http://rocketpages.github.io/talks/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://rocketpages.github.io/talks/</guid>
+      <description>&lt;p&gt;A list of conferences, meetups, webinars, and roundtable events that I&amp;rsquo;ve given talks at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Videos</title>
       <link>http://rocketpages.github.io/videos/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
@@ -110,6 +141,15 @@
       <guid>http://rocketpages.github.io/webinar/legacy-java-monolith/</guid>
       <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>The 6 Rules for Modernizing your Aging Java Monolith with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-03-10/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -151,48 +191,6 @@
       <description>&lt;p&gt;Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.&lt;/p&gt;
 
 &lt;p&gt;Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Revitalizing Aging Architectures with Microservices</title>
-      <link>http://rocketpages.github.io/webinar/revitalized-with-microservices/</link>
-      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/webinar/revitalized-with-microservices/</guid>
-      <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
-      <link>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</link>
-      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</guid>
-      <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why your company&#39;s big data is not nearly fast enough</title>
-      <link>http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/</link>
-      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/</guid>
-      <description>&lt;p&gt;Stream-based processing is taking over big data. Matt Asay and I chatted about &amp;ldquo;fast data&amp;rdquo; to put some context around the value of data and why speed matters.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Journey into Reactive Streams</title>
-      <link>http://rocketpages.github.io/article/a-journey-into-reactive-streams/</link>
-      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/article/a-journey-into-reactive-streams/</guid>
-      <description>&lt;p&gt;As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.&lt;/p&gt;
-
-&lt;p&gt;In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.&lt;/p&gt;
 </description>
     </item>
     
