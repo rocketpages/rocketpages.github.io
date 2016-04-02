@@ -72,6 +72,8 @@
       
       <guid>http://rocketpages.github.io/deck/dist-systems-scala-akka/</guid>
       <description>&lt;p&gt;We explore the reasons for building distributed systems framed around the &amp;ldquo;fallacies of distributed computing&amp;rdquo;. We contrast those fallacies against the requirements, constraints, and realities of building a modern system today, using Scala and Akka for all examples.&lt;/p&gt;
+
+&lt;p&gt;I originally gave this talk to the faculty of Sheridan College, Applied Sciences. The idea was to show at a broad-scope where the industry is heading over the next 5-10 years due to overwhelming demand and expectations placed on public-facing web systems.&lt;/p&gt;
 </description>
     </item>
     
