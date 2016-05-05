@@ -6,20 +6,81 @@
     <description>Recent content in Blogposts on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/blogpost/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Reflecting on Reactive Programming</title>
-      <link>http://rocketpages.github.io/reflecting-on-reactive-programming</link>
+      <title>The Zen of Process</title>
+      <link>http://rocketpages.github.io/the-zen-of-process</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/the-zen-of-process</guid>
+      <description>
+
+&lt;p&gt;Process improvements are the most impactful way to rise above your individual work. All organizations live and die by the quality of their processes.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Give me six hours to chop down a tree and I will spend the first four sharpening the axe.” 
+—  Abraham Lincoln&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Have you ever wondered how an organization with tens of thousands of people survives without collapsing under its own weight? It doesn&amp;rsquo;t survive by hiring &amp;ldquo;only hire the best&amp;rdquo;. Scaling a business from &lt;em&gt;tens&lt;/em&gt; to &lt;em&gt;tens of thousands&lt;/em&gt; depends on hiring motivated people and supporting them with solid processes.&lt;/p&gt;
+
+&lt;p&gt;The task of documenting and formalizing the way we work naturally with an organization can be thought of as a type of &lt;em&gt;corporate anthropology&lt;/em&gt;. At first blush even speaking about process improvements may sound impersonal, but studying how people work together within a company is the study of relationships within that company. Improvements can be made simply by documenting and formalizing those relationships, which makes it possible to study them and improve upon them over time.&lt;/p&gt;
+
+&lt;h2 id=&#34;give-credit-and-take-blame:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Give credit and take blame&lt;/h2&gt;
+
+&lt;p&gt;One of the most important aspects of a healthy process is that it can be &lt;em&gt;delegated&lt;/em&gt; to. The inverse of delegating to a process is delegating to an individual. This distinction has a profound impact on corporate culture, recognized by common vocabulary; “you” instead of “we”, “I” instead of “us”. It&amp;rsquo;s more humane to investigate the shortcomings of a process than a person. People within the organization are still accountable for individual performance, but with clearly defined expectations measuring individual performance becomes more fair and accountable.&lt;/p&gt;
+
+&lt;h2 id=&#34;anti-patterns:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Anti-patterns&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Red tape&lt;/em&gt; is the evil twin of process. Red tape is created when processes are dictated from above by those who don’t understand how people within the organization already work. We should attempt to document and formalize natural interactions well before attempting to improve upon them. Formalizing any working relationship by people who aren’t directly in the mix of the relationship can be well-meaning but ultimately doomed. Senior leadership should take an interest in how to improve upon relationships within the organization, but only after they&amp;rsquo;ve been formalized by the people working inside those relationships.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, senior leadership should show an unwavering dedication to practitioners who attempt to document the way they work. Supporting your anthropologists is a sure-fire way to capture the essence of how the company truly functions.&lt;/p&gt;
+
+&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
+
+&lt;p&gt;Imagine we work together at the same company. Now imagine that I recommend a process to optimize how we prepare for meetings, perhaps even tracking the amount of time we spend preparing, and then a system for rating the quality of the meeting afterwards. If you distrust me or the company, this process would seem incredibly intrusive and perhaps even a little scary.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why does my company want to measure the time I spend preparing for meetings? Does everyone hate my meetings? Are my co-workers complaining about me? Am I going to be fired?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On top of being scary, you may also think that the process is an incredible waste of time, distrustful that anything useful would ever come out of such an exercise.&lt;/p&gt;
+
+&lt;p&gt;If you trust your company, you may feel optimistic that measuring meeting effort will result in &lt;em&gt;less meetings&lt;/em&gt; and &lt;em&gt;more time for interesting work&lt;/em&gt;. Perhaps you anticipate new guidelines coming out of this process to create a new process for formalizing meeting invites. Perhaps you envision this process eventually leading to more time for interesting work rather than being forced to sit through an endless stream of Powerpoint presentations all day. You likely assume your company is protecting your most valuable asset; time.&lt;/p&gt;
+
+&lt;p&gt;Trust is the currency of an organization. Documenting and formalizing the way people work together requires trust on all sides. If there&amp;rsquo;s major pushback from practitioners at an exercise like this, the root cause issue may be deeper than a simple distaste of standardization. It could signal a lack of trust.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-value-of-process:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;The value of process&lt;/h2&gt;
+
+&lt;p&gt;Many technology startups ruthlessly optimize all processes related to code and infrastructure. Many of those same startups view non-code related processes as a burden. That’s because they’ve only seen red tape, which leaves a mark. If enough people in your company have been scarred by red tape in previous jobs you have a culture that resists optimization. This is a major barrier to unlocking the full potential within an organization.&lt;/p&gt;
+
+&lt;h2 id=&#34;find-your-sherpa:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Find your sherpa&lt;/h2&gt;
+
+&lt;p&gt;The only way to turn a formalized process into a de-facto company standard is through a process sponsor. I refer to this person as a &lt;em&gt;process sherpa&lt;/em&gt;. A process sherpa is like a super-mentor. They’re someone senior, someone you’ve accumulated trust with, and someone with the trust of the entire organization. Your process sherpa can take your ideas all the way to the top of the organization. If your ideas are good enough they may be communicated across the entire organization and perhaps become a standard way of working.&lt;/p&gt;
+
+&lt;h2 id=&#34;summary:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;If you visualize the capacity of your company as a bubble, imagine the bubble expanding ever so slightly every time a process is standardized. Introduce enough process improvements and you’ll grow the capacity of your organization without hiring a single new employee. Hiring should be a last resort to expand capacity, and only done when backed up by data from a process. For instance, a development team following &lt;a href=&#34;https://en.wikipedia.org/wiki/Kanban&#34;&gt;Kanban&lt;/a&gt; may track the average amount of time that work waits to move from one stage to another, and then hire a new developer to improve this measurement. Without data that comes out of a process, hiring becomes a political game, usually driven by whoever yells the loudest for additional headcount. Don&amp;rsquo;t play this game.&lt;/p&gt;
+
+&lt;p&gt;Whether you&amp;rsquo;re a startup or part of the largest fortune 500 enterprise, &lt;em&gt;always be improving your processes&lt;/em&gt; and &lt;em&gt;always be working on your process to improve processes&lt;/em&gt;. An unwavering commitment to process improvement is the only way to reliably expand the capacity of your company over time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reflecting on Reactive Systems</title>
+      <link>http://rocketpages.github.io/reflecting-on-reactive-systems</link>
       <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/reflecting-on-reactive-programming</guid>
-      <description>&lt;p&gt;The past year has been a wonderful period of learning and reflection on this exciting new development paradigm. I’ve written about reactive application development on Medium (&lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc&#34;&gt;What is Reactive Programming?&lt;/a&gt;), and contributed to articles for both ReadWrite (&lt;a href=&#34;http://readwrite.com/2015/03/12/reactive-programming-conductr-kevin-webber&#34;&gt;&amp;ldquo;Reactive&amp;rdquo; Systems: Easy To Program, Now Easier To Manage&lt;/a&gt;) and InfoQ (&lt;a href=&#34;http://www.infoq.com/news/2014/09/what-is-reactive-programming&#34;&gt;Actor-based Concurrency for Reactive Systems&lt;/a&gt;). Another high note is that &lt;a href=&#34;http://www.meetup.com/Reactive-TO&#34;&gt;Reactive Programming Toronto&lt;/a&gt; is closing in on 300 members, and new reactive programming groups are forming all over the world. It&amp;rsquo;s an exciting time to be a developer who cares about their craft, as I strongly feel we&amp;rsquo;re at the beginning of a major paradigm shift. I believe the reactive paradigm will drive the next major innovation in how software is crafted for the web, to meet the expectations of both end-users and organizations who are looking for ever increasing ways to secure a competitive advantage online.&lt;/p&gt;
+      <guid>http://rocketpages.github.io/reflecting-on-reactive-systems</guid>
+      <description>&lt;p&gt;The past year has been a wonderful period of learning and reflection on this exciting new software architecture. I’ve written about reactive application development on Medium (&lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc&#34;&gt;What is Reactive Programming?&lt;/a&gt;), contributed to ReadWrite (&lt;a href=&#34;http://readwrite.com/2015/03/12/reactive-programming-conductr-kevin-webber&#34;&gt;&amp;ldquo;Reactive&amp;rdquo; Systems: Easy To Program, Now Easier To Manage&lt;/a&gt;), and contributed to InfoQ (&lt;a href=&#34;http://www.infoq.com/news/2014/09/what-is-reactive-programming&#34;&gt;Actor-based Concurrency for Reactive Systems&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;Reactive applications are at the heart of a new breed of system that embraces modern infrastructure. Gone are the days of a single monolithic application running in a single data center. Not only does this type of application not scale to meet the ever-increasing stress placed on a modern web application, but it provides very little room for future growth; if your data center goes down, your system goes down; if your business requirements evolve, you must modify, test, and deploy a singular, complex monolithic system, and hope that all of the coupled and tangled logic within holds up under the changes you&amp;rsquo;ve made. In order to combat the challenges of keeping monolithic systems up and making risky changes to them, we create ever-more complex business and technical processes to protect ourselves. The cycle repeats, and the system grows in both risk and complexity. The system must be rewritten. And the cycle repeats again. Why do we as software developers allow these cycles to continue?&lt;/p&gt;
+&lt;p&gt;Another high note is that &lt;a href=&#34;http://www.meetup.com/Reactive-TO&#34;&gt;Reactive Programming Toronto&lt;/a&gt; is closing in on 300 members. New reactive programming groups are forming all over the world. It&amp;rsquo;s an exciting time to be a developer who cares about their craft and I strongly feel we&amp;rsquo;re at the beginning of a major paradigm shift. I believe the reactive programming paradigm will drive the next major innovation in how software is crafted for the web, to meet the expectations of both end-users and organizations who are looking for ever increasing ways to secure a competitive advantage online.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m working on a series of articles to outline end-to-end reactive architectures, so stay tuned if you&amp;rsquo;re interested in learning more about implementing reactive systems for the enterprise.&lt;/p&gt;
+&lt;p&gt;Reactive systems are at the heart of a new breed of enterprise system that embraces modern infrastructure. Gone are the days of a single monolithic application running in a single data center. Not only does this type of application not scale to meet the ever-increasing stress placed on a modern web application, but it provides very little room for future growth; if your data center goes down, your system goes down; if your business requirements evolve, you must modify, test, and deploy a singular, complex monolithic system, and hope that all of the coupled and tangled logic within holds up under the changes you&amp;rsquo;ve made. In order to combat the challenges of keeping monolithic systems up and making risky changes to them, we create ever-more complex business and technical processes to protect ourselves. The cycle repeats, and the system grows in both risk and complexity. The system must be rewritten. And the cycle repeats again. Why do we as software developers allow these cycles to continue?&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m working on a series of articles to outline end-to-end reactive architectures. Stay tuned if you&amp;rsquo;re interested in learning more about implementing reactive systems in the enterprise.&lt;/p&gt;
 </description>
     </item>
     
@@ -31,7 +92,7 @@
       <guid>http://rocketpages.github.io/retrospective-a-night-of-reactive-programming</guid>
       <description>
 
-&lt;p&gt;I hosted the first event for &lt;a href=&#34;http://meetup.com/reactive-to&#34;&gt;ReactiveTO&lt;/a&gt; on July 24th. It was fantastic evening filled with great talks on Reactive programming principles, microservices, Akka, and ReactiveCocoa.&lt;/p&gt;
+&lt;p&gt;I hosted the first event for &lt;a href=&#34;http://meetup.com/reactive-to&#34;&gt;ReactiveTO&lt;/a&gt; on July 24th. It was fantastic evening filled with great talks on reactive programming principles, microservices, Akka, and ReactiveCocoa.&lt;/p&gt;
 
 &lt;h2 id=&#34;impressions:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;Impressions&lt;/h2&gt;
 
@@ -1299,366 +1360,6 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 &lt;p&gt;If you ever find yourself working in a team that doesn&amp;rsquo;t see the importance of code reviews, remind them that they could easily wind up with a few million lines of &lt;em&gt;that&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;(Taken from &lt;a href=&#34;http://thedailywtf.com/Articles/Boolean-Illogic.aspx&#34; title=&#34;The Daily WTF&#34;&gt;The Daily WTF&lt;/a&gt;.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Integrating Uploadify with Java using Apache Wicket</title>
-      <link>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket</link>
-      <pubDate>Fri, 30 Apr 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket</guid>
-      <description>
-
-&lt;p&gt;One of the most requested features on any site that accepts file submissions is the ability to handle multiple uploads elegantly. The current HTML standard only permits one file upload at a time, which makes transferring a large number of files quite tedious.&lt;/p&gt;
-
-&lt;p&gt;This tutorial will show how to painlessly integrate Uploadify and Java using Apache Wicket. You should have at least beginner-level knowledge of Wicket before moving forward, but feel free to dive right in even if you&amp;rsquo;ve never used Wicket before. (If you haven&amp;rsquo;t used Wicket before, I can&amp;rsquo;t suggest it strongly enough for developing stateful Java-based web applications.)&lt;/p&gt;
-
-&lt;p&gt;A number of excellent Flash-based multiple file upload plugins are available, including the excellent &lt;a href=&#34;http://www.uploadify.com/&#34; title=&#34;Uploadify&#34;&gt;Uploadify&lt;/a&gt;. Uploadify is essentially a jQuery wrapper for &lt;a href=&#34;http://www.swfupload.org/&#34; title=&#34;SWFUpload&#34;&gt;SWFUpload&lt;/a&gt;. I already use jQuery quite extensively so I chose Uploadify as my multiple upload plugin. If you use a different JavaScript framework or simply prefer plain old JavaScript, SWFUpload might be a better choice.&lt;/p&gt;
-
-&lt;p&gt;The only catch is that most of these plugins are geared towards PHP developers/apps and not all that intuitive to integrate with Java-based solutions.&lt;/p&gt;
-
-&lt;h2 id=&#34;a-few-things-to-consider:290f227844d358fa3bf865e1af926742&#34;&gt;A few things to consider&lt;/h2&gt;
-
-&lt;p&gt;Before jumping in with both feet, the use of Flash is a stopgap measure until HTML5 is more widely supported. HTML5 supports the attribute &amp;ldquo;multiple&amp;rdquo; in the input tag, offering true native multiple file upload support. Also, with Apple fully &lt;a href=&#34;http://news.cnet.com/8301-30685_3-20003739-264.html&#34; title=&#34;throwing its weight behind HTML5 and actively attacking Flash&#34;&gt;throwing its weight behind HTML5 and actively attacking Flash&lt;/a&gt;, it&amp;rsquo;s only a matter of time before Flash-based solutions go the way of the bond market in Greece.&lt;/p&gt;
-
-&lt;p&gt;While HTML5 supports the attribute &amp;ldquo;multiple&amp;rdquo; in the input tag, browser support for HTML5 is far from ubiquitous. To make matters worse, &lt;a href=&#34;http://www.webmonkey.com/2008/09/html_5_won_t_be_ready_until_2022dot_yes__2022dot/&#34; title=&#34;the HTML5 standard won&#39;t officially be signed off on until 2022&#34;&gt;the HTML5 standard won&amp;rsquo;t officially be signed off on until 2022&lt;/a&gt;. Yes, 12 more years. Yes, it&amp;rsquo;s completely ridiculous. That’s how design-by-committee works.&lt;/p&gt;
-
-&lt;h2 id=&#34;getting-started:290f227844d358fa3bf865e1af926742&#34;&gt;Getting Started&lt;/h2&gt;
-
-&lt;p&gt;Preamble complete, let&amp;rsquo;s get down to business. Our strategy will be to create a re-usable Apache Wicket &amp;ldquo;multiple file upload&amp;rdquo; component. In our case, because we will be re-using both Java code and HTML, we&amp;rsquo;ll create a Wicket panel to do this.&lt;/p&gt;
-
-&lt;h3 id=&#34;1-dependencies:290f227844d358fa3bf865e1af926742&#34;&gt;1. Dependencies&lt;/h3&gt;
-
-&lt;p&gt;We don&amp;rsquo;t need everything included in the Uploadify download. We&amp;rsquo;ll create new packages for the components, CSS, and scripts, and cherry-pick the Uploadify artifacts to copy to the new project. Depending on how you have Wicket configured, your scripts, CSS, and HTML files may be separate from Java source files. The default in Wicket is to place them together in the same package, so we&amp;rsquo;ll be using that paradigm for this tutorial.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-re-usable-html:290f227844d358fa3bf865e1af926742&#34;&gt;2. Re-usable HTML&lt;/h3&gt;
-
-&lt;p&gt;The next step is to create the HTML for our Panel. Create a new file called &lt;em&gt;UploadifyPanel.html&lt;/em&gt; with the following source:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;wicket:panel&lt;/span&gt;&amp;gt;
-
-&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;id&lt;/span&gt;=&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;fileQueue&amp;quot;&lt;/span&gt;&amp;gt;
-	&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;strong&lt;/span&gt;&amp;gt;Click browse to select files for uploading.&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;strong&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;
-	&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;em&lt;/span&gt;&amp;gt;To select more than one file, hold down control or shift.&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;em&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;
-	&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;file&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name&lt;/span&gt;=&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;uploadify&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;id&lt;/span&gt;=&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;uploadify&amp;quot;&lt;/span&gt; /&amp;gt;&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;div&lt;/span&gt;&amp;gt;
-
-&amp;lt;/&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;wicket:panel&lt;/span&gt;&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Most of what you see above is standard HTML and CSS. The only item of note is the input tag, which will be replaced with the Flash component by the Uploadify script. If the user does not have Flash installed, the above input tag will be used as-is without replacement, so make sure the tag is valid for graceful downgrading.&lt;/p&gt;
-
-&lt;p&gt;If you want to enhance the tutorial, you should use Wicket&amp;rsquo;s excellent localization support to add fully configurable dynamic text to the re-usable component.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-java-components-for-re-usable-panel:290f227844d358fa3bf865e1af926742&#34;&gt;3. Java components for re-usable Panel&lt;/h3&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;package&lt;/span&gt; org.rocketpages.wicket.component.uploadify;
-
-&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;import&lt;/span&gt; org.apache.wicket.markup.html.CSSPackageResource;  
-&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;import&lt;/span&gt; org.apache.wicket.markup.html.JavascriptPackageResource;  
-&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;import&lt;/span&gt; org.apache.wicket.markup.html.panel.Panel;  
-&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;import&lt;/span&gt; org.apache.wicket.util.template.TextTemplateHeaderContributor;
-
-&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;class&lt;/span&gt; UploadifyPanel &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; Panel {
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;long&lt;/span&gt; serialVersionUID = &lt;span style=&#34;color: #0000FF&#34;&gt;1L&lt;/span&gt;;
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; UploadifyPanel(String id, UploadifyPanelBehaviour behaviour) {
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;super&lt;/span&gt;(id);
-	
-	    add(JavascriptPackageResource.&lt;span style=&#34;color: #FF0000&#34;&gt;getHeaderContribution&lt;/span&gt;(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;scripts/swfobject.js&amp;quot;&lt;/span&gt;));   
-	    add(JavascriptPackageResource.&lt;span style=&#34;color: #FF0000&#34;&gt;getHeaderContribution&lt;/span&gt;(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;scripts/jquery.uploadify.v2.1.0.js&amp;quot;&lt;/span&gt;));
-	
-	    &lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;/* TextTemplateHeaderContributor performs text substitution of values located&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	     in multiupload.js with the values obtained from the behaviour, and&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	     inserts the processed .js in the header. */&lt;/span&gt;
-	    add(TextTemplateHeaderContributor.&lt;span style=&#34;color: #FF0000&#34;&gt;forJavaScript&lt;/span&gt;(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;multiupload.js&amp;quot;&lt;/span&gt;, behaviour.&lt;span style=&#34;color: #FF0000&#34;&gt;getVariables&lt;/span&gt;()));
-	    add(CSSPackageResource.&lt;span style=&#34;color: #FF0000&#34;&gt;getHeaderContribution&lt;/span&gt;(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;css/uploadify.css&amp;quot;&lt;/span&gt;));
-	}   
-}
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;For those of you familiar with Wicket, most of this will look straightforward enough. We&amp;rsquo;re encapsulating all of our configuration variables in a behaviour, which keeps our code clean and generic. Of special interest is the call to &lt;em&gt;TextTemplateHeaderContributor.forJavaScript()&lt;/em&gt;. This is a handy little method that allows you to pass in a Map of variables (key/value) and a reference to a JavaScript file. This results in token substitution in the JavaScript file based on the values in the Map. It&amp;rsquo;s much more simple than performing manual string concatenation to achieve the same result.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;class&lt;/span&gt; UploadifyPanelBehaviour &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;implements&lt;/span&gt; Serializable {
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; String fileExt = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; String fileDesc = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; String sizeLimit = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;;
-
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; String formTokenId;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; String formSessionId;
-
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; Class&amp;lt;? &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; UploadifyFileProcessPage&amp;gt; fileProcessPageClass;
-
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; UploadifyPanelBehaviour(Class&amp;lt;? &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; UploadifyFileProcessPage&amp;gt; fileProcessPageClass, String tokenId, String sessionId)
-	{
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;fileProcessPageClass&lt;/span&gt; = fileProcessPageClass;
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;formSessionId&lt;/span&gt; = sessionId;
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;formTokenId&lt;/span&gt; = tokenId;
-	}
-
-	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;/**&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Sets the valid file extensions for the uploader.&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Do not include leading or trailing quotes, only semi-colon&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * separated wildcards. &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Example usage:&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * *.doc;*.docx;*.pdf;*.jpg;*.png;*.zip&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * @param validExts&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 */&lt;/span&gt;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; setFileExt(String validExts)
-	{
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;fileExt&lt;/span&gt; = validExts;
-	}
-	
-	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;/**&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Sets the message to be displayed when selecting files.&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Example message:&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Select files of type .doc, .pdf, .jpg, .png, or .zip&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * @param fileDesc&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 */&lt;/span&gt;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; setFileDesc(String fileDesc)
-	{
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;fileDesc&lt;/span&gt; = fileDesc;
-	}
-	
-	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;/**&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Sets the size limit, in bytes.&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Example: 3072000&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * @param sizeLimit&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 */&lt;/span&gt;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; setSizeLimit(String sizeLimit)
-	{
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;sizeLimit&lt;/span&gt; = sizeLimit;
-	}
-	
-	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;/**&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * Builds a variables model in order to perform text substitution&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * on values located in JavaScript (multiupload.js)&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * The key values in the Map must match the tokens in the .js file. &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * &lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 * @return&lt;/span&gt;
-&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;	 */&lt;/span&gt;
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;protected&lt;/span&gt; IModel getVariables() {
-		IModel variablesModel = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; AbstractReadOnlyModel() {
-			&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; Map getObject() {
-				Map&amp;lt;String, CharSequence&amp;gt; variables = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; HashMap&amp;lt;String, CharSequence&amp;gt;();
-
-				&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;//Mandatory configuration&lt;/span&gt;
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;uploader&amp;quot;&lt;/span&gt;, RequestCycle.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;urlFor&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; CompressedResourceReference(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;scripts/uploadify.swf&amp;quot;&lt;/span&gt;)).&lt;span style=&#34;color: #FF0000&#34;&gt;toString&lt;/span&gt;());
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;cancelImg&amp;quot;&lt;/span&gt;, RequestCycle.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;urlFor&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; CompressedResourceReference(UploadifyPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;cancel.png&amp;quot;&lt;/span&gt;)).&lt;span style=&#34;color: #FF0000&#34;&gt;toString&lt;/span&gt;());
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;script&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;;jsessionid=&amp;quot;&lt;/span&gt; + formSessionId + RequestCycle.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;urlFor&lt;/span&gt;(fileProcessPageClass, &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;null&lt;/span&gt;));
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;tokenId&amp;quot;&lt;/span&gt;, formTokenId);
-
-				&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;//Optional configuration&lt;/span&gt;
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;fileExt&amp;quot;&lt;/span&gt;, fileExt);
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;fileDesc&amp;quot;&lt;/span&gt;, fileDesc);
-				variables.&lt;span style=&#34;color: #FF0000&#34;&gt;put&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;sizeLimit&amp;quot;&lt;/span&gt;, sizeLimit);
-	
-				&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;return&lt;/span&gt; variables;
-			}
-		};
-	
-		&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;return&lt;/span&gt; variablesModel;
-	}
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The behaviour captures configuration options, which correspond to the available options within Uploadify. You can add more configuration options (or remove some) depending on your specific requirements.&lt;/p&gt;
-
-&lt;p&gt;Another quirk to pay attention to is the token and session id values. This is a kludge we&amp;rsquo;ve added to avoid the messy problem of Flash losing a reference to the HttpSession. Because the end result of this script will be a call to a stateless page to process our uploads, we&amp;rsquo;ll need some way to retrieve the user&amp;rsquo;s session. Because of this, we need to include the session ID as a value in the JavaScript file and pass this as a parameter to our stateless file processing page.&lt;/p&gt;
-
-&lt;p&gt;Finally, make special note of the class we&amp;rsquo;re passing to our behaviour object. We do this because Wicket needs to &amp;ldquo;mount&amp;rdquo; our stateless file processing page so it can be accessed by the plugin. Wicket instantiates the page &amp;ldquo;just in time&amp;rdquo;, not before, otherwise it would hang around in memory doing nothing (kinda like a TTC collector). Note the call to RequestCycle.get().urlFor().&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;abstract&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;class&lt;/span&gt; UploadifyFileProcessPage &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; WebPage {
-
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;protected&lt;/span&gt; User user;
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; UploadifyFileProcessPage(PageParameters params) {
-	    HttpServletRequest r = ((WebRequest) RequestCycle.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;getRequest&lt;/span&gt;()).&lt;span style=&#34;color: #FF0000&#34;&gt;getHttpServletRequest&lt;/span&gt;();
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;try&lt;/span&gt;
-	    {
-	        MultipartServletWebRequest r2 = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; MultipartServletWebRequest(r, Bytes.&lt;span style=&#34;color: #FF0000&#34;&gt;MAX&lt;/span&gt;);
-	        Map paramMap = r2.&lt;span style=&#34;color: #FF0000&#34;&gt;getParameterMap&lt;/span&gt;();
-	        String[] tokenIdParms = (String[]) paramMap.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;tokenId&amp;quot;&lt;/span&gt;);
-	        String tokenId = tokenIdParms[&lt;span style=&#34;color: #0000FF&#34;&gt;0&lt;/span&gt;];
-	        UserSession session = (UserSession) Session.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;();
-	        FormToken token = session.&lt;span style=&#34;color: #FF0000&#34;&gt;getFormToken&lt;/span&gt;();
-	
-	        &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (token.&lt;span style=&#34;color: #FF0000&#34;&gt;isValid&lt;/span&gt;(tokenId, r.&lt;span style=&#34;color: #FF0000&#34;&gt;getRemoteAddr&lt;/span&gt;()))
-	        {
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;long&lt;/span&gt; userId = session.&lt;span style=&#34;color: #FF0000&#34;&gt;getUser&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;getId&lt;/span&gt;();
-	            user = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; UserServiceImpl().&lt;span style=&#34;color: #FF0000&#34;&gt;getUser&lt;/span&gt;(userId);
-	
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;for&lt;/span&gt; (FileItem fi : r2.&lt;span style=&#34;color: #FF0000&#34;&gt;getFiles&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;values&lt;/span&gt;())
-	            {
-	                processFileItem(fi);
-	                fi.&lt;span style=&#34;color: #FF0000&#34;&gt;delete&lt;/span&gt;();
-	            }
-	        }
-	        &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;else&lt;/span&gt;
-	        {
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; Exception(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;Invalid token!&amp;quot;&lt;/span&gt;);
-	        }
-	    }
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;catch&lt;/span&gt; (Exception e)
-	    {
-	        e.&lt;span style=&#34;color: #FF0000&#34;&gt;printStackTrace&lt;/span&gt;();
-	    }
-	}
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;abstract&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; processFileItem(FileItem fileItem) &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;throws&lt;/span&gt; Exception;
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;In order to bridge our plugin with Java, we&amp;rsquo;re creating a stateless page by extending WebPage. This base code is fairly straightforward, pulling out the file data from the request, and passing it to the yet-to-be-defined abstract method &lt;em&gt;processFileItem()&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The only other thing to note is the token logic. This is simply an example/placeholder to draw your attention to security when dealing with &lt;em&gt;jsessionid&lt;/em&gt; directly. This leaves a small window open for hackers to perform a session hijacking, so in our scenario, we associate a jsessionid with an IP address and an additional token value.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;() { 
-	$(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;#uploadify&amp;#39;&lt;/span&gt;).uploadify({ 
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;uploader&amp;#39;&lt;/span&gt;:  &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${uploader}&amp;#39;&lt;/span&gt;, 
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;script&amp;#39;&lt;/span&gt;:   &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${script}&amp;#39;&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;scriptData&amp;#39;&lt;/span&gt;: {&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;tokenId&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${tokenId}&amp;#39;&lt;/span&gt;}, 
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;folder&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;/var/photos/stuffahoy&amp;#39;&lt;/span&gt;, 
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;cancelImg&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${cancelImg}&amp;#39;&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;fileExt&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${fileExt}&amp;#39;&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;fileDesc&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${fileDesc}&amp;#39;&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;sizeLimit&amp;#39;&lt;/span&gt; : &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;${sizeLimit}&amp;#39;&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;auto&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;,
-	    &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;#39;multi&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;,
-	    onAllComplete: &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;(event, queueID, fileObj, response, data) {
-	        uploadCompleted(); 
-	    }
-	}); 
-});
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re familiar with JavaScript, you&amp;rsquo;ll see we&amp;rsquo;re essentially passing an object to the &lt;em&gt;uploadify()&lt;/em&gt; method. The key values of the object correspond to the Uploadify options. The token values on the right correlate to our behaviour class and the key values we defined. Text substitution is done on these when we include the JavaScript file via the call to &lt;em&gt;TextTemplateHeaderContributor&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;4-business-logic:290f227844d358fa3bf865e1af926742&#34;&gt;4. Business Logic&lt;/h3&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;class&lt;/span&gt; AddPhotosProcessingPage &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; UploadifyFileProcessPage {
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; AddPhotosProcessingPage(PageParameters params)
-	{
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;super&lt;/span&gt;(params);
-	}
-	
-	@Override
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; processFileItem(FileItem fileItem) &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;throws&lt;/span&gt; Exception
-	{
-	    &lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;//Wrap the Apache Commons FileItem type in a Wicket FileUpload type&lt;/span&gt;
-	    FileUpload upload = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; FileUpload(fileItem);
-	    &lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;//Get a service reference, store the photo, and create a new Photo record&lt;/span&gt;
-	    PhotoService photoService = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; PhotoServiceImpl();
-	    Photo photo = photoService.&lt;span style=&#34;color: #FF0000&#34;&gt;saveUploadedPhoto&lt;/span&gt;(upload, &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;);
-	    photo.&lt;span style=&#34;color: #FF0000&#34;&gt;setUser&lt;/span&gt;(user);
-	    photoService.&lt;span style=&#34;color: #FF0000&#34;&gt;savePhoto&lt;/span&gt;(photo);
-	}
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This is our actual stateless page that extends our more generic file processor. The code is an example of business logic you may execute on each file. In this case, we&amp;rsquo;re processing image files, so we pass the file reference to a service which in turn writes the file to disk (or Amazon S3, etc) and persists the information in our database.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;class&lt;/span&gt; AddPhotosPage &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;extends&lt;/span&gt; UserRoleSuperPage {
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;long&lt;/span&gt; serialVersionUID = &lt;span style=&#34;color: #0000FF&#34;&gt;1L&lt;/span&gt;;
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; Label noPhotosLabel;
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; AddPhotosPage(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; PageParameters parameters) {
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;this&lt;/span&gt;();
-	}
-	
-	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; AddPhotosPage() {
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;super&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;null&lt;/span&gt;);
-	
-	    add(CSSPackageResource.&lt;span style=&#34;color: #FF0000&#34;&gt;getHeaderContribution&lt;/span&gt;(AddPhotosPage.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, 
-	        &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;css/AddPhotosPage.css&amp;quot;&lt;/span&gt;));
-	
-	    UserSession session = (UserSession) Session.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;();
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;long&lt;/span&gt; userId = session.&lt;span style=&#34;color: #FF0000&#34;&gt;getUser&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;getId&lt;/span&gt;();
-	
-	    HttpServletRequest r = ((WebRequest) RequestCycle.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;getRequest&lt;/span&gt;()).&lt;span style=&#34;color: #FF0000&#34;&gt;getHttpServletRequest&lt;/span&gt;();
-	    session.&lt;span style=&#34;color: #FF0000&#34;&gt;createFormToken&lt;/span&gt;(r.&lt;span style=&#34;color: #FF0000&#34;&gt;getRemoteAddr&lt;/span&gt;());
-	
-	    String tokenId = session.&lt;span style=&#34;color: #FF0000&#34;&gt;getFormToken&lt;/span&gt;().&lt;span style=&#34;color: #FF0000&#34;&gt;getToken&lt;/span&gt;();
-	    String sessionId = session.&lt;span style=&#34;color: #FF0000&#34;&gt;getId&lt;/span&gt;();
-	
-	    &lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// Configure the panel&lt;/span&gt;
-	    UploadifyPanelBehaviour behaviour = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; UploadifyPanelBehaviour(AddPhotosProcessingPage.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, tokenId, sessionId);
-	    behaviour.&lt;span style=&#34;color: #FF0000&#34;&gt;setFileExt&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;*.jpg;*.jpeg;*.gif;*.png&amp;quot;&lt;/span&gt;);
-	    behaviour.&lt;span style=&#34;color: #FF0000&#34;&gt;setFileDesc&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;Select files of type *.jpg, *.jpeg, *.gif, *.png&amp;quot;&lt;/span&gt;);
-	    behaviour.&lt;span style=&#34;color: #FF0000&#34;&gt;setSizeLimit&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;3000000&amp;quot;&lt;/span&gt;);
-	
-	    add(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; UploadifyPanel(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;uploads&amp;quot;&lt;/span&gt;, behaviour));
-	
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; UnprocessedPhotosPanel unprocessedPanel;
-	    add(unprocessedPanel = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; UnprocessedPhotosPanel(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;unprocessedPhotos&amp;quot;&lt;/span&gt;, userId));
-	    unprocessedPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;setOutputMarkupId&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;);
-	
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; Label noPhotosLabel;
-	    add(noPhotosLabel = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; Label(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;noPhotosLabel&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;You haven&amp;#39;t uploaded any new photos!&amp;quot;&lt;/span&gt;));
-	    noPhotosLabel.&lt;span style=&#34;color: #FF0000&#34;&gt;setOutputMarkupId&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;);
-	
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (unprocessedPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;getUnprocessedPhotosCount&lt;/span&gt;() &amp;gt; &lt;span style=&#34;color: #0000FF&#34;&gt;0&lt;/span&gt;) {
-	        noPhotosLabel.&lt;span style=&#34;color: #FF0000&#34;&gt;setVisible&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;false&lt;/span&gt;);
-	    }
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;else&lt;/span&gt; {
-	        noPhotosLabel.&lt;span style=&#34;color: #FF0000&#34;&gt;setVisible&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;);
-	    }
-	
-	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;final&lt;/span&gt; IBehavior repaintBehavior = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; AbstractDefaultAjaxBehavior() {
-	        @Override
-	        &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; respond(AjaxRequestTarget target)
-	        {
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (unprocessedPanel.&lt;span style=&#34;color: #FF0000&#34;&gt;getUnprocessedPhotosCount&lt;/span&gt;() &amp;gt; &lt;span style=&#34;color: #0000FF&#34;&gt;0&lt;/span&gt;) {
-	                noPhotosLabel.&lt;span style=&#34;color: #FF0000&#34;&gt;setVisible&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;false&lt;/span&gt;);
-	            }
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;else&lt;/span&gt; {
-	                noPhotosLabel.&lt;span style=&#34;color: #FF0000&#34;&gt;setVisible&lt;/span&gt;(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;true&lt;/span&gt;);
-	            }
-	
-	            target.&lt;span style=&#34;color: #FF0000&#34;&gt;addComponent&lt;/span&gt;(noPhotosLabel);
-	            target.&lt;span style=&#34;color: #FF0000&#34;&gt;addComponent&lt;/span&gt;(unprocessedPanel);
-	        }
-	
-	        @Override
-	        &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; renderHead(IHeaderResponse response)
-	        {
-	            &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;super&lt;/span&gt;.&lt;span style=&#34;color: #FF0000&#34;&gt;renderHead&lt;/span&gt;(response);
-	            CharSequence callback = getCallbackScript();
-	            response.&lt;span style=&#34;color: #FF0000&#34;&gt;renderJavascript&lt;/span&gt;(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;function uploadCompleted() { &amp;quot;&lt;/span&gt; + callback + &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;}&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;customUploadCompleted&amp;quot;&lt;/span&gt;);
-	        }
-	    };
-	
-	    add(repaintBehavior);
-	
-	    add(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; Image(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;easy&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; ResourceReference(AddPhotosPage.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;easy.png&amp;quot;&lt;/span&gt;))); 
-	}
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This example is a little long-winded, but it ties everything together and shows a few key concepts. Most interesting is our ability to asynchronously invoke a piece of code when all uploads are complete by using Wicket&amp;rsquo;s fantastic built in Ajax support. We do this by creating a new repaintBehaviour object and overriding both respond (which contains the actual code we want to invoke asynchronously) and renderHead (which injects this callback method inside our HTML).&lt;/p&gt;
-
-&lt;p&gt;Other than that, most things are quite straightforward. We tie everything together by configuring our behaviour object and instantiating the processing page.&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion:290f227844d358fa3bf865e1af926742&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Enabling true multiple upload support is fairly straightforward with the Flash plugins readily available. Uploadify is my favourite, but there are a ton to choose from. Integrating with Apache Wicket is a piece of cake, and as always, Wicket just makes life a little easier for Java developers.&lt;/p&gt;
 </description>
     </item>
     
