@@ -6,8 +6,18 @@
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Enterprise Architect&#39;s Intro To Microservices</title>
+      <link>http://rocketpages.github.io/webinar/enterprise-arch-msa/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/webinar/enterprise-arch-msa/</guid>
+      <description>&lt;p&gt;We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Zen of Process</title>
@@ -136,8 +146,8 @@
 &lt;h2 id=&#34;highlights:c59a67a3c7bc5faa453847420267045e&#34;&gt;Highlights&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Over 15 years of development and architecture experience&lt;/strong&gt; — Significant experience within the JVM and Java ecosystem, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Experienced public speaker&lt;/strong&gt; — Presenting at meetups, conferences, and to private businesses around the world about modern software development, architecture, and process&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Over 15 years of architecture, analysis, and development experience&lt;/strong&gt; — Significant experience within the JVM and Java ecosystem, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experienced public speaker&lt;/strong&gt; — Presenting at meetups, conferences, and private businesses around the world on a variety of technical subjects&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Proficient technical writer&lt;/strong&gt; — Regularly contributing to various publications such as Medium, InfoQ, and TechRepublic&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -261,16 +271,6 @@
       
       <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
       <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://rocketpages.github.io/photo/thomson-reuters/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/photo/thomson-reuters/</guid>
-      <description>&lt;p&gt;Speaking at Thomson Reuters about Reactive Streams.&lt;/p&gt;
 </description>
     </item>
     
