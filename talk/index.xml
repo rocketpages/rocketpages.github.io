@@ -6,8 +6,17 @@
     <description>Recent content in Talks on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Microservices, Monoliths, SOA, and how we got here</title>
+      <link>http://rocketpages.github.io/talk/2016-05-05/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-05-05/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reactive Streams: The Glue of the Real-time Organization</title>
@@ -132,15 +141,6 @@
       <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/talk/2015-05-19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reactive Web Development with Play</title>
-      <link>http://rocketpages.github.io/talk/2015-05-14/</link>
-      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/talk/2015-05-14/</guid>
       <description></description>
     </item>
     

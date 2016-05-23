@@ -6,8 +6,18 @@
     <description>Recent content in Decks on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/deck/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Microservices, Monoliths, SOA, and how we got here</title>
+      <link>http://rocketpages.github.io/deck/microservices-how-we-got-here/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/deck/microservices-how-we-got-here/</guid>
+      <description>&lt;p&gt;A bit of history of application development, from the early days of monoliths and SOA to the emergence of Microservice architectures. We will review the drawbacks of heritage architectures and how the principles of Reactive can help you build isolated services that are scalable, resilient to failure, and combine with other services to form a cohesive whole.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Reactive Streams: The Glue of the Real-Time Organization</title>

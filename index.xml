@@ -10,6 +10,25 @@
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Microservices, Monoliths, SOA, and how we got here</title>
+      <link>http://rocketpages.github.io/deck/microservices-how-we-got-here/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/deck/microservices-how-we-got-here/</guid>
+      <description>&lt;p&gt;A bit of history of application development, from the early days of monoliths and SOA to the emergence of Microservice architectures. We will review the drawbacks of heritage architectures and how the principles of Reactive can help you build isolated services that are scalable, resilient to failure, and combine with other services to form a cohesive whole.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microservices, Monoliths, SOA, and how we got here</title>
+      <link>http://rocketpages.github.io/talk/2016-05-05/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-05-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Enterprise Architect&#39;s Intro To Microservices</title>
       <link>http://rocketpages.github.io/webinar/enterprise-arch-msa/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
@@ -120,20 +139,6 @@
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>http://rocketpages.github.io/home/intro/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a systems analyst, architect, and technical speaker from Toronto, Canada. I specialize in systems modernization, reactive systems architectures, and developer productivity.&lt;/p&gt;
-
-&lt;p&gt;I currently work for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
-
-&lt;p&gt;In my role at Lightbend I work as an analyst and advisor to major enterprises (commonly referred to as the Global 2000 by Forbes) on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Resume</title>
       <link>http://rocketpages.github.io/resume/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
@@ -236,6 +241,20 @@
     </item>
     
     <item>
+      <title>Welcome</title>
+      <link>http://rocketpages.github.io/home/intro/</link>
+      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
+      
+      <guid>http://rocketpages.github.io/home/intro/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a systems analyst, architect, and technical speaker from Toronto, Canada. I specialize in systems modernization, reactive systems architectures, and developer productivity.&lt;/p&gt;
+
+&lt;p&gt;I currently work for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
+
+&lt;p&gt;In my role at Lightbend I work as an analyst and advisor to major enterprises (commonly referred to as the Global 2000 by Forbes) on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Modernizing your Monolith with Microservices</title>
       <link>http://rocketpages.github.io/webinar/legacy-java-monolith/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
@@ -252,26 +271,6 @@
       
       <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>How does a compiler, interpreter, and CPU work?</title>
-      <link>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</link>
-      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</guid>
-      <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Software is Eating the World</title>
-      <link>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</link>
-      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
-      <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
