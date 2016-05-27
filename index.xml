@@ -6,8 +6,17 @@
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2016-05-25/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-05-25/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Microservices, Monoliths, SOA, and how we got here</title>
@@ -262,15 +271,6 @@
       <guid>http://rocketpages.github.io/webinar/legacy-java-monolith/</guid>
       <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>The 6 Rules for Modernizing your Aging Java Monolith with Microservices</title>
-      <link>http://rocketpages.github.io/talk/2016-03-10/</link>
-      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
-      <description></description>
     </item>
     
   </channel>
