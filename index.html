@@ -122,6 +122,42 @@
         font-size: 0.8em;
     }
     
+    .tm-section,
+    .tm-footer { padding: 20px 0; }
+    
+     
+    @media (min-width: 768px) {
+
+        .tm-section,
+        .tm-footer { padding: 40px 0; }
+
+    }
+
+     
+    @media (min-width: 1220px) {
+
+        .tm-section,
+        .tm-footer { padding: 60px 0; }
+
+    }
+    
+    .tm-section .uk-heading-large { margin-bottom: 20px; }
+    .tm-section .uk-text-large { margin-bottom: 60px; }
+
+    .tm-section-color-1 { 
+        background: #34495e;
+    }
+    
+    .tm-section-color-2 { 
+        background-image: url("http://res.cloudinary.com/dxqjvpa0t/image/upload/v1471915436/bright_squares_xpqsyv.png");
+        background-repeat: repeat;            
+    }
+        
+    .tm-section-colored,
+    .tm-section-colored h1,
+    .tm-section-colored h2,
+    .tm-section-colored a:not([class]) { color: #fff !important; }
+    
 </style>
 
     <body>
@@ -151,6 +187,14 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
+    <div class="uk-navbar-flip">
+        <ul class="uk-navbar-nav">
+            <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+        </ul>
+    </div>
+        
     <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
     <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
 </nav>
@@ -203,35 +247,31 @@
 <p>In my role at Lightbend I work as an analyst and advisor to major enterprises (commonly referred to as the Global 2000 by Forbes) on systems modernization projects using the principles of <a href="https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72">reactive programming</a>.</p>
 
                     
-                    <h2>
-                        <a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                        <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank"><i class="fa fa-paper-plane"></i></a>
-                    </h2>
                 </div>
 
             </div>
+        </div>
 
-            <hr class="uk-grid-divider">
+        <div class="tm-section tm-section-color-1 tm-section-colored">
+            <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+                <div class="uk-grid" data-uk-grid-margin>
 
-            <div class="uk-grid" data-uk-grid-margin>
-                            
-                <div class="uk-width-medium-1-2">                    
-                    <h2>Latest Webinar</h2>
+                    <div class="uk-width-medium-1-2">                    
+                        <h2>Latest Webinar</h2>
 
-                    
-                        <iframe width="330" height="225" src="https://www.youtube.com/embed/mDBa_89qnuE" frameborder="0" allowfullscreen></iframe>
+                        
+                            <iframe width="330" height="225" src="https://www.youtube.com/embed/mDBa_89qnuE" frameborder="0" allowfullscreen></iframe>
 <h3><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" target="_blank">The Enterprise Architect&#39;s Intro To Microservices</a></h3>
 <p class="uk-text-small">2016-05-05</p>
 <p><p>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</p>
 </p>
-                    
-                </div>
-                
-                <div class="uk-width-medium-1-2">                    
-                    <h2>Latest Video</h2>
-                                                                
-                        <iframe width="330" height="225" src="https://www.youtube.com/embed/OVTu4XcmnwE" frameborder="0" allowfullscreen></iframe>
+                        
+                    </div>
+
+                    <div class="uk-width-medium-1-2">                    
+                        <h2>Latest Video</h2>
+                                                                    
+                            <iframe width="330" height="225" src="https://www.youtube.com/embed/OVTu4XcmnwE" frameborder="0" allowfullscreen></iframe>
 <h3><a href="https://www.youtube.com/watch?v=OVTu4XcmnwE" target="_blank">How does a compiler, interpreter, and CPU work?</a></h3>
 <p class="uk-text-small">
     
@@ -239,13 +279,18 @@
 </p>
 <p><p>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</p>
 </p>
-                    
-                </div>
-                
-            </div>
+                        
+                    </div>
 
-            <hr class="uk-grid-divider">
-            
+                </div>
+            </div>  
+        </div>
+        
+        
+<div class="tm-section tm-section-color-2">
+    
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
+    
 <div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
@@ -269,7 +314,9 @@
 
 </div>
 
-        </div>    
+</div>
+    
+</div>
 
         <div id="offcanvas" class="uk-offcanvas">
     <div class="uk-offcanvas-bar">

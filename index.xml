@@ -6,8 +6,26 @@
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Revitalizing Aging Architectures</title>
+      <link>http://rocketpages.github.io/talk/2016-08-16/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-08-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2016-08-03/</link>
+      <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-08-03/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Being Reactive is Good</title>
@@ -246,30 +264,6 @@
       
       <guid>http://rocketpages.github.io/webinars/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a regular presenter for Lightbend, touching on subjects from microservices to enterprise architecture.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>http://rocketpages.github.io/home/intro/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a systems analyst, architect, and technical speaker from Toronto, Canada. I specialize in systems modernization, reactive systems architectures, and developer productivity.&lt;/p&gt;
-
-&lt;p&gt;I currently work for &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
-
-&lt;p&gt;In my role at Lightbend I work as an analyst and advisor to major enterprises (commonly referred to as the Global 2000 by Forbes) on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Modernizing your Monolith with Microservices</title>
-      <link>http://rocketpages.github.io/webinar/legacy-java-monolith/</link>
-      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/webinar/legacy-java-monolith/</guid>
-      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
 </description>
     </item>
     
