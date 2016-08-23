@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title>Scala: State of the Union</title>
+      <link>http://rocketpages.github.io/talk/2016-08-05/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-08-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Being Reactive is Good</title>
       <link>http://rocketpages.github.io/talk/2016-08-03/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
@@ -132,15 +141,6 @@
       <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/talk/2015-07-22/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring Reactive Streams with Akka</title>
-      <link>http://rocketpages.github.io/talk/2015-07-09/</link>
-      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/talk/2015-07-09/</guid>
       <description></description>
     </item>
     

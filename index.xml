@@ -19,6 +19,25 @@
     </item>
     
     <item>
+      <title>Scala: State of the Union</title>
+      <link>http://rocketpages.github.io/deck/scala-state-of-the-union/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/deck/scala-state-of-the-union/</guid>
+      <description>&lt;p&gt;In this keynote, we discuss the past, present, and future of Scala; where it has been and where it’s going. While this talk will focus on the new language features introduced in 2.12, it will also dive into an equally important aspect of Scala in 2016: the incredible community that’s grown up around Scala over the years. Kevin will frame the talk around his own journey to Scala and how both the language and the community made him a better developer and architect.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scala: State of the Union</title>
+      <link>http://rocketpages.github.io/talk/2016-08-05/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-08-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Being Reactive is Good</title>
       <link>http://rocketpages.github.io/talk/2016-08-03/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
@@ -244,26 +263,6 @@
       
       <guid>http://rocketpages.github.io/talks/</guid>
       <description>&lt;p&gt;Conferences, meetups, webinars, and companies that have kindly hosted one of my talks.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Videos</title>
-      <link>http://rocketpages.github.io/videos/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/videos/</guid>
-      <description>&lt;p&gt;Presentations and educational videos on mostly technical subjects, with a few personal vlogs thrown into the mix. If you have any ideas for future content, please get in touch.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Webinars</title>
-      <link>http://rocketpages.github.io/webinars/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/webinars/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a regular presenter for Lightbend, touching on subjects from microservices to enterprise architecture.&lt;/p&gt;
 </description>
     </item>
     

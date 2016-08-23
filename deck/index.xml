@@ -6,8 +6,18 @@
     <description>Recent content in Decks on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/deck/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scala: State of the Union</title>
+      <link>http://rocketpages.github.io/deck/scala-state-of-the-union/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/deck/scala-state-of-the-union/</guid>
+      <description>&lt;p&gt;In this keynote, we discuss the past, present, and future of Scala; where it has been and where it’s going. While this talk will focus on the new language features introduced in 2.12, it will also dive into an equally important aspect of Scala in 2016: the incredible community that’s grown up around Scala over the years. Kevin will frame the talk around his own journey to Scala and how both the language and the community made him a better developer and architect.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Microservices, Monoliths, SOA, and how we got here</title>
