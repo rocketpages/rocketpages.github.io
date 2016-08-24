@@ -96,7 +96,9 @@
 
 &lt;h2 id=&#34;impressions:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;Impressions&lt;/h2&gt;
 
-&lt;p&gt;It was wonderful to see so many folks show up with interest in such a wide variety of languages and toolkits. We had developers representing the communities of JavaScript (Node.js), Ruby (EventMachine), Objective-C (ReactiveCocoa), and Scala (Akka), among many other languages and toolkits. Reactive programming is an emerging paradigm that aims to help developers solve current problems using new techniques under new conditions. Simply put, with 2.9 billion people now using the internet, our old tricks and techniques of developing robust software must adapt. Language and framework tribalism will play a very small role in the upcoming big shift towards Reactive programming, so it was wonderful to meet other developers with the same point of view. The common factor uniting us all is the desire to build better software.&lt;/p&gt;
+&lt;p&gt;It was wonderful to see so many folks show up with interest in such a wide variety of languages and toolkits. We had developers representing the communities of JavaScript (Node.js), Ruby (EventMachine), Objective-C (ReactiveCocoa), and Scala (Akka), among many other languages and toolkits. Reactive programming is an emerging paradigm that aims to help developers solve current problems using new techniques under new conditions.&lt;/p&gt;
+
+&lt;p&gt;Simply put, with 2.9 billion people now using the internet, our old tricks and techniques of developing robust software must adapt. Language and framework tribalism will play a very small role in the upcoming big shift towards Reactive programming, so it was wonderful to meet other developers with the same point of view. The common factor uniting us all is the desire to build better software.&lt;/p&gt;
 
 &lt;!-- This is a div as a thumbnail with a caption --&gt;
 
@@ -104,12 +106,6 @@
     &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1407310645/IMG_1380_kkwn7u.jpg&#34; alt=&#34;Aleksey Nikiforov - Akka demo&#34;&gt;
     &lt;div class=&#34;uk-thumbnail-caption&#34;&gt;Aleksey Nikiforov demonstrating a live real-time heartbeat app in Akka&lt;/div&gt;
 &lt;/div&gt;
-
-&lt;h2 id=&#34;what-is-reactive-programming:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;What is Reactive Programming?&lt;/h2&gt;
-
-&lt;p&gt;I’m often asked for my opinion on the definition of Reactive programming. I’m currently working on capturing my thoughts in a blog post, but in the meantime here’s my talk from the night in video format.&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;//player.vimeo.com/video/102035223&#34; width=&#34;500&#34; height=&#34;281&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href=&#34;http://vimeo.com/102035223&#34;&gt;What is Reactive Programming?&lt;/a&gt; from &lt;a href=&#34;http://vimeo.com/user30566774&#34;&gt;Kevin Webber&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;thank-you:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;Thank you!&lt;/h2&gt;
 
