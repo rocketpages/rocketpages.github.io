@@ -19,7 +19,7 @@
 <style>
     
     body {
-        color: #60646D;
+        color: #222;
         font-family: "proxima-nova", sans-serif;
     }
     
@@ -41,6 +41,7 @@
         font-family: "futura-pt", sans-serif;
         font-weight: 400;
         font-size: 1.1em;
+        color: #222;
     }
     
     .uk-breadcrumb {
@@ -68,6 +69,7 @@
     
     h1, h2, h3, h4, h5 {
         font-family: "futura-pt", sans-serif;
+        color: #222;
     }
     
     h1 {
@@ -187,7 +189,7 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
-    <div class="uk-navbar-flip">
+    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <ul class="uk-navbar-nav">
             <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -222,21 +224,21 @@
 
 <p>The only catch is that most of these plugins are geared towards PHP developers/apps and not all that intuitive to integrate with Java-based solutions.</p>
 
-<h2 id="a-few-things-to-consider:290f227844d358fa3bf865e1af926742">A few things to consider</h2>
+<h2 id="a-few-things-to-consider">A few things to consider</h2>
 
 <p>Before jumping in with both feet, the use of Flash is a stopgap measure until HTML5 is more widely supported. HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, offering true native multiple file upload support. Also, with Apple fully <a href="http://news.cnet.com/8301-30685_3-20003739-264.html" title="throwing its weight behind HTML5 and actively attacking Flash">throwing its weight behind HTML5 and actively attacking Flash</a>, it&rsquo;s only a matter of time before Flash-based solutions go the way of the bond market in Greece.</p>
 
 <p>While HTML5 supports the attribute &ldquo;multiple&rdquo; in the input tag, browser support for HTML5 is far from ubiquitous. To make matters worse, <a href="http://www.webmonkey.com/2008/09/html_5_won_t_be_ready_until_2022dot_yes__2022dot/" title="the HTML5 standard won't officially be signed off on until 2022">the HTML5 standard won&rsquo;t officially be signed off on until 2022</a>. Yes, 12 more years. Yes, it&rsquo;s completely ridiculous. That’s how design-by-committee works.</p>
 
-<h2 id="getting-started:290f227844d358fa3bf865e1af926742">Getting Started</h2>
+<h2 id="getting-started">Getting Started</h2>
 
 <p>Preamble complete, let&rsquo;s get down to business. Our strategy will be to create a re-usable Apache Wicket &ldquo;multiple file upload&rdquo; component. In our case, because we will be re-using both Java code and HTML, we&rsquo;ll create a Wicket panel to do this.</p>
 
-<h3 id="1-dependencies:290f227844d358fa3bf865e1af926742">1. Dependencies</h3>
+<h3 id="1-dependencies">1. Dependencies</h3>
 
 <p>We don&rsquo;t need everything included in the Uploadify download. We&rsquo;ll create new packages for the components, CSS, and scripts, and cherry-pick the Uploadify artifacts to copy to the new project. Depending on how you have Wicket configured, your scripts, CSS, and HTML files may be separate from Java source files. The default in Wicket is to place them together in the same package, so we&rsquo;ll be using that paradigm for this tutorial.</p>
 
-<h3 id="2-re-usable-html:290f227844d358fa3bf865e1af926742">2. Re-usable HTML</h3>
+<h3 id="2-re-usable-html">2. Re-usable HTML</h3>
 
 <p>The next step is to create the HTML for our Panel. Create a new file called <em>UploadifyPanel.html</em> with the following source:</p>
 
@@ -256,7 +258,7 @@
 
 <p>If you want to enhance the tutorial, you should use Wicket&rsquo;s excellent localization support to add fully configurable dynamic text to the re-usable component.</p>
 
-<h3 id="3-java-components-for-re-usable-panel:290f227844d358fa3bf865e1af926742">3. Java components for re-usable Panel</h3>
+<h3 id="3-java-components-for-re-usable-panel">3. Java components for re-usable Panel</h3>
 
 <div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">package</span> org.rocketpages.wicket.component.uploadify;
 
@@ -286,7 +288,7 @@
 
 <p>For those of you familiar with Wicket, most of this will look straightforward enough. We&rsquo;re encapsulating all of our configuration variables in a behaviour, which keeps our code clean and generic. Of special interest is the call to <em>TextTemplateHeaderContributor.forJavaScript()</em>. This is a handy little method that allows you to pass in a Map of variables (key/value) and a reference to a JavaScript file. This results in token substitution in the JavaScript file based on the values in the Map. It&rsquo;s much more simple than performing manual string concatenation to achieve the same result.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyPanelBehaviour <span style="color: #000080; font-weight: bold">implements</span> Serializable {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> UploadifyPanelBehaviour <span style="color: #000080; font-weight: bold">implements</span> Serializable {
 	<span style="color: #000080; font-weight: bold">private</span> String fileExt = <span style="color: #0000FF">&quot;&quot;</span>;
 	<span style="color: #000080; font-weight: bold">private</span> String fileDesc = <span style="color: #0000FF">&quot;&quot;</span>;
 	<span style="color: #000080; font-weight: bold">private</span> String sizeLimit = <span style="color: #0000FF">&quot;&quot;</span>;
@@ -376,7 +378,7 @@
 	}
 }
 </pre></div>
-</p>
+
 
 <p>The behaviour captures configuration options, which correspond to the available options within Uploadify. You can add more configuration options (or remove some) depending on your specific requirements.</p>
 
@@ -430,7 +432,7 @@
 
 <p>The only other thing to note is the token logic. This is simply an example/placeholder to draw your attention to security when dealing with <em>jsessionid</em> directly. This leaves a small window open for hackers to perform a session hijacking, so in our scenario, we associate a jsessionid with an IP address and an additional token value.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$(document).ready(<span style="color: #000080; font-weight: bold">function</span>() { 
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$(document).ready(<span style="color: #000080; font-weight: bold">function</span>() { 
 	$(<span style="color: #0000FF">&#39;#uploadify&#39;</span>).uploadify({ 
 	    <span style="color: #0000FF">&#39;uploader&#39;</span>:  <span style="color: #0000FF">&#39;${uploader}&#39;</span>, 
 	    <span style="color: #0000FF">&#39;script&#39;</span>:   <span style="color: #0000FF">&#39;${script}&#39;</span>,
@@ -448,13 +450,13 @@
 	}); 
 });
 </pre></div>
-</p>
+
 
 <p>If you&rsquo;re familiar with JavaScript, you&rsquo;ll see we&rsquo;re essentially passing an object to the <em>uploadify()</em> method. The key values of the object correspond to the Uploadify options. The token values on the right correlate to our behaviour class and the key values we defined. Text substitution is done on these when we include the JavaScript file via the call to <em>TextTemplateHeaderContributor</em>.</p>
 
-<h3 id="4-business-logic:290f227844d358fa3bf865e1af926742">4. Business Logic</h3>
+<h3 id="4-business-logic">4. Business Logic</h3>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosProcessingPage <span style="color: #000080; font-weight: bold">extends</span> UploadifyFileProcessPage {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosProcessingPage <span style="color: #000080; font-weight: bold">extends</span> UploadifyFileProcessPage {
 	<span style="color: #000080; font-weight: bold">public</span> AddPhotosProcessingPage(PageParameters params)
 	{
 	    <span style="color: #000080; font-weight: bold">super</span>(params);
@@ -473,11 +475,11 @@
 	}
 }
 </pre></div>
-</p>
+
 
 <p>This is our actual stateless page that extends our more generic file processor. The code is an example of business logic you may execute on each file. In this case, we&rsquo;re processing image files, so we pass the file reference to a service which in turn writes the file to disk (or Amazon S3, etc) and persists the information in our database.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosPage <span style="color: #000080; font-weight: bold">extends</span> UserRoleSuperPage {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> AddPhotosPage <span style="color: #000080; font-weight: bold">extends</span> UserRoleSuperPage {
 	<span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">static</span> <span style="color: #000080; font-weight: bold">final</span> <span style="color: #000080; font-weight: bold">long</span> serialVersionUID = <span style="color: #0000FF">1L</span>;
 	
 	<span style="color: #000080; font-weight: bold">private</span> Label noPhotosLabel;
@@ -554,13 +556,13 @@
 	}
 }
 </pre></div>
-</p>
+
 
 <p>This example is a little long-winded, but it ties everything together and shows a few key concepts. Most interesting is our ability to asynchronously invoke a piece of code when all uploads are complete by using Wicket&rsquo;s fantastic built in Ajax support. We do this by creating a new repaintBehaviour object and overriding both respond (which contains the actual code we want to invoke asynchronously) and renderHead (which injects this callback method inside our HTML).</p>
 
 <p>Other than that, most things are quite straightforward. We tie everything together by configuring our behaviour object and instantiating the processing page.</p>
 
-<h2 id="conclusion:290f227844d358fa3bf865e1af926742">Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Enabling true multiple upload support is fairly straightforward with the Flash plugins readily available. Uploadify is my favourite, but there are a ton to choose from. Integrating with Apache Wicket is a piece of cake, and as always, Wicket just makes life a little easier for Java developers.</p>
 
@@ -573,9 +575,9 @@
     
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
     
-<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+<div class="uk-grid uk-text-small" data-uk-grid-margin>
 
-    <div class="uk-width-medium-1-2">
+    <div class="uk-width-medium-1-2 uk-hidden-small">
         <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 

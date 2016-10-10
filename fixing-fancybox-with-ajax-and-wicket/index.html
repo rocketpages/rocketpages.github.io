@@ -19,7 +19,7 @@
 <style>
     
     body {
-        color: #60646D;
+        color: #222;
         font-family: "proxima-nova", sans-serif;
     }
     
@@ -41,6 +41,7 @@
         font-family: "futura-pt", sans-serif;
         font-weight: 400;
         font-size: 1.1em;
+        color: #222;
     }
     
     .uk-breadcrumb {
@@ -68,6 +69,7 @@
     
     h1, h2, h3, h4, h5 {
         font-family: "futura-pt", sans-serif;
+        color: #222;
     }
     
     h1 {
@@ -187,7 +189,7 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
-    <div class="uk-navbar-flip">
+    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <ul class="uk-navbar-nav">
             <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -255,7 +257,7 @@
 
 <p>Let&rsquo;s take a look at the <strong>reinitFancybox</strong> function which gets invoked after the panel is refreshed.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">function</span> reinitFancybox() {  
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">function</span> reinitFancybox() {  
     <span style="color: #008800; font-style: italic">// CSS</span>
 	$(<span style="color: #0000FF">&quot;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).css(<span style="color: #0000FF">&quot;opacity&quot;</span>, <span style="color: #0000FF">&quot;1&quot;</span>);
 	
@@ -275,11 +277,11 @@
 	});
 }
 </pre></div>
-</p>
+
 
 <p>Most of the code above re-initializes the CSS hover effects I use to pretty up my image panel. The last piece is responsible for re-initializing Fancybox itself. <em>At this point, we should be done, Fancybox should work perfectly again.</em> But there&rsquo;s a small catch, the Fancybox script includes a global variable named <strong>busy</strong> which is set to <em>true </em>at the beginning of almost every single function. If for any reason the script is interrupted before busy is set back to <em>false, </em>re-initialization will always abort. Here&rsquo;s a snippet of the Fancybox code below:</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancybox = <span style="color: #000080; font-weight: bold">function</span>(obj) {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancybox = <span style="color: #000080; font-weight: bold">function</span>(obj) {
 	<span style="color: #000080; font-weight: bold">if</span> (busy) {
 	    <span style="color: #000080; font-weight: bold">return</span>;
 	}
@@ -289,15 +291,15 @@
 	<span style="color: #008800; font-style: italic">// ...</span>
 };
 </pre></div>
-</p>
+
 
 <p>It&rsquo;s pretty obvious that if busy is <em>true</em> Fancybox won&rsquo;t initialize. We need to make sure busy is set to false before attempting to re-initialize. Unfortunately, this requires a small <span style="text-decoration: line-through;">kludge</span> addition to the Fancybox script itself. I&rsquo;ve added the following public function:</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancyboxResetBusy = <span style="color: #000080; font-weight: bold">function</span>() {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancyboxResetBusy = <span style="color: #000080; font-weight: bold">function</span>() {
 	busy = <span style="color: #000080; font-weight: bold">false</span>;
 }
 </pre></div>
-</p>
+
 
 <p>Invoking this before the initialize function ensures the initialization doesn&rsquo;t return prematurely.</p>
 
@@ -310,9 +312,9 @@
     
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
     
-<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+<div class="uk-grid uk-text-small" data-uk-grid-margin>
 
-    <div class="uk-width-medium-1-2">
+    <div class="uk-width-medium-1-2 uk-hidden-small">
         <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 

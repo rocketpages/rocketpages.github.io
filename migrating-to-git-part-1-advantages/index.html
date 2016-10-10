@@ -19,7 +19,7 @@
 <style>
     
     body {
-        color: #60646D;
+        color: #222;
         font-family: "proxima-nova", sans-serif;
     }
     
@@ -41,6 +41,7 @@
         font-family: "futura-pt", sans-serif;
         font-weight: 400;
         font-size: 1.1em;
+        color: #222;
     }
     
     .uk-breadcrumb {
@@ -68,6 +69,7 @@
     
     h1, h2, h3, h4, h5 {
         font-family: "futura-pt", sans-serif;
+        color: #222;
     }
     
     h1 {
@@ -187,7 +189,7 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
-    <div class="uk-navbar-flip">
+    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <ul class="uk-navbar-nav">
             <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -224,13 +226,13 @@
 
 <p>Git is simply one of the best things that&rsquo;s happened to the development workflow in a very long time; <em>if you choose to master it</em>. If you&rsquo;re not willing or able to put in the amount of time needed to properly learn a new tool and are simply looking for a place to dump your code, stick with your current VCS or consider migrating to something other than Git.</p>
 
-<h2 id="three-advantages-of-git-over-svn:68b7dbc463ed26640042d13aa069fc87">Three advantages of Git over SVN</h2>
+<h2 id="three-advantages-of-git-over-svn">Three advantages of Git over SVN</h2>
 
 <p>SVN is a <em>centralized</em> version control system (CVCS). Git is a <em>distributed</em> version control system (DVCS).</p>
 
 <p>What&rsquo;s the difference between a CVCS like SVN and a DVCS like Git?</p>
 
-<h3 id="1-stability-of-shared-repositories:68b7dbc463ed26640042d13aa069fc87">1. Stability of shared repositories</h3>
+<h3 id="1-stability-of-shared-repositories">1. Stability of shared repositories</h3>
 
 <ul>
 <li><strong>SVN</strong>: All developers commit work-in-progress code to shared repositories</li>
@@ -247,19 +249,19 @@
 
 <p>Why does this matter?</p>
 
-<h4 id="speed:68b7dbc463ed26640042d13aa069fc87">Speed</h4>
+<h4 id="speed">Speed</h4>
 
 <p>Developers using Git commit freely as their work does not immediately impact the rest of the team. They experiment in branches, committing code or stashing changes throughout the day. Nothing is permanent and every mistake can be reversed without impacting the entire team. They can throw everything away and start from scratch if necessary. Not only that, but Git commands are blazing fast because they don&rsquo;t involve network traffic to a centralized server. Only <em>fetch</em>, <em>pull</em>, and <em>push</em> involve any network traffic. Every other command operates on the user&rsquo;s local repository.</p>
 
-<h4 id="confidence:68b7dbc463ed26640042d13aa069fc87">Confidence</h4>
+<h4 id="confidence">Confidence</h4>
 
 <p>The Git workflow removes fear and builds confidence. Over time a team is more and more willing to take on work they may have deemed too scary when using a VCS like SVN. Why is this? They don&rsquo;t need to struggle between the lesser of two evils: not committing code, or sharing code that isn&rsquo;t fully tested. Git lets a developer have the best of both worlds; keeping their code in version control, and only sharing changes when they are ready to be <em>pushed</em> to the team. It&rsquo;s nice knowing that your code is safely version but that you are not permanently impacting your team if you make a mistake.</p>
 
-<h4 id="collaboration:68b7dbc463ed26640042d13aa069fc87">Collaboration</h4>
+<h4 id="collaboration">Collaboration</h4>
 
 <p>One may argue that collaboration is hampered because code is kept in local repositories until finished or stable. Keep in mind that nothing stops multiple developers from <em>remoting</em> to each other&rsquo;s repositories to share work-in-progress code. Other options for collaboration include <em>pushing</em> work in progress code to a code review repository before pushing it to a stable, public repository. Collaboration options are limited only the imagination of your team.</p>
 
-<h3 id="2-branching:68b7dbc463ed26640042d13aa069fc87">2. Branching</h3>
+<h3 id="2-branching">2. Branching</h3>
 
 <ul>
 <li><strong>SVN</strong>: Developers often perform bulk commits towards the end of feature development. Work-in-progress code is often left un-versioned to avoid negatively impacting the rest of the team.</li>
@@ -268,15 +270,15 @@
 
 <p>Why does this matter?</p>
 
-<h4 id="integration:68b7dbc463ed26640042d13aa069fc87">Integration</h4>
+<h4 id="integration">Integration</h4>
 
 <p>Developers using Git don&rsquo;t impact the entire team with individual commits being shared before an entire story (or feature) is stable and tested. Developers create branches and merge changes when a feature is ready for integration. Branching is possible with SVN, but it isn&rsquo;t used in the same fashion as in Git, because branches in SVN are expensive to create.</p>
 
-<h4 id="process-and-workflow:68b7dbc463ed26640042d13aa069fc87">Process and workflow</h4>
+<h4 id="process-and-workflow">Process and workflow</h4>
 
 <p>Git is just as much a workflow tool as it is a source control tool. Rapid branching makes working on more than one feature an incredibly flexible process. Merging in SVN is often a nail-biting experience because it&rsquo;s such a potentially destructive process. By contrast a developer using Git can create a new branch, merge multiple branches into it, resolve conflicts, and test locally <em>before squashing</em> the individual commits and integrating it with a main release branch. The worst case scenario in Git is starting over again locally without any impact to the team. The worst case scenario in SVN is corrupting the central repository and getting fired.</p>
 
-<h3 id="3-task-switching:68b7dbc463ed26640042d13aa069fc87">3. Task switching</h3>
+<h3 id="3-task-switching">3. Task switching</h3>
 
 <ul>
 <li><strong>SVN</strong>: Switching between branches is painful. It&rsquo;s essentially like copying and pasting an entire directory structure and having multiple local copies of your project.</li>
@@ -285,7 +287,7 @@
 
 <p>Why does this matter?</p>
 
-<h4 id="productivity:68b7dbc463ed26640042d13aa069fc87">Productivity</h4>
+<h4 id="productivity">Productivity</h4>
 
 <p>Developers using Git simply commit (or stash) their work-in-progress code and <em>checkout</em> the alternate branch they&rsquo;d like to work on. Their working directory is updated in place with the correct code and they continue to work uninterrupted. When they finish their task they simply …</p>
 
@@ -295,7 +297,7 @@
 
 <p>… the previous branch they were working on.</p>
 
-<h2 id="to-be-continued:68b7dbc463ed26640042d13aa069fc87">To be continued</h2>
+<h2 id="to-be-continued">To be continued</h2>
 
 <p>Are you excited about Git? I am, and so are a lot of other developers!</p>
 
@@ -314,9 +316,9 @@
     
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
     
-<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+<div class="uk-grid uk-text-small" data-uk-grid-margin>
 
-    <div class="uk-width-medium-1-2">
+    <div class="uk-width-medium-1-2 uk-hidden-small">
         <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 

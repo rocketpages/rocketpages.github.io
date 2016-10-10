@@ -19,7 +19,7 @@
 <style>
     
     body {
-        color: #60646D;
+        color: #222;
         font-family: "proxima-nova", sans-serif;
     }
     
@@ -41,6 +41,7 @@
         font-family: "futura-pt", sans-serif;
         font-weight: 400;
         font-size: 1.1em;
+        color: #222;
     }
     
     .uk-breadcrumb {
@@ -68,6 +69,7 @@
     
     h1, h2, h3, h4, h5 {
         font-family: "futura-pt", sans-serif;
+        color: #222;
     }
     
     h1 {
@@ -187,7 +189,7 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
-    <div class="uk-navbar-flip">
+    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <ul class="uk-navbar-nav">
             <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -231,7 +233,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 
 <p>In other words, you don&rsquo;t have to change any of your code to use C3P0 connection pools if you&rsquo;re using Hibernate. C3P0 takes care of maintaining the pool and testing connections, so your code stays in tact.</p>
 
-<h2 id="configuring-c3p0:d5fc04781c41afb22bbef911d13dae43">Configuring C3P0</h2>
+<h2 id="configuring-c3p0">Configuring C3P0</h2>
 
 <p>Add the C3P0 jar to your classpath. If you&rsquo;re using Maven, simply add the following to your pom.xml file:</p>
 
@@ -245,7 +247,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 
 <p>Make the following changes to your hibernate.cfg.xml file. Pay special attention to the <em>provider_class</em> property. Previous versions did not require this property, so most of the tutorials on the net are missing this key piece of info.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.url&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>jdbc:mysql://127.0.0.1/your_db<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.url&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>jdbc:mysql://127.0.0.1/your_db<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
 <span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.username&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>your_username<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
 <span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.driver_class&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>com.mysql.jdbc.Driver<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
 <span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;dialect&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>org.hibernate.dialect.MySQLDialect<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
@@ -257,7 +259,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 <span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.timeout&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>1800<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
 <span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.max_statements&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>50<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
 </pre></div>
-</p>
+
 
 <p>In order to configure C3P0 for your specific needs, you&rsquo;ll need a <em>c3p0.properties</em> file on the classpath. Take a look <a href="http://www.mchange.com/projects/c3p0/index.html#configuration_files" title="here">here</a> for all the available settings you can tweak. Here&rsquo;s an example that ensures any closed connection is tested and re-opened rather than MySQL throwing an exception:</p>
 
@@ -265,15 +267,15 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 </pre></div>
 </p>
 
-<h2 id="verifying-it-worked:d5fc04781c41afb22bbef911d13dae43">Verifying it worked</h2>
+<h2 id="verifying-it-worked">Verifying it worked</h2>
 
 <p>Configuring C3P0 is pretty simple! If everything works correctly, you&rsquo;ll see the following in your logs:</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
 INFO C3P0ConnectionProvider:103 - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/your_db
 INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=****}
 </pre></div>
-</p>
+
 
                 </div>
             </div>
@@ -284,9 +286,9 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
     
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
     
-<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+<div class="uk-grid uk-text-small" data-uk-grid-margin>
 
-    <div class="uk-width-medium-1-2">
+    <div class="uk-width-medium-1-2 uk-hidden-small">
         <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 

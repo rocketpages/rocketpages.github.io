@@ -19,7 +19,7 @@
 <style>
     
     body {
-        color: #60646D;
+        color: #222;
         font-family: "proxima-nova", sans-serif;
     }
     
@@ -41,6 +41,7 @@
         font-family: "futura-pt", sans-serif;
         font-weight: 400;
         font-size: 1.1em;
+        color: #222;
     }
     
     .uk-breadcrumb {
@@ -68,6 +69,7 @@
     
     h1, h2, h3, h4, h5 {
         font-family: "futura-pt", sans-serif;
+        color: #222;
     }
     
     h1 {
@@ -187,7 +189,7 @@
             <a href="/resume">Resume</a>
         </li>
     </ul>
-    <div class="uk-navbar-flip">
+    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <ul class="uk-navbar-nav">
             <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -216,17 +218,17 @@
 
 <p>What does this game of tic-tac-toe and Twitter have in common? Both have been implemented using relatively the same technologies: Java and Netty. It was big news in 2010 when Twitter migrated their search from Ruby on Rails to Java-based Netty (<a href="http://engineering.twitter.com/2011/04/twitter-search-is-now-3x-faster_1656.html" title="read about it here">read about it here</a>). Not only was it big in the news department, but it was also big in the results department: Twitter reported their search performance increased by 3x.</p>
 
-<h2 id="what-is-netty:3201017fae06d98c4f5b20b8a44555c2">What is Netty?</h2>
+<h2 id="what-is-netty">What is Netty?</h2>
 
 <p><a href="http://www.jboss.org/netty" title="Netty">Netty</a> is a client server framework by JBoss that simplifies network programming. Netty is built on top of <a href="http://en.wikipedia.org/wiki/New_I/O" title="Java NIO">Java NIO</a> but provides a much more simple API to work with. Netty can be used to build a custom server for network communications; it can be used to build anything including a lightweight HTTP server, a TCP / UDP server, a WebSocket server, or any other network server you can dream of. Because Netty is built on Java NIO, Netty&rsquo;s programming model is asynchronous. This means Netty is very well suited for any number of bi-directional communication projects such as real-time group chat or anything else requiring the server to <a href="http://en.wikipedia.org/wiki/Push_technology" title="push information to a client">push information to a client</a> rather than other methods of network communication such as <a href="http://en.wikipedia.org/wiki/Comet_(programming)" title="long-polling">long-polling</a>.</p>
 
-<h2 id="what-is-the-websocket-protocol:3201017fae06d98c4f5b20b8a44555c2">What is the WebSocket protocol?</h2>
+<h2 id="what-is-the-websocket-protocol">What is the WebSocket protocol?</h2>
 
 <p>WebSocket is a protocol used for bi-directional asynchronous communications between a client (usually a web browser) and a server that supports the WebSocket protocol.</p>
 
 <p>A WebSocket client connects to a server via standard HTTP and performs a handshake, which creates a persistent tunnel between the client and server. After the handshake is performed the client and the server communicate freely using a message/event-driven programming model (binding actions/methods to events). The beautiful thing about the WebSocket protocol is the number of persistent connections that WebSocket servers can handle, easily numbering in the ten-of-thousands, and the volume of messages that can be processed (depending on the way the server is implemented).</p>
 
-<h2 id="netty-in-action-a-game-of-tic-tac-toe:3201017fae06d98c4f5b20b8a44555c2">Netty in action: a game of tic-tac-toe</h2>
+<h2 id="netty-in-action-a-game-of-tic-tac-toe">Netty in action: a game of tic-tac-toe</h2>
 
 <p>Rather than build the same-old group chat application everyone else does to show off the flexibility of Netty and the WebSocket protocol, I decided to build a simple game of tic-tac-toe instead. It seems like an odd decision considering tic-tac-toe is a turn-based game rather than a real-time game, but most tic-tac-toe game demos on the net are single-player. Rather than build another single player game of tic-tac-toe, let&rsquo;s build a multiplayer game!</p>
 
@@ -249,7 +251,7 @@
 
 <p><a href="https://github.com/rocketpages/TicTacToe-Client" title="https://github.com/rocketpages/TicTacToe-Client">https://github.com/rocketpages/TicTacToe-Client</a></p>
 
-<h3 id="building-the-netty-server:3201017fae06d98c4f5b20b8a44555c2">Building the Netty server</h3>
+<h3 id="building-the-netty-server">Building the Netty server</h3>
 
 <p>The first step to creating our tic-tac-toe server is to build the server itself. Creating a new server in Netty is dead simple. We simply need to instruct Netty which port to bind to and which pipeline factory to use.</p>
 
@@ -289,19 +291,19 @@
 
 <p>Take a second to look at the above code. I&rsquo;ll break out some of the key terms and concepts to understand:</p>
 
-<h4 id="channel:3201017fae06d98c4f5b20b8a44555c2">Channel</h4>
+<h4 id="channel">Channel</h4>
 
 <p>A channel is a persistent connection (tunnel) from a specific client to the server.</p>
 
-<h4 id="channelpipeline:3201017fae06d98c4f5b20b8a44555c2">ChannelPipeline</h4>
+<h4 id="channelpipeline">ChannelPipeline</h4>
 
 <p>Each channel can be customized with it&rsquo;s own pipeline. When you take a second to think about it, it becomes obvious how powerful this concept is. Encoders, decoders, aggregator, and handlers are grouped together to form a <em>pipeline</em>. A pipeline instructs Netty how to act on each channel.</p>
 
-<h4 id="encoders-decoders-and-aggregators:3201017fae06d98c4f5b20b8a44555c2">Encoders, decoders, and aggregators</h4>
+<h4 id="encoders-decoders-and-aggregators">Encoders, decoders, and aggregators</h4>
 
 <p>Netty is a low-level framework built on Java NIO. When a client first connects with the server, we need to perform a WebSocket handshake. NIO doesn&rsquo;t care about HTTP however, it cares about packets. In order to process the HTTP request and response, we need to instruct Netty how to deal with the packets we&rsquo;re receiving and sending. Netty makes this easy and provides multiple encoders, decoders, aggregator, and handlers. We&rsquo;ll typically extend Netty to create our own custom handlers, but if we&rsquo;re so inclined, we can also get really low-level and create our own encoders, etc. Keep in mind that handlers can be swapped-out at runtime. After the initial HTTP handshake is performed, we&rsquo;re only going to be responding to WebSocket requests for this channel. You&rsquo;ll see later how we change from an HTTP-based pipeline to a WebSocket-based pipeline for a specific channel (aka client, aka player).</p>
 
-<h4 id="tictactoeserverhandler:3201017fae06d98c4f5b20b8a44555c2">TicTacToeServerHandler</h4>
+<h4 id="tictactoeserverhandler">TicTacToeServerHandler</h4>
 
 <p>This is the heart of the application, responsible for consuming and pushing all messages to and from clients. An instance of this handler is specific to a channel, but we can also declare static variables to keep track of all the games of tic-tac-toe in progress at any given time.</p>
 
@@ -396,7 +398,7 @@
 
 <p>Now let&rsquo;s take a look at some tic-tac-toe specific logic. First we&rsquo;ll need to create a game and assign players to it. As players connect to our server they&rsquo;re paired off and assigned to a game. Our server will be able to support an infinite number of games simultaneously, although I doubt tic-tac-toe will ever become as popular as Twitter.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> initGame(ChannelHandlerContext ctx) {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> initGame(ChannelHandlerContext ctx) {
 	<span style="color: #008800; font-style: italic">// Try to find a game waiting for a player. If one doesn&#39;t exist, create a new one.</span>
 	Game game = findGame();
 	<span style="color: #008800; font-style: italic">// Create a new instance of player and assign their channel for WebSocket communications.</span>
@@ -425,13 +427,13 @@
 	<span style="color: #000080; font-weight: bold">return</span> <span style="color: #000080; font-weight: bold">new</span> Game();
 }
 </pre></div>
-</p>
+
 
 <p>The code above is mainly responsible for creating and maintaining games, which are stored in the TicTacToeServerHandler as a static collection (shared across all instances of our handler). As players connect to our server we assign them to a game and let them know that they are either waiting for an opponent or that an opponent has connected and their game has begun. Exciting!</p>
 
 <p>Finally, we need to accept incoming WebSocket messages. Each message represents a player&rsquo;s turn (which cell they selected). After we process the turn information we need to push data out to their opponent to let them know how badly they&rsquo;re getting pwned. We also need to check the status of the ongoing game; it&rsquo;s fairly important to be able to tell if a game has been won or tied after the last move!</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
 	Gson gson = <span style="color: #000080; font-weight: bold">new</span> Gson();
 	IncomingMessageBean message = gson.<span style="color: #FF0000">fromJson</span>(frame.<span style="color: #FF0000">getTextData</span>(), IncomingMessageBean.<span style="color: #FF0000">class</span>);
 	Game game = games.<span style="color: #FF0000">get</span>(message.<span style="color: #FF0000">getGameId</span>());
@@ -453,7 +455,7 @@
 	}
 }
 </pre></div>
-</p>
+
 
 <p>Remember earlier that handleWebSocketFrame is one of our own methods, not a callback method provided by Netty. This method is invoked when we inspect the incoming message and determine it&rsquo;s a WebSocketFrame rather than an HttpRequest. The core of the logic above deals with updating the <em>game board</em> and marking the current player&rsquo;s last move. We also need to check for victory or draw conditions and update the player and opponent with the latest game status.</p>
 
@@ -465,7 +467,7 @@
 <li><a href="https://github.com/rocketpages/Netty-TicTacToe-Server/blob/master/src/main/java/com/tictactoe/game/Player.java" title="Player.java">Player.java</a></li>
 </ul>
 
-<h3 id="creating-the-tic-tac-toe-client-using-jquery:3201017fae06d98c4f5b20b8a44555c2">Creating the tic-tac-toe client using jQuery</h3>
+<h3 id="creating-the-tic-tac-toe-client-using-jquery">Creating the tic-tac-toe client using jQuery</h3>
 
 <p>Building our tic-tac-toe server was fairly simple. Building our tic-tac-toe client is even easier thanks to the power of jQuery. If you&rsquo;d like to skip straight to the source code, it can be viewed below:</p>
 
@@ -475,7 +477,7 @@
 
 <p>Below is a copy of the JavaScript for the tic-tac-toe client.</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #008800; font-style: italic">// Constants - Status Updates</span>
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #008800; font-style: italic">// Constants - Status Updates</span>
 <span style="color: #000080; font-weight: bold">var</span> STRATEGIZING_STATUS = <span style="color: #0000FF">&quot;Your opponent is strategizing.&quot;</span>;
 <span style="color: #000080; font-weight: bold">var</span> WAITING_STATUS = <span style="color: #0000FF">&quot;Waiting for an opponent.&quot;</span>;
 <span style="color: #000080; font-weight: bold">var</span> YOUR_TURN_STATUS = <span style="color: #0000FF">&quot;It&#39;s your turn!&quot;</span>;
@@ -585,13 +587,13 @@ $(document).ready(<span style="color: #000080; font-weight: bold">function</span
 	ws.send(encoded);
 }
 </pre></div>
-</p>
+
 
 <p>The bulk of the logic above deals with two distinct activities; maintaining state and processing messages. You&rsquo;ll notice that when the page first loads we&rsquo;ll use the documentReady function to initiate the WS handshake. You&rsquo;ll also notice that we use jQuery to bind different WebSocket events to code blocks.</p>
 
 <p>jQuery makes it fairly trivial to communicate with a WS server. Rather than polling the server, the WebSocket API allows us to bind logic to the <em>onmessage</em> event and perform the appropriate logic. This is awesome! Our tic-tac-toe game is a simple webpage that never needs refreshing. We also don&rsquo;t need to waist IO constantly polling the server. As soon as our opponent makes his or her move, our screen is immediately updated and we get to take our turn.</p>
 
-<h2 id="conclusion:3201017fae06d98c4f5b20b8a44555c2">Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>That&rsquo;s a very high level look at the power of Java, Netty, the WebSocket API, and jQuery. We can make a number of improvements to this game, such as tracking and displaying ongoing stats (win, loss, draw) and even allowing the same player to compete in <em>multiple games of tic-tac-toe at once!</em></p>
 
@@ -606,9 +608,9 @@ $(document).ready(<span style="color: #000080; font-weight: bold">function</span
     
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
     
-<div class="uk-grid uk-text-muted uk-text-small" data-uk-grid-margin>
+<div class="uk-grid uk-text-small" data-uk-grid-margin>
 
-    <div class="uk-width-medium-1-2">
+    <div class="uk-width-medium-1-2 uk-hidden-small">
         <h3>Interested in meeting?</h3>
         <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
 

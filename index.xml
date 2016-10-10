@@ -6,8 +6,45 @@
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Goodbye, Lightbend</title>
+      <link>http://rocketpages.github.io/goodbye-lightbend</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/goodbye-lightbend</guid>
+      <description>&lt;p&gt;It’s been an incredible two-and-a-half years.&lt;/p&gt;
+
+&lt;p&gt;My journey to Lightbend began after an incredible experience as an early customer of Typesafe. I began using the Typesafe stack — &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt;, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt;, and &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; — in 2012 to help deliver the revamped &lt;a href=&#34;http://walmart.ca&#34;&gt;Walmart Canada&lt;/a&gt; consumer platform. It was a fantastic project that afforded our team a tremendous opportunity; to help bring the techniques of &lt;em&gt;reactive programming&lt;/em&gt; to one of the biggest companies in the world and to millions of customers. The incredible team I worked with at Nurun (since acquired by Razorfish) delivered the project in 2013 — you can read the case study &lt;a href=&#34;https://www.lightbend.com/resources/case-studies-and-stories/walmart-boosts-conversions-by-20-with-lightbend-reactive-platform&#34;&gt;here&lt;/a&gt; and my thoughts on transitioning an enterprise to Scala &lt;a href=&#34;https://medium.com/@kvnwbbr/transitioning-to-scala-d1818f25b2b7#.euk2348p7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After launch the Walmart project was remarkably stable and in very good hands, so I decided to leave Nurun in early 2014 to seek out a new adventure. Shortly after leaving Nurun a major opportunity presented itself — an invitation to join Typesafe as their Developer Advocate after one of my favourite technical bloggers, James Ward, &lt;a href=&#34;https://www.jamesward.com/2014/04/27/new-adventures-for-a-technology-adventurer&#34;&gt;left Typesafe for Salesforce&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The learning curve was tremendous. I’ve always been comfortable speaking in public on a limited scale, but there’s a massive difference between speaking in front of a trusted group of colleagues and a room full of hundreds of strangers. Over the months and years that followed, not only did I become comfortable in front of an audience but I began to look forward to it. Since July 2014 I’ve spoken at a wide range of events, including Gartner AADI, Gartner Catalyst, GeeCON, Scala Up North, and the list goes on. Traveling around the world to share my opinions on topics that I’m passionate about — topics like reactive programming, fast data, and transforming heritage architectures into scalable real-time systems — was a career-changing experience.&lt;/p&gt;
+
+&lt;p&gt;While contributions to open source projects are typically measured by lines of code, it’s also important to write and speak about our experiences with emerging technologies; both the success stories and the challenges, the pros and cons of different architectures based on real-world experiences, and do it all in an open and transparent way. I was able to do all of that while at Lightbend. Sharing experiences is a vital part of the open source ecosystem and one of the reasons I felt so strongly about spending so much time on the road away from my friends and family.&lt;/p&gt;
+
+&lt;p&gt;Over time I began meeting with companies using or evaluating our platform on major projects, which for over a year put me in the position of being the principle (and only) sales engineer and developer advocate in North America. To say this part of my career was exhausting is an understatement, but after meeting with hundreds of customers and prospective customers I’ve probably been exposed to more ways to leverage the Lightbend stack than most other developers in the world. This has given me a broad perspective on the problems we’re solving with technologies like Scala, both what works and what doesn&amp;rsquo;t. I wouldn&amp;rsquo;t trade these lessons for anything.&lt;/p&gt;
+
+&lt;div class=&#34;uk-panel uk-panel-box&#34;&gt;
+    &lt;div class=&#34;uk-panel-teaser&#34;&gt;
+        &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I&#39;m going to miss this crew!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My time with customers made me miss &lt;em&gt;being&lt;/em&gt; a customer. I crave the thought of getting out there and building something awesome. I miss hands-on architecture, I miss nurturing a team of developers, and I miss tackling the hard problems being solved in the business world.&lt;/p&gt;
+
+&lt;p&gt;So last week I made one of the biggest decisions of my career.&lt;/p&gt;
+
+&lt;p&gt;Effective October 31, I&amp;rsquo;m leaving Lightbend to seek out my next adventure. I&amp;rsquo;m planning to take some time off and recharge before diving back into the ridiculously fun world of building software.&lt;/p&gt;
+
+&lt;p&gt;To my colleagues at Lightbend, thank you for everything you’ve taught me over the years. To the new friends I’ve made on my travels over the years, I look forward to keeping in touch.&lt;/p&gt;
+
+&lt;p&gt;I don’t know where my career will take me next, but I&amp;rsquo;m excited to explore all of the possibilities.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Revitalizing Aging Architectures</title>
@@ -103,17 +140,17 @@
 
 &lt;p&gt;The task of documenting and formalizing the way we work naturally within an organization can be thought of as a type of &lt;em&gt;corporate anthropology&lt;/em&gt;. At first blush even speaking about process improvements may sound impersonal, but studying how people work together within a company is the study of relationships within that company. Improvements can be made simply by documenting and formalizing those relationships, which makes it possible to study them and improve upon them over time.&lt;/p&gt;
 
-&lt;h2 id=&#34;give-credit-and-take-blame:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Give credit and take blame&lt;/h2&gt;
+&lt;h2 id=&#34;give-credit-and-take-blame&#34;&gt;Give credit and take blame&lt;/h2&gt;
 
 &lt;p&gt;One of the most important aspects of a healthy process is that it can be &lt;em&gt;delegated&lt;/em&gt; to. The inverse of delegating to a process is delegating to an individual. This distinction has a profound impact on corporate culture, recognized by common vocabulary; “you” instead of “we”, “I” instead of “us”. It&amp;rsquo;s more humane to investigate the shortcomings of a process than a person. People within the organization are still accountable for individual performance, but with clearly defined expectations measuring individual performance becomes more fair and accountable.&lt;/p&gt;
 
-&lt;h2 id=&#34;anti-patterns:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Anti-patterns&lt;/h2&gt;
+&lt;h2 id=&#34;anti-patterns&#34;&gt;Anti-patterns&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Red tape&lt;/em&gt; is the evil twin of process. Red tape is created when processes are dictated from above by those who don’t understand how people within the organization already work. We should attempt to document and formalize natural interactions well before attempting to improve upon them. Formalizing any working relationship by people who aren’t directly in the mix of the relationship can be well-meaning but ultimately doomed. Senior leadership should take an interest in how to improve upon relationships within the organization, but only after they&amp;rsquo;ve been formalized by the people working inside those relationships.&lt;/p&gt;
 
 &lt;p&gt;On the other hand, senior leadership should show an unwavering dedication to practitioners who attempt to document the way they work. Supporting your anthropologists is a sure-fire way to capture the essence of how the company truly functions.&lt;/p&gt;
 
-&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
+&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
 
 &lt;p&gt;Imagine we work together at the same company. Now imagine that I recommend a process to optimize how we prepare for meetings, perhaps even tracking the amount of time we spend preparing, and then a system for rating the quality of the meeting afterwards. If you distrust me or the company, this process would seem incredibly intrusive and perhaps even a little scary.&lt;/p&gt;
 
@@ -127,15 +164,15 @@
 
 &lt;p&gt;Trust is the currency of an organization. Documenting and formalizing the way people work together requires trust on all sides. If there&amp;rsquo;s major pushback from practitioners at an exercise like this, the root cause issue may be deeper than a simple distaste of standardization. It could signal a lack of trust.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-value-of-process:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;The value of process&lt;/h2&gt;
+&lt;h2 id=&#34;the-value-of-process&#34;&gt;The value of process&lt;/h2&gt;
 
 &lt;p&gt;Many technology startups ruthlessly optimize all processes related to code and infrastructure. Many of those same startups view non-code related processes as a burden. That’s because they’ve only seen red tape, which leaves a mark. If enough people in your company have been scarred by red tape in previous jobs you have a culture that resists optimization. This is a major barrier to unlocking the full potential within an organization.&lt;/p&gt;
 
-&lt;h2 id=&#34;find-your-sherpa:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Find your sherpa&lt;/h2&gt;
+&lt;h2 id=&#34;find-your-sherpa&#34;&gt;Find your sherpa&lt;/h2&gt;
 
 &lt;p&gt;The only way to turn a formalized process into a de-facto company standard is through a process sponsor. I refer to this person as a &lt;em&gt;process sherpa&lt;/em&gt;. A process sherpa is like a super-mentor. They’re someone senior, someone you’ve accumulated trust with, and someone with the trust of the entire organization. Your process sherpa can take your ideas all the way to the top of the organization. If your ideas are good enough they may be communicated across the entire organization and perhaps become a standard way of working.&lt;/p&gt;
 
-&lt;h2 id=&#34;summary:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 
 &lt;p&gt;If you visualize the capacity of your company as a bubble, imagine the bubble expanding ever so slightly every time a process is standardized. Introduce enough process improvements and you’ll grow the capacity of your organization without hiring a single new employee. Hiring should be a last resort to expand capacity, and only done when backed up by data from a process. For instance, a development team following &lt;a href=&#34;https://en.wikipedia.org/wiki/Kanban&#34;&gt;Kanban&lt;/a&gt; may track the average amount of time that work waits to move from one stage to another, and then hire a new developer to improve this measurement. Without data that comes out of a process, hiring becomes a political game, usually driven by whoever yells the loudest for additional headcount. Don&amp;rsquo;t play this game.&lt;/p&gt;
 
@@ -194,7 +231,7 @@
 
 &lt;p&gt;If you&amp;rsquo;re interested in learning more about any area of expertise listed below, please &lt;a href=&#34;http://goo.gl/forms/Ox9cGw4Ohw&#34;&gt;get in touch&lt;/a&gt;. I&amp;rsquo;d be happy to meet over Skype or in-person in downtown Toronto.&lt;/p&gt;
 
-&lt;h2 id=&#34;highlights:c59a67a3c7bc5faa453847420267045e&#34;&gt;Highlights&lt;/h2&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Over 15 years of architecture, analysis, and development experience&lt;/strong&gt; — Significant experience within the JVM and Java ecosystem, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
@@ -202,7 +239,7 @@
 &lt;li&gt;&lt;strong&gt;Proficient technical writer&lt;/strong&gt; — Regularly contributing to various publications such as Medium, InfoQ, and TechRepublic&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;skills:c59a67a3c7bc5faa453847420267045e&#34;&gt;Skills&lt;/h2&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; — Acting as an advisor and architect on major systems modernization projects&lt;/li&gt;
@@ -213,7 +250,7 @@
 &lt;li&gt;&lt;strong&gt;Ops&lt;/strong&gt; — Implementing cloud and hybrid-cloud topologies for clustered, scalable, resilient systems&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;verticals:c59a67a3c7bc5faa453847420267045e&#34;&gt;Verticals&lt;/h2&gt;
+&lt;h2 id=&#34;verticals&#34;&gt;Verticals&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Open source&lt;/strong&gt;
@@ -245,7 +282,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;areas-of-interest:c59a67a3c7bc5faa453847420267045e&#34;&gt;Areas of interest&lt;/h2&gt;
+&lt;h2 id=&#34;areas-of-interest&#34;&gt;Areas of interest&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; of legacy systems to &lt;em&gt;microservices&lt;/em&gt; and &lt;em&gt;distributed systems&lt;/em&gt;&lt;/li&gt;
@@ -253,16 +290,6 @@
 &lt;li&gt;&lt;strong&gt;Stream processing&lt;/strong&gt; with &lt;em&gt;Akka Streams&lt;/em&gt;, &lt;em&gt;Spark&lt;/em&gt;, and &lt;em&gt;Kafka&lt;/em&gt;, especially related to batch/ETL modernization&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Developing scalable, resilient systems&lt;/strong&gt; using &lt;em&gt;Scala&lt;/em&gt;, &lt;em&gt;Play&lt;/em&gt;, and &lt;em&gt;Akka&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>http://rocketpages.github.io/talks/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/talks/</guid>
-      <description>&lt;p&gt;Conferences, meetups, webinars, and companies that have kindly hosted one of my talks.&lt;/p&gt;
 </description>
     </item>
     

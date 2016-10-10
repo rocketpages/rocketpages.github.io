@@ -6,8 +6,45 @@
     <description>Recent content in Blogposts on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/blogpost/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Goodbye, Lightbend</title>
+      <link>http://rocketpages.github.io/goodbye-lightbend</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/goodbye-lightbend</guid>
+      <description>&lt;p&gt;It’s been an incredible two-and-a-half years.&lt;/p&gt;
+
+&lt;p&gt;My journey to Lightbend began after an incredible experience as an early customer of Typesafe. I began using the Typesafe stack — &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt;, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt;, and &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; — in 2012 to help deliver the revamped &lt;a href=&#34;http://walmart.ca&#34;&gt;Walmart Canada&lt;/a&gt; consumer platform. It was a fantastic project that afforded our team a tremendous opportunity; to help bring the techniques of &lt;em&gt;reactive programming&lt;/em&gt; to one of the biggest companies in the world and to millions of customers. The incredible team I worked with at Nurun (since acquired by Razorfish) delivered the project in 2013 — you can read the case study &lt;a href=&#34;https://www.lightbend.com/resources/case-studies-and-stories/walmart-boosts-conversions-by-20-with-lightbend-reactive-platform&#34;&gt;here&lt;/a&gt; and my thoughts on transitioning an enterprise to Scala &lt;a href=&#34;https://medium.com/@kvnwbbr/transitioning-to-scala-d1818f25b2b7#.euk2348p7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After launch the Walmart project was remarkably stable and in very good hands, so I decided to leave Nurun in early 2014 to seek out a new adventure. Shortly after leaving Nurun a major opportunity presented itself — an invitation to join Typesafe as their Developer Advocate after one of my favourite technical bloggers, James Ward, &lt;a href=&#34;https://www.jamesward.com/2014/04/27/new-adventures-for-a-technology-adventurer&#34;&gt;left Typesafe for Salesforce&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The learning curve was tremendous. I’ve always been comfortable speaking in public on a limited scale, but there’s a massive difference between speaking in front of a trusted group of colleagues and a room full of hundreds of strangers. Over the months and years that followed, not only did I become comfortable in front of an audience but I began to look forward to it. Since July 2014 I’ve spoken at a wide range of events, including Gartner AADI, Gartner Catalyst, GeeCON, Scala Up North, and the list goes on. Traveling around the world to share my opinions on topics that I’m passionate about — topics like reactive programming, fast data, and transforming heritage architectures into scalable real-time systems — was a career-changing experience.&lt;/p&gt;
+
+&lt;p&gt;While contributions to open source projects are typically measured by lines of code, it’s also important to write and speak about our experiences with emerging technologies; both the success stories and the challenges, the pros and cons of different architectures based on real-world experiences, and do it all in an open and transparent way. I was able to do all of that while at Lightbend. Sharing experiences is a vital part of the open source ecosystem and one of the reasons I felt so strongly about spending so much time on the road away from my friends and family.&lt;/p&gt;
+
+&lt;p&gt;Over time I began meeting with companies using or evaluating our platform on major projects, which for over a year put me in the position of being the principle (and only) sales engineer and developer advocate in North America. To say this part of my career was exhausting is an understatement, but after meeting with hundreds of customers and prospective customers I’ve probably been exposed to more ways to leverage the Lightbend stack than most other developers in the world. This has given me a broad perspective on the problems we’re solving with technologies like Scala, both what works and what doesn&amp;rsquo;t. I wouldn&amp;rsquo;t trade these lessons for anything.&lt;/p&gt;
+
+&lt;div class=&#34;uk-panel uk-panel-box&#34;&gt;
+    &lt;div class=&#34;uk-panel-teaser&#34;&gt;
+        &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I&#39;m going to miss this crew!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My time with customers made me miss &lt;em&gt;being&lt;/em&gt; a customer. I crave the thought of getting out there and building something awesome. I miss hands-on architecture, I miss nurturing a team of developers, and I miss tackling the hard problems being solved in the business world.&lt;/p&gt;
+
+&lt;p&gt;So last week I made one of the biggest decisions of my career.&lt;/p&gt;
+
+&lt;p&gt;Effective October 31, I&amp;rsquo;m leaving Lightbend to seek out my next adventure. I&amp;rsquo;m planning to take some time off and recharge before diving back into the ridiculously fun world of building software.&lt;/p&gt;
+
+&lt;p&gt;To my colleagues at Lightbend, thank you for everything you’ve taught me over the years. To the new friends I’ve made on my travels over the years, I look forward to keeping in touch.&lt;/p&gt;
+
+&lt;p&gt;I don’t know where my career will take me next, but I&amp;rsquo;m excited to explore all of the possibilities.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Zen of Process</title>
@@ -28,17 +65,17 @@
 
 &lt;p&gt;The task of documenting and formalizing the way we work naturally within an organization can be thought of as a type of &lt;em&gt;corporate anthropology&lt;/em&gt;. At first blush even speaking about process improvements may sound impersonal, but studying how people work together within a company is the study of relationships within that company. Improvements can be made simply by documenting and formalizing those relationships, which makes it possible to study them and improve upon them over time.&lt;/p&gt;
 
-&lt;h2 id=&#34;give-credit-and-take-blame:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Give credit and take blame&lt;/h2&gt;
+&lt;h2 id=&#34;give-credit-and-take-blame&#34;&gt;Give credit and take blame&lt;/h2&gt;
 
 &lt;p&gt;One of the most important aspects of a healthy process is that it can be &lt;em&gt;delegated&lt;/em&gt; to. The inverse of delegating to a process is delegating to an individual. This distinction has a profound impact on corporate culture, recognized by common vocabulary; “you” instead of “we”, “I” instead of “us”. It&amp;rsquo;s more humane to investigate the shortcomings of a process than a person. People within the organization are still accountable for individual performance, but with clearly defined expectations measuring individual performance becomes more fair and accountable.&lt;/p&gt;
 
-&lt;h2 id=&#34;anti-patterns:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Anti-patterns&lt;/h2&gt;
+&lt;h2 id=&#34;anti-patterns&#34;&gt;Anti-patterns&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Red tape&lt;/em&gt; is the evil twin of process. Red tape is created when processes are dictated from above by those who don’t understand how people within the organization already work. We should attempt to document and formalize natural interactions well before attempting to improve upon them. Formalizing any working relationship by people who aren’t directly in the mix of the relationship can be well-meaning but ultimately doomed. Senior leadership should take an interest in how to improve upon relationships within the organization, but only after they&amp;rsquo;ve been formalized by the people working inside those relationships.&lt;/p&gt;
 
 &lt;p&gt;On the other hand, senior leadership should show an unwavering dedication to practitioners who attempt to document the way they work. Supporting your anthropologists is a sure-fire way to capture the essence of how the company truly functions.&lt;/p&gt;
 
-&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
+&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
 
 &lt;p&gt;Imagine we work together at the same company. Now imagine that I recommend a process to optimize how we prepare for meetings, perhaps even tracking the amount of time we spend preparing, and then a system for rating the quality of the meeting afterwards. If you distrust me or the company, this process would seem incredibly intrusive and perhaps even a little scary.&lt;/p&gt;
 
@@ -52,15 +89,15 @@
 
 &lt;p&gt;Trust is the currency of an organization. Documenting and formalizing the way people work together requires trust on all sides. If there&amp;rsquo;s major pushback from practitioners at an exercise like this, the root cause issue may be deeper than a simple distaste of standardization. It could signal a lack of trust.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-value-of-process:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;The value of process&lt;/h2&gt;
+&lt;h2 id=&#34;the-value-of-process&#34;&gt;The value of process&lt;/h2&gt;
 
 &lt;p&gt;Many technology startups ruthlessly optimize all processes related to code and infrastructure. Many of those same startups view non-code related processes as a burden. That’s because they’ve only seen red tape, which leaves a mark. If enough people in your company have been scarred by red tape in previous jobs you have a culture that resists optimization. This is a major barrier to unlocking the full potential within an organization.&lt;/p&gt;
 
-&lt;h2 id=&#34;find-your-sherpa:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Find your sherpa&lt;/h2&gt;
+&lt;h2 id=&#34;find-your-sherpa&#34;&gt;Find your sherpa&lt;/h2&gt;
 
 &lt;p&gt;The only way to turn a formalized process into a de-facto company standard is through a process sponsor. I refer to this person as a &lt;em&gt;process sherpa&lt;/em&gt;. A process sherpa is like a super-mentor. They’re someone senior, someone you’ve accumulated trust with, and someone with the trust of the entire organization. Your process sherpa can take your ideas all the way to the top of the organization. If your ideas are good enough they may be communicated across the entire organization and perhaps become a standard way of working.&lt;/p&gt;
 
-&lt;h2 id=&#34;summary:85cb0f842e2a42d338e9ef4d311fdf02&#34;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 
 &lt;p&gt;If you visualize the capacity of your company as a bubble, imagine the bubble expanding ever so slightly every time a process is standardized. Introduce enough process improvements and you’ll grow the capacity of your organization without hiring a single new employee. Hiring should be a last resort to expand capacity, and only done when backed up by data from a process. For instance, a development team following &lt;a href=&#34;https://en.wikipedia.org/wiki/Kanban&#34;&gt;Kanban&lt;/a&gt; may track the average amount of time that work waits to move from one stage to another, and then hire a new developer to improve this measurement. Without data that comes out of a process, hiring becomes a political game, usually driven by whoever yells the loudest for additional headcount. Don&amp;rsquo;t play this game.&lt;/p&gt;
 
@@ -94,7 +131,7 @@
 
 &lt;p&gt;I hosted the first event for &lt;a href=&#34;http://meetup.com/reactive-to&#34;&gt;ReactiveTO&lt;/a&gt; on July 24th. It was fantastic evening filled with great talks on reactive programming principles, microservices, Akka, and ReactiveCocoa.&lt;/p&gt;
 
-&lt;h2 id=&#34;impressions:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;Impressions&lt;/h2&gt;
+&lt;h2 id=&#34;impressions&#34;&gt;Impressions&lt;/h2&gt;
 
 &lt;p&gt;It was wonderful to see so many folks show up with interest in such a wide variety of languages and toolkits. We had developers representing the communities of JavaScript (Node.js), Ruby (EventMachine), Objective-C (ReactiveCocoa), and Scala (Akka), among many other languages and toolkits. Reactive programming is an emerging paradigm that aims to help developers solve current problems using new techniques under new conditions.&lt;/p&gt;
 
@@ -107,7 +144,7 @@
     &lt;div class=&#34;uk-thumbnail-caption&#34;&gt;Aleksey Nikiforov demonstrating a live real-time heartbeat app in Akka&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;thank-you:5b0c53eaaf7502baa057f23e4701bd22&#34;&gt;Thank you!&lt;/h2&gt;
+&lt;h2 id=&#34;thank-you&#34;&gt;Thank you!&lt;/h2&gt;
 
 &lt;p&gt;A big thanks goes out to my fellow presenters, in no particular order: Dejan Glozic (IBM), Sergey Gavrilyuk (Qwrty), Aleksey Nikiforov (PagerDuty), and &lt;a href=&#34;http://www.nurun.com/en/careers/toronto&#34; title=&#34;Nurun Toronto&#34;&gt;Nurun Toronto&lt;/a&gt; for hosting our first event.&lt;/p&gt;
 </description>
@@ -123,7 +160,7 @@
 
 &lt;p&gt;Agile is challenging to use on certain projects, like those bound by fixed-price, fixed-date contracts. Agencies, governments, and other organizations who are bound by contracts struggle to implement Agile effectively. Contracts force software developers to adopt less flexible approaches to development in order to satisfy negotiated requirements and deadlines. Even worse than taking an alternate approach is to use the wrong approach entirely. This can manifest itself as a completely bastardized version of Agile, which is unfortunately the most common version in use today.&lt;/p&gt;
 
-&lt;h2 id=&#34;understanding-the-history-of-agile-and-waterfall:b09410dfae1f28b91209b60c93ed84a1&#34;&gt;Understanding the history of Agile and Waterfall&lt;/h2&gt;
+&lt;h2 id=&#34;understanding-the-history-of-agile-and-waterfall&#34;&gt;Understanding the history of Agile and Waterfall&lt;/h2&gt;
 
 &lt;p&gt;Agile is not new. The earliest form of Agile, IIDD (iterative and incremental design and development), was in use by engineers over 75 years ago. Plan-Do-Check-Act (PDCA) was later made popular by Dr. W. Edwards Deming in the 1950s, but the core concepts behind PDCA (later Plan-Do-Study-Act or PDSA) were based on the scientific method and the work of Francis Bacon in the 1600s. The core concepts behind Agile are not simply old, they&amp;rsquo;re ancient.&lt;/p&gt;
 
@@ -137,7 +174,7 @@
 
 &lt;p&gt;Contrary to popular opinion, modern forms of Agile got their start in large corporations. Kent Beck created XP (eXtreme Programming) while at Chrysler in the 90s, while FDD (Feature Driven Development) was created by United Overseas Bank in Singapore. These are massive, bureaucratic companies with established cultures that were already managed by mature processes, but they created and implemented new forms of Agile in order to plug gaps they identified in their existing Waterfall processes.&lt;/p&gt;
 
-&lt;h2 id=&#34;using-agile-when-waterfall-is-more-appropriate:b09410dfae1f28b91209b60c93ed84a1&#34;&gt;Using Agile when Waterfall is more appropriate&lt;/h2&gt;
+&lt;h2 id=&#34;using-agile-when-waterfall-is-more-appropriate&#34;&gt;Using Agile when Waterfall is more appropriate&lt;/h2&gt;
 
 &lt;p&gt;The word Agile is hot. The word Waterfall is not. This polarization attracts a large number of practitioners and managers to Agile with a fundamental misunderstanding of what Agile is, let alone how to apply it and when to apply it. There are a great deal of companies misusing Agile rather than properly using existing Waterfall processes simply because Agile sounds better on paper.&lt;/p&gt;
 
@@ -163,7 +200,7 @@
 
 &lt;p&gt;The effects of poorly implemented Agile are terrible. Abused Agile is essentially Waterfall without any research, analysis, estimation, or quality control processes in place. This is exactly why some experienced software engineers consider Agile to be nothing more than cowboy coding.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-best-of-both-worlds:b09410dfae1f28b91209b60c93ed84a1&#34;&gt;The best of both worlds&lt;/h2&gt;
+&lt;h2 id=&#34;the-best-of-both-worlds&#34;&gt;The best of both worlds&lt;/h2&gt;
 
 &lt;p&gt;Waterfall is far from perfect, but nobody can argue against up-front analysis and research, especially when the result of that research makes its way into a contract. Where Agile falls short on delivering contractually-bound projects, Waterfall recognizes those constraints and provides a framework to address them. On the other hand, requirements can never be defined with absolute accuracy up-front, which is why newer software engineers consider Waterfall processes to be bloated and burdensome.&lt;/p&gt;
 
@@ -186,7 +223,7 @@
 &lt;li&gt;Effectively scaling up and out on large teams&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;a-balanced-approach:b09410dfae1f28b91209b60c93ed84a1&#34;&gt;A balanced approach&lt;/h2&gt;
+&lt;h2 id=&#34;a-balanced-approach&#34;&gt;A balanced approach&lt;/h2&gt;
 
 &lt;p&gt;Firm release dates always present a challenge. The less flexible a release date is, the more up-front work is required to mitigate risk. Some projects must launch on a specific date no matter what, especially when regulated by the government or other market forces. That said, firm release dates cost money; &amp;ldquo;measure twice, cut once&amp;rdquo; isn&amp;rsquo;t the most efficient way to launch a modern software product when the market shifts in minutes rather than months. The more flexibility with a release date, the more flexibility with the overall process. An ideal balance for some teams involves Waterfall up front followed by Agile during construction and post construction. Looking at a project in two-phases makes sense, as one phase of the project may dominate over the other depending on the amount of flexibility with scope and timelines.&lt;/p&gt;
 
@@ -212,11 +249,11 @@
 
 &lt;p&gt;If you&amp;rsquo;re ready to proceed with a migration to Git, congratulations! You&amp;rsquo;re about to start using one of the best development tools available today.&lt;/p&gt;
 
-&lt;h2 id=&#34;pre-migration-steps:0261b231e905d6607b9c6335989d58e2&#34;&gt;Pre-migration steps&lt;/h2&gt;
+&lt;h2 id=&#34;pre-migration-steps&#34;&gt;Pre-migration steps&lt;/h2&gt;
 
 &lt;p&gt;Anyone who has worked with me knows I’m a big fan of checklists, and the transition to Git is non-trivial enough to warrant a solid understanding of the questions that should be answered before pulling the trigger on migration.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-do-you-need-to-maintain-commit-history:0261b231e905d6607b9c6335989d58e2&#34;&gt;1. Do you need to maintain commit history?&lt;/h3&gt;
+&lt;h3 id=&#34;1-do-you-need-to-maintain-commit-history&#34;&gt;1. Do you need to maintain commit history?&lt;/h3&gt;
 
 &lt;p&gt;If you&amp;rsquo;re moving from SVN to Git, the migration to Git is greatly simplified if you don&amp;rsquo;t need to retain revision history. Otherwise, you&amp;rsquo;ll need to explore SubGit or git-svn.&lt;/p&gt;
 
@@ -233,11 +270,11 @@
 
 &lt;p&gt;These aren&amp;rsquo;t the most time consuming tasks, but they&amp;rsquo;re not quick either. If you&amp;rsquo;re unconcerned about porting over history, I highly recommend skipping most of the steps above. We simply kept historical data in FishEye and instructed developers to query it if they had any questions about pre-Git revisions. Other version control systems will have their own tools to help with the migration, but converting each different VCS is beyond the scope of this series.&lt;/p&gt;
 
-&lt;h3 id=&#34;2a-install-git-and-other-dependencies-on-the-central-git-server:0261b231e905d6607b9c6335989d58e2&#34;&gt;2a. Install Git and other dependencies on the central Git server&lt;/h3&gt;
+&lt;h3 id=&#34;2a-install-git-and-other-dependencies-on-the-central-git-server&#34;&gt;2a. Install Git and other dependencies on the central Git server&lt;/h3&gt;
 
 &lt;p&gt;At a bare minimum you&amp;rsquo;ll need to install Git. I&amp;rsquo;m assuming you&amp;rsquo;ll be using a Linux server, so this is an easy step. You may also need to install an up-to-date version of Java or Ruby (depending on what repository management tool you choose below).&lt;/p&gt;
 
-&lt;h3 id=&#34;2b-set-up-a-repository-management-tool:0261b231e905d6607b9c6335989d58e2&#34;&gt;2b. Set up a repository management tool&lt;/h3&gt;
+&lt;h3 id=&#34;2b-set-up-a-repository-management-tool&#34;&gt;2b. Set up a repository management tool&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s easy to initially set up Git by hand, but it becomes more and more of a burden to maintain a central Git repository without an easy-to-use management tool. Popular repository management tools include:&lt;/p&gt;
 
@@ -254,7 +291,7 @@
 
 &lt;p&gt;&lt;em&gt;Kando&lt;/em&gt; adds workflow functionality, similar to the concept of ClearCase swim-lanes. Depending on your existing workflow it may be too prescriptive for your needs or it may be exactly what you need.&lt;/p&gt;
 
-&lt;h3 id=&#34;2c-select-and-install-a-git-client-and-additional-developer-tools:0261b231e905d6607b9c6335989d58e2&#34;&gt;2c. Select and install a Git client and additional developer tools&lt;/h3&gt;
+&lt;h3 id=&#34;2c-select-and-install-a-git-client-and-additional-developer-tools&#34;&gt;2c. Select and install a Git client and additional developer tools&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://code.google.com/p/msysgit/&#34; title=&#34;msysgit&#34;&gt;msysgit&lt;/a&gt; is a no brainer for those in a Windows environment. This should be installed on all developer workstations before the migration, and each developer should create a local repository as a test to make sure it&amp;rsquo;s set up properly. This will help to avoid any day-of-migration surprises that will kill velocity.&lt;/p&gt;
 
@@ -273,7 +310,7 @@
 
 &lt;p&gt;Our developers are in a Windows environment, and we use Beyond Compare, TortoiseGit, and bash. For the most part we&amp;rsquo;re happy, but I&amp;rsquo;ve also heard good things about SmartGit. I&amp;rsquo;ve also heard amazing things about Tower, and I would not hesitate to switch to it if our developers used OSX.&lt;/p&gt;
 
-&lt;h3 id=&#34;2d-code-review-and-other-tools:0261b231e905d6607b9c6335989d58e2&#34;&gt;2d. Code review and other tools&lt;/h3&gt;
+&lt;h3 id=&#34;2d-code-review-and-other-tools&#34;&gt;2d. Code review and other tools&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s worth the time to stop and identify areas of weakness in your current process. Opportunities for improvement may exist with support from the right choice of tools. This is an especially good opportunity to identify a solid code review tool, which will also force the team to decide on a post-commit or pre-commit workflow.&lt;/p&gt;
 
@@ -296,19 +333,19 @@
 
 &lt;p&gt;As of version 1.3 &lt;em&gt;Stash&lt;/em&gt; supports pull requests, which are an excellent choice for code reviews. &lt;em&gt;GitHub Enterprise&lt;/em&gt; and &lt;em&gt;GITLAB&lt;/em&gt; also support pull requests, so it&amp;rsquo;s not always necessary to augment your Git management tool with an external review tool. You should evaluate each and decide which works the best for your team. One thing to keep in mind is that pull requests only help to review code that has yet to be merged.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-ssh-authentication:0261b231e905d6607b9c6335989d58e2&#34;&gt;3. SSH authentication&lt;/h3&gt;
+&lt;h3 id=&#34;3-ssh-authentication&#34;&gt;3. SSH authentication&lt;/h3&gt;
 
 &lt;p&gt;Developers will most likely authenticate with remote Git repositories using SSH. This will require all developers to generate a private/public SSH key pair and add their public key to the Git server (in the authorized_keys file or adding the public key to the Git repository management tool). Using a repository management tool like GitHub Enterprise will make maintaining SSH keys a much more streamlined process rather than manually adding them to the authorized_keys file.&lt;/p&gt;
 
-&lt;h3 id=&#34;4-inventory-all-svn-related-scripts:0261b231e905d6607b9c6335989d58e2&#34;&gt;4. Inventory all SVN-related scripts&lt;/h3&gt;
+&lt;h3 id=&#34;4-inventory-all-svn-related-scripts&#34;&gt;4. Inventory all SVN-related scripts&lt;/h3&gt;
 
 &lt;p&gt;Custom scripts with SVN references should be identified as these will obviously break after the migration. This is typically the most time consuming task if a lot of SVN scripts and hooks exist as part of the current development workflow.&lt;/p&gt;
 
-&lt;h2 id=&#34;migration-steps:0261b231e905d6607b9c6335989d58e2&#34;&gt;Migration steps&lt;/h2&gt;
+&lt;h2 id=&#34;migration-steps&#34;&gt;Migration steps&lt;/h2&gt;
 
 &lt;p&gt;The migration itself is fairly straightforward if you aren&amp;rsquo;t preserving SVN history. If you need to port history this list will look slightly more complicated and you should look into using &lt;a href=&#34;http://subgit.com/book/index.html#installation&#34; title=&#34;SubGit&#34;&gt;SubGit&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-design-a-new-repository-structure:0261b231e905d6607b9c6335989d58e2&#34;&gt;1. Design a new repository structure&lt;/h3&gt;
+&lt;h3 id=&#34;1-design-a-new-repository-structure&#34;&gt;1. Design a new repository structure&lt;/h3&gt;
 
 &lt;p&gt;We had a single large SVN repository with every single application in our organization. Rather than port our monolithic SVN repository to Git, we decided to break it into smaller repositories that better fit with the conceptual and logical view of our applications.&lt;/p&gt;
 
@@ -321,27 +358,27 @@
 &lt;li&gt;Static web resources and Apache configuration&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;2-create-the-new-git-repositories-locally:0261b231e905d6607b9c6335989d58e2&#34;&gt;2. Create the new Git repositories locally&lt;/h3&gt;
+&lt;h3 id=&#34;2-create-the-new-git-repositories-locally&#34;&gt;2. Create the new Git repositories locally&lt;/h3&gt;
 
 &lt;p&gt;We grabbed the latest version of our code from SVN and split our monolithic repository into four separate local folders. We had to clean the SVN kruft from each folder, which was incredibly fun. After all of this was done we initialized each folder as a new Git repository.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-add-content-to-git-before-building-applications:0261b231e905d6607b9c6335989d58e2&#34;&gt;3. Add content to Git before building applications&lt;/h3&gt;
+&lt;h3 id=&#34;3-add-content-to-git-before-building-applications&#34;&gt;3. Add content to Git before building applications&lt;/h3&gt;
 
 &lt;p&gt;We added all of our files to Git first &lt;em&gt;before&lt;/em&gt; performing a full-build or even importing our applications into an IDE. This made it easy to create our .gitignore files, because we performed a commit of what&amp;rsquo;s in SVN and nothing else (such as compiled resources or IDE project configuration files).&lt;/p&gt;
 
-&lt;h3 id=&#34;4-build-applications-and-configure-gitignore:0261b231e905d6607b9c6335989d58e2&#34;&gt;4. Build applications and configure .gitignore&lt;/h3&gt;
+&lt;h3 id=&#34;4-build-applications-and-configure-gitignore&#34;&gt;4. Build applications and configure .gitignore&lt;/h3&gt;
 
 &lt;p&gt;Perform a full build of each application after you have all of your files committed to Git. You&amp;rsquo;ll immediately be able to identify all the generated build artefacts that shouldn&amp;rsquo;t be versioned. These artefacts can safely be added to .gitignore. Remember to add and commit your .gitignore file(s) too!&lt;/p&gt;
 
-&lt;h3 id=&#34;5-update-tooling-and-scripts-to-switch-from-svn-to-git:0261b231e905d6607b9c6335989d58e2&#34;&gt;5. Update tooling and scripts to switch from SVN to Git&lt;/h3&gt;
+&lt;h3 id=&#34;5-update-tooling-and-scripts-to-switch-from-svn-to-git&#34;&gt;5. Update tooling and scripts to switch from SVN to Git&lt;/h3&gt;
 
 &lt;p&gt;This is arguably one of the most time consuming tasks of the migration. For instance, Jenkins/Hudson users will need to update all of their scripts to pull from Git instead of SVN. All custom SVN-related scripts will need to be updated.&lt;/p&gt;
 
-&lt;h3 id=&#34;6-create-central-repositories-and-push-local-commits:0261b231e905d6607b9c6335989d58e2&#34;&gt;6. Create central repositories and push local commits&lt;/h3&gt;
+&lt;h3 id=&#34;6-create-central-repositories-and-push-local-commits&#34;&gt;6. Create central repositories and push local commits&lt;/h3&gt;
 
 &lt;p&gt;If you&amp;rsquo;re using a tool like Stash or GitHub Enterprise, you&amp;rsquo;ll manage the creation of new repositories through the tool&amp;rsquo;s UI. Otherwise, you will need to create bare repositories on the Git server.&lt;/p&gt;
 
-&lt;h3 id=&#34;7-every-developer-should-clone-commit-push-pull:0261b231e905d6607b9c6335989d58e2&#34;&gt;7. Every developer should clone, commit, push, pull&lt;/h3&gt;
+&lt;h3 id=&#34;7-every-developer-should-clone-commit-push-pull&#34;&gt;7. Every developer should clone, commit, push, pull&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s fairly important for all developers to clone the repo(s) right away and push code to identify any issues that may have cropped up during the migration. It&amp;rsquo;s recommended that the person leading the migration create a throw-away branch and instruct all developers to check it out and perform a few smoke-test changes.&lt;/p&gt;
 
@@ -358,11 +395,11 @@
 
 &lt;p&gt;If you&amp;rsquo;re feeling brave, you can even set things up so a change forces merge conflicts. This will get the team used to using the difftool and mergetool commands.&lt;/p&gt;
 
-&lt;h3 id=&#34;8-application-s-should-be-built-in-a-test-environment-and-shaken-down:0261b231e905d6607b9c6335989d58e2&#34;&gt;8. Application(s) should be built in a test environment and shaken-down&lt;/h3&gt;
+&lt;h3 id=&#34;8-application-s-should-be-built-in-a-test-environment-and-shaken-down&#34;&gt;8. Application(s) should be built in a test environment and shaken-down&lt;/h3&gt;
 
 &lt;p&gt;Once developers are fairly happy that they&amp;rsquo;re set up and ready to go, the version of code now on the central repositories should be built and deployed to test environments. Presumably this will be done using a continuous integration tool and the fancy new Git scripts that were updated during pre-migration.&lt;/p&gt;
 
-&lt;h2 id=&#34;retrospective:0261b231e905d6607b9c6335989d58e2&#34;&gt;Retrospective&lt;/h2&gt;
+&lt;h2 id=&#34;retrospective&#34;&gt;Retrospective&lt;/h2&gt;
 
 &lt;p&gt;Most of the issues that come up during post-migration are related to the rationalization for switching to Git in the first place. During our transition we experienced very few technical issues with our code, but we experienced the natural frustration of learning a new tool and a new development process all at the same time.&lt;/p&gt;
 
@@ -393,21 +430,21 @@
 
 &lt;p&gt;If you already understand the benefits of Git, or have already read part one, welcome to part two in the series! We&amp;rsquo;re going to discuss certain pre-conditions of a migration to Git and make sure your team is ready for the transition.&lt;/p&gt;
 
-&lt;h2 id=&#34;prerequisites:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 
 &lt;p&gt;Before migrating to Git, you should make sure your team is &lt;em&gt;ready&lt;/em&gt; to migrate. Changing version control systems (especially in a large team) is not a trivial undertaking, and certain technical debt should not exist in your code base to ensure a smooth transition.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s a rough guide to help you evaluate whether you&amp;rsquo;re ready to migrate:&lt;/p&gt;
 
-&lt;h3 id=&#34;1-ensure-your-code-base-is-buildable-and-stable:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;1. Ensure your code base is buildable and stable&lt;/h3&gt;
+&lt;h3 id=&#34;1-ensure-your-code-base-is-buildable-and-stable&#34;&gt;1. Ensure your code base is buildable and stable&lt;/h3&gt;
 
 &lt;p&gt;If you can&amp;rsquo;t perform a clean, full build of your application, you should absolutely delay your migrations plans and pay down technical debt before attempting &lt;em&gt;any&lt;/em&gt; large scale project (let alone something is risky as migrating to a different version control system). Post-migration, the entire application will need to be completely rebuilt and regression tested. This seems like an obvious prerequisite, but not every organization performs full builds on a regular basis, especially with legacy applications. Being unable to build your application or lacking confidence in your build is a recipe for disaster.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-set-up-a-continuous-integration-server:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;2. Set up a continuous integration server&lt;/h3&gt;
+&lt;h3 id=&#34;2-set-up-a-continuous-integration-server&#34;&gt;2. Set up a continuous integration server&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s a good idea to implement a CI solution in order to get up-to-date feedback on build issues as developers begin to use Git for the first time. It&amp;rsquo;s amazing the types of issues that crop up in the first few days post-migration. Most issues are minor if they&amp;rsquo;re caught early enough.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-prepare-a-regression-test-plan-or-implement-automated-testing:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;3. Prepare a regression test plan or implement automated testing&lt;/h3&gt;
+&lt;h3 id=&#34;3-prepare-a-regression-test-plan-or-implement-automated-testing&#34;&gt;3. Prepare a regression test plan or implement automated testing&lt;/h3&gt;
 
 &lt;p&gt;Changing version control systems is quite disruptive. Prepare for a number of things to go wrong. At the very minimum, you should plan for a full regression test of your application immediately after migration and before developers begin committing code. This window should be minimized to avoid syncing nightmares.&lt;/p&gt;
 
@@ -415,13 +452,13 @@
 
 &lt;p&gt;If you work in a team that practices Kanban or Scrum, it&amp;rsquo;s a good idea to plan for a loss of velocity during the migration period. This loss of productivity should be minimal if the migration is planned properly. For instance, if your team practices Scrum, it may be a good idea to consider the migration iteration zero and release the product (fully tested) at the end of the sprint. A full sprint is unnecessary, but a short sprint (of a week or less) is also a good opportunity to pay down any kind of technical debt that is a blocker of the migration to Git.&lt;/p&gt;
 
-&lt;h3 id=&#34;4-plan-for-training:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;4. Plan for training&lt;/h3&gt;
+&lt;h3 id=&#34;4-plan-for-training&#34;&gt;4. Plan for training&lt;/h3&gt;
 
 &lt;p&gt;Our team attempted to train grassroots-style, and it was tough. Budget for at least a full day of training to ensure your developers are comfortable with core Git and DVCS concepts.&lt;/p&gt;
 
 &lt;p&gt;It also helps that developers understand the rationale for switching version control systems, as any impedance to velocity will be met with frustration. If they understand the long-term benefits, it will make the short-term frustrations easier to deal with.&lt;/p&gt;
 
-&lt;h3 id=&#34;5-identify-an-evangelist-to-lead-the-migration-and-post-migration-support:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;5. Identify an evangelist to lead the migration and post-migration support&lt;/h3&gt;
+&lt;h3 id=&#34;5-identify-an-evangelist-to-lead-the-migration-and-post-migration-support&#34;&gt;5. Identify an evangelist to lead the migration and post-migration support&lt;/h3&gt;
 
 &lt;p&gt;At least one member of the team should be very familiar with Git in order to ensure a smooth migration.&lt;/p&gt;
 
@@ -443,7 +480,7 @@
 
 &lt;p&gt;Speaking from personal experience, it&amp;rsquo;s helpful (but not required) that the evangelist is not distracted with development tasks immediately after post-migration. I recommend considering them a build manager or a DevOps team-member for a finite period of time post-migration to ensure capacity for support.&lt;/p&gt;
 
-&lt;h3 id=&#34;6-make-a-list-of-why-you-re-migrating-to-git-in-the-first-place:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;6. Make a list of why you&amp;rsquo;re migrating to Git in the first place&lt;/h3&gt;
+&lt;h3 id=&#34;6-make-a-list-of-why-you-re-migrating-to-git-in-the-first-place&#34;&gt;6. Make a list of why you&amp;rsquo;re migrating to Git in the first place&lt;/h3&gt;
 
 &lt;p&gt;This the least technical prerequisite and more of a return-on-investment analysis exercise.&lt;/p&gt;
 
@@ -461,7 +498,7 @@
 &lt;li&gt;Etcetera&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;the-final-steps:533e7ccb8870417c0899dc42cf8638c7&#34;&gt;The final steps&lt;/h2&gt;
+&lt;h2 id=&#34;the-final-steps&#34;&gt;The final steps&lt;/h2&gt;
 
 &lt;p&gt;If you&amp;rsquo;re confident and ready to migrate to Git, check out the final part of my Migrating to Git series, &lt;a href=&#34;http://kevinwebber.ca/migrating-to-git-part-3-moving-your-code-to-git/&#34; title=&#34;Migrating to Git, Part 3: Moving your code to Git&#34;&gt;Migrating to Git, Part 3: Moving your code to Git&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -485,13 +522,13 @@
 
 &lt;p&gt;Git is simply one of the best things that&amp;rsquo;s happened to the development workflow in a very long time; &lt;em&gt;if you choose to master it&lt;/em&gt;. If you&amp;rsquo;re not willing or able to put in the amount of time needed to properly learn a new tool and are simply looking for a place to dump your code, stick with your current VCS or consider migrating to something other than Git.&lt;/p&gt;
 
-&lt;h2 id=&#34;three-advantages-of-git-over-svn:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Three advantages of Git over SVN&lt;/h2&gt;
+&lt;h2 id=&#34;three-advantages-of-git-over-svn&#34;&gt;Three advantages of Git over SVN&lt;/h2&gt;
 
 &lt;p&gt;SVN is a &lt;em&gt;centralized&lt;/em&gt; version control system (CVCS). Git is a &lt;em&gt;distributed&lt;/em&gt; version control system (DVCS).&lt;/p&gt;
 
 &lt;p&gt;What&amp;rsquo;s the difference between a CVCS like SVN and a DVCS like Git?&lt;/p&gt;
 
-&lt;h3 id=&#34;1-stability-of-shared-repositories:68b7dbc463ed26640042d13aa069fc87&#34;&gt;1. Stability of shared repositories&lt;/h3&gt;
+&lt;h3 id=&#34;1-stability-of-shared-repositories&#34;&gt;1. Stability of shared repositories&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;SVN&lt;/strong&gt;: All developers commit work-in-progress code to shared repositories&lt;/li&gt;
@@ -508,19 +545,19 @@
 
 &lt;p&gt;Why does this matter?&lt;/p&gt;
 
-&lt;h4 id=&#34;speed:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Speed&lt;/h4&gt;
+&lt;h4 id=&#34;speed&#34;&gt;Speed&lt;/h4&gt;
 
 &lt;p&gt;Developers using Git commit freely as their work does not immediately impact the rest of the team. They experiment in branches, committing code or stashing changes throughout the day. Nothing is permanent and every mistake can be reversed without impacting the entire team. They can throw everything away and start from scratch if necessary. Not only that, but Git commands are blazing fast because they don&amp;rsquo;t involve network traffic to a centralized server. Only &lt;em&gt;fetch&lt;/em&gt;, &lt;em&gt;pull&lt;/em&gt;, and &lt;em&gt;push&lt;/em&gt; involve any network traffic. Every other command operates on the user&amp;rsquo;s local repository.&lt;/p&gt;
 
-&lt;h4 id=&#34;confidence:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Confidence&lt;/h4&gt;
+&lt;h4 id=&#34;confidence&#34;&gt;Confidence&lt;/h4&gt;
 
 &lt;p&gt;The Git workflow removes fear and builds confidence. Over time a team is more and more willing to take on work they may have deemed too scary when using a VCS like SVN. Why is this? They don&amp;rsquo;t need to struggle between the lesser of two evils: not committing code, or sharing code that isn&amp;rsquo;t fully tested. Git lets a developer have the best of both worlds; keeping their code in version control, and only sharing changes when they are ready to be &lt;em&gt;pushed&lt;/em&gt; to the team. It&amp;rsquo;s nice knowing that your code is safely version but that you are not permanently impacting your team if you make a mistake.&lt;/p&gt;
 
-&lt;h4 id=&#34;collaboration:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Collaboration&lt;/h4&gt;
+&lt;h4 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h4&gt;
 
 &lt;p&gt;One may argue that collaboration is hampered because code is kept in local repositories until finished or stable. Keep in mind that nothing stops multiple developers from &lt;em&gt;remoting&lt;/em&gt; to each other&amp;rsquo;s repositories to share work-in-progress code. Other options for collaboration include &lt;em&gt;pushing&lt;/em&gt; work in progress code to a code review repository before pushing it to a stable, public repository. Collaboration options are limited only the imagination of your team.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-branching:68b7dbc463ed26640042d13aa069fc87&#34;&gt;2. Branching&lt;/h3&gt;
+&lt;h3 id=&#34;2-branching&#34;&gt;2. Branching&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;SVN&lt;/strong&gt;: Developers often perform bulk commits towards the end of feature development. Work-in-progress code is often left un-versioned to avoid negatively impacting the rest of the team.&lt;/li&gt;
@@ -529,15 +566,15 @@
 
 &lt;p&gt;Why does this matter?&lt;/p&gt;
 
-&lt;h4 id=&#34;integration:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Integration&lt;/h4&gt;
+&lt;h4 id=&#34;integration&#34;&gt;Integration&lt;/h4&gt;
 
 &lt;p&gt;Developers using Git don&amp;rsquo;t impact the entire team with individual commits being shared before an entire story (or feature) is stable and tested. Developers create branches and merge changes when a feature is ready for integration. Branching is possible with SVN, but it isn&amp;rsquo;t used in the same fashion as in Git, because branches in SVN are expensive to create.&lt;/p&gt;
 
-&lt;h4 id=&#34;process-and-workflow:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Process and workflow&lt;/h4&gt;
+&lt;h4 id=&#34;process-and-workflow&#34;&gt;Process and workflow&lt;/h4&gt;
 
 &lt;p&gt;Git is just as much a workflow tool as it is a source control tool. Rapid branching makes working on more than one feature an incredibly flexible process. Merging in SVN is often a nail-biting experience because it&amp;rsquo;s such a potentially destructive process. By contrast a developer using Git can create a new branch, merge multiple branches into it, resolve conflicts, and test locally &lt;em&gt;before squashing&lt;/em&gt; the individual commits and integrating it with a main release branch. The worst case scenario in Git is starting over again locally without any impact to the team. The worst case scenario in SVN is corrupting the central repository and getting fired.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-task-switching:68b7dbc463ed26640042d13aa069fc87&#34;&gt;3. Task switching&lt;/h3&gt;
+&lt;h3 id=&#34;3-task-switching&#34;&gt;3. Task switching&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;SVN&lt;/strong&gt;: Switching between branches is painful. It&amp;rsquo;s essentially like copying and pasting an entire directory structure and having multiple local copies of your project.&lt;/li&gt;
@@ -546,7 +583,7 @@
 
 &lt;p&gt;Why does this matter?&lt;/p&gt;
 
-&lt;h4 id=&#34;productivity:68b7dbc463ed26640042d13aa069fc87&#34;&gt;Productivity&lt;/h4&gt;
+&lt;h4 id=&#34;productivity&#34;&gt;Productivity&lt;/h4&gt;
 
 &lt;p&gt;Developers using Git simply commit (or stash) their work-in-progress code and &lt;em&gt;checkout&lt;/em&gt; the alternate branch they&amp;rsquo;d like to work on. Their working directory is updated in place with the correct code and they continue to work uninterrupted. When they finish their task they simply …&lt;/p&gt;
 
@@ -556,7 +593,7 @@
 
 &lt;p&gt;… the previous branch they were working on.&lt;/p&gt;
 
-&lt;h2 id=&#34;to-be-continued:68b7dbc463ed26640042d13aa069fc87&#34;&gt;To be continued&lt;/h2&gt;
+&lt;h2 id=&#34;to-be-continued&#34;&gt;To be continued&lt;/h2&gt;
 
 &lt;p&gt;Are you excited about Git? I am, and so are a lot of other developers!&lt;/p&gt;
 
@@ -588,7 +625,7 @@
 
 &lt;p&gt;The “cloud”, SaaS, PaaS, the App Store, the Marketplace. A decade ago businesses could afford a technological misstep. Today businesses are ruthlessly judged on their technical prowess by a generation of people who look at a magazine as a broken iPad.&lt;/p&gt;
 
-&lt;h2 id=&#34;highlights:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;Highlights&lt;/h2&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
 
 &lt;p&gt;For me, the highlight of QCon was meeting so many other developers who are just as passionate about technology as I am. From the CTOs of companies like Etsy to fellow hands-on developers from Toronto, everyone I spoke with at QCon had an educated and informed opinion about the reality of developing software in 2012. Surprisingly, most of the people I met were not focused on the nitty gritty low-level details of implementing code, but instead focused on how people interact with each other and how people interact with software. Does what we build make people happy? Is the environment we work at positive? Can we build better software and be even happier in the process?&lt;/p&gt;
 
@@ -596,19 +633,19 @@
 
 &lt;p&gt;Great companies understand that great software comes from developers who understand, empathize, and feel connected to the people they create for. Great companies understand that great products are created by joyful people.&lt;/p&gt;
 
-&lt;h2 id=&#34;great-companies-think-alike:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;Great companies think alike&lt;/h2&gt;
+&lt;h2 id=&#34;great-companies-think-alike&#34;&gt;Great companies think alike&lt;/h2&gt;
 
 &lt;p&gt;When software developers think of prototypical great companies, they probably think of names such as Facebook, Twitter, Etsy, and Menlo. All of these companies were represented at QCon, and all of these companies share certain cultural traits and processes that help attract some of the brightest engineers to their ranks.&lt;/p&gt;
 
 &lt;p&gt;What common processes or beliefs do most of these companies share?&lt;/p&gt;
 
-&lt;h3 id=&#34;1-bootcamp:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;1. Bootcamp&lt;/h3&gt;
+&lt;h3 id=&#34;1-bootcamp&#34;&gt;1. Bootcamp&lt;/h3&gt;
 
 &lt;p&gt;Top companies start an employment relationship the right way, with a warm welcome that includes mentorship and training. Not only technical training, but also a gentle and welcoming introduction to an employer&amp;rsquo;s culture. This welcoming is sometimes referred to as &lt;em&gt;bootcamp&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Bootcamp is arguably a terrible term to use for such a positive experience. When I think of bootcamp I think of Full Metal Jacket, but bootcamp at software companies has little in common with the bootcamp envisioned by Stanley Kubrick.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-empathetic-development:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;2. Empathetic development&lt;/h3&gt;
+&lt;h3 id=&#34;2-empathetic-development&#34;&gt;2. Empathetic development&lt;/h3&gt;
 
 &lt;p&gt;The inspirational &lt;a href=&#34;http://www.menloinnovations.com/our-story/partners&#34; title=&#34;Richard Sheridan&#34;&gt;Richard Sheridan&lt;/a&gt; put it so eloquently.&lt;/p&gt;
 
@@ -628,13 +665,13 @@
 
 &lt;p&gt;Would you rather use Microsoft Project or Basecamp? Changepoint or Tick? QuickBooks or FreshBooks?&lt;/p&gt;
 
-&lt;h3 id=&#34;3-innovation-days:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;3. Innovation days&lt;/h3&gt;
+&lt;h3 id=&#34;3-innovation-days&#34;&gt;3. Innovation days&lt;/h3&gt;
 
 &lt;p&gt;Top companies seek out innovators. There&amp;rsquo;s a big difference between talking about innovation and investing in innovation. How much time do you allocate for your team to explore their own ideas? None? You&amp;rsquo;re not an innovator.&lt;/p&gt;
 
 &lt;p&gt;The best, most disruptive, most lucrative ideas are often not in the official plan. Your clients don&amp;rsquo;t want to pay for them yet. They&amp;rsquo;re simply ideas swimming in the heads of your team. Not all of these ideas pay off, but some of them have turned into the most ubiquitous technologies we use today, like Google Maps and Facebook Timeline.&lt;/p&gt;
 
-&lt;h3 id=&#34;4-experienced-developers-are-sherpas-not-pack-mules:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;4. Experienced developers are Sherpas, not pack mules&lt;/h3&gt;
+&lt;h3 id=&#34;4-experienced-developers-are-sherpas-not-pack-mules&#34;&gt;4. Experienced developers are Sherpas, not pack mules&lt;/h3&gt;
 
 &lt;p&gt;Most companies struggle to provide a career path for their most senior hands-on technical talent. To paraphrase &lt;a href=&#34;http://laribee.com/&#34; title=&#34;David Laribee&#34;&gt;David Laribee&lt;/a&gt; of VersionOne, many senior developers reach a point of becoming a pack mule. They become so specialized in version 8.1.4.9 of RandomTechnology that they can never escape it, and the rest of their days are spent in quiet desperation pushing around packs of commodity code.&lt;/p&gt;
 
@@ -648,7 +685,7 @@
 
 &lt;p&gt;Some organizations are great facilitators of this transition through mentoring and career coaching. Not all technical talent is extroverted, and without support they can very naturally slip into the role of pack mule. Don&amp;rsquo;t allow this to happen. Eliminate silos of knowledge by helping your most experienced team members pass their experience along to the next generation.&lt;/p&gt;
 
-&lt;h2 id=&#34;summary:ff85ae7433da3a71c2c35e91c6358c8f&#34;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 
 &lt;p&gt;Companies who embrace the business value of joy have a remarkable advantage because there are still so many horrible companies creating horrible software. It&amp;rsquo;s simply too easy to compete against miserable companies, especially in the enterprise software market where misery is the norm rather than the exception. More and more companies are recognizing the business opportunity and optimizing for happiness. These companies making a lot of money in the process.&lt;/p&gt;
 
@@ -666,17 +703,17 @@
 
 &lt;p&gt;What does this game of tic-tac-toe and Twitter have in common? Both have been implemented using relatively the same technologies: Java and Netty. It was big news in 2010 when Twitter migrated their search from Ruby on Rails to Java-based Netty (&lt;a href=&#34;http://engineering.twitter.com/2011/04/twitter-search-is-now-3x-faster_1656.html&#34; title=&#34;read about it here&#34;&gt;read about it here&lt;/a&gt;). Not only was it big in the news department, but it was also big in the results department: Twitter reported their search performance increased by 3x.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-netty:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;What is Netty?&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-netty&#34;&gt;What is Netty?&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.jboss.org/netty&#34; title=&#34;Netty&#34;&gt;Netty&lt;/a&gt; is a client server framework by JBoss that simplifies network programming. Netty is built on top of &lt;a href=&#34;http://en.wikipedia.org/wiki/New_I/O&#34; title=&#34;Java NIO&#34;&gt;Java NIO&lt;/a&gt; but provides a much more simple API to work with. Netty can be used to build a custom server for network communications; it can be used to build anything including a lightweight HTTP server, a TCP / UDP server, a WebSocket server, or any other network server you can dream of. Because Netty is built on Java NIO, Netty&amp;rsquo;s programming model is asynchronous. This means Netty is very well suited for any number of bi-directional communication projects such as real-time group chat or anything else requiring the server to &lt;a href=&#34;http://en.wikipedia.org/wiki/Push_technology&#34; title=&#34;push information to a client&#34;&gt;push information to a client&lt;/a&gt; rather than other methods of network communication such as &lt;a href=&#34;http://en.wikipedia.org/wiki/Comet_(programming)&#34; title=&#34;long-polling&#34;&gt;long-polling&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-the-websocket-protocol:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;What is the WebSocket protocol?&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-the-websocket-protocol&#34;&gt;What is the WebSocket protocol?&lt;/h2&gt;
 
 &lt;p&gt;WebSocket is a protocol used for bi-directional asynchronous communications between a client (usually a web browser) and a server that supports the WebSocket protocol.&lt;/p&gt;
 
 &lt;p&gt;A WebSocket client connects to a server via standard HTTP and performs a handshake, which creates a persistent tunnel between the client and server. After the handshake is performed the client and the server communicate freely using a message/event-driven programming model (binding actions/methods to events). The beautiful thing about the WebSocket protocol is the number of persistent connections that WebSocket servers can handle, easily numbering in the ten-of-thousands, and the volume of messages that can be processed (depending on the way the server is implemented).&lt;/p&gt;
 
-&lt;h2 id=&#34;netty-in-action-a-game-of-tic-tac-toe:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Netty in action: a game of tic-tac-toe&lt;/h2&gt;
+&lt;h2 id=&#34;netty-in-action-a-game-of-tic-tac-toe&#34;&gt;Netty in action: a game of tic-tac-toe&lt;/h2&gt;
 
 &lt;p&gt;Rather than build the same-old group chat application everyone else does to show off the flexibility of Netty and the WebSocket protocol, I decided to build a simple game of tic-tac-toe instead. It seems like an odd decision considering tic-tac-toe is a turn-based game rather than a real-time game, but most tic-tac-toe game demos on the net are single-player. Rather than build another single player game of tic-tac-toe, let&amp;rsquo;s build a multiplayer game!&lt;/p&gt;
 
@@ -699,7 +736,7 @@
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/rocketpages/TicTacToe-Client&#34; title=&#34;https://github.com/rocketpages/TicTacToe-Client&#34;&gt;https://github.com/rocketpages/TicTacToe-Client&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;building-the-netty-server:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Building the Netty server&lt;/h3&gt;
+&lt;h3 id=&#34;building-the-netty-server&#34;&gt;Building the Netty server&lt;/h3&gt;
 
 &lt;p&gt;The first step to creating our tic-tac-toe server is to build the server itself. Creating a new server in Netty is dead simple. We simply need to instruct Netty which port to bind to and which pipeline factory to use.&lt;/p&gt;
 
@@ -739,19 +776,19 @@
 
 &lt;p&gt;Take a second to look at the above code. I&amp;rsquo;ll break out some of the key terms and concepts to understand:&lt;/p&gt;
 
-&lt;h4 id=&#34;channel:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Channel&lt;/h4&gt;
+&lt;h4 id=&#34;channel&#34;&gt;Channel&lt;/h4&gt;
 
 &lt;p&gt;A channel is a persistent connection (tunnel) from a specific client to the server.&lt;/p&gt;
 
-&lt;h4 id=&#34;channelpipeline:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;ChannelPipeline&lt;/h4&gt;
+&lt;h4 id=&#34;channelpipeline&#34;&gt;ChannelPipeline&lt;/h4&gt;
 
 &lt;p&gt;Each channel can be customized with it&amp;rsquo;s own pipeline. When you take a second to think about it, it becomes obvious how powerful this concept is. Encoders, decoders, aggregator, and handlers are grouped together to form a &lt;em&gt;pipeline&lt;/em&gt;. A pipeline instructs Netty how to act on each channel.&lt;/p&gt;
 
-&lt;h4 id=&#34;encoders-decoders-and-aggregators:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Encoders, decoders, and aggregators&lt;/h4&gt;
+&lt;h4 id=&#34;encoders-decoders-and-aggregators&#34;&gt;Encoders, decoders, and aggregators&lt;/h4&gt;
 
 &lt;p&gt;Netty is a low-level framework built on Java NIO. When a client first connects with the server, we need to perform a WebSocket handshake. NIO doesn&amp;rsquo;t care about HTTP however, it cares about packets. In order to process the HTTP request and response, we need to instruct Netty how to deal with the packets we&amp;rsquo;re receiving and sending. Netty makes this easy and provides multiple encoders, decoders, aggregator, and handlers. We&amp;rsquo;ll typically extend Netty to create our own custom handlers, but if we&amp;rsquo;re so inclined, we can also get really low-level and create our own encoders, etc. Keep in mind that handlers can be swapped-out at runtime. After the initial HTTP handshake is performed, we&amp;rsquo;re only going to be responding to WebSocket requests for this channel. You&amp;rsquo;ll see later how we change from an HTTP-based pipeline to a WebSocket-based pipeline for a specific channel (aka client, aka player).&lt;/p&gt;
 
-&lt;h4 id=&#34;tictactoeserverhandler:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;TicTacToeServerHandler&lt;/h4&gt;
+&lt;h4 id=&#34;tictactoeserverhandler&#34;&gt;TicTacToeServerHandler&lt;/h4&gt;
 
 &lt;p&gt;This is the heart of the application, responsible for consuming and pushing all messages to and from clients. An instance of this handler is specific to a channel, but we can also declare static variables to keep track of all the games of tic-tac-toe in progress at any given time.&lt;/p&gt;
 
@@ -846,7 +883,7 @@
 
 &lt;p&gt;Now let&amp;rsquo;s take a look at some tic-tac-toe specific logic. First we&amp;rsquo;ll need to create a game and assign players to it. As players connect to our server they&amp;rsquo;re paired off and assigned to a game. Our server will be able to support an infinite number of games simultaneously, although I doubt tic-tac-toe will ever become as popular as Twitter.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; initGame(ChannelHandlerContext ctx) {
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; initGame(ChannelHandlerContext ctx) {
 	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// Try to find a game waiting for a player. If one doesn&amp;#39;t exist, create a new one.&lt;/span&gt;
 	Game game = findGame();
 	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// Create a new instance of player and assign their channel for WebSocket communications.&lt;/span&gt;
@@ -875,13 +912,13 @@
 	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; Game();
 }
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;The code above is mainly responsible for creating and maintaining games, which are stored in the TicTacToeServerHandler as a static collection (shared across all instances of our handler). As players connect to our server we assign them to a game and let them know that they are either waiting for an opponent or that an opponent has connected and their game has begun. Exciting!&lt;/p&gt;
 
 &lt;p&gt;Finally, we need to accept incoming WebSocket messages. Each message represents a player&amp;rsquo;s turn (which cell they selected). After we process the turn information we need to push data out to their opponent to let them know how badly they&amp;rsquo;re getting pwned. We also need to check the status of the ongoing game; it&amp;rsquo;s fairly important to be able to tell if a game has been won or tied after the last move!&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;void&lt;/span&gt; handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
 	Gson gson = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;new&lt;/span&gt; Gson();
 	IncomingMessageBean message = gson.&lt;span style=&#34;color: #FF0000&#34;&gt;fromJson&lt;/span&gt;(frame.&lt;span style=&#34;color: #FF0000&#34;&gt;getTextData&lt;/span&gt;(), IncomingMessageBean.&lt;span style=&#34;color: #FF0000&#34;&gt;class&lt;/span&gt;);
 	Game game = games.&lt;span style=&#34;color: #FF0000&#34;&gt;get&lt;/span&gt;(message.&lt;span style=&#34;color: #FF0000&#34;&gt;getGameId&lt;/span&gt;());
@@ -903,7 +940,7 @@
 	}
 }
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;Remember earlier that handleWebSocketFrame is one of our own methods, not a callback method provided by Netty. This method is invoked when we inspect the incoming message and determine it&amp;rsquo;s a WebSocketFrame rather than an HttpRequest. The core of the logic above deals with updating the &lt;em&gt;game board&lt;/em&gt; and marking the current player&amp;rsquo;s last move. We also need to check for victory or draw conditions and update the player and opponent with the latest game status.&lt;/p&gt;
 
@@ -915,7 +952,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/rocketpages/Netty-TicTacToe-Server/blob/master/src/main/java/com/tictactoe/game/Player.java&#34; title=&#34;Player.java&#34;&gt;Player.java&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;creating-the-tic-tac-toe-client-using-jquery:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Creating the tic-tac-toe client using jQuery&lt;/h3&gt;
+&lt;h3 id=&#34;creating-the-tic-tac-toe-client-using-jquery&#34;&gt;Creating the tic-tac-toe client using jQuery&lt;/h3&gt;
 
 &lt;p&gt;Building our tic-tac-toe server was fairly simple. Building our tic-tac-toe client is even easier thanks to the power of jQuery. If you&amp;rsquo;d like to skip straight to the source code, it can be viewed below:&lt;/p&gt;
 
@@ -925,7 +962,7 @@
 
 &lt;p&gt;Below is a copy of the JavaScript for the tic-tac-toe client.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// Constants - Status Updates&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// Constants - Status Updates&lt;/span&gt;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;var&lt;/span&gt; STRATEGIZING_STATUS = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;Your opponent is strategizing.&amp;quot;&lt;/span&gt;;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;var&lt;/span&gt; WAITING_STATUS = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;Waiting for an opponent.&amp;quot;&lt;/span&gt;;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;var&lt;/span&gt; YOUR_TURN_STATUS = &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;It&amp;#39;s your turn!&amp;quot;&lt;/span&gt;;
@@ -1035,13 +1072,13 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
 	ws.send(encoded);
 }
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;The bulk of the logic above deals with two distinct activities; maintaining state and processing messages. You&amp;rsquo;ll notice that when the page first loads we&amp;rsquo;ll use the documentReady function to initiate the WS handshake. You&amp;rsquo;ll also notice that we use jQuery to bind different WebSocket events to code blocks.&lt;/p&gt;
 
 &lt;p&gt;jQuery makes it fairly trivial to communicate with a WS server. Rather than polling the server, the WebSocket API allows us to bind logic to the &lt;em&gt;onmessage&lt;/em&gt; event and perform the appropriate logic. This is awesome! Our tic-tac-toe game is a simple webpage that never needs refreshing. We also don&amp;rsquo;t need to waist IO constantly polling the server. As soon as our opponent makes his or her move, our screen is immediately updated and we get to take our turn.&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusion:3201017fae06d98c4f5b20b8a44555c2&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;That&amp;rsquo;s a very high level look at the power of Java, Netty, the WebSocket API, and jQuery. We can make a number of improvements to this game, such as tracking and displaying ongoing stats (win, loss, draw) and even allowing the same player to compete in &lt;em&gt;multiple games of tic-tac-toe at once!&lt;/em&gt;&lt;/p&gt;
 
@@ -1098,7 +1135,7 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
 
 &lt;p&gt;Let&amp;rsquo;s take a look at the &lt;strong&gt;reinitFancybox&lt;/strong&gt; function which gets invoked after the panel is refreshed.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt; reinitFancybox() {  
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt; reinitFancybox() {  
     &lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// CSS&lt;/span&gt;
 	$(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&amp;quot;&lt;/span&gt;).css(&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;opacity&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;);
 	
@@ -1118,11 +1155,11 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
 	});
 }
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;Most of the code above re-initializes the CSS hover effects I use to pretty up my image panel. The last piece is responsible for re-initializing Fancybox itself. &lt;em&gt;At this point, we should be done, Fancybox should work perfectly again.&lt;/em&gt; But there&amp;rsquo;s a small catch, the Fancybox script includes a global variable named &lt;strong&gt;busy&lt;/strong&gt; which is set to &lt;em&gt;true &lt;/em&gt;at the beginning of almost every single function. If for any reason the script is interrupted before busy is set back to &lt;em&gt;false, &lt;/em&gt;re-initialization will always abort. Here&amp;rsquo;s a snippet of the Fancybox code below:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$.fancybox = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;(obj) {
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$.fancybox = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;(obj) {
 	&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (busy) {
 	    &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;return&lt;/span&gt;;
 	}
@@ -1132,15 +1169,15 @@ $(document).ready(&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;
 	&lt;span style=&#34;color: #008800; font-style: italic&#34;&gt;// ...&lt;/span&gt;
 };
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;It&amp;rsquo;s pretty obvious that if busy is &lt;em&gt;true&lt;/em&gt; Fancybox won&amp;rsquo;t initialize. We need to make sure busy is set to false before attempting to re-initialize. Unfortunately, this requires a small &lt;span style=&#34;text-decoration: line-through;&#34;&gt;kludge&lt;/span&gt; addition to the Fancybox script itself. I&amp;rsquo;ve added the following public function:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$.fancyboxResetBusy = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;() {
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$.fancyboxResetBusy = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;function&lt;/span&gt;() {
 	busy = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;false&lt;/span&gt;;
 }
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;Invoking this before the initialize function ensures the initialization doesn&amp;rsquo;t return prematurely.&lt;/p&gt;
 </description>
@@ -1171,7 +1208,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 
 &lt;p&gt;In other words, you don&amp;rsquo;t have to change any of your code to use C3P0 connection pools if you&amp;rsquo;re using Hibernate. C3P0 takes care of maintaining the pool and testing connections, so your code stays in tact.&lt;/p&gt;
 
-&lt;h2 id=&#34;configuring-c3p0:d5fc04781c41afb22bbef911d13dae43&#34;&gt;Configuring C3P0&lt;/h2&gt;
+&lt;h2 id=&#34;configuring-c3p0&#34;&gt;Configuring C3P0&lt;/h2&gt;
 
 &lt;p&gt;Add the C3P0 jar to your classpath. If you&amp;rsquo;re using Maven, simply add the following to your pom.xml file:&lt;/p&gt;
 
@@ -1185,7 +1222,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 
 &lt;p&gt;Make the following changes to your hibernate.cfg.xml file. Pay special attention to the &lt;em&gt;provider_class&lt;/em&gt; property. Previous versions did not require this property, so most of the tutorials on the net are missing this key piece of info.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;connection.url&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;jdbc:mysql://127.0.0.1/your_db&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;connection.url&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;jdbc:mysql://127.0.0.1/your_db&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;connection.username&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;your_username&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;connection.driver_class&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;com.mysql.jdbc.Driver&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;dialect&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;org.hibernate.dialect.MySQLDialect&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
@@ -1197,7 +1234,7 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;c3p0.timeout&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;1800&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;property&lt;/span&gt; &lt;span style=&#34;color: #FF0000&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color: #0000FF&#34;&gt;&amp;quot;c3p0.max_statements&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;50&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;In order to configure C3P0 for your specific needs, you&amp;rsquo;ll need a &lt;em&gt;c3p0.properties&lt;/em&gt; file on the classpath. Take a look &lt;a href=&#34;http://www.mchange.com/projects/c3p0/index.html#configuration_files&#34; title=&#34;here&#34;&gt;here&lt;/a&gt; for all the available settings you can tweak. Here&amp;rsquo;s an example that ensures any closed connection is tested and re-opened rather than MySQL throwing an exception:&lt;/p&gt;
 
@@ -1205,15 +1242,15 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&#34;verifying-it-worked:d5fc04781c41afb22bbef911d13dae43&#34;&gt;Verifying it worked&lt;/h2&gt;
+&lt;h2 id=&#34;verifying-it-worked&#34;&gt;Verifying it worked&lt;/h2&gt;
 
 &lt;p&gt;Configuring C3P0 is pretty simple! If everything works correctly, you&amp;rsquo;ll see the following in your logs:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
 INFO C3P0ConnectionProvider:103 - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/your_db
 INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=****}
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 </description>
     </item>
     
@@ -1233,7 +1270,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 
 &lt;p&gt;I agree with the spirit of Mike&amp;rsquo;s post. Java can be a real pain to build typical business software with. The problem isn&amp;rsquo;t Java itself, the problem is that businesses use it for &lt;em&gt;everything&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;4gls-and-dead-ends:676d3bca1d69bb7c78928bbaf25861c2&#34;&gt;4GLs and dead-ends&lt;/h2&gt;
+&lt;h2 id=&#34;4gls-and-dead-ends&#34;&gt;4GLs and dead-ends&lt;/h2&gt;
 
 &lt;p&gt;People have tried for decades to move away from third-generation languages like Java and towards the nirvana of business folks creating their own apps with some kind of flow-charting tool. One of the first guys I worked with - he had punch cards in his drawer that &lt;em&gt;he&lt;/em&gt; punched - told me all about it. It&amp;rsquo;s the longest running punch line in IT. Mike&amp;rsquo;s post may have been titled &amp;ldquo;Java is a dead end&amp;rdquo;, but it really should have been titled &amp;ldquo;third-generation languages are a dead end&amp;rdquo;. And the date of the article could easily have been 1980 or 1990. The dead end is not third-generation languages; languages are merely a tool.&lt;/p&gt;
 
@@ -1247,7 +1284,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 
 &lt;p&gt;The only reason these strategies worked in the past is because &lt;strong&gt;everyone&lt;/strong&gt; was producing garbage software, but nothing lasts forever.&lt;/p&gt;
 
-&lt;h2 id=&#34;staying-competitive:676d3bca1d69bb7c78928bbaf25861c2&#34;&gt;Staying competitive&lt;/h2&gt;
+&lt;h2 id=&#34;staying-competitive&#34;&gt;Staying competitive&lt;/h2&gt;
 
 &lt;p&gt;Here&amp;rsquo;s a hands-on developer&amp;rsquo;s opinion on the whole “Java is dead” debate.&lt;/p&gt;
 
@@ -1255,7 +1292,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 
 &lt;p&gt;If you want to build great software, you need to hire great software developers. There&amp;rsquo;s no magic tool that will allow your business folks to put together fantastic software all by themselves. These ideas look fantastic in a Powerpoint slide or Forrester report, but fall flat in the real world.&lt;/p&gt;
 
-&lt;h3 id=&#34;how-do-you-hire-great-software-developers:676d3bca1d69bb7c78928bbaf25861c2&#34;&gt;How do you hire great software developers?&lt;/h3&gt;
+&lt;h3 id=&#34;how-do-you-hire-great-software-developers&#34;&gt;How do you hire great software developers?&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Understand what&amp;rsquo;s important to top-tier developers. Here&amp;rsquo;s a &lt;a href=&#34;http://www.joelonsoftware.com/articles/fog0000000043.html&#34; title=&#34;good place to start&#34;&gt;good place to start&lt;/a&gt;. This was written 10 years ago and most companies aren&amp;rsquo;t even close to a perfect score.&lt;/p&gt;&lt;/li&gt;
@@ -1267,7 +1304,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 &lt;li&gt;&lt;p&gt;Stop putting stock traders and accountants and lawyers in charge of your IT department. They may be smart folks, and that kind of strategy may work in politics, but it&amp;rsquo;s painful to watch the decisions these people make day in and day out. Decisions like outsourcing a project to India with almost no oversight and wondering why it looks like a box of pudding when it finally gets delivered. Or having a budget of $100mm and not bothering to hire UX and UI professionals.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;conclusion:676d3bca1d69bb7c78928bbaf25861c2&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Developers need to speak up, while keeping in mind the limitations of the process and cultural limitations of large enterprise environments. I&amp;rsquo;ve seen projects go completely off the rails because developers allow corporate inertia to dictate decisions rather than technical merits. I&amp;rsquo;ve also seen money saved because someone asks the question, &amp;ldquo;Why are we building a custom app when we can buy it off the shelf?&amp;rdquo;&lt;/p&gt;
 
@@ -1340,22 +1377,6 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 &lt;p&gt;ING Direct Canada was able to steal market share from every other bank simply because they built software that was easy to use and didn&amp;rsquo;t suck. Sure, they competed on rates, but Canadians lined up to stuff their money in some Dutch guy&amp;rsquo;s shorts rather than walk down the street and hand it over to a Canadian bank. Why? Canadian banks were slow to adapt to a market that increasingly craves convenience and simplicity rather than filling out forms in triplicate, haggling over 25 basis points, understanding complex fee schedules, and rushing to a branch in person before some guy takes his two-hour lunch break. Ten years ago, if Canadian banks had simplified their processes and software, ING Direct wouldn&amp;rsquo;t have had a chance to get a foothold in the Canadian market. ING listened to the market and scored, while Canadian banks dictated to the market and lost. Yeah, Canadian banks are the apple of the world&amp;rsquo;s eye right now, but they still dropped the ball. Otherwise the guy juggling oranges on TV wouldn&amp;rsquo;t be so damn smug.&lt;/p&gt;
 
 &lt;p&gt;The good news is it&amp;rsquo;s not too late for companies of all sizes to compete on technical prowess and simplified processes. To put it plainly, most software still sucks. But it won&amp;rsquo;t forever.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The greatest line of code ever</title>
-      <link>http://rocketpages.github.io/the-greatest-line-of-code-ever</link>
-      <pubDate>Sun, 22 Aug 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/the-greatest-line-of-code-ever</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;if&lt;/span&gt; (statusIsNotValid.&lt;span style=&#34;color: #FF0000&#34;&gt;compareTo&lt;/span&gt;( Boolean.&lt;span style=&#34;color: #FF0000&#34;&gt;FALSE&lt;/span&gt; ) != &lt;span style=&#34;color: #0000FF&#34;&gt;0&lt;/span&gt;) skipValidation = &lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;false&lt;/span&gt;;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;If you ever find yourself working in a team that doesn&amp;rsquo;t see the importance of code reviews, remind them that they could easily wind up with a few million lines of &lt;em&gt;that&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;(Taken from &lt;a href=&#34;http://thedailywtf.com/Articles/Boolean-Illogic.aspx&#34; title=&#34;The Daily WTF&#34;&gt;The Daily WTF&lt;/a&gt;.)&lt;/p&gt;
 </description>
     </item>
     

@@ -208,91 +208,40 @@
                         <ul class="uk-breadcrumb">
                             <li><a href="/">Home</a></li>
                             <li><a href="/blog">Blog</a></li>
-                            <li class="uk-active"><span>Migrating to Git, Part 2: Prerequisites</span></li>
+                            <li class="uk-active"><span>Goodbye, Lightbend</span></li>
                         </ul>
                     </div>
                     
-                    <h1>Migrating to Git, Part 2: Prerequisites</h1>
-                    <p class="uk-text-muted">2012-09-10</p>
-                    
+                    <h1>Goodbye, Lightbend</h1>
+                    <p class="uk-text-muted">2016-10-09</p>
+                    <p>It’s been an incredible two-and-a-half years.</p>
 
-<p>This is the second part of a three part series about migrating to Git. If you haven&rsquo;t read part one and are unfamiliar with the advantages of Git, you should check it out.</p>
+<p>My journey to Lightbend began after an incredible experience as an early customer of Typesafe. I began using the Typesafe stack — <a href="http://www.scala-lang.org/">Scala</a>, <a href="https://www.playframework.com/">Play</a>, and <a href="http://akka.io/">Akka</a> — in 2012 to help deliver the revamped <a href="http://walmart.ca">Walmart Canada</a> consumer platform. It was a fantastic project that afforded our team a tremendous opportunity; to help bring the techniques of <em>reactive programming</em> to one of the biggest companies in the world and to millions of customers. The incredible team I worked with at Nurun (since acquired by Razorfish) delivered the project in 2013 — you can read the case study <a href="https://www.lightbend.com/resources/case-studies-and-stories/walmart-boosts-conversions-by-20-with-lightbend-reactive-platform">here</a> and my thoughts on transitioning an enterprise to Scala <a href="https://medium.com/@kvnwbbr/transitioning-to-scala-d1818f25b2b7#.euk2348p7">here</a>.</p>
 
-<p><a href="http://kevinwebber.ca/migrating-to-git-part-1-advantages/" title="Migrating to Git, Part 1: Advantages">Migrating to Git, Part 1: Advantages</a></p>
+<p>After launch the Walmart project was remarkably stable and in very good hands, so I decided to leave Nurun in early 2014 to seek out a new adventure. Shortly after leaving Nurun a major opportunity presented itself — an invitation to join Typesafe as their Developer Advocate after one of my favourite technical bloggers, James Ward, <a href="https://www.jamesward.com/2014/04/27/new-adventures-for-a-technology-adventurer">left Typesafe for Salesforce</a>.</p>
 
-<p>If you already understand the benefits of Git, or have already read part one, welcome to part two in the series! We&rsquo;re going to discuss certain pre-conditions of a migration to Git and make sure your team is ready for the transition.</p>
+<p>The learning curve was tremendous. I’ve always been comfortable speaking in public on a limited scale, but there’s a massive difference between speaking in front of a trusted group of colleagues and a room full of hundreds of strangers. Over the months and years that followed, not only did I become comfortable in front of an audience but I began to look forward to it. Since July 2014 I’ve spoken at a wide range of events, including Gartner AADI, Gartner Catalyst, GeeCON, Scala Up North, and the list goes on. Traveling around the world to share my opinions on topics that I’m passionate about — topics like reactive programming, fast data, and transforming heritage architectures into scalable real-time systems — was a career-changing experience.</p>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<p>While contributions to open source projects are typically measured by lines of code, it’s also important to write and speak about our experiences with emerging technologies; both the success stories and the challenges, the pros and cons of different architectures based on real-world experiences, and do it all in an open and transparent way. I was able to do all of that while at Lightbend. Sharing experiences is a vital part of the open source ecosystem and one of the reasons I felt so strongly about spending so much time on the road away from my friends and family.</p>
 
-<p>Before migrating to Git, you should make sure your team is <em>ready</em> to migrate. Changing version control systems (especially in a large team) is not a trivial undertaking, and certain technical debt should not exist in your code base to ensure a smooth transition.</p>
+<p>Over time I began meeting with companies using or evaluating our platform on major projects, which for over a year put me in the position of being the principle (and only) sales engineer and developer advocate in North America. To say this part of my career was exhausting is an understatement, but after meeting with hundreds of customers and prospective customers I’ve probably been exposed to more ways to leverage the Lightbend stack than most other developers in the world. This has given me a broad perspective on the problems we’re solving with technologies like Scala, both what works and what doesn&rsquo;t. I wouldn&rsquo;t trade these lessons for anything.</p>
 
-<p>Here&rsquo;s a rough guide to help you evaluate whether you&rsquo;re ready to migrate:</p>
+<div class="uk-panel uk-panel-box">
+    <div class="uk-panel-teaser">
+        <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg" alt="">
+    </div>
+    <p>Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I'm going to miss this crew!</p>
+</div>
 
-<h3 id="1-ensure-your-code-base-is-buildable-and-stable">1. Ensure your code base is buildable and stable</h3>
+<p>My time with customers made me miss <em>being</em> a customer. I crave the thought of getting out there and building something awesome. I miss hands-on architecture, I miss nurturing a team of developers, and I miss tackling the hard problems being solved in the business world.</p>
 
-<p>If you can&rsquo;t perform a clean, full build of your application, you should absolutely delay your migrations plans and pay down technical debt before attempting <em>any</em> large scale project (let alone something is risky as migrating to a different version control system). Post-migration, the entire application will need to be completely rebuilt and regression tested. This seems like an obvious prerequisite, but not every organization performs full builds on a regular basis, especially with legacy applications. Being unable to build your application or lacking confidence in your build is a recipe for disaster.</p>
+<p>So last week I made one of the biggest decisions of my career.</p>
 
-<h3 id="2-set-up-a-continuous-integration-server">2. Set up a continuous integration server</h3>
+<p>Effective October 31, I&rsquo;m leaving Lightbend to seek out my next adventure. I&rsquo;m planning to take some time off and recharge before diving back into the ridiculously fun world of building software.</p>
 
-<p>It&rsquo;s a good idea to implement a CI solution in order to get up-to-date feedback on build issues as developers begin to use Git for the first time. It&rsquo;s amazing the types of issues that crop up in the first few days post-migration. Most issues are minor if they&rsquo;re caught early enough.</p>
+<p>To my colleagues at Lightbend, thank you for everything you’ve taught me over the years. To the new friends I’ve made on my travels over the years, I look forward to keeping in touch.</p>
 
-<h3 id="3-prepare-a-regression-test-plan-or-implement-automated-testing">3. Prepare a regression test plan or implement automated testing</h3>
-
-<p>Changing version control systems is quite disruptive. Prepare for a number of things to go wrong. At the very minimum, you should plan for a full regression test of your application immediately after migration and before developers begin committing code. This window should be minimized to avoid syncing nightmares.</p>
-
-<p>If you don&rsquo;t have an automated test suite, this may be a burden to your QA team. There may be a temptation to piggy-back the Git migration onto a major release and kill two testing birds with one stone, but I caution against this as it will be hard to track down the root cause of defects.</p>
-
-<p>If you work in a team that practices Kanban or Scrum, it&rsquo;s a good idea to plan for a loss of velocity during the migration period. This loss of productivity should be minimal if the migration is planned properly. For instance, if your team practices Scrum, it may be a good idea to consider the migration iteration zero and release the product (fully tested) at the end of the sprint. A full sprint is unnecessary, but a short sprint (of a week or less) is also a good opportunity to pay down any kind of technical debt that is a blocker of the migration to Git.</p>
-
-<h3 id="4-plan-for-training">4. Plan for training</h3>
-
-<p>Our team attempted to train grassroots-style, and it was tough. Budget for at least a full day of training to ensure your developers are comfortable with core Git and DVCS concepts.</p>
-
-<p>It also helps that developers understand the rationale for switching version control systems, as any impedance to velocity will be met with frustration. If they understand the long-term benefits, it will make the short-term frustrations easier to deal with.</p>
-
-<h3 id="5-identify-an-evangelist-to-lead-the-migration-and-post-migration-support">5. Identify an evangelist to lead the migration and post-migration support</h3>
-
-<p>At least one member of the team should be very familiar with Git in order to ensure a smooth migration.</p>
-
-<p>Certain questions will come up, like:</p>
-
-<ul>
-<li>What&rsquo;s the team&rsquo;s branching strategy?</li>
-<li>How will the team collaborate?</li>
-<li>What merge strategy will be used?
-
-<ul>
-<li>Squash merges? Fast-forward merges?</li>
-</ul></li>
-<li>How often should merges take place from feature branches to a release branch?</li>
-<li>Will we use sprint branches? Release branches? Or integration directly into a master branch?</li>
-</ul>
-
-<p>It&rsquo;s helpful for one person to take ownership of the migration and establish a developer workflow before the migration. The workflow will evolve, but it helps to have a starting point and a rough objective. The evangelist will guide the team through the initial learning curve, and after the entire team is comfortable with Git the decision making process will naturally become more democratic and decentralized, just like Git itself.</p>
-
-<p>Speaking from personal experience, it&rsquo;s helpful (but not required) that the evangelist is not distracted with development tasks immediately after post-migration. I recommend considering them a build manager or a DevOps team-member for a finite period of time post-migration to ensure capacity for support.</p>
-
-<h3 id="6-make-a-list-of-why-you-re-migrating-to-git-in-the-first-place">6. Make a list of why you&rsquo;re migrating to Git in the first place</h3>
-
-<p>This the least technical prerequisite and more of a return-on-investment analysis exercise.</p>
-
-<p>It&rsquo;s important to come up with a justification for the migration. If you&rsquo;re unable to make this list and be prepared to justify it, you probably don&rsquo;t have someone on the team that understands the benefits of Git well enough to support the migration through the often challenging transitional period. Simply put, if you&rsquo;re unable to justify the expense and disruption of a VCS migration, don&rsquo;t bother. Wait around until you&rsquo;re about to create a reasonable business case and that you have specific measurable goals to revisit during the post-migration retrospective.</p>
-
-<p>This list may include items such as:</p>
-
-<ul>
-<li>Increased developer productivity</li>
-<li>Encouraging exploration and refactoring through rapid branching</li>
-<li>Reducing errors during branch merges (shaking down merges locally)</li>
-<li>More naturally supporting team and release workflow</li>
-<li>Supporting workers who aren&rsquo;t always on the network</li>
-<li>Developer happiness</li>
-<li>Etcetera</li>
-</ul>
-
-<h2 id="the-final-steps">The final steps</h2>
-
-<p>If you&rsquo;re confident and ready to migrate to Git, check out the final part of my Migrating to Git series, <a href="http://kevinwebber.ca/migrating-to-git-part-3-moving-your-code-to-git/" title="Migrating to Git, Part 3: Moving your code to Git">Migrating to Git, Part 3: Moving your code to Git</a>.</p>
+<p>I don’t know where my career will take me next, but I&rsquo;m excited to explore all of the possibilities.</p>
 
                 </div>
             </div>
