@@ -191,6 +191,23 @@
     .article-listing p {
         margin-top: 0px;
     }
+
+    .blog-post {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .blog-post h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .blog-post h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -302,9 +319,10 @@
                         </ul>
                     </div>
                     
-                    <h1>Connection pooling with Hibernate 3.3.x and C3P0</h1>
-                    <p class="uk-text-muted">2010-12-26</p>
-                    
+                    <div class="blog-post">
+                        <h1>Connection pooling with Hibernate 3.3.x and C3P0</h1>
+                        <h5>December 26, 2010</h5>
+                        
 
 <p>Hibernate uses it&rsquo;s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.</p>
 
@@ -367,6 +385,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
 </pre></div>
 
 
+                    </div>
                 </div>
             </div>
         </div>    

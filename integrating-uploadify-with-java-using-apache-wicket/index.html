@@ -191,6 +191,23 @@
     .article-listing p {
         margin-top: 0px;
     }
+
+    .blog-post {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .blog-post h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .blog-post h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -302,9 +319,10 @@
                         </ul>
                     </div>
                     
-                    <h1>Integrating Uploadify with Java using Apache Wicket</h1>
-                    <p class="uk-text-muted">2010-04-30</p>
-                    
+                    <div class="blog-post">
+                        <h1>Integrating Uploadify with Java using Apache Wicket</h1>
+                        <h5>April 30, 2010</h5>
+                        
 
 <p>One of the most requested features on any site that accepts file submissions is the ability to handle multiple uploads elegantly. The current HTML standard only permits one file upload at a time, which makes transferring a large number of files quite tedious.</p>
 
@@ -656,6 +674,7 @@
 
 <p>Enabling true multiple upload support is fairly straightforward with the Flash plugins readily available. Uploadify is my favourite, but there are a ton to choose from. Integrating with Apache Wicket is a piece of cake, and as always, Wicket just makes life a little easier for Java developers.</p>
 
+                    </div>
                 </div>
             </div>
         </div>    

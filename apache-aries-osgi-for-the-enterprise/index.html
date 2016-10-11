@@ -191,6 +191,23 @@
     .article-listing p {
         margin-top: 0px;
     }
+
+    .blog-post {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .blog-post h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .blog-post h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -302,9 +319,10 @@
                         </ul>
                     </div>
                     
-                    <h1>Apache Aries: OSGi for the Enterprise</h1>
-                    <p class="uk-text-muted">2009-11-18</p>
-                    
+                    <div class="blog-post">
+                        <h1>Apache Aries: OSGi for the Enterprise</h1>
+                        <h5>November 18, 2009</h5>
+                        
 
 <p>I recently came across a <a href="http://ianrobinson.blogspot.com/2009/09/osgi-in-enterprise-apache-aries.html" title="blog post">blog post</a> about an Apache project called Aries, currently in incubator status. You can <a href="http://wiki.apache.org/incubator/AriesProposal" title="check out the details here">check out the details here</a>. It looks like enterprise developers are in for a real treat: the missing secret sauce that allows enterprise application developers to harness the goodness of OSGi.</p>
 
@@ -340,6 +358,7 @@
 
 <p>The OSGi Blueprint container being moved from Geronimo to Aries is significant in the fact that, theoretically, Aries can be run on any Java EE app server. This would be huge and take away a major roadblock to OSGi adoption for most people. Simply put, deploying OSGi applications to productive is either too complicated (if you want to embed and make use of Java EE features), or too limiting (running natively and losing out on EE + container managed everything).</p>
 
+                    </div>
                 </div>
             </div>
         </div>    
