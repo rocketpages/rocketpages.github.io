@@ -113,10 +113,10 @@
     
     <item>
       <title>The Enterprise Architect&#39;s Intro To Microservices</title>
-      <link>http://rocketpages.github.io/webinar/enterprise-arch-msa/</link>
+      <link>http://rocketpages.github.io/video/enterprise-arch-msa/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/webinar/enterprise-arch-msa/</guid>
+      <guid>http://rocketpages.github.io/video/enterprise-arch-msa/</guid>
       <description>&lt;p&gt;We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).&lt;/p&gt;
 </description>
     </item>
@@ -222,74 +222,14 @@
     </item>
     
     <item>
-      <title>Resume</title>
-      <link>http://rocketpages.github.io/resume/</link>
+      <title>Kevin Webber</title>
+      <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
-      <guid>http://rocketpages.github.io/resume/</guid>
-      <description>
+      <guid>http://rocketpages.github.io/home/intro/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m a software architect, analyst, and technical speaker from Toronto, Canada. I specialize in the modernization of legacy systems using reactive programming and microservices architecture.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If you&amp;rsquo;re interested in learning more about any area of expertise listed below, please &lt;a href=&#34;http://goo.gl/forms/Ox9cGw4Ohw&#34;&gt;get in touch&lt;/a&gt;. I&amp;rsquo;d be happy to meet over Skype or in-person in downtown Toronto.&lt;/p&gt;
-
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Over 15 years of architecture, analysis, and development experience&lt;/strong&gt; — Significant experience within the JVM and Java ecosystem, having performed the role of architect, analyst, technical leader, developer, and advocate&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Experienced public speaker&lt;/strong&gt; — Presenting at meetups, conferences, and private businesses around the world on a variety of technical subjects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proficient technical writer&lt;/strong&gt; — Regularly contributing to various publications such as Medium, InfoQ, and TechRepublic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; — Acting as an advisor and architect on major systems modernization projects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; — Domain-Driven Design (DDD), OOA/D, distributed systems architecture&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt; — Scala, Java, JavaScript&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Frameworks&lt;/strong&gt; — Play, Akka, Spring&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt; — Vagrant, Puppet, Kubernetes, ConductR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ops&lt;/strong&gt; — Implementing cloud and hybrid-cloud topologies for clustered, scalable, resilient systems&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;verticals&#34;&gt;Verticals&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Open source&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Currently employed at &lt;em&gt;Lightbend&lt;/em&gt;, the corporate steward of &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt;, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt;, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt;, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Advisor to some of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Forbes_Global_2000&#34;&gt;top 2000 businesses&lt;/a&gt; on systems modernization projects&lt;/li&gt;
-&lt;li&gt;Contributor to the open source community through various projects, videos, and writing&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;eCommerce&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2 years of experience with &lt;em&gt;Nurun&lt;/em&gt; (now Razorfish)&lt;/li&gt;
-&lt;li&gt;Tech lead of the &lt;a href=&#34;http://walmart.ca&#34;&gt;Walmart Canada&lt;/a&gt; modernization project&lt;/li&gt;
-&lt;li&gt;Read the Walmart Canada case study &lt;a href=&#34;https://www.lightbend.com/resources/case-studies-and-stories/walmart-boosts-conversions-by-20-with-lightbend-reactive-platform&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Capital Markets&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2 years of experience with &lt;em&gt;Bank of Montreal Capital Markets&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Senior developer and technical lead, working on &lt;a href=&#34;https://www.bmocm.com/&#34;&gt;https://www.bmocm.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Performed enhancements to various FX and global wire transfer payment platforms&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wealth Management&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;7 years of experience with &lt;em&gt;CIBC Wealth Management&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Developed software used by financial advisors in every CIBC branch across Canada, including &lt;a href=&#34;http://www.newswire.ca/news-releases/cibc-financial-healthcheck-helps-2000000-canadians-prepare-for-their-future-539316171.html&#34;&gt;Financial Health Check&lt;/a&gt;, which was used by over &lt;em&gt;2 million&lt;/em&gt; Canadians to help them plan for their financial goals&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;areas-of-interest&#34;&gt;Areas of interest&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt; of legacy systems to &lt;em&gt;microservices&lt;/em&gt; and &lt;em&gt;distributed systems&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; of non-trivial systems; solving the hard problems using emerging patterns to build event-driven, reactive systems&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stream processing&lt;/strong&gt; with &lt;em&gt;Akka Streams&lt;/em&gt;, &lt;em&gt;Spark&lt;/em&gt;, and &lt;em&gt;Kafka&lt;/em&gt;, especially related to batch/ETL modernization&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Developing scalable, resilient systems&lt;/strong&gt; using &lt;em&gt;Scala&lt;/em&gt;, &lt;em&gt;Play&lt;/em&gt;, and &lt;em&gt;Akka&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework. In my role at Lightbend I worked as &lt;strong&gt;Enterprise Architect&lt;/strong&gt;, acting as an analyst and advisor to major enterprises on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

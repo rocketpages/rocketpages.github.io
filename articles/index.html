@@ -95,6 +95,102 @@
     .uk-text-muted {
         color: #9E9D9B;
     }
+
+    .section-heading {
+        margin-bottom: 2.5em;
+    }
+
+    .section-heading h1 {
+        margin-bottom: 0px;
+    }
+
+    .section-heading p {
+        margin-top: 0px;
+        font-size: 1.4em;
+    }
+
+    .publication-listing {
+        margin-bottom: 3em;
+    }
+
+    .publication-listing h5 {
+        margin-bottom: 2px;
+        font-size:0.9em;
+    }
+
+    .publication-listing h5, h5 a {
+        color: #7f8c8d;
+    }
+
+    .publication-listing h4 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .publication-listing p {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .post-listing {
+        margin-bottom: 3em;
+    }
+
+    .post-listing h5 {
+        margin-bottom: 5px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .post-listing h2 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .post-listing p {
+        margin-top: 0px;
+    }
+
+    .video-listing {
+        margin-bottom: 3em;
+    }
+
+    .video-listing h2, .video-listing h3 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+    }
+
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .video-listing p {
+        margin-top: 0px;
+    }
+
+    .article-listing {
+        margin-top:2em;
+        margin-bottom: 3em;
+    }
+
+    .article-listing h2, h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .article-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .article-listing p {
+        margin-top: 0px;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -109,11 +205,6 @@
     .wf-loading td,
     .wf-loading .uk-breadcrumb {
       visibility: hidden
-    }
-    
-    .section-heading {
-        margin-top: 0em;
-        text-transform: uppercase; font-weight: 700
     }
     
     .uk-panel p {
@@ -159,6 +250,8 @@
     .tm-section-colored h1,
     .tm-section-colored h2,
     .tm-section-colored a:not([class]) { color: #fff !important; }
+    .tm-section-colored button { background: #f39c12; color:#2c3e50; }
+    .tm-section-colored button:hover { background:#f1c40f; }
     
 </style>
 
@@ -178,9 +271,6 @@
         </li>
         <li>
             <a href="/videos">Videos</a>
-        </li>
-        <li>
-            <a href="/webinars">Webinars</a>
         </li>
         <li>
             <a href="/talks">Talks</a>
@@ -203,7 +293,7 @@
 
             <div class="uk-grid" data-uk-grid-margin>
                 <div class="uk-width-medium-1-1" style="larger">
-                    <h1 class="section-heading">Articles on Medium</h1>
+                    <h1>Articles on Medium</h1>
                     <div class="headline">
                         <p>The articles below cover technical subjects in depth, focusing on areas of distributed systems such as <em>reactive programming</em> and <em>event-based architectures</em>. The articles below have accumulated well over 100,000 views since 2014.</p>
 
@@ -212,56 +302,75 @@
             </div>
             
             
-                <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-grid uk-hidden-small article-listing" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_768/v1458694296/blog/medium-akka-streams-big.jpg" alt="" class="uk-visible-medium"/>
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_1200/v1458694296/blog/medium-akka-streams-big.jpg" alt="" class="uk-visible-large"/>
     </div>
 
-    <div class="uk-width-medium-1-2 uk-width-small-1-1">
-        <h2><a href="https://medium.com/p/diving-into-akka-streams-2770b3aeabb0" target="_blank">Diving into Akka Streams</a></h2>
-        <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_480/v1458694296/blog/medium-akka-streams-big.jpg" alt="" class="uk-visible-small"/>
-        <p class="uk-text-muted uk-text-small">2016-03-01</p>
-        <p>Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.</p>
+    <div class="uk-width-medium-1-2">
+            <h2><a href="https://medium.com/p/diving-into-akka-streams-2770b3aeabb0" target="_blank">Diving into Akka Streams</a></h2>
+            <h5>March 1, 2016</h5>
+            <p>Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.</p>
 
 <p>Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.</p>
 
     </div>
 
 </div>
+
+<div class="uk-visible-small">
+    <div class="article-listing">
+        <h2><a href="https://medium.com/p/diving-into-akka-streams-2770b3aeabb0" target="_blank">Diving into Akka Streams</a></h2>
+        <h5>March 1, 2016</h5>
+        <p>Akka Streams is a toolkit for per-event processing of streams. It’s an implementation of the Reactive Streams specification, which promises interoperability between a variety of compliant streaming libraries.</p>
+
+<p>Thinking in events enables us to rethink our systems in a purely reactive way — ingesting events, issuing commands which emit new events. We can feed those events back into our system, or emit them for further downstream processing. Forward thinking organizations are using event-driven architectures like this to transform batch-mode systems into real-time systems, reducing latencies from hours to seconds.</p>
+
+    </div>
+</div>
             
-                <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-grid uk-hidden-small article-listing" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_768/v1458694296/blog/medium-reactive-streams-big.jpg" alt="" class="uk-visible-medium"/>
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_1200/v1458694296/blog/medium-reactive-streams-big.jpg" alt="" class="uk-visible-large"/>
     </div>
 
-    <div class="uk-width-medium-1-2 uk-width-small-1-1">
-        <h2><a href="https://medium.com/p/a-journey-into-reactive-streams-5ee2a9cd7e29" target="_blank">A Journey into Reactive Streams</a></h2>
-        <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_480/v1458694296/blog/medium-reactive-streams-big.jpg" alt="" class="uk-visible-small"/>
-        <p class="uk-text-muted uk-text-small">2015-08-01</p>
-        <p>As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.</p>
+    <div class="uk-width-medium-1-2">
+            <h2><a href="https://medium.com/p/a-journey-into-reactive-streams-5ee2a9cd7e29" target="_blank">A Journey into Reactive Streams</a></h2>
+            <h5>August 1, 2015</h5>
+            <p>As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.</p>
 
 <p>In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.</p>
 
     </div>
 
 </div>
+
+<div class="uk-visible-small">
+    <div class="article-listing">
+        <h2><a href="https://medium.com/p/a-journey-into-reactive-streams-5ee2a9cd7e29" target="_blank">A Journey into Reactive Streams</a></h2>
+        <h5>August 1, 2015</h5>
+        <p>As systems embrace data in motion, traditional batch architectures are being re-imagined as pure stream-based architectures. In these systems live data is captured, processed, and used to modify behaviour with response times of seconds or less. There’s major business value in sub-second response times to changing information, rather than the hours, days, or even weeks a system with a traditional batch-based architecture may take to respond. Specifications such as Reactive Streams, and stream processing libraries such as Akka Streams, provide the standards and plumbing necessary to implement such systems effectively.</p>
+
+<p>In this article we introduce concepts high-level concepts such as the difference between arrays and streams and invite you to reimagine your systems as fully event-driven and real-time.</p>
+
+    </div>
+</div>
             
-                <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-grid uk-hidden-small article-listing" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_768/v1458694296/blog/medium-reactive-programming-big.jpg" alt="" class="uk-visible-medium"/>
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_1200/v1458694296/blog/medium-reactive-programming-big.jpg" alt="" class="uk-visible-large"/>
     </div>
 
-    <div class="uk-width-medium-1-2 uk-width-small-1-1">
-        <h2><a href="https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc" target="_blank">What is Reactive Programming?</a></h2>
-        <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_480/v1458694296/blog/medium-reactive-programming-big.jpg" alt="" class="uk-visible-small"/>
-        <p class="uk-text-muted uk-text-small">2014-08-01</p>
-        <p>There’s a wealth of knowledge at our disposal gained over decades of research in computing. Reactive programming is an attempt to capture that knowledge in order to apply it to a new generation of software.</p>
+    <div class="uk-width-medium-1-2">
+            <h2><a href="https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc" target="_blank">What is Reactive Programming?</a></h2>
+            <h5>August 1, 2014</h5>
+            <p>There’s a wealth of knowledge at our disposal gained over decades of research in computing. Reactive programming is an attempt to capture that knowledge in order to apply it to a new generation of software.</p>
 
 <p>The main selling feature of Java was the ability to “write once, run anywhere”, but anywhere was in the context of which operating system the JVM was installed on, not concepts like the cloud or the massive number of concurrent connections that we’re designing for in the age of the Internet of Things.</p>
 
@@ -270,24 +379,47 @@
     </div>
 
 </div>
+
+<div class="uk-visible-small">
+    <div class="article-listing">
+        <h2><a href="https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc" target="_blank">What is Reactive Programming?</a></h2>
+        <h5>August 1, 2014</h5>
+        <p>There’s a wealth of knowledge at our disposal gained over decades of research in computing. Reactive programming is an attempt to capture that knowledge in order to apply it to a new generation of software.</p>
+
+<p>The main selling feature of Java was the ability to “write once, run anywhere”, but anywhere was in the context of which operating system the JVM was installed on, not concepts like the cloud or the massive number of concurrent connections that we’re designing for in the age of the Internet of Things.</p>
+
+<p>In this article we discuss the four principles of reactive software development: responsiveness, resilience, elasticity, and messages. We frame how to apply these principles to software development and architecture, regardless of tool or framework, to build indestructable systems.</p>
+
+    </div>
+</div>
             
-                <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-grid uk-hidden-small article-listing" data-uk-grid-margin>
 
     <div class="uk-width-medium-1-2">
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_768/v1458694296/blog/medium-scala-big.jpg" alt="" class="uk-visible-medium"/>
         <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_1200/v1458694296/blog/medium-scala-big.jpg" alt="" class="uk-visible-large"/>
     </div>
 
-    <div class="uk-width-medium-1-2 uk-width-small-1-1">
-        <h2><a href="https://medium.com/p/transitioning-to-scala-d1818f25b2b7" target="_blank">Transitioning to Scala</a></h2>
-        <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/c_scale,w_480/v1458694296/blog/medium-scala-big.jpg" alt="" class="uk-visible-small"/>
-        <p class="uk-text-muted uk-text-small">2014-04-01</p>
-        <p>What started as a proof-of-concept micro e-commerce site to internally demonstrate the simplicity of Scala code and developer productivity of Play eventually gained traction and became the foundation of Walmart Canada’s new e-commerce platform.</p>
+    <div class="uk-width-medium-1-2">
+            <h2><a href="https://medium.com/p/transitioning-to-scala-d1818f25b2b7" target="_blank">Transitioning to Scala</a></h2>
+            <h5>April 1, 2014</h5>
+            <p>What started as a proof-of-concept micro e-commerce site to internally demonstrate the simplicity of Scala code and developer productivity of Play eventually gained traction and became the foundation of Walmart Canada’s new e-commerce platform.</p>
 
 <p>This is not a Scala programming tutorial. This is a collection of advice geared towards developers, team leads, and managers who are thinking of transitioning their teams to Scala. The advice is based on my own personal experience as a team lead on an enterprise Scala project.</p>
 
     </div>
 
+</div>
+
+<div class="uk-visible-small">
+    <div class="article-listing">
+        <h2><a href="https://medium.com/p/transitioning-to-scala-d1818f25b2b7" target="_blank">Transitioning to Scala</a></h2>
+        <h5>April 1, 2014</h5>
+        <p>What started as a proof-of-concept micro e-commerce site to internally demonstrate the simplicity of Scala code and developer productivity of Play eventually gained traction and became the foundation of Walmart Canada’s new e-commerce platform.</p>
+
+<p>This is not a Scala programming tutorial. This is a collection of advice geared towards developers, team leads, and managers who are thinking of transitioning their teams to Scala. The advice is based on my own personal experience as a team lead on an enterprise Scala project.</p>
+
+    </div>
 </div>
             
 

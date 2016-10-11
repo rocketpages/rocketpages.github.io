@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinar/enterprise-arch-msa/</loc>
+    <loc>http://rocketpages.github.io/video/enterprise-arch-msa/</loc>
     <lastmod>2016-05-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -77,6 +77,11 @@
   </url>
   
   <url>
+    <loc>http://rocketpages.github.io/home/intro/</loc>
+    <lastmod>2016-03-17T15:09:06-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rocketpages.github.io/resume/</loc>
     <lastmod>2016-03-17T15:09:06-04:00</lastmod>
   </url>
@@ -92,17 +97,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinars/</loc>
-    <lastmod>2016-03-17T15:09:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rocketpages.github.io/home/intro/</loc>
-    <lastmod>2016-03-17T15:09:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rocketpages.github.io/webinar/legacy-java-monolith/</loc>
+    <loc>http://rocketpages.github.io/video/legacy-java-monolith/</loc>
     <lastmod>2016-03-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -142,7 +137,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinar/revitalized-with-microservices/</loc>
+    <loc>http://rocketpages.github.io/video/revitalized-with-microservices/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -202,7 +197,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinar/forrester-going-reactive/</loc>
+    <loc>http://rocketpages.github.io/video/forrester-going-reactive/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -272,7 +267,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinar/play-activator-deep-dive/</loc>
+    <loc>http://rocketpages.github.io/video/play-activator-deep-dive/</loc>
     <lastmod>2015-01-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -332,7 +327,7 @@
   </url>
   
   <url>
-    <loc>http://rocketpages.github.io/webinar/play-all-day/</loc>
+    <loc>http://rocketpages.github.io/video/play-all-day/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url>
   

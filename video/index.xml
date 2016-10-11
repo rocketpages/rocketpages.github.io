@@ -6,8 +6,28 @@
     <description>Recent content in Videos on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Enterprise Architect&#39;s Intro To Microservices</title>
+      <link>http://rocketpages.github.io/video/enterprise-arch-msa/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/enterprise-arch-msa/</guid>
+      <description>&lt;p&gt;We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modernizing your Monolith with Microservices</title>
+      <link>http://rocketpages.github.io/video/legacy-java-monolith/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/legacy-java-monolith/</guid>
+      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How does a compiler, interpreter, and CPU work?</title>
@@ -30,12 +50,42 @@
     </item>
     
     <item>
-      <title>Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://rocketpages.github.io/video/revitalized-with-microservices/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/revitalized-with-microservices/</guid>
+      <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
       <link>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</link>
       <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</guid>
       <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Forrester: What Architects Need To Know About Going Reactive</title>
+      <link>http://rocketpages.github.io/video/forrester-going-reactive/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/forrester-going-reactive/</guid>
+      <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deep Dive into the Typesafe Reactive Platform</title>
+      <link>http://rocketpages.github.io/video/play-activator-deep-dive/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/play-activator-deep-dive/</guid>
+      <description>&lt;p&gt;Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.&lt;/p&gt;
 </description>
     </item>
     
@@ -56,6 +106,16 @@
       
       <guid>http://rocketpages.github.io/video/what-is-reactive-programming/</guid>
       <description>&lt;p&gt;Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enterprise Web Development with Play and Scala</title>
+      <link>http://rocketpages.github.io/video/play-all-day/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/play-all-day/</guid>
+      <description>&lt;p&gt;The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.&lt;/p&gt;
 </description>
     </item>
     

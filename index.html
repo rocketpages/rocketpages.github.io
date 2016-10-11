@@ -96,6 +96,102 @@
     .uk-text-muted {
         color: #9E9D9B;
     }
+
+    .section-heading {
+        margin-bottom: 2.5em;
+    }
+
+    .section-heading h1 {
+        margin-bottom: 0px;
+    }
+
+    .section-heading p {
+        margin-top: 0px;
+        font-size: 1.4em;
+    }
+
+    .publication-listing {
+        margin-bottom: 3em;
+    }
+
+    .publication-listing h5 {
+        margin-bottom: 2px;
+        font-size:0.9em;
+    }
+
+    .publication-listing h5, h5 a {
+        color: #7f8c8d;
+    }
+
+    .publication-listing h4 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .publication-listing p {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .post-listing {
+        margin-bottom: 3em;
+    }
+
+    .post-listing h5 {
+        margin-bottom: 5px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .post-listing h2 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .post-listing p {
+        margin-top: 0px;
+    }
+
+    .video-listing {
+        margin-bottom: 3em;
+    }
+
+    .video-listing h2, .video-listing h3 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+    }
+
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .video-listing p {
+        margin-top: 0px;
+    }
+
+    .article-listing {
+        margin-top:2em;
+        margin-bottom: 3em;
+    }
+
+    .article-listing h2, h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .article-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .article-listing p {
+        margin-top: 0px;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -110,11 +206,6 @@
     .wf-loading td,
     .wf-loading .uk-breadcrumb {
       visibility: hidden
-    }
-    
-    .section-heading {
-        margin-top: 0em;
-        text-transform: uppercase; font-weight: 700
     }
     
     .uk-panel p {
@@ -160,6 +251,8 @@
     .tm-section-colored h1,
     .tm-section-colored h2,
     .tm-section-colored a:not([class]) { color: #fff !important; }
+    .tm-section-colored button { background: #f39c12; color:#2c3e50; }
+    .tm-section-colored button:hover { background:#f1c40f; }
     
 </style>
 
@@ -179,9 +272,6 @@
         </li>
         <li>
             <a href="/videos">Videos</a>
-        </li>
-        <li>
-            <a href="/webinars">Webinars</a>
         </li>
         <li>
             <a href="/talks">Talks</a>
@@ -242,7 +332,7 @@
 
                 <div class="uk-width-medium-1-2 larger">
                     
-                        <h1 class="section-heading">Welcome</h1>
+                        <h1>Kevin Webber</h1>
                         <p><strong>I&rsquo;m a software architect, analyst, and technical speaker from Toronto, Canada. I specialize in the modernization of legacy systems using reactive programming and microservices architecture.</strong></p>
 
 <p>My previous role was at <a href="https://lightbend.com">Lightbend</a> (formerly Typesafe), the corporate entity behind the <a href="http://www.scala-lang.org/">Scala</a> programming language, <a href="http://akka.io/">Akka</a> distributed systems framework, <a href="https://www.playframework.com/">Play</a> web framework, and <a href="https://www.lightbend.com/lagom">Lagom</a> microservices framework. In my role at Lightbend I worked as <strong>Enterprise Architect</strong>, acting as an analyst and advisor to major enterprises on systems modernization projects using the principles of <a href="https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72">reactive programming</a>.</p>
@@ -258,29 +348,44 @@
                 <div class="uk-grid" data-uk-grid-margin>
 
                     <div class="uk-width-medium-1-2">                    
-                        <h2>Latest Webinar</h2>
+                        <h1 style="margin-bottom:1em">Latest Blog Posts</h1>
 
                         
-                            <iframe width="330" height="225" src="https://www.youtube.com/embed/mDBa_89qnuE" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" target="_blank">The Enterprise Architect&#39;s Intro To Microservices</a></h3>
-<p class="uk-text-small">2016-05-05</p>
-<p><p>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</p>
-</p>
+                            <div class="post-listing">
+  <h5>October 9, 2016 • Career</h5>
+  <h2><a href="http://rocketpages.github.io/goodbye-lightbend">Goodbye, Lightbend</a></h2>
+  <p>It’s been an incredible two-and-a-half years.</p>
+</div>
                         
+                            <div class="post-listing">
+  <h5>April 26, 2016 • Process</h5>
+  <h2><a href="http://rocketpages.github.io/the-zen-of-process">The Zen of Process</a></h2>
+  <p>Process improvement is the most impactful way to rise above your individual work and impact the overall capacity of the company you work for. All organizations live and die by the quality of their processes.</p>
+</div>
+                        
+                            <div class="post-listing">
+  <h5>April 16, 2015 • Architecture</h5>
+  <h2><a href="http://rocketpages.github.io/reflecting-on-reactive-systems">Reflecting on Reactive Systems</a></h2>
+  <p>Reactive systems are at the heart of a new breed of enterprise system that fully embraces modern infrastructure.</p>
+</div>
+                        
+
+                        <a href="/blog"><button class="uk-button" type="button">Read more posts</button></a>
                     </div>
 
-                    <div class="uk-width-medium-1-2">                    
-                        <h2>Latest Video</h2>
+                    <div class="uk-width-medium-1-2 uk-hidden-small">                    
+                        <h1 style="margin-bottom:1em">Latest Video</h1>
                                                                     
-                            <iframe width="330" height="225" src="https://www.youtube.com/embed/OVTu4XcmnwE" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://www.youtube.com/watch?v=OVTu4XcmnwE" target="_blank">How does a compiler, interpreter, and CPU work?</a></h3>
-<p class="uk-text-small">
-    
-    2016-03-09
+                            <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/mDBa_89qnuE" frameborder="0" allowfullscreen></iframe>  
+  <h2><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" target="_blank">The Enterprise Architect&#39;s Intro To Microservices</a></h2>
+  <h5>May 5, 2016 • Webinar </h5>
+  <p><p>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</p>
 </p>
-<p><p>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</p>
-</p>
+</div>
                         
+
+                        <a href="/videos"><button class="uk-button" type="button">Watch more videos</button></a>
                     </div>
 
                 </div>

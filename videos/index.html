@@ -95,6 +95,102 @@
     .uk-text-muted {
         color: #9E9D9B;
     }
+
+    .section-heading {
+        margin-bottom: 2.5em;
+    }
+
+    .section-heading h1 {
+        margin-bottom: 0px;
+    }
+
+    .section-heading p {
+        margin-top: 0px;
+        font-size: 1.4em;
+    }
+
+    .publication-listing {
+        margin-bottom: 3em;
+    }
+
+    .publication-listing h5 {
+        margin-bottom: 2px;
+        font-size:0.9em;
+    }
+
+    .publication-listing h5, h5 a {
+        color: #7f8c8d;
+    }
+
+    .publication-listing h4 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .publication-listing p {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .post-listing {
+        margin-bottom: 3em;
+    }
+
+    .post-listing h5 {
+        margin-bottom: 5px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .post-listing h2 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .post-listing p {
+        margin-top: 0px;
+    }
+
+    .video-listing {
+        margin-bottom: 3em;
+    }
+
+    .video-listing h2, .video-listing h3 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+    }
+
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .video-listing p {
+        margin-top: 0px;
+    }
+
+    .article-listing {
+        margin-top:2em;
+        margin-bottom: 3em;
+    }
+
+    .article-listing h2, h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .article-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #16a085;
+        text-transform: uppercase;
+    }
+
+    .article-listing p {
+        margin-top: 0px;
+    }
     
     .wf-loading h1,
     .wf-loading h2,
@@ -109,11 +205,6 @@
     .wf-loading td,
     .wf-loading .uk-breadcrumb {
       visibility: hidden
-    }
-    
-    .section-heading {
-        margin-top: 0em;
-        text-transform: uppercase; font-weight: 700
     }
     
     .uk-panel p {
@@ -159,6 +250,8 @@
     .tm-section-colored h1,
     .tm-section-colored h2,
     .tm-section-colored a:not([class]) { color: #fff !important; }
+    .tm-section-colored button { background: #f39c12; color:#2c3e50; }
+    .tm-section-colored button:hover { background:#f1c40f; }
     
 </style>
 
@@ -178,9 +271,6 @@
         </li>
         <li>
             <a href="/videos">Videos</a>
-        </li>
-        <li>
-            <a href="/webinars">Webinars</a>
         </li>
         <li>
             <a href="/talks">Talks</a>
@@ -203,7 +293,7 @@
 
             <div class="uk-grid" data-uk-grid-margin>
                 <div class="uk-width-medium-1-1" style="larger">
-                    <h1 class="section-heading">Videos</h1>
+                    <h1>Videos</h1>
                     <div class="headline">
                         <p>Presentations and educational videos on mostly technical subjects, with a few personal vlogs thrown into the mix. If you have any ideas for future content, please get in touch.</p>
 
@@ -215,64 +305,113 @@
                 
                                         
                     <div class="uk-width-medium-1-2">                    
-                        <iframe width="330" height="225" src="https://www.youtube.com/embed/OVTu4XcmnwE" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://www.youtube.com/watch?v=OVTu4XcmnwE" target="_blank">How does a compiler, interpreter, and CPU work?</a></h3>
-<p class="uk-text-small">
-    
-    2016-03-09
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/mDBa_89qnuE" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" target="_blank">The Enterprise Architect&#39;s Intro To Microservices</a></h3>
+  <h5>May 5, 2016 • Webinar </h5>
+  <p><p>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</p>
 </p>
-<p><p>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</p>
-</p>
+</div>
                     </div>
                                         
                     <div class="uk-width-medium-1-2">                    
-                        <iframe width="330" height="225" src="https://www.youtube.com/embed/D1MzfcS2TDQ" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://www.youtube.com/watch?v=D1MzfcS2TDQ" target="_blank">Software is Eating the World</a></h3>
-<p class="uk-text-small">
-    
-    2016-03-08
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/A-IMfF15FZA" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=A-IMfF15FZA" target="_blank">Modernizing your Monolith with Microservices</a></h3>
+  <h5>March 10, 2016 • Webinar </h5>
+  <p><p>We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.</p>
 </p>
-<p><p>The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&rsquo;s famous 2011 quote that &ldquo;software is eating the world&rdquo;.</p>
-</p>
+</div>
                     </div>
                                         
                     <div class="uk-width-medium-1-2">                    
-                        <iframe width="330" height="225" src="https://gartner.mediasite.com/Mediasite/Play/9e3cede606f74c87aafa2e4d7aec08e51d" frameborder="0" allowfullscreen></iframe>
-<h3><a href="http://www.gartnereventsondemand.com/session/APN29/SPS18" target="_blank">Gartner AADI: Revitalizing Walmart&#39;s Aging Architecture For Web Scale</a></h3>
-<p class="uk-text-small">
-    
-        <span class="uk-badge"><a href="http://www.gartner.com/events/na/applications" class="uk-contrast">Gartner AADI</a></span>
-    
-    2015-12-03
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/OVTu4XcmnwE" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=OVTu4XcmnwE" target="_blank">How does a compiler, interpreter, and CPU work?</a></h3>
+  <h5>March 9, 2016 • YouTube </h5>
+  <p><p>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</p>
 </p>
-<p><p>The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.</p>
-</p>
+</div>
                     </div>
                                         
                     <div class="uk-width-medium-1-2">                    
-                        <iframe width="330" height="225" src="https://player.vimeo.com/video/110790971" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://vimeo.com/110790971" target="_blank">Go Reactive! Reactive web application development with Scala, Play, and Akka</a></h3>
-<p class="uk-text-small">
-    
-        <span class="uk-badge"><a href="http://2014.geecon.cz/" class="uk-contrast">GeeCON 2014</a></span>
-    
-    2014-10-24
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/D1MzfcS2TDQ" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=D1MzfcS2TDQ" target="_blank">Software is Eating the World</a></h3>
+  <h5>March 8, 2016 • YouTube </h5>
+  <p><p>The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&rsquo;s famous 2011 quote that &ldquo;software is eating the world&rdquo;.</p>
 </p>
-<p><p>We&rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.</p>
-</p>
+</div>
                     </div>
                                         
                     <div class="uk-width-medium-1-2">                    
-                        <iframe width="330" height="225" src="https://player.vimeo.com/video/102035223" frameborder="0" allowfullscreen></iframe>
-<h3><a href="https://vimeo.com/102035223" target="_blank">What is Reactive Programming?</a></h3>
-<p class="uk-text-small">
-    
-        <span class="uk-badge"><a href="http://www.meetup.com/Reactive-TO/" class="uk-contrast">ReactiveTO</a></span>
-    
-    2014-07-24
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/SPGCdziXlHU" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=SPGCdziXlHU" target="_blank">Revitalizing Aging Architectures with Microservices</a></h3>
+  <h5>January 20, 2016 • Webinar </h5>
+  <p><p>This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.</p>
 </p>
-<p><p>Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.</p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://gartner.mediasite.com/Mediasite/Play/9e3cede606f74c87aafa2e4d7aec08e51d" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="http://www.gartnereventsondemand.com/session/APN29/SPS18" target="_blank">Revitalizing Walmart&#39;s Aging Architecture For Web Scale</a></h3>
+  <h5>December 3, 2015 • Conference  • Gartner AADI</h5>
+  <p><p>The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.</p>
 </p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/FCkdY0HjiIg" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=FCkdY0HjiIg" target="_blank">Forrester: What Architects Need To Know About Going Reactive</a></h3>
+  <h5>July 23, 2015 • Webinar </h5>
+  <p><p>A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.</p>
+</p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/EJl9mQ0051g" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=EJl9mQ0051g" target="_blank">Deep Dive into the Typesafe Reactive Platform</a></h3>
+  <h5>January 14, 2015 • Webinar </h5>
+  <p><p>Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.</p>
+</p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://player.vimeo.com/video/110790971" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://vimeo.com/110790971" target="_blank">Go Reactive! Reactive web application development with Scala, Play, and Akka</a></h3>
+  <h5>October 24, 2014 • Conference  • GeeCON 2014</h5>
+  <p><p>We&rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.</p>
+</p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://player.vimeo.com/video/102035223" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://vimeo.com/102035223" target="_blank">What is Reactive Programming?</a></h3>
+  <h5>July 24, 2014 • Meetup  • ReactiveTO</h5>
+  <p><p>Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.</p>
+</p>
+</div>
+                    </div>
+                                        
+                    <div class="uk-width-medium-1-2">                    
+                        <div class="video-listing">
+  <iframe width="330" height="225" src="https://www.youtube.com/embed/GnhPAdFreX4" frameborder="0" allowfullscreen></iframe>  
+  <h3><a href="https://www.youtube.com/watch?v=GnhPAdFreX4" target="_blank">Enterprise Web Development with Play and Scala</a></h3>
+  <h5>May 5, 2014 • Webinar </h5>
+  <p><p>The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.</p>
+</p>
+</div>
                     </div>
                 
                 
