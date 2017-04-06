@@ -1,0 +1,1450 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6521356/7819972/css/fonts.css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    <script src="/js/uikit.min.js"></script>      
+    <script src="/js/uikit-icons.min.js"></script>      
+</head>
+
+<style>
+    
+    body {
+        color: #222;
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .uk-text-lead {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 150%;
+    }
+    
+    a {
+        color: #3498db;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-weight: 400;
+        font-size: 1em;
+        color: #222;
+    }
+        
+    h1, h2, h3, h4, h5 {
+        color: #222;
+    }
+    
+    h1 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 2.5em;
+        letter-spacing: -1px;
+    }
+    
+    h2 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 1.7em;
+    }
+    
+    h3 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.3em;
+    }
+    
+    h5 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1em;
+    }
+    
+    pre {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-size: 0.85em;
+    }
+    
+    #kevin-webber {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+
+    #latest-content {
+        font-size: 0.85em;
+    }
+
+    .uk-section-primary {
+        background-color: #2980b9;
+    }
+
+    #video-li h2, #video-li h5, #video-li p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #video-li h2 {
+        margin-top: 18px;
+    }
+
+    #footer {
+        font-size: 0.85em;
+    }
+    
+    .uk-card-secondary, .uk-section-secondary {
+        background: #34495e;
+        font-size:0.8em;
+    }
+    
+    #blog-post h1 {
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #blog-post h4 {
+        margin-bottom: 0px;
+    }
+    
+    #blog-post h4.date {
+        font-size:1em;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 2em;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        color:#7f8c8d;
+    }
+        
+    .blog-post {
+        margin-bottom:2.5em;
+    }
+    
+    #blog-post .uk-active span {
+        font-weight: 700;
+    }
+    
+    .blog-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:2px;
+    }
+    
+    .blog-post h2 {
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-left:0px;
+    }
+    
+    .blog-post p {
+        margin-top:4px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post {
+        margin-bottom:2.5em;
+    }
+    
+    .pub-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:5px;
+    }
+    
+    .pub-post h4 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post p {
+        margin-top:5px;
+        margin-bottom:0px;
+    }
+
+    .photo-overlay {
+        font-size: 0.85em;
+    }
+    
+    .video-listing h2 {
+        margin-top:1em;
+        margin-bottom:0px;
+    }
+    
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";       
+    }
+    
+    .video-listing p {
+        margin-top: 0px;
+    }
+    
+    .uk-text-lead {        
+        font-family: "Whitney SSm A", "Whitney SSm B";
+    }
+    
+    .talk-title-small .title {
+        font-weight: 700;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";   
+        font-size: 1.1em;
+    }
+    
+    .talk-title-small .link {
+        padding-left:6px;
+    }
+    
+</style>
+
+<script>
+
+    $(document).ready(function() {        
+        $(".video").each(function() {
+            
+            $(this).append($('<div/>', {'class': 'play'}));
+
+            $(document).delegate('#'+this.id, 'click', function() {
+                
+                var iframe_url = $(this).attr("iframe-src");
+
+                
+                var iframe = $('<iframe></iframe>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+
+                
+                $(this).replaceWith(iframe);
+            });
+        });
+    });
+    
+</script>
+    
+    <body>
+        <nav class="uk-navbar-container uk-margin-bottom-remove uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="/" uk-icon="icon: home"></a>
+        <ul class="uk-navbar-nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/"><img style="height:35px;"/></a>
+    </div>
+    <div class="uk-navbar-right">        
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav"></a>        
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+        <div class="uk-section uk-padding-large uk-section-default">
+            <div class="uk-container uk-container-medium">                      
+                <h1 class="uk-heading-line uk-text-left uk-margin-medium-bottom"><span>Talks</span></h1>                    
+                <table class="uk-table uk-table-striped uk-visible@l">
+                    <thead>
+                        <tr>
+                            <th class="uk-hidden-medium uk-hidden-small uk-visible@l">&nbsp;</th>
+                            <th>Date</th>
+                            <th class="uk-visible@l">Video</th>
+                            <th class="uk-visible@l">Slides</th>
+                            <th>Title</th>
+                            <th class="uk-hidden-small">City</th>
+                            <th>Host</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2016-08-16</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Revitalizing Aging Architectures</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>San Diego, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.gartner.com/events/na/catalyst">Gartner Catalyst</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2016-08-05</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/scala-state-of-the-union" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Scala: State of the Union</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Montreal, Canada</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://scalaupnorth.com/">Scala Up North</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Roundtable
+        </span>
+    </td>
+    <td><nobr>2016-08-03</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Being Reactive is Good</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>New York, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="https://www.lightbend.com/reactive-roundtable">Reactive Roundtable</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Roundtable
+        </span>
+    </td>
+    <td><nobr>2016-05-25</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Being Reactive is Good</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Chicago, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="https://www.lightbend.com/reactive-roundtable">Reactive Roundtable</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2016-05-05</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=mDBa_89qnuE" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/microservices-monoliths-soa-and-how-we-got-here" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Microservices, Monoliths, SOA, and how we got here</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            <a href="https://www.lightbend.com/blog/microservices-monoliths-soa-and-how-we-got-here">Lightbend</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2016-03-21</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/reactive-streams-the-glue-of-the-real-time-organization" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Reactive Streams: The Glue of the Real-time Organization</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>New York, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Open-Source-Analytics-New-York/events/229469500/">Open Source Analytics New York</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2016-03-10</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=A-IMfF15FZA" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/microservices-architecture-for-the-real-time-organization" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>The 6 Rules for Modernizing your Aging Java Monolith with Microservices</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            Lightbend
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2016-01-20</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=SPGCdziXlHU" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/revitalizing-aging-architectures-with-microservices-and-the-reactive-platform" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Revitalizing Aging Architectures with Microservices</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            Lightbend
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2015-12-01</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="http://www.gartnereventsondemand.com/session/APN29/SPS18" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Revitalizing Walmart&#39;s Aging Architecture For Web Scale</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Las Vegas, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.gartner.com/newsroom/id/3145017">Gartner AADI Summit</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2015-10-22</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="http://eventsnew.sapvirtualevents.com/teched/en/embed.aspx?sid=22803&amp;autoplay=off" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Being Reactive is Good</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Las Vegas, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://events.sap.com/teched-2015-usa/en/home">SAP TechEd</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2015-09-24</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Being Reactive is Good</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Houston, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.slb.com/resources/events.aspx">Schlumberger Software Symposium</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-09-09</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Reactive Streams and Akka Streams</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Dallas, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.javamug.org/meeting/18">Dallas JavaMUG</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-08-06</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>A Journey into Reactive Streams</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Baltimore, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Baltimore-Scala/events/224084687/">Baltimore Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-08-05</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>A Journey into Reactive Streams</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Washington DC, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/dc-scala/events/223575545/">DC Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-07-22</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Exploring Reactive Streams with Akka</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Boston, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/boston-scala/events/223617839/">Boston Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-07-09</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Exploring Reactive Streams with Akka</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Toronto, Canada</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Reactive-TO/events/222389043/">ReactiveTO</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2015-06-24</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=FCkdY0HjiIg" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Forrester: Modernizing Your Aging Architecture</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            Lightbend
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-05-31</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Going Reactive</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Atlanta, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/atlanta-scala/events/220928080/">Atlanta Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-05-19</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Reactive Web Development with Play</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Seattle, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Seattle-Scala-User-Group/events/220010618/">Seattle Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-05-14</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Reactive Web Development with Play</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Dallas, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Dallas-Scala-Enthusiasts/events/221973369/">Dallas Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2015-05-13</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Reactive Web Development with Play</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Austin, US</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Austin-Scala-Enthusiasts/events/220932943/">Austin Scala</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Roundtable
+        </span>
+    </td>
+    <td><nobr>2015-04-09</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://speakerdeck.com/kvnwbbr/introduction-to-building-distributed-systems-with-scala-and-akka" uk-icon="icon: image"></a>
+        
+    </td>
+    <td>Introduction to Distributed Systems</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Brampton, Canada</nobr>
+        
+    </td>
+    <td>
+        
+            Sheridan College
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2015-01-14</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=EJl9mQ0051g" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Getting Started with Play and Activator</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            Lightbend
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Conference
+        </span>
+    </td>
+    <td><nobr>2014-10-23</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://vimeo.com/110790971" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Go Reactive! With Scala, Play, and Akka</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Prague, CZ</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://2014.geecon.cz/speakers/?id=46">GeeCON</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Meetup
+        </span>
+    </td>
+    <td><nobr>2014-07-24</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>A Night of Reactive Programming</td>
+    <td class="uk-hidden-small">
+        
+            <nobr>Toronto, Canada</nobr>
+        
+    </td>
+    <td>
+        
+            <a href="http://www.meetup.com/Reactive-TO/events/184996462/">ReactiveTO</a>
+        
+    </td>
+</tr>
+                                                
+                            <tr>
+    <td class="uk-hidden-medium uk-hidden-small uk-visible@l">
+        <span class="uk-badge">
+            Webinar
+        </span>
+    </td>
+    <td><nobr>2014-05-05</nobr></td>
+    <td class="uk-text-center uk-visible@l">
+        
+            <a href="https://www.youtube.com/watch?v=GnhPAdFreX4" uk-icon="icon: youtube"></a>
+        
+    </td>
+    <td class="uk-text-center uk-visible@l">
+        
+    </td>
+    <td>Enterprise Web Development with Play and Scala</td>
+    <td class="uk-hidden-small">
+        
+    </td>
+    <td>
+        
+            Lightbend
+        
+    </td>
+</tr>
+                                                   
+                    </tbody>                        
+                </table>
+                <dl class="uk-description-list uk-description-list-divider uk-hidden@l uk-margin-medium-bottom">
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Revitalizing Aging Architectures</span>
+    
+        
+</dt>
+<dd>2016-08-16<br/>
+    
+        San Diego, US<br/>
+    
+    
+        <a href="http://www.gartner.com/events/na/catalyst">Gartner Catalyst</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Scala: State of the Union</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/scala-state-of-the-union" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2016-08-05<br/>
+    
+        Montreal, Canada<br/>
+    
+    
+        <a href="http://scalaupnorth.com/">Scala Up North</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Being Reactive is Good</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2016-08-03<br/>
+    
+        New York, US<br/>
+    
+    
+        <a href="https://www.lightbend.com/reactive-roundtable">Reactive Roundtable</a><br/>
+    
+    <span class="uk-badge">Roundtable</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Being Reactive is Good</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2016-05-25<br/>
+    
+        Chicago, US<br/>
+    
+    
+        <a href="https://www.lightbend.com/reactive-roundtable">Reactive Roundtable</a><br/>
+    
+    <span class="uk-badge">Roundtable</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Microservices, Monoliths, SOA, and how we got here</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/microservices-monoliths-soa-and-how-we-got-here" uk-icon="icon: image"></a></span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2016-05-05<br/>
+    
+    
+        <a href="https://www.lightbend.com/blog/microservices-monoliths-soa-and-how-we-got-here">Lightbend</a><br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Reactive Streams: The Glue of the Real-time Organization</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/reactive-streams-the-glue-of-the-real-time-organization" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2016-03-21<br/>
+    
+        New York, US<br/>
+    
+    
+        <a href="http://www.meetup.com/Open-Source-Analytics-New-York/events/229469500/">Open Source Analytics New York</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">The 6 Rules for Modernizing your Aging Java Monolith with Microservices</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/microservices-architecture-for-the-real-time-organization" uk-icon="icon: image"></a></span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=A-IMfF15FZA" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2016-03-10<br/>
+    
+    
+        Lightbend<br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Revitalizing Aging Architectures with Microservices</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/revitalizing-aging-architectures-with-microservices-and-the-reactive-platform" uk-icon="icon: image"></a></span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=SPGCdziXlHU" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2016-01-20<br/>
+    
+    
+        Lightbend<br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Revitalizing Walmart&#39;s Aging Architecture For Web Scale</span>
+    
+    
+        <span class="link"><a href="http://www.gartnereventsondemand.com/session/APN29/SPS18" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2015-12-01<br/>
+    
+        Las Vegas, US<br/>
+    
+    
+        <a href="http://www.gartner.com/newsroom/id/3145017">Gartner AADI Summit</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Being Reactive is Good</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a></span>
+    
+    
+        <span class="link"><a href="http://eventsnew.sapvirtualevents.com/teched/en/embed.aspx?sid=22803&amp;autoplay=off" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2015-10-22<br/>
+    
+        Las Vegas, US<br/>
+    
+    
+        <a href="http://events.sap.com/teched-2015-usa/en/home">SAP TechEd</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Being Reactive is Good</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/why-being-reactive-is-good" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2015-09-24<br/>
+    
+        Houston, US<br/>
+    
+    
+        <a href="http://www.slb.com/resources/events.aspx">Schlumberger Software Symposium</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Reactive Streams and Akka Streams</span>
+    
+        
+</dt>
+<dd>2015-09-09<br/>
+    
+        Dallas, US<br/>
+    
+    
+        <a href="http://www.javamug.org/meeting/18">Dallas JavaMUG</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">A Journey into Reactive Streams</span>
+    
+        
+</dt>
+<dd>2015-08-06<br/>
+    
+        Baltimore, US<br/>
+    
+    
+        <a href="http://www.meetup.com/Baltimore-Scala/events/224084687/">Baltimore Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">A Journey into Reactive Streams</span>
+    
+        
+</dt>
+<dd>2015-08-05<br/>
+    
+        Washington DC, US<br/>
+    
+    
+        <a href="http://www.meetup.com/dc-scala/events/223575545/">DC Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Exploring Reactive Streams with Akka</span>
+    
+        
+</dt>
+<dd>2015-07-22<br/>
+    
+        Boston, US<br/>
+    
+    
+        <a href="http://www.meetup.com/boston-scala/events/223617839/">Boston Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Exploring Reactive Streams with Akka</span>
+    
+        
+</dt>
+<dd>2015-07-09<br/>
+    
+        Toronto, Canada<br/>
+    
+    
+        <a href="http://www.meetup.com/Reactive-TO/events/222389043/">ReactiveTO</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Forrester: Modernizing Your Aging Architecture</span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=FCkdY0HjiIg" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2015-06-24<br/>
+    
+    
+        Lightbend<br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Going Reactive</span>
+    
+        
+</dt>
+<dd>2015-05-31<br/>
+    
+        Atlanta, US<br/>
+    
+    
+        <a href="http://www.meetup.com/atlanta-scala/events/220928080/">Atlanta Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Reactive Web Development with Play</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2015-05-19<br/>
+    
+        Seattle, US<br/>
+    
+    
+        <a href="http://www.meetup.com/Seattle-Scala-User-Group/events/220010618/">Seattle Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Reactive Web Development with Play</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2015-05-14<br/>
+    
+        Dallas, US<br/>
+    
+    
+        <a href="http://www.meetup.com/Dallas-Scala-Enthusiasts/events/221973369/">Dallas Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Reactive Web Development with Play</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/reactive-web-development-with-play-2-dot-3" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2015-05-13<br/>
+    
+        Austin, US<br/>
+    
+    
+        <a href="http://www.meetup.com/Austin-Scala-Enthusiasts/events/220932943/">Austin Scala</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Introduction to Distributed Systems</span>
+    
+        <span class="link"><a href="https://speakerdeck.com/kvnwbbr/introduction-to-building-distributed-systems-with-scala-and-akka" uk-icon="icon: image"></a></span>
+    
+        
+</dt>
+<dd>2015-04-09<br/>
+    
+        Brampton, Canada<br/>
+    
+    
+        Sheridan College<br/>
+    
+    <span class="uk-badge">Roundtable</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Getting Started with Play and Activator</span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=EJl9mQ0051g" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2015-01-14<br/>
+    
+    
+        Lightbend<br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Go Reactive! With Scala, Play, and Akka</span>
+    
+    
+        <span class="link"><a href="https://vimeo.com/110790971" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2014-10-23<br/>
+    
+        Prague, CZ<br/>
+    
+    
+        <a href="http://2014.geecon.cz/speakers/?id=46">GeeCON</a><br/>
+    
+    <span class="uk-badge">Conference</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">A Night of Reactive Programming</span>
+    
+        
+</dt>
+<dd>2014-07-24<br/>
+    
+        Toronto, Canada<br/>
+    
+    
+        <a href="http://www.meetup.com/Reactive-TO/events/184996462/">ReactiveTO</a><br/>
+    
+    <span class="uk-badge">Meetup</span> 
+</dd>
+                                            
+                        <dt class="talk-title-small">
+    <span class="title">Enterprise Web Development with Play and Scala</span>
+    
+    
+        <span class="link"><a href="https://www.youtube.com/watch?v=GnhPAdFreX4" uk-icon="icon: youtube"></a></span>
+        
+</dt>
+<dd>2014-05-05<br/>
+    
+    
+        Lightbend<br/>
+    
+    <span class="uk-badge">Webinar</span> 
+</dd>
+                                               
+                </dl>
+            </div>
+        </div>    
+        
+        <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-1-2@m uk-text-left uk-text-center@m">
+                <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
+            </div>
+            <div class="uk-width-1-2@m">
+                <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
+                <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+            </div>
+        </div>             
+    </div>
+</div>  
+        
+    </body>
+    
+</html>

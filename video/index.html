@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6521356/7819972/css/fonts.css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    <script src="/js/uikit.min.js"></script>      
+    <script src="/js/uikit-icons.min.js"></script>      
+</head>
+
+<style>
+    
+    body {
+        color: #222;
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .uk-text-lead {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 150%;
+    }
+    
+    a {
+        color: #3498db;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-weight: 400;
+        font-size: 1em;
+        color: #222;
+    }
+        
+    h1, h2, h3, h4, h5 {
+        color: #222;
+    }
+    
+    h1 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 2.5em;
+        letter-spacing: -1px;
+    }
+    
+    h2 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 1.7em;
+    }
+    
+    h3 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.3em;
+    }
+    
+    h5 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1em;
+    }
+    
+    pre {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-size: 0.85em;
+    }
+    
+    #kevin-webber {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+
+    #latest-content {
+        font-size: 0.85em;
+    }
+
+    .uk-section-primary {
+        background-color: #2980b9;
+    }
+
+    #video-li h2, #video-li h5, #video-li p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #video-li h2 {
+        margin-top: 18px;
+    }
+
+    #footer {
+        font-size: 0.85em;
+    }
+    
+    .uk-card-secondary, .uk-section-secondary {
+        background: #34495e;
+        font-size:0.8em;
+    }
+    
+    #blog-post h1 {
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #blog-post h4 {
+        margin-bottom: 0px;
+    }
+    
+    #blog-post h4.date {
+        font-size:1em;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 2em;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        color:#7f8c8d;
+    }
+        
+    .blog-post {
+        margin-bottom:2.5em;
+    }
+    
+    #blog-post .uk-active span {
+        font-weight: 700;
+    }
+    
+    .blog-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:2px;
+    }
+    
+    .blog-post h2 {
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-left:0px;
+    }
+    
+    .blog-post p {
+        margin-top:4px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post {
+        margin-bottom:2.5em;
+    }
+    
+    .pub-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:5px;
+    }
+    
+    .pub-post h4 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post p {
+        margin-top:5px;
+        margin-bottom:0px;
+    }
+
+    .photo-overlay {
+        font-size: 0.85em;
+    }
+    
+    .video-listing h2 {
+        margin-top:1em;
+        margin-bottom:0px;
+    }
+    
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";       
+    }
+    
+    .video-listing p {
+        margin-top: 0px;
+    }
+    
+    .uk-text-lead {        
+        font-family: "Whitney SSm A", "Whitney SSm B";
+    }
+    
+    .talk-title-small .title {
+        font-weight: 700;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";   
+        font-size: 1.1em;
+    }
+    
+    .talk-title-small .link {
+        padding-left:6px;
+    }
+    
+</style>
+
+<script>
+
+    $(document).ready(function() {        
+        $(".video").each(function() {
+            
+            $(this).append($('<div/>', {'class': 'play'}));
+
+            $(document).delegate('#'+this.id, 'click', function() {
+                
+                var iframe_url = $(this).attr("iframe-src");
+
+                
+                var iframe = $('<iframe></iframe>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+
+                
+                $(this).replaceWith(iframe);
+            });
+        });
+    });
+    
+</script>
+    
+    <body>
+        <nav class="uk-navbar-container uk-margin-bottom-remove uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="/" uk-icon="icon: home"></a>
+        <ul class="uk-navbar-nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/"><img style="height:35px;"/></a>
+    </div>
+    <div class="uk-navbar-right">        
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav"></a>        
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+        <div class="uk-section uk-padding-large uk-section-default">
+            <div class="uk-container">            
+                <h1 class="uk-heading-line uk-text-left uk-margin-medium-bottom"><span>Videos</span></h1>
+                <div class="uk-grid" data-uk-grid-margin>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="mDBa_89qnuE" iframe-src="https://www.youtube.com/embed/mDBa_89qnuE?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/mDBa_89qnuE/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=mDBa_89qnuE" target="_blank">The Enterprise Architect&#39;s Intro To Microservices</a></h2>
+    <h5>May 5, 2016 • Webinar </h5>
+    <p><p>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="A-IMfF15FZA" iframe-src="https://www.youtube.com/embed/A-IMfF15FZA?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/A-IMfF15FZA/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=A-IMfF15FZA" target="_blank">Modernizing your Monolith with Microservices</a></h2>
+    <h5>March 10, 2016 • Webinar </h5>
+    <p><p>We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="OVTu4XcmnwE" iframe-src="https://www.youtube.com/embed/OVTu4XcmnwE?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/OVTu4XcmnwE/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=OVTu4XcmnwE" target="_blank">How does a compiler, interpreter, and CPU work?</a></h2>
+    <h5>March 9, 2016 • YouTube </h5>
+    <p><p>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="D1MzfcS2TDQ" iframe-src="https://www.youtube.com/embed/D1MzfcS2TDQ?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/D1MzfcS2TDQ/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=D1MzfcS2TDQ" target="_blank">Software is Eating the World</a></h2>
+    <h5>March 8, 2016 • YouTube </h5>
+    <p><p>The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&rsquo;s famous 2011 quote that &ldquo;software is eating the world&rdquo;.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="SPGCdziXlHU" iframe-src="https://www.youtube.com/embed/SPGCdziXlHU?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/SPGCdziXlHU/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=SPGCdziXlHU" target="_blank">Revitalizing Aging Architectures with Microservices</a></h2>
+    <h5>January 20, 2016 • Webinar </h5>
+    <p><p>This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="9e3cede606f74c87aafa2e4d7aec08e51d" iframe-src="https://gartner.mediasite.com/Mediasite/Play/9e3cede606f74c87aafa2e4d7aec08e51d">
+        <div class="uk-inline uk-light">
+            <img src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491423941/video-walmart-web-scale_osxl8b.png"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="http://www.gartnereventsondemand.com/session/APN29/SPS18" target="_blank">Revitalizing Walmart&#39;s Aging Architecture For Web Scale</a></h2>
+    <h5>December 3, 2015 • Conference  • Gartner AADI</h5>
+    <p><p>The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="FCkdY0HjiIg" iframe-src="https://www.youtube.com/embed/FCkdY0HjiIg?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/FCkdY0HjiIg/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=FCkdY0HjiIg" target="_blank">Forrester: What Architects Need To Know About Going Reactive</a></h2>
+    <h5>July 23, 2015 • Webinar </h5>
+    <p><p>A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="EJl9mQ0051g" iframe-src="https://www.youtube.com/embed/EJl9mQ0051g?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/EJl9mQ0051g/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=EJl9mQ0051g" target="_blank">Deep Dive into the Typesafe Reactive Platform</a></h2>
+    <h5>January 14, 2015 • Webinar </h5>
+    <p><p>Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="vimeo-110790971" iframe-src="https://player.vimeo.com/video/110790971">
+        <div class="uk-inline uk-light">
+            <img src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491423102/video-go-reactive_aqrstw.png"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://vimeo.com/110790971" target="_blank">Go Reactive! Reactive web application development with Scala, Play, and Akka</a></h2>
+    <h5>October 24, 2014 • Conference  • GeeCON 2014</h5>
+    <p><p>We&rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="vimeo-102035223" iframe-src="https://player.vimeo.com/video/102035223">
+        <div class="uk-inline uk-light">
+            <img src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491423840/video-what-is-reactive_vuerfx.png"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://vimeo.com/102035223" target="_blank">What is Reactive Programming?</a></h2>
+    <h5>July 24, 2014 • Meetup  • ReactiveTO</h5>
+    <p><p>Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.</p>
+</p>
+</div>
+
+                        </div>
+                                            
+                        <div class="uk-width-1-2@m uk-margin-medium-bottom">                                    
+                            <div class="video-listing">  
+    
+        <div class="uk-margin-remove">    
+    <div class="video" id="GnhPAdFreX4" iframe-src="https://www.youtube.com/embed/GnhPAdFreX4?autoplay=1">
+        <div class="uk-inline uk-light">
+            <img src="http://i.ytimg.com/vi/GnhPAdFreX4/sddefault.jpg"/>
+            <div class="uk-position-center">
+                <span uk-overlay-icon="icon: youtube; ratio: 3"></span>
+            </div>
+        </div>
+    </div>    
+</div> 
+    
+    <h2><a href="https://www.youtube.com/watch?v=GnhPAdFreX4" target="_blank">Enterprise Web Development with Play and Scala</a></h2>
+    <h5>May 5, 2014 • Webinar </h5>
+    <p><p>The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.</p>
+</p>
+</div>
+
+                        </div>
+                    
+                </div>
+            </div>
+        </div>    
+        
+        <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-1-2@m uk-text-left uk-text-center@m">
+                <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
+            </div>
+            <div class="uk-width-1-2@m">
+                <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
+                <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+            </div>
+        </div>             
+    </div>
+</div>
+        
+    </body>
+    
+</html>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Kevin Webber</title>
-    <link>http://rocketpages.github.io/home/</link>
+    <link>http://rocketpages.github.io/home/index.xml</link>
     <description>Recent content in Homes on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -15,9 +15,9 @@
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m a software architect, analyst, and technical speaker from Toronto, Canada. I specialize in the modernization of legacy systems using reactive programming and microservices architecture.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;I currently work as Founder and Consultant at &lt;a href=&#34;https://redelastic.com&#34;&gt;RedElastic&lt;/a&gt;, a boutique consulting firm that equips organizations with the skills necessary to adopt modern architectural approaches. We specialize in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.&lt;/p&gt;
 
-&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework. In my role at Lightbend I worked as &lt;strong&gt;Enterprise Architect&lt;/strong&gt;, acting as an analyst and advisor to major enterprises on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
 </description>
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Kevin Webber</title>
-    <link>http://rocketpages.github.io/publication/</link>
+    <link>http://rocketpages.github.io/publication/index.xml</link>
     <description>Recent content in Publications on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

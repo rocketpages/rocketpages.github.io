@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Webber</title>
-    <link>http://rocketpages.github.io/</link>
+    <link>http://rocketpages.github.io/index.xml</link>
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -27,11 +27,11 @@
 
 &lt;p&gt;Over time I began meeting with companies using or evaluating our platform on major projects, which for over a year put me in the position of being the principle (and only) sales engineer and developer advocate in North America. To say this part of my career was exhausting is an understatement, but after meeting with hundreds of customers and prospective customers I’ve probably been exposed to more ways to leverage the Lightbend stack than most other developers in the world. This has given me a broad perspective on the problems we’re solving with technologies like Scala, both what works and what doesn&amp;rsquo;t. I wouldn&amp;rsquo;t trade these lessons for anything.&lt;/p&gt;
 
-&lt;div class=&#34;uk-panel uk-panel-box&#34;&gt;
-    &lt;div class=&#34;uk-panel-teaser&#34;&gt;
-        &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg&#34; alt=&#34;&#34;&gt;
+&lt;div class=&#34;uk-inline&#34;&gt;
+    &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;div class=&#34;uk-overlay uk-overlay-default uk-position-bottom photo-overlay&#34;&gt;
+        Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I&#39;m going to miss this crew!
     &lt;/div&gt;
-    &lt;p&gt;Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I&#39;m going to miss this crew!&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;My time with customers made me miss &lt;em&gt;being&lt;/em&gt; a customer. I crave the thought of getting out there and building something awesome. I miss hands-on architecture, I miss nurturing a team of developers, and I miss tackling the hard problems being solved in the business world.&lt;/p&gt;
@@ -53,16 +53,6 @@
       
       <guid>http://rocketpages.github.io/talk/2016-08-16/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Scala: State of the Union</title>
-      <link>http://rocketpages.github.io/deck/scala-state-of-the-union/</link>
-      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/deck/scala-state-of-the-union/</guid>
-      <description>&lt;p&gt;In this keynote, we discuss the past, present, and future of Scala; where it has been and where it’s going. While this talk will focus on the new language features introduced in 2.12, it will also dive into an equally important aspect of Scala in 2016: the incredible community that’s grown up around Scala over the years. Kevin will frame the talk around his own journey to Scala and how both the language and the community made him a better developer and architect.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -90,16 +80,6 @@
       
       <guid>http://rocketpages.github.io/talk/2016-05-25/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Microservices, Monoliths, SOA, and how we got here</title>
-      <link>http://rocketpages.github.io/deck/microservices-how-we-got-here/</link>
-      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/deck/microservices-how-we-got-here/</guid>
-      <description>&lt;p&gt;A bit of history of application development, from the early days of monoliths and SOA to the emergence of Microservice architectures. We will review the drawbacks of heritage architectures and how the principles of Reactive can help you build isolated services that are scalable, resilient to failure, and combine with other services to form a cohesive whole.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -181,18 +161,6 @@
     </item>
     
     <item>
-      <title>Reactive Streams: The Glue of the Real-Time Organization</title>
-      <link>http://rocketpages.github.io/deck/reactive-streams-glue/</link>
-      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/deck/reactive-streams-glue/</guid>
-      <description>&lt;p&gt;The &amp;ldquo;real-time organization&amp;rdquo; reacts to information now rather than basing critical decisions on stale data. This requires reimagining how data flows through your organization, moving away from data at rest and moving towards a completely event-based streaming architecture. Events become the lifeblood of the organization, while analytics becomes the brain. Organizations that successfully harness the power of real-time event streaming can transform analytical latencies from hours to seconds.&lt;/p&gt;
-
-&lt;p&gt;This session will describe a reference architecture using the Lightbend Reactive Platform and other tools that can be used to build out the real-time organization, leveraging real-time data to produce analytics that result in immediate, actionable insights.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Reactive Streams: The Glue of the Real-time Organization</title>
       <link>http://rocketpages.github.io/talk/2016-03-21/</link>
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
@@ -202,35 +170,63 @@
     </item>
     
     <item>
-      <title>Articles on Medium</title>
-      <link>http://rocketpages.github.io/articles/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/articles/</guid>
-      <description>&lt;p&gt;The articles below cover technical subjects in depth, focusing on areas of distributed systems such as &lt;em&gt;reactive programming&lt;/em&gt; and &lt;em&gt;event-based architectures&lt;/em&gt;. The articles below have accumulated well over 100,000 views since 2014.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>http://rocketpages.github.io/blog/</link>
-      <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
-      
-      <guid>http://rocketpages.github.io/blog/</guid>
-      <description>&lt;p&gt;A collection of blog posts and personal anecdotes.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Kevin Webber</title>
       <link>http://rocketpages.github.io/home/intro/</link>
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m a software architect, analyst, and technical speaker from Toronto, Canada. I specialize in the modernization of legacy systems using reactive programming and microservices architecture.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;I currently work as Founder and Consultant at &lt;a href=&#34;https://redelastic.com&#34;&gt;RedElastic&lt;/a&gt;, a boutique consulting firm that equips organizations with the skills necessary to adopt modern architectural approaches. We specialize in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.&lt;/p&gt;
 
-&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe), the corporate entity behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework. In my role at Lightbend I worked as &lt;strong&gt;Enterprise Architect&lt;/strong&gt;, acting as an analyst and advisor to major enterprises on systems modernization projects using the principles of &lt;a href=&#34;https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.lpdqdjp72&#34;&gt;reactive programming&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Modernizing your Monolith with Microservices</title>
+      <link>http://rocketpages.github.io/video/legacy-java-monolith/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/legacy-java-monolith/</guid>
+      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The 6 Rules for Modernizing your Aging Java Monolith with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-03-10/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How does a compiler, interpreter, and CPU work?</title>
+      <link>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</guid>
+      <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software is Eating the World</title>
+      <link>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
+      <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-01-20/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-01-20/</guid>
+      <description></description>
     </item>
     
   </channel>

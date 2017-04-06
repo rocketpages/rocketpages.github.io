@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,323 +6,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kevin Webber</title>
     <link rel="stylesheet" href="/css/uikit.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/components/slideshow.min.css">
-    <script src="/js/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6521356/7819972/css/fonts.css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
     <script src="/js/uikit.min.js"></script>      
-    <script src="/js/components/slideshow.min.js"></script>
-    <script src="https://use.typekit.net/ecv7ait.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="/js/uikit-icons.min.js"></script>      
 </head>
 
 <style>
     
     body {
         color: #222;
-        font-family: "proxima-nova", sans-serif;
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .uk-text-lead {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-style: normal;
+        font-weight: 400;
     }
     
     p {
-        font-size: 1.15em;
+        font-size: 1em;
         line-height: 150%;
     }
     
-    ul {
-        line-height: 150%;
-    }
-    
-    em {
-        font-family: "garamond-premier-pro-caption", sans-serif;
-        font-size: 1.15em;
+    a {
+        color: #3498db;
     }
     
     nav, .uk-navbar-nav>li>a {
-        font-family: "futura-pt", sans-serif;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
         color: #222;
     }
-    
-    .uk-breadcrumb {
-        font-family: "futura-pt", sans-serif;
-        font-weight: 400;
-    }
-    
-    .uk-navbar-brand {
-        font-weight: 700;
-    }
-    
-    .uk-navbar-brand,
-    .uk-navbar-nav>li>a,
-    .uk-navbar-nav>li {
-        height: 44px;
-    }
-    
-    .larger {
-        font-size: 1.1em;
-    }
-    
-    .headline {
-        font-size: 1.2em;
-    }
-    
+        
     h1, h2, h3, h4, h5 {
-        font-family: "futura-pt", sans-serif;
         color: #222;
     }
     
     h1 {
-        font-size: 2.3em;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 2.5em;
+        letter-spacing: -1px;
     }
     
     h2 {
-        font-size: 1.8em;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 1.7em;
     }
     
     h3 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1.5em;
     }
     
     h4 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1.3em;
     }
     
-    pre {
-        font-family: "source-code-pro", sans-serif;
-    }
-    
-    .uk-text-muted {
-        color: #9E9D9B;
-    }
-
-    .section-heading {
-        margin-bottom: 2.5em;
-    }
-
-    .section-heading h1 {
-        margin-bottom: 0px;
-    }
-
-    .section-heading p {
-        margin-top: 0px;
-        font-size: 1.4em;
-    }
-
-    .publication-listing {
-        margin-bottom: 3em;
-    }
-
-    .publication-listing h5 {
-        margin-bottom: 2px;
-        font-size:0.9em;
-    }
-
-    .publication-listing h5, h5 a {
-        color: #7f8c8d;
-    }
-
-    .publication-listing h4 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-    }
-
-    .publication-listing p {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-
-    .post-listing {
-        margin-bottom: 3em;
-    }
-
-    .post-listing h5 {
-        margin-bottom: 5px;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .post-listing h2 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-    }
-
-    .post-listing p {
-        margin-top: 0px;
-    }
-
-    .video-listing {
-        margin-bottom: 3em;
-    }
-
-    .video-listing h2, .video-listing h3 {
-        margin-top: 1em;
-        margin-bottom: 0px;
-    }
-
-    .video-listing h5 {
-        margin-top: 1em;
-        margin-bottom: 0px;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .video-listing p {
-        margin-top: 0px;
-    }
-
-    .article-listing {
-        margin-top:2em;
-        margin-bottom: 3em;
-    }
-
-    .article-listing h2, h3 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .article-listing h5 {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .article-listing p {
-        margin-top: 0px;
-    }
-
-    .blog-post {
-        margin-top: 2em;
-        margin-bottom: 4em;
-    }
-
-    .blog-post h1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .blog-post h5 {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-    
-    .wf-loading h1,
-    .wf-loading h2,
-    .wf-loading h3,
-    .wf-loading h4,
-    .wf-loading h5,
-    .wf-loading p,
-    .wf-loading nav,
-    .wf-loading ul,
-    .wf-loading ul li,
-    .wf-loading li,
-    .wf-loading td,
-    .wf-loading .uk-breadcrumb {
-      visibility: hidden
-    }
-    
-    .uk-panel p {
+    h5 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1em;
     }
     
-    .uk-panel p.date {
-        font-size: 0.8em;
+    pre {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-size: 0.85em;
     }
     
-    .tm-section,
-    .tm-footer { padding: 20px 0; }
-    
-     
-    @media (min-width: 768px) {
-
-        .tm-section,
-        .tm-footer { padding: 40px 0; }
-
+    #kevin-webber {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: -3px;
     }
 
-     
-    @media (min-width: 1220px) {
+    #latest-content {
+        font-size: 0.85em;
+    }
 
-        .tm-section,
-        .tm-footer { padding: 60px 0; }
+    .uk-section-primary {
+        background-color: #2980b9;
+    }
 
+    #video-li h2, #video-li h5, #video-li p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #video-li h2 {
+        margin-top: 18px;
+    }
+
+    #footer {
+        font-size: 0.85em;
     }
     
-    .tm-section .uk-heading-large { margin-bottom: 20px; }
-    .tm-section .uk-text-large { margin-bottom: 60px; }
-
-    .tm-section-color-1 { 
+    .uk-card-secondary, .uk-section-secondary {
         background: #34495e;
+        font-size:0.8em;
     }
     
-    .tm-section-color-2 { 
-        background-image: url("http://res.cloudinary.com/dxqjvpa0t/image/upload/v1471915436/bright_squares_xpqsyv.png");
-        background-repeat: repeat;            
+    #blog-post h1 {
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #blog-post h4 {
+        margin-bottom: 0px;
+    }
+    
+    #blog-post h4.date {
+        font-size:1em;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 2em;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        color:#7f8c8d;
     }
         
-    .tm-section-colored,
-    .tm-section-colored h1,
-    .tm-section-colored h2,
-    .tm-section-colored a:not([class]) { color: #fff !important; }
-    .tm-section-colored button { background: #f39c12; color:#2c3e50; }
-    .tm-section-colored button:hover { background:#f1c40f; }
+    .blog-post {
+        margin-bottom:2.5em;
+    }
+    
+    #blog-post .uk-active span {
+        font-weight: 700;
+    }
+    
+    .blog-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:2px;
+    }
+    
+    .blog-post h2 {
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-left:0px;
+    }
+    
+    .blog-post p {
+        margin-top:4px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post {
+        margin-bottom:2.5em;
+    }
+    
+    .pub-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:5px;
+    }
+    
+    .pub-post h4 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post p {
+        margin-top:5px;
+        margin-bottom:0px;
+    }
+
+    .photo-overlay {
+        font-size: 0.85em;
+    }
+    
+    .video-listing h2 {
+        margin-top:1em;
+        margin-bottom:0px;
+    }
+    
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";       
+    }
+    
+    .video-listing p {
+        margin-top: 0px;
+    }
+    
+    .uk-text-lead {        
+        font-family: "Whitney SSm A", "Whitney SSm B";
+    }
+    
+    .talk-title-small .title {
+        font-weight: 700;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";   
+        font-size: 1.1em;
+    }
+    
+    .talk-title-small .link {
+        padding-left:6px;
+    }
     
 </style>
 
-    <body>
-        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+<script>
 
-            <nav class="uk-navbar uk-margin-large-bottom">
-    <a class="uk-navbar-brand uk-hidden-small" href="/">
-        Kevin Webber
-    </a>
-    <ul class="uk-navbar-nav uk-hidden-small">
-        <li>
-            <a href="/articles">Articles</a>
-        </li>
-        <li>
-            <a href="/blog">Blog</a>
-        </li>
-        <li>
-            <a href="/videos">Videos</a>
-        </li>
-        <li>
-            <a href="/talks">Talks</a>
-        </li>
-        <li>
-            <a href="/resume">Resume</a>
-        </li>
-    </ul>
-    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
+    $(document).ready(function() {        
+        $(".video").each(function() {
+            
+            $(this).append($('<div/>', {'class': 'play'}));
+
+            $(document).delegate('#'+this.id, 'click', function() {
+                
+                var iframe_url = $(this).attr("iframe-src");
+
+                
+                var iframe = $('<iframe></iframe>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+
+                
+                $(this).replaceWith(iframe);
+            });
+        });
+    });
+    
+</script>
+
+    <body>
+        
+        <nav class="uk-navbar-container uk-margin-bottom-remove uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="/" uk-icon="icon: home"></a>
         <ul class="uk-navbar-nav">
-            <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
         </ul>
     </div>
-        
-    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
 </nav>
 
-            <div class="uk-grid" data-uk-grid-margin>
-                <div class="uk-width-medium-1-6 uk-width-large-1-5">&nbsp;</div>
-                <div class="uk-width-medium-4-6 uk-width-large-3-5">
-                    
-                    <div class="uk-panel uk-panel-box">
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/"><img style="height:35px;"/></a>
+    </div>
+    <div class="uk-navbar-right">        
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav"></a>        
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+        <div id="blog-post" class="uk-section uk-padding-large uk-section-default">
+            <div class="uk-container uk-container-small">            
+                    <div class="uk-tile uk-tile-muted uk-padding-small" uk-sticky>                        
                         <ul class="uk-breadcrumb">
-                            <li><a href="/">Home</a></li>
+                            <li><a class="uk-logo" href="/" uk-icon="icon: home"></a></li>
                             <li><a href="/blog">Blog</a></li>
                             <li class="uk-active"><span>Retrospective: A Night of Reactive Programming</span></li>
                         </ul>
-                    </div>
+                    </div>                    
+                
+                    <h1>Retrospective: A Night of Reactive Programming</h1>
+                    <h4 class="uk-heading-bullet date">August 6, 2014</h4>
                     
-                    <div class="blog-post">
-                        <h1>Retrospective: A Night of Reactive Programming</h1>
-                        <h5>August 6, 2014</h5>
-                        
 
 <p>I hosted the first event for <a href="http://meetup.com/reactive-to">ReactiveTO</a> on July 24th. It was fantastic evening filled with great talks on reactive programming principles, microservices, Akka, and ReactiveCocoa.</p>
 
@@ -333,77 +298,31 @@
 
 <p>Simply put, with 2.9 billion people now using the internet, our old tricks and techniques of developing robust software must adapt. Language and framework tribalism will play a very small role in the upcoming big shift towards Reactive programming, so it was wonderful to meet other developers with the same point of view. The common factor uniting us all is the desire to build better software.</p>
 
-<!-- This is a div as a thumbnail with a caption -->
-
-<div class="uk-thumbnail">
+<div class="uk-inline">
     <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/v1407310645/IMG_1380_kkwn7u.jpg" alt="Aleksey Nikiforov - Akka demo">
-    <div class="uk-thumbnail-caption">Aleksey Nikiforov demonstrating a live real-time heartbeat app in Akka</div>
+    <div class="uk-overlay uk-overlay-default uk-position-bottom photo-overlay">
+        Aleksey Nikiforov demonstrating a live real-time heartbeat app in Akka.
+    </div>
 </div>
 
 <h2 id="thank-you">Thank you!</h2>
 
 <p>A big thanks goes out to my fellow presenters, in no particular order: Dejan Glozic (IBM), Sergey Gavrilyuk (Qwrty), Aleksey Nikiforov (PagerDuty), and <a href="http://www.nurun.com/en/careers/toronto" title="Nurun Toronto">Nurun Toronto</a> for hosting our first event.</p>
 
-                    </div>
-                </div>
-                <div class="uk-width-medium-1-6 uk-width-large-1-5">&nbsp;</div>
             </div>
         </div>    
         
-        
-<div class="tm-section tm-section-color-2">
-    
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
-    
-<div class="uk-grid uk-text-small" data-uk-grid-margin>
-
-    <div class="uk-width-medium-1-2 uk-hidden-small">
-        <h3>Interested in meeting?</h3>
-        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
-
-        <ul style="line-height:200%; font-size: 1.1em;">
-            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
-            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
-        </ul>
-        
-    </div>
-
-    <div class="uk-width-medium-1-2">
-        <h3>Interested in chatting?</h3>
-        <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
-        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
-        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
-        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
-    </div>
-
-</div>
-
-</div>
-    
-</div>
-
-        <div id="offcanvas" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/articles">Articles</a>
-            </li>
-            <li>
-                <a href="/blog">Blog</a>
-            </li>
-            <li>
-                <a href="/videos">Videos</a>
-            </li>
-            <li>
-                <a href="/talks">Talks</a>
-            </li>
-            <li>
-                <a href="/resume">Resume</a>
-            </li>
-        </ul>
+        <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-1-2@m uk-text-left uk-text-center@m">
+                <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
+            </div>
+            <div class="uk-width-1-2@m">
+                <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
+                <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+            </div>
+        </div>             
     </div>
 </div>
         

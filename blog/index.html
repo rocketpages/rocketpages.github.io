@@ -7,540 +7,468 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kevin Webber</title>
     <link rel="stylesheet" href="/css/uikit.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/components/slideshow.min.css">
-    <script src="/js/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6521356/7819972/css/fonts.css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
     <script src="/js/uikit.min.js"></script>      
-    <script src="/js/components/slideshow.min.js"></script>
-    <script src="https://use.typekit.net/ecv7ait.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="/js/uikit-icons.min.js"></script>      
 </head>
 
 <style>
     
     body {
         color: #222;
-        font-family: "proxima-nova", sans-serif;
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .uk-text-lead {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-style: normal;
+        font-weight: 400;
     }
     
     p {
-        font-size: 1.15em;
+        font-size: 1em;
         line-height: 150%;
     }
     
-    ul {
-        line-height: 150%;
-    }
-    
-    em {
-        font-family: "garamond-premier-pro-caption", sans-serif;
-        font-size: 1.15em;
+    a {
+        color: #3498db;
     }
     
     nav, .uk-navbar-nav>li>a {
-        font-family: "futura-pt", sans-serif;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
         color: #222;
     }
-    
-    .uk-breadcrumb {
-        font-family: "futura-pt", sans-serif;
-        font-weight: 400;
-    }
-    
-    .uk-navbar-brand {
-        font-weight: 700;
-    }
-    
-    .uk-navbar-brand,
-    .uk-navbar-nav>li>a,
-    .uk-navbar-nav>li {
-        height: 44px;
-    }
-    
-    .larger {
-        font-size: 1.1em;
-    }
-    
-    .headline {
-        font-size: 1.2em;
-    }
-    
+        
     h1, h2, h3, h4, h5 {
-        font-family: "futura-pt", sans-serif;
         color: #222;
     }
     
     h1 {
-        font-size: 2.3em;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 2.5em;
+        letter-spacing: -1px;
     }
     
     h2 {
-        font-size: 1.8em;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 1.7em;
     }
     
     h3 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1.5em;
     }
     
     h4 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1.3em;
     }
     
-    pre {
-        font-family: "source-code-pro", sans-serif;
-    }
-    
-    .uk-text-muted {
-        color: #9E9D9B;
-    }
-
-    .section-heading {
-        margin-bottom: 2.5em;
-    }
-
-    .section-heading h1 {
-        margin-bottom: 0px;
-    }
-
-    .section-heading p {
-        margin-top: 0px;
-        font-size: 1.4em;
-    }
-
-    .publication-listing {
-        margin-bottom: 3em;
-    }
-
-    .publication-listing h5 {
-        margin-bottom: 2px;
-        font-size:0.9em;
-    }
-
-    .publication-listing h5, h5 a {
-        color: #7f8c8d;
-    }
-
-    .publication-listing h4 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-    }
-
-    .publication-listing p {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-
-    .post-listing {
-        margin-bottom: 3em;
-    }
-
-    .post-listing h5 {
-        margin-bottom: 5px;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .post-listing h2 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-    }
-
-    .post-listing p {
-        margin-top: 0px;
-    }
-
-    .video-listing {
-        margin-bottom: 3em;
-    }
-
-    .video-listing h2, .video-listing h3 {
-        margin-top: 1em;
-        margin-bottom: 0px;
-    }
-
-    .video-listing h5 {
-        margin-top: 1em;
-        margin-bottom: 0px;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .video-listing p {
-        margin-top: 0px;
-    }
-
-    .article-listing {
-        margin-top:2em;
-        margin-bottom: 3em;
-    }
-
-    .article-listing h2, h3 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .article-listing h5 {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-
-    .article-listing p {
-        margin-top: 0px;
-    }
-
-    .blog-post {
-        margin-top: 2em;
-        margin-bottom: 4em;
-    }
-
-    .blog-post h1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .blog-post h5 {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: #16a085;
-        text-transform: uppercase;
-    }
-    
-    .wf-loading h1,
-    .wf-loading h2,
-    .wf-loading h3,
-    .wf-loading h4,
-    .wf-loading h5,
-    .wf-loading p,
-    .wf-loading nav,
-    .wf-loading ul,
-    .wf-loading ul li,
-    .wf-loading li,
-    .wf-loading td,
-    .wf-loading .uk-breadcrumb {
-      visibility: hidden
-    }
-    
-    .uk-panel p {
+    h5 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
         font-size: 1em;
     }
     
-    .uk-panel p.date {
-        font-size: 0.8em;
+    pre {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-size: 0.85em;
     }
     
-    .tm-section,
-    .tm-footer { padding: 20px 0; }
-    
-     
-    @media (min-width: 768px) {
-
-        .tm-section,
-        .tm-footer { padding: 40px 0; }
-
+    #kevin-webber {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: -3px;
     }
 
-     
-    @media (min-width: 1220px) {
+    #latest-content {
+        font-size: 0.85em;
+    }
 
-        .tm-section,
-        .tm-footer { padding: 60px 0; }
+    .uk-section-primary {
+        background-color: #2980b9;
+    }
 
+    #video-li h2, #video-li h5, #video-li p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #video-li h2 {
+        margin-top: 18px;
+    }
+
+    #footer {
+        font-size: 0.85em;
     }
     
-    .tm-section .uk-heading-large { margin-bottom: 20px; }
-    .tm-section .uk-text-large { margin-bottom: 60px; }
-
-    .tm-section-color-1 { 
+    .uk-card-secondary, .uk-section-secondary {
         background: #34495e;
+        font-size:0.8em;
     }
     
-    .tm-section-color-2 { 
-        background-image: url("http://res.cloudinary.com/dxqjvpa0t/image/upload/v1471915436/bright_squares_xpqsyv.png");
-        background-repeat: repeat;            
+    #blog-post h1 {
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #blog-post h4 {
+        margin-bottom: 0px;
+    }
+    
+    #blog-post h4.date {
+        font-size:1em;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 2em;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        color:#7f8c8d;
     }
         
-    .tm-section-colored,
-    .tm-section-colored h1,
-    .tm-section-colored h2,
-    .tm-section-colored a:not([class]) { color: #fff !important; }
-    .tm-section-colored button { background: #f39c12; color:#2c3e50; }
-    .tm-section-colored button:hover { background:#f1c40f; }
+    .blog-post {
+        margin-bottom:2.5em;
+    }
+    
+    #blog-post .uk-active span {
+        font-weight: 700;
+    }
+    
+    .blog-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:2px;
+    }
+    
+    .blog-post h2 {
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-left:0px;
+    }
+    
+    .blog-post p {
+        margin-top:4px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post {
+        margin-bottom:2.5em;
+    }
+    
+    .pub-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:5px;
+    }
+    
+    .pub-post h4 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post p {
+        margin-top:5px;
+        margin-bottom:0px;
+    }
+
+    .photo-overlay {
+        font-size: 0.85em;
+    }
+    
+    .video-listing h2 {
+        margin-top:1em;
+        margin-bottom:0px;
+    }
+    
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";       
+    }
+    
+    .video-listing p {
+        margin-top: 0px;
+    }
+    
+    .uk-text-lead {        
+        font-family: "Whitney SSm A", "Whitney SSm B";
+    }
+    
+    .talk-title-small .title {
+        font-weight: 700;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";   
+        font-size: 1.1em;
+    }
+    
+    .talk-title-small .link {
+        padding-left:6px;
+    }
     
 </style>
 
-    <body>
-        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+<script>
 
-            <nav class="uk-navbar uk-margin-large-bottom">
-    <a class="uk-navbar-brand uk-hidden-small" href="/">
-        Kevin Webber
-    </a>
-    <ul class="uk-navbar-nav uk-hidden-small">
-        <li>
-            <a href="/articles">Articles</a>
-        </li>
-        <li>
-            <a href="/blog">Blog</a>
-        </li>
-        <li>
-            <a href="/videos">Videos</a>
-        </li>
-        <li>
-            <a href="/talks">Talks</a>
-        </li>
-        <li>
-            <a href="/resume">Resume</a>
-        </li>
-    </ul>
-    <div class="uk-navbar-flip uk-hidden-small uk-hidden-medium">
+    $(document).ready(function() {        
+        $(".video").each(function() {
+            
+            $(this).append($('<div/>', {'class': 'play'}));
+
+            $(document).delegate('#'+this.id, 'click', function() {
+                
+                var iframe_url = $(this).attr("iframe-src");
+
+                
+                var iframe = $('<iframe></iframe>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+
+                
+                $(this).replaceWith(iframe);
+            });
+        });
+    });
+    
+</script>
+    
+    <body>
+        <nav class="uk-navbar-container uk-margin-bottom-remove uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="/" uk-icon="icon: home"></a>
         <ul class="uk-navbar-nav">
-            <li><a href="https://ca.linkedin.com/in/kvnwbbr" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://twitter.com/kvnwbbr" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
         </ul>
     </div>
-        
-    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Kevin Webber</div>
 </nav>
-            
-            <div class="uk-grid" data-uk-grid-margin>
-                <div class="uk-width-medium-2-3">
-                    
-                    <div class="section-heading">
-                        <h1>Blog</h1>
-                        <p><p>A collection of blog posts and personal anecdotes.</p>
-</p>
-                    </div>
-                    
-                    <div class="posts">
+
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/"><img style="height:35px;"/></a>
+    </div>
+    <div class="uk-navbar-right">        
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav"></a>        
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+        <div class="uk-section uk-padding-large uk-section-default">
+            <div class="uk-container">            
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-2-3@m">                    
                         
-                            <div class="post-listing">
+                        <h1 class="uk-heading-line uk-text-left uk-margin-medium-bottom"><span>Blog</span></h1>
+
+                        <div class="posts">
+                                                            
+                                <div class="blog-post">
   <h5>October 9, 2016 • Career</h5>
   <h2><a href="http://rocketpages.github.io/goodbye-lightbend">Goodbye, Lightbend</a></h2>
   <p>It’s been an incredible two-and-a-half years.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>April 26, 2016 • Process</h5>
   <h2><a href="http://rocketpages.github.io/the-zen-of-process">The Zen of Process</a></h2>
   <p>Process improvement is the most impactful way to rise above your individual work and impact the overall capacity of the company you work for. All organizations live and die by the quality of their processes.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>April 16, 2015 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/reflecting-on-reactive-systems">Reflecting on Reactive Systems</a></h2>
   <p>Reactive systems are at the heart of a new breed of enterprise system that fully embraces modern infrastructure.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>August 6, 2014 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/retrospective-a-night-of-reactive-programming">Retrospective: A Night of Reactive Programming</a></h2>
   <p>I hosted the first event for ReactiveTO on July 24th. It was fantastic evening filled with great talks on reactive programming principles, microservices, Akka, and ReactiveCocoa.</p>
-</div>
-                        
-                            <div class="post-listing">
-  <h5>November 15, 2013 • Process</h5>
-  <h2><a href="http://rocketpages.github.io/agile-and-waterfall-together">Agile and Waterfall can live together in harmony</a></h2>
-  <p>Agile is challenging to use on certain projects, like those bound by fixed-price, fixed-date contracts. Agencies, governments, and other organizations who are bound by contracts struggle to implement Agile effectively. We&#39;ll explore ways that we can borrow the best processes from Agile when we&#39;re bound by the limitations of fixed-price contracts and statements of work.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>September 11, 2012 • Process</h5>
   <h2><a href="http://rocketpages.github.io/migrating-to-git-part-3-moving-your-code-to-git">Migrating to Git, Part 3: Moving your code to Git</a></h2>
   <p>If you&#39;re ready to proceed with a migration to Git, congratulations! You&#39;re about to start using one of the best development tools available. In this third part of the series we&#39;ll explore the actual migration and how it will impact your workflow in the future.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>September 10, 2012 • Process</h5>
   <h2><a href="http://rocketpages.github.io/migrating-to-git-part-2-prerequisites">Migrating to Git, Part 2: Prerequisites</a></h2>
   <p>Changing version control systems is not a trivial undertaking. Certain technical debt should not exist in your code base to ensure a smooth transition. This is a checklist to help make sure your team is prepared to move to Git.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>September 9, 2012 • Process</h5>
   <h2><a href="http://rocketpages.github.io/migrating-to-git-part-1-advantages">Migrating to Git, Part 1: Advantages</a></h2>
   <p>Git is simply one of the best things that’s happened to the development workflow in a decade; if you choose to master it. The first in this three part series will begin your journey from Git novice to Git master.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>July 2, 2012 • Career</h5>
   <h2><a href="http://rocketpages.github.io/joy-at-qcon-new-york">Joy at QCon New York</a></h2>
   <p>Joy isn&#39;t the typical emotion that comes to mind when one pictures enterprise software and enterprise software developers, but technical culture is changing rapidly and more people are recognizing the business value of joy. It&#39;s an exciting time to be a software developer.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>November 2, 2011 • Code</h5>
   <h2><a href="http://rocketpages.github.io/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery">Multiplayer tic-tac-toe in Java using the WebSocket API, Netty (NIO), and jQuery</a></h2>
   <p>It was big news in 2010 when Twitter migrated their search from Ruby on Rails to Java-based Netty. Not only was it big in the news department, but it was also big in the results department: Twitter reported their search performance increased by 3x. In this post we&#39;ll explore Netty by using it to build a game of multiplayer tic-tac-toe.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>December 28, 2010 • Code</h5>
   <h2><a href="http://rocketpages.github.io/fixing-fancybox-with-ajax-and-wicket">Fixing Fancybox with AJAX (and Wicket)</a></h2>
   <p>A page I&#39;m working on accepts multiple image uploads. Once the images are successfully processed asynchronously on the server, an image panel on the same page is automatically refreshed. The AJAX callback works fine and updates the panel view with the newly uploaded photos, but the net result is that Fancybox stops working completely.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>December 26, 2010 • Code</h5>
   <h2><a href="http://rocketpages.github.io/connection-pooling-with-hibernate-3-3-x-and-c3p0">Connection pooling with Hibernate 3.3.x and C3P0</a></h2>
   <p>Hibernate uses it’s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>December 13, 2010 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/beyond-java">Beyond Java</a></h2>
   <p>We explore a Forrester report which asserts that Java is a dead end for enterprises and business software should be built with a 4GL such as webMethods. Let&#39;s explore why Java won&#39;t disappear from the enterprise any time soon.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>November 15, 2010 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/the-future-of-java-in-the-enterprise">The future of Java in the enterprise</a></h2>
   <p>Java is a utilitarian, status-quo ecosystem for getting things done, albeit not very quickly. This is a good thing. Instead of worrying about sharp edges, developers get to work with a very stable, very slow moving target. What&#39;s the future hold for enterprise Java developers?</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>September 5, 2010 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/desire-paths">Desire paths</a></h2>
   <p>A desire path represents the evolutionary nature of how people interact with their environment. An engineer designs a concrete path, but people find it more convenient to create their own. Software isn&#39;t any different. Users bump up against the limitation of an application but find their own workaround through sheer necessity.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>August 22, 2010 • Code</h5>
   <h2><a href="http://rocketpages.github.io/the-greatest-line-of-code-ever">The greatest line of code ever</a></h2>
   <p>Look at this piece of code to be reminded of the magnificence of code reviews. Hallelujah.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>April 30, 2010 • Code</h5>
   <h2><a href="http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket">Integrating Uploadify with Java using Apache Wicket</a></h2>
   <p>One of the most requested features on any site that accepts file submissions is the ability to handle multiple uploads elegantly. The current HTML standard only permits one file upload at a time, which makes transferring a large number of files quite tedious. This tutorial will show how to painlessly integrate Uploadify and Java using Apache Wicket.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>February 23, 2010 • Career</h5>
   <h2><a href="http://rocketpages.github.io/be-a-revolutionary">Be a Revolutionary</a></h2>
   <p>Good developers always try to deliver amazing software in spite of obstacles. The perfect methodology for our team may not integrate well with the rest of the organization. The perfect programming language may be unknown to most developers on the team. The perfect architecture may require three months to develop but the deadline is three weeks away. Good developers embrace a harmonious balance between pragmatism and idealism.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>November 18, 2009 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/apache-aries-osgi-for-the-enterprise">Apache Aries: OSGi for the Enterprise</a></h2>
   <p>It looks like enterprise developers are in for a real treat: the missing secret sauce that allows enterprise application developers to harness the goodness of OSGi.</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>October 23, 2009 • Process</h5>
   <h2><a href="http://rocketpages.github.io/dont-forget-team-structure">Don&#39;t forget team structure</a></h2>
   <p>In my experience I&#39;ve noticed that flexible and adaptable organizations produce flexible and adaptable applications. Rigid and inflexible organizations tend to produce rigid and inflexible applications. Co-incidence?</p>
-</div>
-                        
-                            <div class="post-listing">
+</div>                                
+                                                            
+                                <div class="blog-post">
   <h5>August 10, 2009 • Architecture</h5>
   <h2><a href="http://rocketpages.github.io/is-soa-doomed">Is SOA doomed?</a></h2>
   <p>The spirit of SOA is fantastic; adaptable, flexible, maintainable, loosely-coupled applications supported by open governance, strong relationships between business and technology folks, and co-operation across all silos and levels of an organization. What&#39;s not to love? We&#39;ll explore the pitfalls of SOA and explore the future of SOA in the enterprise.</p>
-</div>
+</div>                                
+                            
+                        </div>
                         
                     </div>
-                </div>
-                
-                <div class="uk-width-medium-1-3">
-                    <div class="uk-panel uk-panel-box">
-                        <h2>Publications</h2>
-                        <p>A collection of articles and interviews by leading technical publications that I've been featured in.</p>
-                        
-                            <div class="publication-listing">
+
+                    <div class="uk-width-1-3@m uk-visible@m">                        
+                        <div id="publications" class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Publications</h3>
+                            <p>A collection of articles and interviews by leading technical publications that I've been featured in.</p>
+                            
+                                
+                            
+                                
+                                    <div class="pub-post">
   <h5>September 8, 2015 • <a href="http://www.techrepublic.com/" target="_blank">TechRepublic</a></h5>
-  <h4><a href="http://www.techrepublic.com/article/why-your-companys-big-data-is-not-nearly-fast-enough/" target="_blank">Why your company&#39;s big data is not nearly fast enough</a></h4>
-  <p>Stream-based processing is taking over big data. Matt Asay and I chatted about &ldquo;fast data&rdquo; to put some context around the value of data and why speed matters.</p>
-
+  <h4><a href="http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/">Why your company&#39;s big data is not nearly fast enough</a></h4>
+  <p><p>Stream-based processing is taking over big data. Matt Asay and I chatted about &ldquo;fast data&rdquo; to put some context around the value of data and why speed matters.</p>
+</p>
 </div>
-                        
-                            <div class="publication-listing">
+                                
+                            
+                                
+                                    <div class="pub-post">
   <h5>March 15, 2015 • <a href="http://readwriteweb.com" target="_blank">ReadWriteWeb</a></h5>
-  <h4><a href="http://readwrite.com/2015/03/12/reactive-programming-conductr-kevin-webber/" target="_blank">Reactive Systems: Easy To Program, Now Easier To Manage</a></h4>
-  <p>On top of user expectations being significantly higher today than a decade ago, the pressures facing enterprise operations teams to manage resilient, responsive systems is brutal; most existing technologies available today are not designed to deploy and manage reactive systems running on clusters.</p>
-
+  <h4><a href="http://rocketpages.github.io/publication/read-write-web-conductr/">Reactive Systems: Easy To Program, Now Easier To Manage</a></h4>
+  <p><p>On top of user expectations being significantly higher today than a decade ago, the pressures facing enterprise operations teams to manage resilient, responsive systems is brutal; most existing technologies available today are not designed to deploy and manage reactive systems running on clusters.</p>
+</p>
 </div>
-                        
-                            <div class="publication-listing">
+                                
+                            
+                                
+                                    <div class="pub-post">
   <h5>September 14, 2014 • <a href="http://infoq.com" target="_blank">InfoQ</a></h5>
-  <h4><a href="http://www.infoq.com/news/2014/09/what-is-reactive-programming" target="_blank">Actor-based Concurrency for Reactive Systems</a></h4>
-  <p>According to reactive manifesto, reactive applications are built on four guiding principles: responsiveness, resiliency, scalability, and message-driven architecture. In Kevin&rsquo;s view, those four guiding principles are closely related in that both resiliency and scalability are necessary qualities to ensure that a system remains responsive, i.e., &ldquo;quick to react to users,&rdquo; under varying working conditions and loads.</p>
-
+  <h4><a href="http://rocketpages.github.io/publication/infoq-actor-based-concurrency/">Actor-based Concurrency for Reactive Systems</a></h4>
+  <p><p>According to reactive manifesto, reactive applications are built on four guiding principles: responsiveness, resiliency, scalability, and message-driven architecture. In Kevin&rsquo;s view, those four guiding principles are closely related in that both resiliency and scalability are necessary qualities to ensure that a system remains responsive, i.e., &ldquo;quick to react to users,&rdquo; under varying working conditions and loads.</p>
+</p>
 </div>
-                        
-                            <div class="publication-listing">
+                                
+                            
+                                
+                                    <div class="pub-post">
   <h5>September 13, 2014 • <a href="https://msopentech.com" target="_blank">Microsoft Open Technologies</a></h5>
-  <h4><a href="https://msopentech.com/opentech-projects/reactive-programming-microsoft/#" target="_blank">Reactive Programming at Microsoft</a></h4>
-  <p>Typesafe has extended their Reactive Maps Activator template to Azure, which enables easy deployment of Java-based technologies such as Scala, the Play Framework and the Akka Toolkit on Microsoft Azure. MS Open Tech has also published a tutorial on using the Play Framework with Azure.</p>
-
+  <h4><a href="http://rocketpages.github.io/publication/microsoft-reactive-systems/">Reactive Programming at Microsoft</a></h4>
+  <p><p>Typesafe has extended their Reactive Maps Activator template to Azure, which enables easy deployment of Java-based technologies such as Scala, the Play Framework and the Akka Toolkit on Microsoft Azure. MS Open Tech has also published a tutorial on using the Play Framework with Azure.</p>
+</p>
 </div>
-                        
+                                
+                            
+                        </div>                        
                     </div>
                 </div>
             </div>
-
-        </div>    
+        </div>
         
-        
-<div class="tm-section tm-section-color-2">
-    
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">    
-    
-<div class="uk-grid uk-text-small" data-uk-grid-margin>
-
-    <div class="uk-width-medium-1-2 uk-hidden-small">
-        <h3>Interested in meeting?</h3>
-        <p>I organize a few local groups for programmers in the Toronto area. If you'd like to meet in person, feel free to come out to one of these events.</p>
-
-        <ul style="line-height:200%; font-size: 1.1em;">
-            <li><a href="http://www.meetup.com/Reactive-TO/">ReactiveTO</a></li>
-            <li><a href="http://www.meetup.com/Programming-Book-Club-Toronto/">Programming Book Club Toronto</a></li>
-        </ul>
-        
-    </div>
-
-    <div class="uk-width-medium-1-2">
-        <h3>Interested in chatting?</h3>
-        <p>I'm located in <strong>Toronto, Canada</strong>. If you're interested in learning more about anything I've published and would like to meet via Skype or have a coffee in Toronto, feel free to contact me at one of the links below.</p>
-        <p><i class="fa fa-paper-plane"></i> <a href="http://goo.gl/forms/Ox9cGw4Ohw" target="_blank">Email</a></p>
-        <p><i class="fa fa-linkedin-square"></i> <a href="https://ca.linkedin.com/in/kvnwbbr">LinkedIn</a></p>
-        <p><i class="fa fa-twitter-square"></i> <a href="https://twitter.com/kvnwbbr">Twitter</a></p>
-    </div>
-
-</div>
-
-</div>
-    
-</div>
-
-        <div id="offcanvas" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/articles">Articles</a>
-            </li>
-            <li>
-                <a href="/blog">Blog</a>
-            </li>
-            <li>
-                <a href="/videos">Videos</a>
-            </li>
-            <li>
-                <a href="/talks">Talks</a>
-            </li>
-            <li>
-                <a href="/resume">Resume</a>
-            </li>
-        </ul>
+        <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-1-2@m uk-text-left uk-text-center@m">
+                <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
+            </div>
+            <div class="uk-width-1-2@m">
+                <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
+                <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+            </div>
+        </div>             
     </div>
 </div>
         
