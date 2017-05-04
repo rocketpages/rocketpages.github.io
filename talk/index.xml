@@ -6,8 +6,26 @@
     <description>Recent content in Talks on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 May 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://rocketpages.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scala is the Next Scala</title>
+      <link>http://rocketpages.github.io/talk/2017-05-13/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2017-05-13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Refactoring Legacy Java Apps with Akka Cluster and DC/OS</title>
+      <link>http://rocketpages.github.io/talk/2017-04-26/</link>
+      <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2017-04-26/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Revitalizing Aging Architectures</title>
@@ -123,24 +141,6 @@
       <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/talk/2015-08-06/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Journey into Reactive Streams</title>
-      <link>http://rocketpages.github.io/talk/2015-08-05/</link>
-      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/talk/2015-08-05/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring Reactive Streams with Akka</title>
-      <link>http://rocketpages.github.io/talk/2015-07-22/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rocketpages.github.io/talk/2015-07-22/</guid>
       <description></description>
     </item>
     
