@@ -88,21 +88,27 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Have expert-level technical skills to offer.&lt;/strong&gt; You&amp;rsquo;re at the top of your game. Others in the industry respect your opinion and abilities. This is arguably the starting point. If you don&amp;rsquo;t come from a technical background, you&amp;rsquo;ll need to find a co-founder, partner, confidant, and friend who brings this capability into the company. Non-technical staff will need to learn how to position technology to their clients. (Some of the sales people I&amp;rsquo;ve worked with are deeply technical and can easily rock a high-level technical presentation.)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Listen first and speak second.&lt;/strong&gt; The core competency of consulting is &lt;em&gt;listening&lt;/em&gt;. I&amp;rsquo;m naturally a chatty person, so active listening is something I&amp;rsquo;ve worked at for years. There&amp;rsquo;s nothing wrong with processing the ideas of others before formulating an opinion. If you need to think about something overnight, be clear and confident that you need time to prepare. Set expectations clearly and come back prepared. There&amp;rsquo;s a balance here; if you &lt;em&gt;always&lt;/em&gt; need a weekend to prepare before answering a question, it&amp;rsquo;s a clear sign that you should hone your craft before attempting this adventure.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Know your limits.&lt;/strong&gt; Expertise doesn&amp;rsquo;t mean knowing &lt;em&gt;everything&lt;/em&gt;. Learn the delta between your abilities and your gaps and get to know that space well. Consulting requires understanding when you can deliver on a requirement in-house, or when a client has a requirement that&amp;rsquo;s not in your wheelhouse. You gain trust by promising only what you&amp;rsquo;re able to deliver.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Know your limits.&lt;/strong&gt; Expertise doesn&amp;rsquo;t mean knowing &lt;em&gt;everything&lt;/em&gt;. Learn the delta between your abilities and your gaps and get to know that space well. Consulting requires understanding when you can deliver on a requirement in-house, or when a client has a requirement that&amp;rsquo;s not in your wheelhouse. You gain trust by promising only what you&amp;rsquo;re able to deliver. As a counterpoint, if you have knowledge in the general domain, you can be confident in your ability to understand the ideas quickly and find an optimum solution. You&amp;rsquo;ll have faith in your experience in unknown circumstances if you already have expert-level skills. The takeaway is that &amp;ldquo;fake it until you make it&amp;rdquo; does not apply to consulting.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Make alliances.&lt;/strong&gt; You will be successful with strong alliances. For instance, I&amp;rsquo;m not a machine learning expert, but I can refer experts in the field who I trust enough to stake my reputation on &lt;em&gt;their&lt;/em&gt; ability to deliver. The reverse also happens; RedElastic has not yet done any significant outbound sales yet. All of our work has come through referrals.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;5-become-well-rounded&#34;&gt;5. Become well-rounded&lt;/h2&gt;
 
-&lt;p&gt;In 2013 I finished my biggest project to date, which was helping to successfully deliver a new reactive platform for Walmart Canada on behalf of Nurun (well before Nurun was acquired by Razorfish, well before Razorfish was acquired by Publicis, and well before Publicis mashed Sapient and Razorfish together &amp;ndash; the Nurun Toronto that exists today is a totally different team).&lt;/p&gt;
+&lt;p&gt;In 2013 I finished my biggest project to date, which was helping to successfully deliver a new reactive platform for Walmart Canada on behalf of Nurun (well before Nurun was acquired by Razorfish, well before Razorfish was acquired by Publicis, and well before Publicis merged Sapient and Razorfish together &amp;ndash; the Nurun Toronto that exists today is a totally different team).&lt;/p&gt;
 
 &lt;p&gt;I was on the Walmart project from the technical selection to delivery, wrote the first line of code for the web-tier, worked day and night through launch, and ultimately helped to deliver the project successfully. I had some amazing mentors along the way who believed in my opinions such as Bob Seehra, Mark Aning, and Ankur Mathur. I learned a tremendous amount from all of them; not only technical skills, but also the skill of articulating solutions to some of the largest organizations in the world. I was also fortunate to learn from Simon Rodrigue, former SVP of eCommerce at Walmart Canada. We didn&amp;rsquo;t spend a huge amount of time together but I paid attention to absolutely everything he shared &amp;ndash; not only &lt;em&gt;what&lt;/em&gt; was shared but &lt;em&gt;how&lt;/em&gt; it was shared. This gave me genuine insight into what the value of consulting is and how it intersects with a client&amp;rsquo;s internal capabilities.&lt;/p&gt;
 
-&lt;p&gt;Delivering an optimum solution to a client requires understanding client&amp;rsquo;s requirements at &lt;em&gt;all levels&lt;/em&gt; over the entire lifecycle of a deliverable. Case in point: the first line of code anyone paid me for was written in COBOL, and rumour has it that it&amp;rsquo;s still in production today. What you leave behind needs to last. I worry that much of the code I see today is throw-away and writing throw-away code is a very low-leverage activity. The goal should be that everything you deliver will evolve over time, and it will only evolve if its both valuable and comprehensable.&lt;/p&gt;
+&lt;p&gt;Delivering an optimum solution to a client requires understanding client&amp;rsquo;s requirements at &lt;em&gt;all levels&lt;/em&gt; over the entire lifecycle of a deliverable. Case in point: the first line of code anyone paid me for was written in COBOL, and rumour has it that it&amp;rsquo;s still in production today. What you leave behind needs to last. I worry that much of the code that I see today is throw-away. Writing throw-away code is a very low-leverage activity. The goal should be that everything you deliver will evolve over time, and it will only evolve if it&amp;rsquo;s both valuable and comprehensible. When delivering a solution for a client, keep in mind that:&lt;/p&gt;
 
-&lt;p&gt;Building the most beautiful and optimal technical solution means very little if a client can&amp;rsquo;t find talent to support it in five years because you selected an exotic language or framework. Everything must be taken into consideration. Treat everyone&amp;rsquo;s money as if it were your own.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Code always lives longer than you think it will&lt;/li&gt;
+&lt;li&gt;Code will be read many more times than it will be written&lt;/li&gt;
+&lt;li&gt;Existing code will be used as a blueprint for future code&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Being well rounded means knowning when to be opinionated and when to compromise.&lt;/p&gt;
+&lt;p&gt;What you deliver will have an impact well beyond your time on site. Optimize for the people reading your code, not for yourself as you write it. Building the most beautiful and optimal technical solution means very little if a client can&amp;rsquo;t find talent to support it in five years because you selected an exotic language or framework. Everything must be taken into consideration. Treat everyone&amp;rsquo;s money as if it were your own.&lt;/p&gt;
+
+&lt;p&gt;Being well rounded means knowing when to be opinionated and when to compromise.&lt;/p&gt;
 
 &lt;p&gt;I was tempted to use the momentum from the Walmart project to launch my firm, but I decided that I had more to learn. Though I was &lt;em&gt;technically&lt;/em&gt; well-rounded, I needed other skills in my wheelhouse that would take years to develop.&lt;/p&gt;
 
@@ -139,10 +145,10 @@
     &lt;dt&gt;The Play Framework&lt;/dt&gt;
     &lt;dd&gt;I was hunting for a solution that I could recommend to clients as an alternative to my go-to recommendations at the time like JEE, Spring, Ruby on Rails, and Grails. While some of those are fine choices, for web-facing systems that receive millions of requests per minute are a whole different ballgame. I was so impressed with Play that not only did I use it for the Walmart Canada project, but I also wound up becoming an advocate at Lightbend. Sadek Drobi gave a detailed talk about Play at QCon, and while much of it was over my head at the time, thanks to the magic of WiFi I downloaded Play and began hacking before I even left his talk.&lt;/dd&gt;
     &lt;dt&gt;The Business Value of Joy&lt;/dt&gt;
-    &lt;dd&gt;I heard Richard Sheridan of Menlo Innovations gave a talk about the &#34;business value of joy&#34;, and it was a transformational experience both professionally and personally. I realized that it&#39;s possible to start a company that&#39;s both profitable and also a joy to work with and do business with. This was the moment when I knew that I would start a consulting company in Canada.&lt;/dd&gt;
+    &lt;dd&gt;I heard Richard Sheridan of Menlo Innovations gave a talk about the &#34;business value of joy&#34;, and it was a transformative experience both professionally and personally. I realized that it&#39;s possible to start a company that&#39;s both profitable and also a joy to work with and do business with. This was the moment when I knew that I would start a consulting company in Canada.&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;p&gt;Without marketing, I would never have had those transformational experiences. Professionals from all over North America took time out of their schedule to attend QCon to share their experience with others. Sure, there&amp;rsquo;s an upside for presenters &amp;ndash; an inspirational talk is a powerful business development tool &amp;ndash; but the upside is mutual.&lt;/p&gt;
+&lt;p&gt;Without marketing, I would never have had those transformative experiences. Professionals from all over North America took time out of their schedule to attend QCon to share their experience with others. Sure, there&amp;rsquo;s an upside for presenters &amp;ndash; an inspirational talk is a powerful business development tool &amp;ndash; but the upside is mutual.&lt;/p&gt;
 
 &lt;p&gt;Understanding how marketing affects your company, your opportunities, and the success of future clients is critical. Is your consulting company just about making money, or do you have inspirational experiences to share with the community? Are you willing to invest in open source software, not only releasing code but also sharing your knowledge and experience?&lt;/p&gt;
 
@@ -150,7 +156,7 @@
 
 &lt;h3 id=&#34;practice-public-speaking&#34;&gt;Practice public speaking&lt;/h3&gt;
 
-&lt;p&gt;Before joining Lightbend I had never delivered even a single Meetup talk. It wound up taking me years of practice before becoming comfortable in front of a large audience. If you&amp;rsquo;re serious about developing your public speaking skills, start presenting at local Meetups.&lt;/p&gt;
+&lt;p&gt;Before joining Lightbend I had never delivered even a single Meetup talk. It took me years of practice before becoming comfortable in front of a large audience. If you&amp;rsquo;re serious about developing your public speaking skills, start presenting at local Meetups.&lt;/p&gt;
 
 &lt;p&gt;Most importantly, ask people for feedback after every single talk. Sometimes it&amp;rsquo;s amazing at how different your own opinion of your talk compared to how others experienced it. My very first conference talk was at GeeCON in Prague, and afterwards I asked Konrad Malawski of Akka fame for feedback. He shared the good, the bad, and the ugly, and I incorporated his advice into all of my future talks. If you&amp;rsquo;re not willing to be humbled you&amp;rsquo;ll never develop a connection with your audience, which defeats the entire purpose of speaking; after all, do you speak for yourself, or for others?&lt;/p&gt;
 
@@ -161,10 +167,10 @@
 &lt;div class=&#34;uk-grid-match uk-child-width-expand@s&#34; uk-grid&gt;
     &lt;div&gt;
         &lt;div class=&#34;uk-padding uk-background-secondary uk-light&#34;&gt;
-            &lt;h4&gt;Marketing&lt;/h4&gt;
-            &lt;p&gt;Marketing involves content creation, presenting at conferences and meetups, and anything else that generates brand awareness in a positive way.&lt;/p&gt;
+            &lt;h4&gt;Marketing Communications&lt;/h4&gt;
+            &lt;p&gt;Marketing Communications involves content creation, presenting at conferences and meetups, and anything else that generates brand awareness in a positive way.&lt;/p&gt;
             &lt;h4&gt;Sales&lt;/h4&gt;
-            &lt;p&gt;Marketing will generate &#34;marketing qualified leads&#34; (MQLs). Some MQLs will convert into &#34;sales accepted leads&#34; (SALs). The sales process involves working with a prospective client to determine a mutual fit between requirements, capabilities, timing, and budget. If a fit doesn&#39;t exist, either you or your prospective client will need to find alternatives (such as recommending another firm).&lt;/p&gt;
+            &lt;p&gt;The sales process involves working with a prospective client to determine a mutual fit between requirements, capabilities, timing, and budget. If a fit doesn&#39;t exist, either you or your prospective client will need to find alternatives (such as recommending another firm).&lt;/p&gt;
             &lt;h4&gt;Delivery&lt;/h4&gt;
             &lt;p&gt;After a deal is won it needs to be delivered! This is the funnest part of consulting!&lt;/p&gt;
         &lt;/div&gt;
@@ -224,7 +230,7 @@
         &lt;tr&gt;
             &lt;td&gt;Incorporation fees&lt;/td&gt;
             &lt;td&gt;$300&lt;/td&gt;
-            &lt;td&gt;Canada is one of the easiest companies in the world to start a business in. From start to finish incorporation took me about 5 days. Federal incorporation offers a few major benefits including (very limited) trade name protection. It&#39;s also possible to start a LLC (limited liability company); different structures come with their own pros and cons, such as different tax treatments, so you&#39;ll need to spend some time investigating the right choice depending on your circumstances and locale. It&#39;s often a good idea to consult with a lawyer and accountant before making your decision as it&#39;s very time consuming to change your mind once things are in motion.
+            &lt;td&gt;Canada is one of the easiest countries in the world to &lt;em&gt;start&lt;/em&gt; a business in. From start to finish incorporation took me about 5 days. Federal incorporation offers a few major benefits including (very limited) trade name protection. It&#39;s also possible to start a LLC (limited liability company). Different structures come with their own pros and cons, such as different tax treatments, so you&#39;ll need to spend some time investigating the right choice depending on your circumstances and locale. It&#39;s often a good idea to consult with a lawyer and accountant before making your decision as it&#39;s very time consuming to change your mind once things are in motion.
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;Legal fees&lt;/td&gt;
@@ -269,9 +275,9 @@
 &lt;p&gt;&amp;ldquo;Bank of Canada figures show 14 per cent of all private business loans from chartered banks are now bound for so-called real estate operator industries.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;As an entrepreneur building a service-oriented business, the cards are stacked against you in our current business climate. Angels, VCs, and banks want nothing to do with you. In Canada banks are literally betting on real estate rather than any other type of business, and service companies don&amp;rsquo;t have the scale potential of a product company like Uber (although, technically speaking, RedElastic is already more profitable than Uber).&lt;/p&gt;
+&lt;p&gt;As an entrepreneur building a service-oriented business, the cards are stacked against you in our current business climate. Angels, VCs, and Banks want nothing to do with you; Banks are literally betting on real estate rather than any other type of business, and VCs aren&amp;rsquo;t interested in service companies because they don&amp;rsquo;t have the scale potential of a product company (although, technically speaking, while Uber is more valuable than RedElastic, RedElastic is more profitable than Uber).&lt;/p&gt;
 
-&lt;p&gt;The moral of the story is to not underestimate:&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t underestimate:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The cost of starting a services company, even though major capital expenses like equipment is not required, and&lt;/li&gt;
@@ -282,7 +288,7 @@
 
 &lt;h2 id=&#34;8-be-a-friend-to-yourself&#34;&gt;8. Be a friend to yourself&lt;/h2&gt;
 
-&lt;p&gt;Starting a business is stressful so it&amp;rsquo;s important to carve out some time for yourself. I make a habit of going to see live music whenever I have a chance, and also go to the gym once a week and lifting weights until I fall over no matter what else is happening.&lt;/p&gt;
+&lt;p&gt;Starting a business is stressful so it&amp;rsquo;s important to carve out some time for yourself. I make a habit of going to see live music whenever I have a chance. I also go to the gym once a week and lift weights until I fall over, no matter what else is happening.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve also picked up a few bad habits, such as smoking (again) and ordering too much pizza. Nobody is perfect.&lt;/p&gt;
 
