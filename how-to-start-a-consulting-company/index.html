@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Webber</title>
+    <link rel="stylesheet" href="/css/uikit-3.0.0.19.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6521356/7819972/css/fonts.css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    <script src="/js/uikit-3.0.0.19.min.js"></script>      
+    <script src="/js/uikit-3.0.0.19-icons.min.js"></script>      
+</head>
+
+<style>
+    
+    body {
+        color: #222;
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .uk-text-lead {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 150%;
+    }
+    
+    a {
+        color: #3498db;
+    }
+    
+    nav, .uk-navbar-nav>li>a {
+        font-weight: 400;
+        font-size: 1em;
+        color: #222;
+    }
+        
+    h1, h2, h3, h4, h5 {
+        color: #222;
+    }
+    
+    h1 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 2.5em;
+        letter-spacing: -1px;
+    }
+    
+    h2 {
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        font-size: 1.7em;
+    }
+    
+    h3 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1.3em;
+    }
+    
+    h5 {
+        font-family: "Whitney SSm A", "Whitney SSm B";
+        font-size: 1em;
+    }
+    
+    pre {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-size: 0.85em;
+    }
+    
+    #kevin-webber {
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+
+    #latest-content {
+        font-size: 0.85em;
+    }
+
+    .uk-section-primary {
+        background-color: #2980b9;
+    }
+
+    #video-li h2, #video-li h5, #video-li p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #video-li h2 {
+        margin-top: 18px;
+    }
+
+    #footer {
+        font-size: 0.85em;
+    }
+    
+    .uk-card-secondary, .uk-section-secondary {
+        background: #34495e;
+        font-size:0.8em;
+    }
+    
+    #blog-post h1 {
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #blog-post h4 {
+        margin-bottom: 0px;
+    }
+    
+    #blog-post h4.date {
+        font-size:1em;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 2em;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        color:#7f8c8d;
+    }
+        
+    .blog-post {
+        margin-bottom:2.5em;
+    }
+    
+    #blog-post .uk-active span {
+        font-weight: 700;
+    }
+    
+    .blog-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:2px;
+    }
+    
+    .blog-post h2 {
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-left:0px;
+    }
+    
+    .blog-post p {
+        margin-top:4px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post {
+        margin-bottom:2.5em;
+    }
+    
+    .pub-post h5 {
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+        margin-bottom:5px;
+    }
+    
+    .pub-post h4 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    .pub-post p {
+        margin-top:5px;
+        margin-bottom:0px;
+    }
+
+    .photo-overlay {
+        font-size: 0.85em;
+    }
+    
+    .video-listing h2 {
+        margin-top:1em;
+        margin-bottom:0px;
+    }
+    
+    .video-listing h5 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 0.8em;
+        color:#34495e;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";       
+    }
+    
+    .video-listing p {
+        margin-top: 0px;
+    }
+    
+    .uk-text-lead {        
+        font-family: "Whitney SSm A", "Whitney SSm B";
+    }
+    
+    .talk-title-small .title {
+        font-weight: 700;
+        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";   
+        font-size: 1.1em;
+    }
+    
+    .talk-title-small .link {
+        padding-left:6px;
+    }
+    
+</style>
+
+<script>
+
+    $(document).ready(function() {        
+        $(".video").each(function() {
+            
+            $(this).append($('<div/>', {'class': 'play'}));
+
+            $(document).delegate('#'+this.id, 'click', function() {
+                
+                var iframe_url = $(this).attr("iframe-src");
+
+                
+                var iframe = $('<iframe></iframe>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+
+                
+                $(this).replaceWith(iframe);
+            });
+        });
+    });
+    
+</script>
+
+    <body>
+        
+        <nav class="uk-navbar-container uk-margin-bottom-remove uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="/" uk-icon="icon: home"></a>
+        <ul class="uk-navbar-nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/"><img style="height:35px;"/></a>
+    </div>
+    <div class="uk-navbar-right">        
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav"></a>        
+    </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/video">Videos</a></li>
+            <li><a href="/talk">Talks</a></li>            
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+        <div id="blog-post" class="uk-section uk-padding-large uk-section-default">
+            <div class="uk-container uk-container-small">            
+                    <div class="uk-tile uk-tile-muted uk-padding-small" uk-sticky>                        
+                        <ul class="uk-breadcrumb">
+                            <li><a class="uk-logo" href="/" uk-icon="icon: home"></a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li class="uk-active"><span>How to Start a Consulting Company</span></li>
+                        </ul>
+                    </div>                    
+                
+                    <h1>How to Start a Consulting Company</h1>
+                    <h4 class="uk-heading-bullet date">May 1, 2017</h4>
+                    
+
+<p>Last fall I decided to leave <a href="http://lightbend.com">Lightbend</a> to pursue a dream that I&rsquo;ve had for the better part of a decade: starting a consulting company. So, in late 2016, RedElastic was born.</p>
+
+<p>Starting RedElastic is the hardest, most rewarding, and most exciting things I&rsquo;ve done in my life. Every experience that I&rsquo;ve had up until now, both professionally and personally, has lead up to the point that starting RedElastic wasn&rsquo;t even up for debate. I wouldn&rsquo;t have slept at night if I didn&rsquo;t make it happen.</p>
+
+<p>The support from friends and colleagues has been overwhelming, which means a lot to me. Some of those friends have asked me for advice on how to start their own consulting company, so I decided to capture some thoughts here as a way to share what I&rsquo;ve learned.</p>
+
+<h2 id="1-don-t-start-a-consulting-company">1. Don&rsquo;t start a consulting company</h2>
+
+<p>My best advice to anyone thinking of starting a consulting company is not to start a consulting company.</p>
+
+<p>Anyone who has the mix of skills required to start a consulting company can find a much higher paying job as an executive, director, or analyst at a larger consulting firm with less hours and <em>far</em> less stress. Working for a larger company will free you up from the administrative details I will cover below.</p>
+
+<p>In my own case, I could have happily stayed at <a href="http://lightbend.com">Lightbend</a>, a company that I not only loved working for but that I was previously a customer of. Before deciding to take on the level of commitment required to be successful in consulting you need to fully appreciate the other opportunities you&rsquo;re passing up.</p>
+
+<h2 id="2-know-your-why">2. Know your <em>&ldquo;why&rdquo;</em></h2>
+
+<p>Consulting in the true sense of the word is rare. Advisory-level consulting only <em>begins</em> with performing as a subject-matter expert for your clients. People are entrusting you with their dreams and counting on you to deliver; it&rsquo;s not something to take lightly, it&rsquo;s servant leadership in the truest sense of the word. You must bring every ounce of empathy, compassion, and caring for the dreams of others with you to work every single day. Your success as a consultant is not gained through billable hours, billable hours keep you fed and the lights on in your office. Genuine success as a consultant is only realized when you unlock the potential in others.</p>
+
+<p>That&rsquo;s why, for the most part, there are very few consulting firms. Most &ldquo;consulting&rdquo; is better called <em>staff augmentation</em> or <em>digital studio outsourcing</em>.</p>
+
+<table class="uk-table">
+    <tbody>
+        <tr>
+            <td>Staff augmentation firms</td>
+            <td>Staff augmentation firms act as an on-tap bench for their clients. They're especially useful for large corporations who are feeling out "skunkworks" projects with new technologies that may never make it to production. Clients never deal directly with A-list talent through the big firms unless they're a Fortune 50 and have an 8-figure budget, so they'll need their own A-team to provide mentorship and quality control throughout an engagement. Augmentation firms are a "lever" to accelerate productivity, but they can't live in isolation. In many ways this is becoming a broken model as companies are able to do significantly more with significantly less; for example, WhatsApp had only 35 developers and supported 450 million users when it was acquired by Facebook for $19 billion dollars.</td>
+        </tr>
+        <tr>
+            <td>Digital studios</td>
+            <td>Digital studios are somewhere between consulting firms and staff augmentation firms. They tend to have a small handful of senior-level employees who nurture clients during presales and the early phase of crafting a solution, while offering closer to a turn-key model of service from design through delivery. The business model of a digital studio requires moving as much work as possible to more junior staff members so the margin on billable rates is always at its highest. For this reason, peak happiness with a digital studio often begins and ends somewhere near the beginning of a project. Digital studios sometimes compete with the large augmentation firms on rates, but studios bring extra capabilities to the table such as design and marketing. The boundaries between the two are blurring, but can usually be determined based on the percentage of work that's off-shored versus done locally. A top-shelf studio competes on value, so they can charge a higher rate and provide top-notch local talent. A hybrid augmentation/studio competes on price, so therefore has to move delivery work offshore while providing local relationship management.</td>
+        </tr>
+        <tr>
+            <td>Consulting firms</td>
+            <td>Advisory-level consulting firms are typically small agencies staffed by top-tier talent with pre-established reputations in the industry. The rates at consulting firms are high, the value is high, and the demand is typically higher than the supply; experts in highly sought after domains such as AI, machine learning, InfoSec, and distributed systems can bill out at rates of anywhere from $2000-4000 USD per day, sometimes significantly higher depending on the nature and duration of the project. It's rare for advisory-level consulting firms to complete directly with staff augmentation firms or digital studios. On the contrary, consulting firms often work closely with other consulting firms, digital studios, and staff augmentation firms; for instance, if a prospective client of a consulting firm doesn't have expert-level advisors available in-house to provide leadership and oversight of a staff augmentation firm, a consultant can be brought in to provide checks-and-balances to a project.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>If you plan to compete in the world of consulting, you&rsquo;ll need to serve your clients at the highest levels of expectations. You&rsquo;ll also need to work at such a high-level of skill and trust that other consulting firms are comfortable to recommend you to their clients.</p>
+
+<p>Are you cut out to deal with sky-high expectations every single day you wake up? One of the best pieces of advice I was given in my career was from an early manager I had at CIBC:</p>
+
+<blockquote>
+<p>It&rsquo;s one thing to get excited about your own vision, but can you become excited about <em>my</em> vision? If you&rsquo;re able to embrace the dreams of others as passionately as your own, you&rsquo;re ready to become a mentor.</p>
+</blockquote>
+
+<p>Before that conversation I was able to demonstrate a huge amount of passion for my own ideas but I had a harder time getting behind the ideas of others. There&rsquo;s nothing wrong with that! Often times product companies are best lead by founders who stick to their guns and disregard the advice of others by protecting their singular vision. The essence of consulting is the complete opposite. You must embrace your client&rsquo;s vision while lending your expertise in order to make sure they&rsquo;re completely successful.</p>
+
+<p>Digging a little deeper, you need to understand why you want to enter a business domain to serve others.</p>
+
+<p>My own <em>&ldquo;why?&rdquo;</em> is simple:</p>
+
+<ol>
+<li>I&rsquo;m passionate about building a consulting company that I would have wanted to hire as a customer, and</li>
+<li>I&rsquo;m passionate about building a consulting company that I would have wanted to work for.</li>
+</ol>
+
+<h2 id="3-embrace-the-unknown">3. Embrace the unknown</h2>
+
+<p>The stress of sales, marketing, and business development, along with the pressure of delivering technical solutions at the highest levels of excellence, is far from trivial.</p>
+
+<p>Everyone who has asked me for advice on starting their own company is a technical expert. Working in a technical capacity is <em>consistent</em>: for instance, as an expert technologist, I have confidence that if I put in <code>X</code> number of hours of hard work I will achieve the result of <code>Y</code>, and the result will be proportional to my efforts. I will end the day (likely) feeling proud of my tangible accomplishments and inspired to build new things tomorrow.</p>
+
+<p>As an entrepreneur you&rsquo;ll be doing a lot of work that has no immediate correlation between effort and results. Sales and marketing is more like chaos theory, <em>&ldquo;flap your wings today and it may rain in New York next year&rdquo;</em>. Spending a full day on marketing materials may yield a positive result, such as a viral blog post, or it may yield nothing more than the sound of crickets. You may put together an incredible sales presentation but ultimately lose an opportunity to a competitor because they played hockey together in high school. You may make the right decision for a client that involves withdrawing your interest from a high-paying contract because over the long term you&rsquo;re simply not the right firm to deliver the work.</p>
+
+<h2 id="4-master-the-basics">4. Master the basics</h2>
+
+<p>There are a handful of skills that anyone leading or working in a consulting firm needs to have. This applies to everyone:</p>
+
+<ul>
+<li><strong>Have expert-level technical skills to offer.</strong> You&rsquo;re at the top of your game. Others in the industry respect your opinion and abilities. This is arguably the starting point. If you don&rsquo;t come from a technical background, you&rsquo;ll need to find a co-founder, partner, confidant, and friend who brings this capability into the company. Non-technical staff will need to learn how to position technology to their clients. (Some of the sales people I&rsquo;ve worked with are deeply technical and can easily rock a high-level technical presentation.)</li>
+<li><strong>Listen first and speak second.</strong> The core competency of consulting is <em>listening</em>. I&rsquo;m naturally a chatty person, so active listening is something I&rsquo;ve worked at for years. There&rsquo;s nothing wrong with processing the ideas of others before formulating an opinion. If you need to think about something overnight, be clear and confident that you need time to prepare. Set expectations clearly and come back prepared. There&rsquo;s a balance here; if you <em>always</em> need a weekend to prepare before answering a question, it&rsquo;s a clear sign that you should hone your craft before attempting this adventure.</li>
+<li><strong>Know your limits.</strong> Expertise doesn&rsquo;t mean knowing <em>everything</em>. Learn the delta between your abilities and your gaps and get to know that space well. Consulting requires understanding when you can deliver on a requirement in-house, or when a client has a requirement that&rsquo;s not in your wheelhouse. You gain trust by promising only what you&rsquo;re able to deliver.</li>
+<li><strong>Make alliances.</strong> You will be successful with strong alliances. For instance, I&rsquo;m not a machine learning expert, but I can refer experts in the field who I trust enough to stake my reputation on <em>their</em> ability to deliver. The reverse also happens; RedElastic has not yet done any significant outbound sales yet. All of our work has come through referrals.</li>
+</ul>
+
+<h2 id="5-become-well-rounded">5. Become well-rounded</h2>
+
+<p>In 2013 I finished my biggest project to date, which was helping to successfully deliver a new reactive platform for Walmart Canada on behalf of Nurun (well before Nurun was acquired by Razorfish, well before Razorfish was acquired by Publicis, and well before Publicis mashed Sapient and Razorfish together &ndash; the Nurun Toronto that exists today is a totally different team).</p>
+
+<p>I was on the Walmart project from the technical selection to delivery, wrote the first line of code for the web-tier, worked day and night through launch, and ultimately helped to deliver the project successfully. I had some amazing mentors along the way who believed in my opinions such as Bob Seehra, Mark Aning, and Ankur Mathur. I learned a tremendous amount from all of them; not only technical skills, but also the skill of articulating solutions to some of the largest organizations in the world. I was also fortunate to learn from Simon Rodrigue, former SVP of eCommerce at Walmart Canada. We didn&rsquo;t spend a huge amount of time together but I paid attention to absolutely everything he shared &ndash; not only <em>what</em> was shared but <em>how</em> it was shared. This gave me genuine insight into what the value of consulting is and how it intersects with a client&rsquo;s internal capabilities.</p>
+
+<p>Delivering an optimum solution to a client requires understanding client&rsquo;s requirements at <em>all levels</em> over the entire lifecycle of a deliverable. Case in point: the first line of code anyone paid me for was written in COBOL, and rumour has it that it&rsquo;s still in production today. What you leave behind needs to last. I worry that much of the code I see today is throw-away and writing throw-away code is a very low-leverage activity. The goal should be that everything you deliver will evolve over time, and it will only evolve if its both valuable and comprehensable.</p>
+
+<p>Building the most beautiful and optimal technical solution means very little if a client can&rsquo;t find talent to support it in five years because you selected an exotic language or framework. Everything must be taken into consideration. Treat everyone&rsquo;s money as if it were your own.</p>
+
+<p>Being well rounded means knowning when to be opinionated and when to compromise.</p>
+
+<p>I was tempted to use the momentum from the Walmart project to launch my firm, but I decided that I had more to learn. Though I was <em>technically</em> well-rounded, I needed other skills in my wheelhouse that would take years to develop.</p>
+
+<h3 id="develop-your-sales-iq">Develop your sales IQ</h3>
+
+<p>Many of the open source technologies that developers love are funded through the efforts of sales teams at open source companies. Sales teams work <em>hard</em> and they absolutely deserve more credit for moving the open source community forward. Everyone from a Junior Developer to the CEO of a large enterprise should have a keen sense of how their efforts fit into the goals of their business, and sales is the cornerstone of business.</p>
+
+<div class="uk-child-width-expand@s" uk-grid>
+    <div>
+        <p>A big part of my role at Lightbend was supporting the Lightbend sales team. Every single sales meeting that I participated in over the years was critical training for starting a business. Not only did those experiences better teach me how to define the business value of technology, but they gave me a better understanding of the entire open source software industry in general. If you don't have any hands-on sales experience, I highly recommend spending a few years in a sales engineer role before attempting to start your own business.</p>
+        <p>There's no way to read about sales to understand how it works; you have to get out on the road and embrace the grind. You can't teach what it's like to go to sales meetings all day, then present at a Meetup, then drive overnight from Houston to Dallas through a rainstorm with someone who can barely see at night (Powell, I love you, but holy hell you need glasses). A sales meeting in open source software is vastly different than a sales meeting in insurance; it might involve walking into an unfamiliar building to have 30 strangers waiting for you, and within a few minutes you're in front of them on a whiteboard to dive into the deepest bits of an architectural approach or programming language.</p>
+    </div>
+    <div>
+        <div class="uk-inline">
+            <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493920652/DSC02927_ajii0c.png" alt="">
+            <div class="uk-overlay uk-light uk-position-bottom">
+                <p>Hanging out with John Mayerhofer in 2015; learning everything I can.</p>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<p>Sales encompasses every aspect of building positive business relationships, from technical excellence like presenting a detailed delivery plan, to logistics like ordering lunch. Positive relationships are not forged on dollars and cents, they only develop when people are able to achieve mutual goals together in a caring and trustworthy way. Anyone who thinks sales is only about hustling deals is doing business with the wrong companies.</p>
+
+<blockquote>
+<p>&ldquo;Don&rsquo;t fuck up the salad!&rdquo; &ndash; Jason Goodwin</p>
+</blockquote>
+
+<h3 id="understand-the-role-of-marketing">Understand the role of marketing</h3>
+
+<p>One of the most influential experiences in my career was attending QCon in New York back in 2012. That&rsquo;s when I came across two new subjects that would change my career:</p>
+
+<dl class="uk-description-list">
+    <dt>The Play Framework</dt>
+    <dd>I was hunting for a solution that I could recommend to clients as an alternative to my go-to recommendations at the time like JEE, Spring, Ruby on Rails, and Grails. While some of those are fine choices, for web-facing systems that receive millions of requests per minute are a whole different ballgame. I was so impressed with Play that not only did I use it for the Walmart Canada project, but I also wound up becoming an advocate at Lightbend. Sadek Drobi gave a detailed talk about Play at QCon, and while much of it was over my head at the time, thanks to the magic of WiFi I downloaded Play and began hacking before I even left his talk.</dd>
+    <dt>The Business Value of Joy</dt>
+    <dd>I heard Richard Sheridan of Menlo Innovations gave a talk about the "business value of joy", and it was a transformational experience both professionally and personally. I realized that it's possible to start a company that's both profitable and also a joy to work with and do business with. This was the moment when I knew that I would start a consulting company in Canada.</dd>
+</dl>
+
+<p>Without marketing, I would never have had those transformational experiences. Professionals from all over North America took time out of their schedule to attend QCon to share their experience with others. Sure, there&rsquo;s an upside for presenters &ndash; an inspirational talk is a powerful business development tool &ndash; but the upside is mutual.</p>
+
+<p>Understanding how marketing affects your company, your opportunities, and the success of future clients is critical. Is your consulting company just about making money, or do you have inspirational experiences to share with the community? Are you willing to invest in open source software, not only releasing code but also sharing your knowledge and experience?</p>
+
+<p>Marketing is <strong>not</strong> advertising. Marketing done right should give back to the community more than it takes from the community. The delta between give and take is part of the contribution that your company makes to open source software.</p>
+
+<h3 id="practice-public-speaking">Practice public speaking</h3>
+
+<p>Before joining Lightbend I had never delivered even a single Meetup talk. It wound up taking me years of practice before becoming comfortable in front of a large audience. If you&rsquo;re serious about developing your public speaking skills, start presenting at local Meetups.</p>
+
+<p>Most importantly, ask people for feedback after every single talk. Sometimes it&rsquo;s amazing at how different your own opinion of your talk compared to how others experienced it. My very first conference talk was at GeeCON in Prague, and afterwards I asked Konrad Malawski of Akka fame for feedback. He shared the good, the bad, and the ugly, and I incorporated his advice into all of my future talks. If you&rsquo;re not willing to be humbled you&rsquo;ll never develop a connection with your audience, which defeats the entire purpose of speaking; after all, do you speak for yourself, or for others?</p>
+
+<h3 id="bringing-it-all-together">Bringing it all together</h3>
+
+<p>Once you have an idea of what you want to accomplish with your sales and marketing efforts, you need to tie them together and understand how they fit into the big picture.</p>
+
+<div class="uk-grid-match uk-child-width-expand@s" uk-grid>
+    <div>
+        <div class="uk-padding uk-background-secondary uk-light">
+            <h4>Marketing</h4>
+            <p>Marketing involves content creation, presenting at conferences and meetups, and anything else that generates brand awareness in a positive way.</p>
+            <h4>Sales</h4>
+            <p>Marketing will generate "marketing qualified leads" (MQLs). Some MQLs will convert into "sales accepted leads" (SALs). The sales process involves working with a prospective client to determine a mutual fit between requirements, capabilities, timing, and budget. If a fit doesn't exist, either you or your prospective client will need to find alternatives (such as recommending another firm).</p>
+            <h4>Delivery</h4>
+            <p>After a deal is won it needs to be delivered! This is the funnest part of consulting!</p>
+        </div>
+    </div>
+    <div class="uk-visible@m">
+        <div class="uk-card">
+            <div style="z-index: 980;" uk-sticky="bottom: true">
+                <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493867443/Sales_Marketing_Funnel_4x_almfpo.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>Starting a consulting company looks easy, after all, &ldquo;<em>I&rsquo;m</em> the person with the technical skills, so I&rsquo;m the one making everything happen!&rdquo; What most technologists don&rsquo;t appreciate is everything that&rsquo;s shielded from them day-to-day; the days of phone calls to qualify leads, the hours of content preparation to win a deal, the intricacies of negotiations during the legal process, and so forth. This is why you can&rsquo;t do it alone.</p>
+
+<p>Working <strong>for</strong> a consulting company allows a technologist to <em>specialize</em>. <strong>Starting</strong> a consulting company requires a technologist to <em>generalize</em>. As a generalist I love the new things that I learn every day, from the nuances of an errors &amp; omissions insurance policy to the difference between a &ldquo;zero rated&rdquo; and &ldquo;exempt&rdquo; tax rate on an invoice. I also spend a portion of my day reading ACM articles and hacking on Akka.</p>
+
+<h2 id="6-find-a-partner">6. Find a partner</h2>
+
+<p>One of the most important decisions to make is whether or not to launch a company on your own or with a co-founder.</p>
+
+<div class="uk-child-width-expand@s" uk-grid>
+    <div>
+        <p>I would not have survived the first month – let alone the first six months – of business without my co-founder, Jason Goodwin. Although I'm highly technical, I decided that it would be impossible to develop the business model of RedElastic while also keeping an eye on the fast-moving technology industry. I knew I needed someone to fill the visionary role of <em>Super Hacker</em> (also known as "CTO"). Not only has Jason been invaluable from a technical perspective on client work, but the small conversations we have in the office every day refine my own approach to every aspect of RedElastic.</p>
+        <p>I couldn't and wouldn't do this alone. If you can't find someone else who believes in your vision enough to take the plunge into entrepreneurship with you, look at it as a signal that you may need to refine your vision, develop your network, develop your skills, or all of the above. I would argue that this is the hardest part of starting any type of business and where most businesses fail before they even begin.</p>
+        <p>In consulting specifically, one of the hardest parts of building a business is finding new work while currently working with customers. Without at least a two-person team this is virtually impossible without working part time, sacrificing the quality of your billable work, never sleeping, or all of the above.</p>
+    </div>
+    <div>
+        <div class="uk-inline">
+            <img src="http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493911811/16665101_1312553878782661_9119854844747736905_o_paondc.jpg" alt="">
+            <div class="uk-overlay uk-light uk-position-bottom">
+                <p>Jason and Kevin exploring Dubai; apparently we even dress the same. This was not planned.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>I repeat, don&rsquo;t start a consulting business on your own. Thar be dragons.</p>
+
+<h2 id="7-budget-budget-budget">7. Budget, budget, budget</h2>
+
+<p>Starting a consulting company is not as simple as finding a domain name and leaning in. Here are the approximate up-front costs in Canada. (If you&rsquo;re not from Canada your milage may vary.)</p>
+
+<table class="uk-table">
+    <thead>
+        <tr>
+            <td>Expense</td>
+            <td>Cost</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Estimate</td>
+        <td>$20,300-39,300</td>
+    <tbody>
+        <tr>
+            <td>Incorporation fees</td>
+            <td>$300</td>
+            <td>Canada is one of the easiest companies in the world to start a business in. From start to finish incorporation took me about 5 days. Federal incorporation offers a few major benefits including (very limited) trade name protection. It's also possible to start a LLC (limited liability company); different structures come with their own pros and cons, such as different tax treatments, so you'll need to spend some time investigating the right choice depending on your circumstances and locale. It's often a good idea to consult with a lawyer and accountant before making your decision as it's very time consuming to change your mind once things are in motion.
+        </tr>
+        <tr>
+            <td>Legal fees</td>
+            <td class="uk-text-nowrap">$5,000-15,000</td>
+            <td>Once you're incorporated you'll need to define the legal structure of your corporation. You'll likely need to set up a share structure, appoint the initial officers of the company, and finalize a shareholder agreement. Finding a good lawyer is absolutely critical at this stage. Budget up to $10,000 for initial legal fees and $5,000 for reviewing early client contracts. Your lawyer will draft all the off-the-shelf contracts you'll use with clients, such as NDAs (non disclosure agreements), MSAs (master service agreements), and SOWs (statements of work). Many clients will require that you use their in-house contracts, so your lawyer will need to review those in detail before you sign. <strong>Take your time to find a good lawyer.</strong> Our lawyer has been so integral to our success that it would be impossible imagining sleeping soundly at night without his involvement.</td>
+        </tr>
+        <tr>
+            <td>Insurance</td>
+            <td class="uk-text-nowrap">$8,000-11,000</td>
+            <td>Your corporation will need to be insured against errors, omissions, general liability, and a host of other circumstances that can arise. Unlike full time employees, independant contractors have virtually no protection from a lawsuit if they screw up. Find a good insurance broker and plan to spend anywhere from $5,000 to $15,000 per year. You will not be able to sign any contracts with customers until you have insurance in place. There's virtually no company in the world that will deal with uninsured consulting firms.</td>
+        </tr> 
+        <tr>
+            <td>Benefits</td>
+            <td class="uk-text-nowrap">$5,000-8,000</td>
+            <td>If you plan on hiring anyone or covering the founders under a benefits plan, budget thousands of dollars for initial coverage. In Canada this is fairly straightforward as the government covers basic health care, but offering early employees things like life and dental insurance is important to attract top-talent.</td>
+        </tr>          
+        <tr>
+            <td>SaaS tools</td>
+            <td class="uk-text-nowrap">$2,000-5,000</td>
+            <td>This is one expense that you can spread out over the first year of operations. Budget at least 2-5k on all of the tools that you'll require to run your business. Sales tools (such as Salesforce) and HR tools (such as BambooHR) are not necessarily cheap, but automating everything possible is the only way to effectively run a consulting company.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Those are only the up-front expenses, and don&rsquo;t factor in salaries for the founding team, equipment like laptops, and so forth. I&rsquo;ll assume you already have a laptop and assume you&rsquo;ll budget for the expenses above along with approximately 6 months of salary to live on while developing your clientele. It may take 9-12 months to become cash-flow positive, even at reduced founder salaries.</p>
+
+<p>I also didn&rsquo;t factor in office space to the above estimates. Working remotely is fine for an established company, but it&rsquo;s pretty important to co-locate with your partner and founding employees to foster a culture and bond. Consulting is tough, so being there to provide emotional support, coaching, and mentoring is critical. It&rsquo;s impossible to give an estimate on how much office space will run as it&rsquo;s so location dependant, but in Toronto, the going rate for a decent turn-key office is $2,000-3,000 per month in the downtown core and slightly less in the inner suburbs. (If you move too far outside of the core it may become difficult to stay connected with your customers and recruit top talent.)</p>
+
+<p>If you don&rsquo;t have $50,000-100,000 cash on hand that you are willing to part with, think carefully about how badly you believe in what you&rsquo;re doing. Nothing is free, especially dreams.</p>
+
+<p>Relationships, trust, and integrity are far more important than short-term profits. If you&rsquo;re able to make tough decisions that are right for customers <em>first</em> and yourself <em>second</em>, even if it means weathering a short-term storm, you&rsquo;re ready to give this a shot. If you want to make an impact in the industry there&rsquo;s nothing better than staking your own claim and starting a business to serve others. If you want to make a lot of money, there are easier ways.</p>
+
+<h3 id="the-canadian-economy-is-not-as-business-friendly-as-you-think">The Canadian economy is not as business friendly as you think</h3>
+
+<p>While there&rsquo;s money and mentorship on-tap for product companies through angel investors and venture capital firms, starting a services business is a lonely experience.</p>
+
+<p>Canada&rsquo;s GDP is fueled by real estate, which is where most banks throw their money. I would have a much easier time borrowing the better part of $750,000 to buy a <a href="https://www.realtor.ca/Residential/Single-Family/18110217/58-CEDARCREST-Boulevard-Toronto-Ontario-M4B2P2-OConnor-Parkview">tiny bungalow</a> (in the midst of a housing bubble) than borrowing $75,000 to help grow RedElastic.</p>
+
+<p>According to a <a href="https://www.thestar.com/business/economy/2017/05/01/real-estates-huge-role-in-canadian-economy-causing-worry.html">recent article</a> in the Toronto Star, in Canada &ldquo;residential mortgages today make up about 52 per cent of all chartered bank loans, versus 21 per cent for business lending.&rdquo;  And much of that business lending is for real estate.</p>
+
+<blockquote>
+<p>&ldquo;Bank of Canada figures show 14 per cent of all private business loans from chartered banks are now bound for so-called real estate operator industries.&rdquo;</p>
+</blockquote>
+
+<p>As an entrepreneur building a service-oriented business, the cards are stacked against you in our current business climate. Angels, VCs, and banks want nothing to do with you. In Canada banks are literally betting on real estate rather than any other type of business, and service companies don&rsquo;t have the scale potential of a product company like Uber (although, technically speaking, RedElastic is already more profitable than Uber).</p>
+
+<p>The moral of the story is to not underestimate:</p>
+
+<ul>
+<li>The cost of starting a services company, even though major capital expenses like equipment is not required, and</li>
+<li>The time required to become cash-flow positive</li>
+</ul>
+
+<p>You&rsquo;re own your own, financially speaking. Don&rsquo;t start a consulting company and buy a bungalow at the same time.</p>
+
+<h2 id="8-be-a-friend-to-yourself">8. Be a friend to yourself</h2>
+
+<p>Starting a business is stressful so it&rsquo;s important to carve out some time for yourself. I make a habit of going to see live music whenever I have a chance, and also go to the gym once a week and lifting weights until I fall over no matter what else is happening.</p>
+
+<p>I&rsquo;ve also picked up a few bad habits, such as smoking (again) and ordering too much pizza. Nobody is perfect.</p>
+
+<p>On that note&hellip;</p>
+
+<h2 id="9-give-credit-and-take-blame">9. Give credit and take blame</h2>
+
+<p>In a full-time role, a big part of your job is to manage your own career. In consulting, a big part of your job is to manage the career of others. I&rsquo;ve watched consulting companies walk into an office, proclaim everything the full-time team has accomplished to date as &ldquo;shit&rdquo;, and proceed to create chaos for the people in the trenches at every opportunity to further their own ends.</p>
+
+<p>Consultants do not exist to crank out code. We exist to train, educate, and mentor. Coding is <em>fun</em>, so it&rsquo;s vital to spread your knowledge through a team so <em>they</em> can deliver as much code as possible while providing mentorship and oversight. Helping other people to reach their full potential is a huge part of the job. That means leaving behind way more than code, it means leaving behind a piece of your knowledge and a piece of your culture.</p>
+
+<p>With this in mind, it&rsquo;s critical to embrace a simple philosophy that Mike Kelland, VP of Professional Services at Lightbend, first shared with me while he was the CEO of BoldRadius.</p>
+
+<blockquote>
+<p>&ldquo;Give credit and take blame.&rdquo; &ndash; Mike Kelland</p>
+</blockquote>
+
+<p>This is such an important piece of advice that I still repeat it to myself during tense times. If a mistake is made while you&rsquo;re on-site, assume that it&rsquo;s your mistake. Own it and identify the next steps required to improve the situation. When success is ultimately achieved, give the credit to others! There will be time for you to internalize your own impact on the success of a project, take a little piece of the credit for your company, and ultimately share your role in the achievement with others. Looking back on my career, the only way I was able to grow professionally is because other people subscribed to this philosophy and I benefitted from it. We all stand on the shoulders of giants.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>If you read this whole article and still want to start a consulting company, buckle up and go for it. If you go down this path and need any advice, feel free to reach out.</p>
+
+<p>I hope this has been helpful in a general sense as well. Some of these lessons I learned the hard way and am happy if they provide anyone with a head start. Hopefully some of this advice will be of benefit you no matter what path you choose.</p>
+
+            </div>
+        </div>    
+        
+        <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
+    <div class="uk-container uk-container-small uk-text-center@m">
+        <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
+        <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
+        <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+    </div>
+</div>
+        
+    </body>
+    
+</html>

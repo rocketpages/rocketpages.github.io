@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rocketpages.github.io/how-to-start-a-consulting-company</loc>
+    <lastmod>2017-05-01T21:54:43-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rocketpages.github.io/goodbye-lightbend</loc>
     <lastmod>2016-10-09T00:00:00+00:00</lastmod>
   </url>
@@ -318,7 +323,7 @@
   
   <url>
     <loc>http://rocketpages.github.io/blog/</loc>
-    <lastmod>2016-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T21:54:43-04:00</lastmod>
   </url>
   
   <url>
@@ -329,7 +334,7 @@
   
   <url>
     <loc>http://rocketpages.github.io/</loc>
-    <lastmod>2016-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T21:54:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
