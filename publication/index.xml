@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Kevin Webber</title>
-    <link>http://rocketpages.github.io/publication/index.xml</link>
+    <link>http://rocketpages.github.io/publication/</link>
     <description>Recent content in Publications on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rocketpages.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://rocketpages.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Why your company&#39;s big data is not nearly fast enough</title>
@@ -15,8 +17,7 @@
       <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/</guid>
-      <description>&lt;p&gt;Stream-based processing is taking over big data. Matt Asay and I chatted about &amp;ldquo;fast data&amp;rdquo; to put some context around the value of data and why speed matters.&lt;/p&gt;
-</description>
+      <description>Stream-based processing is taking over big data. Matt Asay and I chatted about &amp;ldquo;fast data&amp;rdquo; to put some context around the value of data and why speed matters.</description>
     </item>
     
     <item>
@@ -25,8 +26,7 @@
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/publication/read-write-web-conductr/</guid>
-      <description>&lt;p&gt;On top of user expectations being significantly higher today than a decade ago, the pressures facing enterprise operations teams to manage resilient, responsive systems is brutal; most existing technologies available today are not designed to deploy and manage reactive systems running on clusters.&lt;/p&gt;
-</description>
+      <description>On top of user expectations being significantly higher today than a decade ago, the pressures facing enterprise operations teams to manage resilient, responsive systems is brutal; most existing technologies available today are not designed to deploy and manage reactive systems running on clusters.</description>
     </item>
     
     <item>
@@ -35,8 +35,7 @@
       <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/publication/infoq-actor-based-concurrency/</guid>
-      <description>&lt;p&gt;According to reactive manifesto, reactive applications are built on four guiding principles: responsiveness, resiliency, scalability, and message-driven architecture. In Kevin&amp;rsquo;s view, those four guiding principles are closely related in that both resiliency and scalability are necessary qualities to ensure that a system remains responsive, i.e., &amp;ldquo;quick to react to users,&amp;rdquo; under varying working conditions and loads.&lt;/p&gt;
-</description>
+      <description>According to reactive manifesto, reactive applications are built on four guiding principles: responsiveness, resiliency, scalability, and message-driven architecture. In Kevin&amp;rsquo;s view, those four guiding principles are closely related in that both resiliency and scalability are necessary qualities to ensure that a system remains responsive, i.e., &amp;ldquo;quick to react to users,&amp;rdquo; under varying working conditions and loads.</description>
     </item>
     
     <item>
@@ -45,8 +44,7 @@
       <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/publication/microsoft-reactive-systems/</guid>
-      <description>&lt;p&gt;Typesafe has extended their Reactive Maps Activator template to Azure, which enables easy deployment of Java-based technologies such as Scala, the Play Framework and the Akka Toolkit on Microsoft Azure. MS Open Tech has also published a tutorial on using the Play Framework with Azure.&lt;/p&gt;
-</description>
+      <description>Typesafe has extended their Reactive Maps Activator template to Azure, which enables easy deployment of Java-based technologies such as Scala, the Play Framework and the Akka Toolkit on Microsoft Azure. MS Open Tech has also published a tutorial on using the Play Framework with Azure.</description>
     </item>
     
   </channel>

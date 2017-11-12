@@ -83,7 +83,7 @@
     
     #kevin-webber {
         font-family: "Operator Mono SSm A", "Operator Mono SSm B";
-        font-style: italic;
+        font-style: normal;
         font-weight: 700;
         letter-spacing: -3px;
     }
@@ -332,37 +332,35 @@
 
 <p>Netty works based on inbound and outbound &ldquo;handlers&rdquo;; upstream handlers and downstream handlers. As a message is either received by the server or sent by the server, it is acted upon by the handlers that you specify in the pipeline factory. This is a flexible architecture and lets us work in a very modular fashion on any given message. Anyone who has done MDB, MQ, or SOAP programming (SOAP handler chain) should be familiar with the concept already.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> TicTacToeServer {
-	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">static</span> <span style="color: #000080; font-weight: bold">void</span> main(String[] args) <span style="color: #000080; font-weight: bold">throws</span> Exception {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">public</span> <span style="color:#000080;font-weight:bold">class</span> TicTacToeServer {
+	<span style="color:#000080;font-weight:bold">public</span> <span style="color:#000080;font-weight:bold">static</span> <span style="color:#000080;font-weight:bold">void</span> main(String[] args) <span style="color:#000080;font-weight:bold">throws</span> Exception {
 	    ChannelFactory factory =
-	    <span style="color: #000080; font-weight: bold">new</span> NioServerSocketChannelFactory(
-	        Executors.<span style="color: #FF0000">newCachedThreadPool</span>(),
-	        Executors.<span style="color: #FF0000">newCachedThreadPool</span>());
-	    ServerBootstrap bootstrap = <span style="color: #000080; font-weight: bold">new</span> ServerBootstrap(factory);
-	    bootstrap.<span style="color: #FF0000">setPipelineFactory</span>(<span style="color: #000080; font-weight: bold">new</span> WebSocketServerPipelineFactory());
-	    bootstrap.<span style="color: #FF0000">setOption</span>(<span style="color: #0000FF">&quot;child.tcpNoDelay&quot;</span>, <span style="color: #000080; font-weight: bold">true</span>);
-	    bootstrap.<span style="color: #FF0000">setOption</span>(<span style="color: #0000FF">&quot;child.keepAlive&quot;</span>, <span style="color: #000080; font-weight: bold">true</span>);
-	    bootstrap.<span style="color: #FF0000">bind</span>(<span style="color: #000080; font-weight: bold">new</span> InetSocketAddress(<span style="color: #0000FF">9000</span>));
-	    System.<span style="color: #FF0000">out</span>.<span style="color: #FF0000">println</span>(<span style="color: #0000FF">&quot;TicTacToe Server: Listening on port 9000&quot;</span>);
+	    <span style="color:#000080;font-weight:bold">new</span> NioServerSocketChannelFactory(
+	        Executors.<span style="color:#f00">newCachedThreadPool</span>(),
+	        Executors.<span style="color:#f00">newCachedThreadPool</span>());
+	    ServerBootstrap bootstrap = <span style="color:#000080;font-weight:bold">new</span> ServerBootstrap(factory);
+	    bootstrap.<span style="color:#f00">setPipelineFactory</span>(<span style="color:#000080;font-weight:bold">new</span> WebSocketServerPipelineFactory());
+	    bootstrap.<span style="color:#f00">setOption</span>(<span style="color:#00f">&#34;child.tcpNoDelay&#34;</span>, <span style="color:#000080;font-weight:bold">true</span>);
+	    bootstrap.<span style="color:#f00">setOption</span>(<span style="color:#00f">&#34;child.keepAlive&#34;</span>, <span style="color:#000080;font-weight:bold">true</span>);
+	    bootstrap.<span style="color:#f00">bind</span>(<span style="color:#000080;font-weight:bold">new</span> InetSocketAddress(9000));
+	    System.<span style="color:#f00">out</span>.<span style="color:#f00">println</span>(<span style="color:#00f">&#34;TicTacToe Server: Listening on port 9000&#34;</span>);
 	}
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>The next step is creating the pipeline factory. In this case we&rsquo;re using a custom pipeline factory called WebSocketServerPipelineFactory. We could also have built this as an anonymous class as our implementation is fairly simple, but I decided to break it out into it&rsquo;s own high-level class.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">class</span> WebSocketServerPipelineFactory <span style="color: #000080; font-weight: bold">implements</span> ChannelPipelineFactory {  
-    <span style="color: #000080; font-weight: bold">public</span> ChannelPipeline getPipeline() <span style="color: #000080; font-weight: bold">throws</span> Exception {  
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">public</span> <span style="color:#000080;font-weight:bold">class</span> WebSocketServerPipelineFactory <span style="color:#000080;font-weight:bold">implements</span> ChannelPipelineFactory {  
+    <span style="color:#000080;font-weight:bold">public</span> ChannelPipeline getPipeline() <span style="color:#000080;font-weight:bold">throws</span> Exception {  
         ChannelPipeline pipeline = pipeline();  
-        pipeline.<span style="color: #FF0000">addLast</span>(<span style="color: #0000FF">&quot;decoder&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> HttpRequestDecoder());  
-        pipeline.<span style="color: #FF0000">addLast</span>(<span style="color: #0000FF">&quot;aggregator&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> HttpChunkAggregator(<span style="color: #0000FF">65536</span>));  
-        pipeline.<span style="color: #FF0000">addLast</span>(<span style="color: #0000FF">&quot;encoder&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> HttpResponseEncoder());  
-        pipeline.<span style="color: #FF0000">addLast</span>(<span style="color: #0000FF">&quot;handler&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> TicTacToeServerHandler());  
-        <span style="color: #000080; font-weight: bold">return</span> pipeline;  
+        pipeline.<span style="color:#f00">addLast</span>(<span style="color:#00f">&#34;decoder&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> HttpRequestDecoder());  
+        pipeline.<span style="color:#f00">addLast</span>(<span style="color:#00f">&#34;aggregator&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> HttpChunkAggregator(65536));  
+        pipeline.<span style="color:#f00">addLast</span>(<span style="color:#00f">&#34;encoder&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> HttpResponseEncoder());  
+        pipeline.<span style="color:#f00">addLast</span>(<span style="color:#00f">&#34;handler&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> TicTacToeServerHandler());  
+        <span style="color:#000080;font-weight:bold">return</span> pipeline;  
     }
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>Take a second to look at the above code. I&rsquo;ll break out some of the key terms and concepts to understand:</p>
 
@@ -384,86 +382,84 @@
 
 <p>Let&rsquo;s check out the <a href="https://github.com/rocketpages/Netty-TicTacToe-Server/blob/master/src/main/java/com/tictactoe/server/TicTacToeServerHandler.java" title="TicTacToeServerHandler">TicTacToeServerHandler</a>. I&rsquo;ll discuss some of the core concepts below.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>@Override  
-<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> messageReceived(ChannelHandlerContext ctx, MessageEvent e) <span style="color: #000080; font-weight: bold">throws</span> Exception {  
-    Object msg = e.<span style="color: #FF0000">getMessage</span>();  
-    <span style="color: #000080; font-weight: bold">if</span> (msg <span style="color: #000080; font-weight: bold">instanceof</span> HttpRequest) {  
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">@Override  
+<span style="color:#000080;font-weight:bold">public</span> <span style="color:#000080;font-weight:bold">void</span> messageReceived(ChannelHandlerContext ctx, MessageEvent e) <span style="color:#000080;font-weight:bold">throws</span> Exception {  
+    Object msg = e.<span style="color:#f00">getMessage</span>();  
+    <span style="color:#000080;font-weight:bold">if</span> (msg <span style="color:#000080;font-weight:bold">instanceof</span> HttpRequest) {  
         handleHttpRequest(ctx, (HttpRequest) msg);  
-    } <span style="color: #000080; font-weight: bold">else</span> <span style="color: #000080; font-weight: bold">if</span> (msg <span style="color: #000080; font-weight: bold">instanceof</span> WebSocketFrame) {
+    } <span style="color:#000080;font-weight:bold">else</span> <span style="color:#000080;font-weight:bold">if</span> (msg <span style="color:#000080;font-weight:bold">instanceof</span> WebSocketFrame) {
 	    handleWebSocketFrame(ctx, (WebSocketFrame) msg);  
 	}
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>The <em>messageReceived(…)</em> method is the main callback method provided by Netty to process incoming messages from clients. In our case, we&rsquo;ll only be processing two types of messages: HttpRequest (for the initial handshake from a client) and WebSocketFrame (for all incoming communications after the tunnel has been established).</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> handleHttpRequest(ChannelHandlerContext ctx, HttpRequest req) <span style="color: #000080; font-weight: bold">throws</span> Exception {
-	<span style="color: #008800; font-style: italic">// Allow only GET methods.</span>
-	<span style="color: #000080; font-weight: bold">if</span> (req.<span style="color: #FF0000">getMethod</span>() != HttpMethod.<span style="color: #FF0000">GET</span>) {
-	    sendHttpResponse(ctx, req, <span style="color: #000080; font-weight: bold">new</span> DefaultHttpResponse(HttpVersion.<span style="color: #FF0000">HTTP_1_1</span>, HttpResponseStatus.<span style="color: #FF0000">FORBIDDEN</span>));
-	    <span style="color: #000080; font-weight: bold">return</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">private</span> <span style="color:#000080;font-weight:bold">void</span> handleHttpRequest(ChannelHandlerContext ctx, HttpRequest req) <span style="color:#000080;font-weight:bold">throws</span> Exception {
+	<span style="color:#080;font-style:italic">// Allow only GET methods.
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">if</span> (req.<span style="color:#f00">getMethod</span>() != HttpMethod.<span style="color:#f00">GET</span>) {
+	    sendHttpResponse(ctx, req, <span style="color:#000080;font-weight:bold">new</span> DefaultHttpResponse(HttpVersion.<span style="color:#f00">HTTP_1_1</span>, HttpResponseStatus.<span style="color:#f00">FORBIDDEN</span>));
+	    <span style="color:#000080;font-weight:bold">return</span>;
 	}
 	
-	<span style="color: #008800; font-style: italic">// Serve the WebSocket handshake request.</span>
-	<span style="color: #000080; font-weight: bold">if</span> (req.<span style="color: #FF0000">getUri</span>().<span style="color: #FF0000">equals</span>(WEBSOCKET_PATH) &amp;&amp; Values.<span style="color: #FF0000">UPGRADE</span>.<span style="color: #FF0000">equalsIgnoreCase</span>(req.<span style="color: #FF0000">getHeader</span>(CONNECTION)) &amp;&amp; WEBSOCKET.<span style="color: #FF0000">equalsIgnoreCase</span>(req.<span style="color: #FF0000">getHeader</span>(Names.<span style="color: #FF0000">UPGRADE</span>))) {
-	<span style="color: #008800; font-style: italic">// Create the WebSocket handshake response.</span>
-	    HttpResponse res = <span style="color: #000080; font-weight: bold">new</span> DefaultHttpResponse(HTTP_1_1, <span style="color: #000080; font-weight: bold">new</span> HttpResponseStatus(<span style="color: #0000FF">101</span>, <span style="color: #0000FF">&quot;Web Socket Protocol Handshake&quot;</span>));
-	    res.<span style="color: #FF0000">addHeader</span>(Names.<span style="color: #FF0000">UPGRADE</span>, WEBSOCKET);
-	    res.<span style="color: #FF0000">addHeader</span>(CONNECTION, Values.<span style="color: #FF0000">UPGRADE</span>);
+	<span style="color:#080;font-style:italic">// Serve the WebSocket handshake request.
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">if</span> (req.<span style="color:#f00">getUri</span>().<span style="color:#f00">equals</span>(WEBSOCKET_PATH) &amp;&amp; Values.<span style="color:#f00">UPGRADE</span>.<span style="color:#f00">equalsIgnoreCase</span>(req.<span style="color:#f00">getHeader</span>(CONNECTION)) &amp;&amp; WEBSOCKET.<span style="color:#f00">equalsIgnoreCase</span>(req.<span style="color:#f00">getHeader</span>(Names.<span style="color:#f00">UPGRADE</span>))) {
+	<span style="color:#080;font-style:italic">// Create the WebSocket handshake response.
+</span><span style="color:#080;font-style:italic"></span>	    HttpResponse res = <span style="color:#000080;font-weight:bold">new</span> DefaultHttpResponse(HTTP_1_1, <span style="color:#000080;font-weight:bold">new</span> HttpResponseStatus(101, <span style="color:#00f">&#34;Web Socket Protocol Handshake&#34;</span>));
+	    res.<span style="color:#f00">addHeader</span>(Names.<span style="color:#f00">UPGRADE</span>, WEBSOCKET);
+	    res.<span style="color:#f00">addHeader</span>(CONNECTION, Values.<span style="color:#f00">UPGRADE</span>);
 	
-	    <span style="color: #008800; font-style: italic">// Fill in the headers and contents depending on handshake method. New handshake specification has a challenge.</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (req.<span style="color: #FF0000">containsHeader</span>(SEC_WEBSOCKET_KEY1) &amp;&amp; req.<span style="color: #FF0000">containsHeader</span>(SEC_WEBSOCKET_KEY2)) {
-	        <span style="color: #008800; font-style: italic">// New handshake method with challenge</span>
-	        res.<span style="color: #FF0000">addHeader</span>(SEC_WEBSOCKET_ORIGIN, req.<span style="color: #FF0000">getHeader</span>(ORIGIN));
-	        res.<span style="color: #FF0000">addHeader</span>(SEC_WEBSOCKET_LOCATION, getWebSocketLocation(req));
-	        String protocol = req.<span style="color: #FF0000">getHeader</span>(SEC_WEBSOCKET_PROTOCOL);
+	    <span style="color:#080;font-style:italic">// Fill in the headers and contents depending on handshake method. New handshake specification has a challenge.
+</span><span style="color:#080;font-style:italic"></span>	    <span style="color:#000080;font-weight:bold">if</span> (req.<span style="color:#f00">containsHeader</span>(SEC_WEBSOCKET_KEY1) &amp;&amp; req.<span style="color:#f00">containsHeader</span>(SEC_WEBSOCKET_KEY2)) {
+	        <span style="color:#080;font-style:italic">// New handshake method with challenge
+</span><span style="color:#080;font-style:italic"></span>	        res.<span style="color:#f00">addHeader</span>(SEC_WEBSOCKET_ORIGIN, req.<span style="color:#f00">getHeader</span>(ORIGIN));
+	        res.<span style="color:#f00">addHeader</span>(SEC_WEBSOCKET_LOCATION, getWebSocketLocation(req));
+	        String protocol = req.<span style="color:#f00">getHeader</span>(SEC_WEBSOCKET_PROTOCOL);
 	
-	        <span style="color: #000080; font-weight: bold">if</span> (protocol != <span style="color: #000080; font-weight: bold">null</span>) {
-	            res.<span style="color: #FF0000">addHeader</span>(SEC_WEBSOCKET_PROTOCOL, protocol);
+	        <span style="color:#000080;font-weight:bold">if</span> (protocol != <span style="color:#000080;font-weight:bold">null</span>) {
+	            res.<span style="color:#f00">addHeader</span>(SEC_WEBSOCKET_PROTOCOL, protocol);
 	        }
 	
-	        <span style="color: #008800; font-style: italic">// Calculate the answer of the challenge.</span>
-	        String key1 = req.<span style="color: #FF0000">getHeader</span>(SEC_WEBSOCKET_KEY1);
-	        String key2 = req.<span style="color: #FF0000">getHeader</span>(SEC_WEBSOCKET_KEY2);
-	        <span style="color: #000080; font-weight: bold">int</span> a = (<span style="color: #000080; font-weight: bold">int</span>) (Long.<span style="color: #FF0000">parseLong</span>(key1.<span style="color: #FF0000">replaceAll</span>(<span style="color: #0000FF">&quot;[^0-9]&quot;</span>, <span style="color: #0000FF">&quot;&quot;</span>)) / key1.<span style="color: #FF0000">replaceAll</span>(<span style="color: #0000FF">&quot;[^ ]&quot;</span>, <span style="color: #0000FF">&quot;&quot;</span>).<span style="color: #FF0000">length</span>());
-	        <span style="color: #000080; font-weight: bold">int</span> b = (<span style="color: #000080; font-weight: bold">int</span>) (Long.<span style="color: #FF0000">parseLong</span>(key2.<span style="color: #FF0000">replaceAll</span>(<span style="color: #0000FF">&quot;[^0-9]&quot;</span>, <span style="color: #0000FF">&quot;&quot;</span>)) / key2.<span style="color: #FF0000">replaceAll</span>(<span style="color: #0000FF">&quot;[^ ]&quot;</span>, <span style="color: #0000FF">&quot;&quot;</span>).<span style="color: #FF0000">length</span>());
-	        <span style="color: #000080; font-weight: bold">long</span> c = req.<span style="color: #FF0000">getContent</span>().<span style="color: #FF0000">readLong</span>();
-	        ChannelBuffer input = ChannelBuffers.<span style="color: #FF0000">buffer</span>(<span style="color: #0000FF">16</span>);
-	        input.<span style="color: #FF0000">writeInt</span>(a);
-	        input.<span style="color: #FF0000">writeInt</span>(b);
-	        input.<span style="color: #FF0000">writeLong</span>(c);
-	        ChannelBuffer output = ChannelBuffers.<span style="color: #FF0000">wrappedBuffer</span>(MessageDigest.<span style="color: #FF0000">getInstance</span>(<span style="color: #0000FF">&quot;MD5&quot;</span>).<span style="color: #FF0000">digest</span>(input.<span style="color: #FF0000">array</span>()));
-	        res.<span style="color: #FF0000">setContent</span>(output);
-	    } <span style="color: #000080; font-weight: bold">else</span> {
-	    <span style="color: #008800; font-style: italic">// Old handshake method with no challenge:</span>
-	        res.<span style="color: #FF0000">addHeader</span>(WEBSOCKET_ORIGIN, req.<span style="color: #FF0000">getHeader</span>(ORIGIN));
-	        res.<span style="color: #FF0000">addHeader</span>(WEBSOCKET_LOCATION, getWebSocketLocation(req));
-	        String protocol = req.<span style="color: #FF0000">getHeader</span>(WEBSOCKET_PROTOCOL);
-	        <span style="color: #000080; font-weight: bold">if</span> (protocol != <span style="color: #000080; font-weight: bold">null</span>) {
-	            res.<span style="color: #FF0000">addHeader</span>(WEBSOCKET_PROTOCOL, protocol);
+	        <span style="color:#080;font-style:italic">// Calculate the answer of the challenge.
+</span><span style="color:#080;font-style:italic"></span>	        String key1 = req.<span style="color:#f00">getHeader</span>(SEC_WEBSOCKET_KEY1);
+	        String key2 = req.<span style="color:#f00">getHeader</span>(SEC_WEBSOCKET_KEY2);
+	        <span style="color:#000080;font-weight:bold">int</span> a = (<span style="color:#000080;font-weight:bold">int</span>) (Long.<span style="color:#f00">parseLong</span>(key1.<span style="color:#f00">replaceAll</span>(<span style="color:#00f">&#34;[^0-9]&#34;</span>, <span style="color:#00f">&#34;&#34;</span>)) / key1.<span style="color:#f00">replaceAll</span>(<span style="color:#00f">&#34;[^ ]&#34;</span>, <span style="color:#00f">&#34;&#34;</span>).<span style="color:#f00">length</span>());
+	        <span style="color:#000080;font-weight:bold">int</span> b = (<span style="color:#000080;font-weight:bold">int</span>) (Long.<span style="color:#f00">parseLong</span>(key2.<span style="color:#f00">replaceAll</span>(<span style="color:#00f">&#34;[^0-9]&#34;</span>, <span style="color:#00f">&#34;&#34;</span>)) / key2.<span style="color:#f00">replaceAll</span>(<span style="color:#00f">&#34;[^ ]&#34;</span>, <span style="color:#00f">&#34;&#34;</span>).<span style="color:#f00">length</span>());
+	        <span style="color:#000080;font-weight:bold">long</span> c = req.<span style="color:#f00">getContent</span>().<span style="color:#f00">readLong</span>();
+	        ChannelBuffer input = ChannelBuffers.<span style="color:#f00">buffer</span>(16);
+	        input.<span style="color:#f00">writeInt</span>(a);
+	        input.<span style="color:#f00">writeInt</span>(b);
+	        input.<span style="color:#f00">writeLong</span>(c);
+	        ChannelBuffer output = ChannelBuffers.<span style="color:#f00">wrappedBuffer</span>(MessageDigest.<span style="color:#f00">getInstance</span>(<span style="color:#00f">&#34;MD5&#34;</span>).<span style="color:#f00">digest</span>(input.<span style="color:#f00">array</span>()));
+	        res.<span style="color:#f00">setContent</span>(output);
+	    } <span style="color:#000080;font-weight:bold">else</span> {
+	    <span style="color:#080;font-style:italic">// Old handshake method with no challenge:
+</span><span style="color:#080;font-style:italic"></span>	        res.<span style="color:#f00">addHeader</span>(WEBSOCKET_ORIGIN, req.<span style="color:#f00">getHeader</span>(ORIGIN));
+	        res.<span style="color:#f00">addHeader</span>(WEBSOCKET_LOCATION, getWebSocketLocation(req));
+	        String protocol = req.<span style="color:#f00">getHeader</span>(WEBSOCKET_PROTOCOL);
+	        <span style="color:#000080;font-weight:bold">if</span> (protocol != <span style="color:#000080;font-weight:bold">null</span>) {
+	            res.<span style="color:#f00">addHeader</span>(WEBSOCKET_PROTOCOL, protocol);
 	        }
 	    }
 	
-	    <span style="color: #008800; font-style: italic">// Upgrade the connection and send the handshake response.</span>
-	    ChannelPipeline p = ctx.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">getPipeline</span>();
-	    p.<span style="color: #FF0000">remove</span>(<span style="color: #0000FF">&quot;aggregator&quot;</span>);
-	    p.<span style="color: #FF0000">replace</span>(<span style="color: #0000FF">&quot;decoder&quot;</span>, <span style="color: #0000FF">&quot;wsdecoder&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> WebSocketFrameDecoder());
-	    <span style="color: #008800; font-style: italic">// Write handshake response to the channel</span>
-	    ctx.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(res);
-	    <span style="color: #008800; font-style: italic">// Upgrade encoder to WebSocketFrameEncoder</span>
-	    p.<span style="color: #FF0000">replace</span>(<span style="color: #0000FF">&quot;encoder&quot;</span>, <span style="color: #0000FF">&quot;wsencoder&quot;</span>, <span style="color: #000080; font-weight: bold">new</span> WebSocketFrameEncoder());
-	    <span style="color: #008800; font-style: italic">// Initialize the game. Assign players to a game and assign them a letter (X or O)</span>
-	    initGame(ctx);
-	    <span style="color: #000080; font-weight: bold">return</span>;
+	    <span style="color:#080;font-style:italic">// Upgrade the connection and send the handshake response.
+</span><span style="color:#080;font-style:italic"></span>	    ChannelPipeline p = ctx.<span style="color:#f00">getChannel</span>().<span style="color:#f00">getPipeline</span>();
+	    p.<span style="color:#f00">remove</span>(<span style="color:#00f">&#34;aggregator&#34;</span>);
+	    p.<span style="color:#f00">replace</span>(<span style="color:#00f">&#34;decoder&#34;</span>, <span style="color:#00f">&#34;wsdecoder&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> WebSocketFrameDecoder());
+	    <span style="color:#080;font-style:italic">// Write handshake response to the channel
+</span><span style="color:#080;font-style:italic"></span>	    ctx.<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(res);
+	    <span style="color:#080;font-style:italic">// Upgrade encoder to WebSocketFrameEncoder
+</span><span style="color:#080;font-style:italic"></span>	    p.<span style="color:#f00">replace</span>(<span style="color:#00f">&#34;encoder&#34;</span>, <span style="color:#00f">&#34;wsencoder&#34;</span>, <span style="color:#000080;font-weight:bold">new</span> WebSocketFrameEncoder());
+	    <span style="color:#080;font-style:italic">// Initialize the game. Assign players to a game and assign them a letter (X or O)
+</span><span style="color:#080;font-style:italic"></span>	    initGame(ctx);
+	    <span style="color:#000080;font-weight:bold">return</span>;
 	}
 	
-	<span style="color: #008800; font-style: italic">// Send an error page otherwise.</span>
-	sendHttpResponse(ctx, req, <span style="color: #000080; font-weight: bold">new</span> DefaultHttpResponse(
-	    HttpVersion.<span style="color: #FF0000">HTTP_1_1</span>, HttpResponseStatus.<span style="color: #FF0000">FORBIDDEN</span>));
-}
-</pre></div>
-
+	<span style="color:#080;font-style:italic">// Send an error page otherwise.
+</span><span style="color:#080;font-style:italic"></span>	sendHttpResponse(ctx, req, <span style="color:#000080;font-weight:bold">new</span> DefaultHttpResponse(
+	    HttpVersion.<span style="color:#f00">HTTP_1_1</span>, HttpResponseStatus.<span style="color:#f00">FORBIDDEN</span>));
+}</code></pre>
+</div>
 
 <p>The code above is performed when the client initially connects to the tic-tac-toe server. The WebSocket specification defines how a <em>handshake</em> needs to be performed. There are two versions of the handshake implemented above: one based on the old WebSocket specification (75), and the other based on the new version of the WebSocket specification (76). The biggest difference between the two handshake methods is the old version does not require a challenge while the new version does. To slightly complicate matters, different browsers implement different versions of the WebSocket specification. Another twist is that neither 75 or 76 is the latest version of the WebSocket specification, but these are the most commonly implemented by modern browsers. A deep dive into the WebSocket specification is beyond the scope of this article, but <a href="https://tools.ietf.org/html/rfc6455" title="you can find the latest draft specification here">you can find the latest draft specification here</a>. You can find more <a href="http://www.whoishostingthis.com/resources/internet-sockets/">resources to learn about sockets here</a>.</p>
 
@@ -473,64 +469,62 @@
 
 <p>Now let&rsquo;s take a look at some tic-tac-toe specific logic. First we&rsquo;ll need to create a game and assign players to it. As players connect to our server they&rsquo;re paired off and assigned to a game. Our server will be able to support an infinite number of games simultaneously, although I doubt tic-tac-toe will ever become as popular as Twitter.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> initGame(ChannelHandlerContext ctx) {
-	<span style="color: #008800; font-style: italic">// Try to find a game waiting for a player. If one doesn&#39;t exist, create a new one.</span>
-	Game game = findGame();
-	<span style="color: #008800; font-style: italic">// Create a new instance of player and assign their channel for WebSocket communications.</span>
-	Player player = <span style="color: #000080; font-weight: bold">new</span> Player(ctx.<span style="color: #FF0000">getChannel</span>());
-	<span style="color: #008800; font-style: italic">// Add the player to the game.</span>
-	Game.<span style="color: #FF0000">PlayerLetter</span> letter = game.<span style="color: #FF0000">addPlayer</span>(player);
-	<span style="color: #008800; font-style: italic">// Add the game to the collection of games.</span>
-	games.<span style="color: #FF0000">put</span>(game.<span style="color: #FF0000">getId</span>(), game);
-	<span style="color: #008800; font-style: italic">// Send confirmation message to player with game ID and their assigned letter (X or O)</span>
-	ctx.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(<span style="color: #000080; font-weight: bold">new</span> HandshakeMessageBean(game.<span style="color: #FF0000">getId</span>(), letter.<span style="color: #FF0000">toString</span>()).<span style="color: #FF0000">toJson</span>()));
-	<span style="color: #008800; font-style: italic">// If the game has begun we need to inform the players. Send them a &quot;turn&quot; message (either &quot;waiting&quot; or &quot;your_turn&quot;)</span>
-	<span style="color: #000080; font-weight: bold">if</span> (game.<span style="color: #FF0000">getStatus</span>() == Game.<span style="color: #FF0000">Status</span>.<span style="color: #FF0000">IN_PROGRESS</span>) {
-	    game.<span style="color: #FF0000">getPlayer</span>(PlayerLetter.<span style="color: #FF0000">X</span>).<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(<span style="color: #000080; font-weight: bold">new</span> TurnMessageBean(YOUR_TURN).<span style="color: #FF0000">toJson</span>()));
-	    game.<span style="color: #FF0000">getPlayer</span>(PlayerLetter.<span style="color: #FF0000">O</span>).<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(<span style="color: #000080; font-weight: bold">new</span> TurnMessageBean(WAITING).<span style="color: #FF0000">toJson</span>()));
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">private</span> <span style="color:#000080;font-weight:bold">void</span> initGame(ChannelHandlerContext ctx) {
+	<span style="color:#080;font-style:italic">// Try to find a game waiting for a player. If one doesn&#39;t exist, create a new one.
+</span><span style="color:#080;font-style:italic"></span>	Game game = findGame();
+	<span style="color:#080;font-style:italic">// Create a new instance of player and assign their channel for WebSocket communications.
+</span><span style="color:#080;font-style:italic"></span>	Player player = <span style="color:#000080;font-weight:bold">new</span> Player(ctx.<span style="color:#f00">getChannel</span>());
+	<span style="color:#080;font-style:italic">// Add the player to the game.
+</span><span style="color:#080;font-style:italic"></span>	Game.<span style="color:#f00">PlayerLetter</span> letter = game.<span style="color:#f00">addPlayer</span>(player);
+	<span style="color:#080;font-style:italic">// Add the game to the collection of games.
+</span><span style="color:#080;font-style:italic"></span>	games.<span style="color:#f00">put</span>(game.<span style="color:#f00">getId</span>(), game);
+	<span style="color:#080;font-style:italic">// Send confirmation message to player with game ID and their assigned letter (X or O)
+</span><span style="color:#080;font-style:italic"></span>	ctx.<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(<span style="color:#000080;font-weight:bold">new</span> HandshakeMessageBean(game.<span style="color:#f00">getId</span>(), letter.<span style="color:#f00">toString</span>()).<span style="color:#f00">toJson</span>()));
+	<span style="color:#080;font-style:italic">// If the game has begun we need to inform the players. Send them a &#34;turn&#34; message (either &#34;waiting&#34; or &#34;your_turn&#34;)
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">if</span> (game.<span style="color:#f00">getStatus</span>() == Game.<span style="color:#f00">Status</span>.<span style="color:#f00">IN_PROGRESS</span>) {
+	    game.<span style="color:#f00">getPlayer</span>(PlayerLetter.<span style="color:#f00">X</span>).<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(<span style="color:#000080;font-weight:bold">new</span> TurnMessageBean(YOUR_TURN).<span style="color:#f00">toJson</span>()));
+	    game.<span style="color:#f00">getPlayer</span>(PlayerLetter.<span style="color:#f00">O</span>).<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(<span style="color:#000080;font-weight:bold">new</span> TurnMessageBean(WAITING).<span style="color:#f00">toJson</span>()));
 	}
 }
 
-<span style="color: #000080; font-weight: bold">private</span> Game findGame() {
-	<span style="color: #008800; font-style: italic">// Find an existing game and return it</span>
-	<span style="color: #000080; font-weight: bold">for</span> (Game g : games.<span style="color: #FF0000">values</span>()) {
-	    <span style="color: #000080; font-weight: bold">if</span> (g.<span style="color: #FF0000">getStatus</span>().<span style="color: #FF0000">equals</span>(Game.<span style="color: #FF0000">Status</span>.<span style="color: #FF0000">WAITING</span>)) {
-	        <span style="color: #000080; font-weight: bold">return</span> g;
+<span style="color:#000080;font-weight:bold">private</span> Game findGame() {
+	<span style="color:#080;font-style:italic">// Find an existing game and return it
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">for</span> (Game g : games.<span style="color:#f00">values</span>()) {
+	    <span style="color:#000080;font-weight:bold">if</span> (g.<span style="color:#f00">getStatus</span>().<span style="color:#f00">equals</span>(Game.<span style="color:#f00">Status</span>.<span style="color:#f00">WAITING</span>)) {
+	        <span style="color:#000080;font-weight:bold">return</span> g;
 	    }
 	}
-	<span style="color: #008800; font-style: italic">// Or return a new game</span>
-	<span style="color: #000080; font-weight: bold">return</span> <span style="color: #000080; font-weight: bold">new</span> Game();
-}
-</pre></div>
-
+	<span style="color:#080;font-style:italic">// Or return a new game
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">return</span> <span style="color:#000080;font-weight:bold">new</span> Game();
+}</code></pre>
+</div>
 
 <p>The code above is mainly responsible for creating and maintaining games, which are stored in the TicTacToeServerHandler as a static collection (shared across all instances of our handler). As players connect to our server we assign them to a game and let them know that they are either waiting for an opponent or that an opponent has connected and their game has begun. Exciting!</p>
 
 <p>Finally, we need to accept incoming WebSocket messages. Each message represents a player&rsquo;s turn (which cell they selected). After we process the turn information we need to push data out to their opponent to let them know how badly they&rsquo;re getting pwned. We also need to check the status of the ongoing game; it&rsquo;s fairly important to be able to tell if a game has been won or tied after the last move!</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">private</span> <span style="color: #000080; font-weight: bold">void</span> handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
-	Gson gson = <span style="color: #000080; font-weight: bold">new</span> Gson();
-	IncomingMessageBean message = gson.<span style="color: #FF0000">fromJson</span>(frame.<span style="color: #FF0000">getTextData</span>(), IncomingMessageBean.<span style="color: #FF0000">class</span>);
-	Game game = games.<span style="color: #FF0000">get</span>(message.<span style="color: #FF0000">getGameId</span>());
-	Player opponent = game.<span style="color: #FF0000">getOpponent</span>(message.<span style="color: #FF0000">getPlayer</span>());
-	Player player = game.<span style="color: #FF0000">getPlayer</span>(PlayerLetter.<span style="color: #FF0000">valueOf</span>(message.<span style="color: #FF0000">getPlayer</span>()));
-	<span style="color: #008800; font-style: italic">// Mark the cell the player selected.</span>
-	game.<span style="color: #FF0000">markCell</span>(message.<span style="color: #FF0000">getGridIdAsInt</span>(), player.<span style="color: #FF0000">getLetter</span>());
-	<span style="color: #008800; font-style: italic">// Get the status for the current game.</span>
-	<span style="color: #000080; font-weight: bold">boolean</span> winner = game.<span style="color: #FF0000">isPlayerWinner</span>(player.<span style="color: #FF0000">getLetter</span>());
-	<span style="color: #000080; font-weight: bold">boolean</span> tied = game.<span style="color: #FF0000">isTied</span>();
-	<span style="color: #008800; font-style: italic">// Respond to the opponent in order to update their screen.</span>
-	String responseToOpponent = <span style="color: #000080; font-weight: bold">new</span> OutgoingMessageBean(player.<span style="color: #FF0000">getLetter</span>().<span style="color: #FF0000">toString</span>(), message.<span style="color: #FF0000">getGridId</span>(), winner, tied).<span style="color: #FF0000">toJson</span>();
-	opponent.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(responseToOpponent));
-	<span style="color: #008800; font-style: italic">// Respond to the player to let them know they won.</span>
-	<span style="color: #000080; font-weight: bold">if</span> (winner) {
-	    player.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(<span style="color: #000080; font-weight: bold">new</span> GameOverMessageBean(YOU_WIN).<span style="color: #FF0000">toJson</span>()));
-	} <span style="color: #000080; font-weight: bold">else</span> <span style="color: #000080; font-weight: bold">if</span> (tied) {
-	    player.<span style="color: #FF0000">getChannel</span>().<span style="color: #FF0000">write</span>(<span style="color: #000080; font-weight: bold">new</span> DefaultWebSocketFrame(<span style="color: #000080; font-weight: bold">new</span> GameOverMessageBean(TIED).<span style="color: #FF0000">toJson</span>()));
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">private</span> <span style="color:#000080;font-weight:bold">void</span> handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+	Gson gson = <span style="color:#000080;font-weight:bold">new</span> Gson();
+	IncomingMessageBean message = gson.<span style="color:#f00">fromJson</span>(frame.<span style="color:#f00">getTextData</span>(), IncomingMessageBean.<span style="color:#f00">class</span>);
+	Game game = games.<span style="color:#f00">get</span>(message.<span style="color:#f00">getGameId</span>());
+	Player opponent = game.<span style="color:#f00">getOpponent</span>(message.<span style="color:#f00">getPlayer</span>());
+	Player player = game.<span style="color:#f00">getPlayer</span>(PlayerLetter.<span style="color:#f00">valueOf</span>(message.<span style="color:#f00">getPlayer</span>()));
+	<span style="color:#080;font-style:italic">// Mark the cell the player selected.
+</span><span style="color:#080;font-style:italic"></span>	game.<span style="color:#f00">markCell</span>(message.<span style="color:#f00">getGridIdAsInt</span>(), player.<span style="color:#f00">getLetter</span>());
+	<span style="color:#080;font-style:italic">// Get the status for the current game.
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">boolean</span> winner = game.<span style="color:#f00">isPlayerWinner</span>(player.<span style="color:#f00">getLetter</span>());
+	<span style="color:#000080;font-weight:bold">boolean</span> tied = game.<span style="color:#f00">isTied</span>();
+	<span style="color:#080;font-style:italic">// Respond to the opponent in order to update their screen.
+</span><span style="color:#080;font-style:italic"></span>	String responseToOpponent = <span style="color:#000080;font-weight:bold">new</span> OutgoingMessageBean(player.<span style="color:#f00">getLetter</span>().<span style="color:#f00">toString</span>(), message.<span style="color:#f00">getGridId</span>(), winner, tied).<span style="color:#f00">toJson</span>();
+	opponent.<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(responseToOpponent));
+	<span style="color:#080;font-style:italic">// Respond to the player to let them know they won.
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">if</span> (winner) {
+	    player.<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(<span style="color:#000080;font-weight:bold">new</span> GameOverMessageBean(YOU_WIN).<span style="color:#f00">toJson</span>()));
+	} <span style="color:#000080;font-weight:bold">else</span> <span style="color:#000080;font-weight:bold">if</span> (tied) {
+	    player.<span style="color:#f00">getChannel</span>().<span style="color:#f00">write</span>(<span style="color:#000080;font-weight:bold">new</span> DefaultWebSocketFrame(<span style="color:#000080;font-weight:bold">new</span> GameOverMessageBean(TIED).<span style="color:#f00">toJson</span>()));
 	}
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>Remember earlier that handleWebSocketFrame is one of our own methods, not a callback method provided by Netty. This method is invoked when we inspect the incoming message and determine it&rsquo;s a WebSocketFrame rather than an HttpRequest. The core of the logic above deals with updating the <em>game board</em> and marking the current player&rsquo;s last move. We also need to check for victory or draw conditions and update the player and opponent with the latest game status.</p>
 
@@ -552,117 +546,116 @@
 
 <p>Below is a copy of the JavaScript for the tic-tac-toe client.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #008800; font-style: italic">// Constants - Status Updates</span>
-<span style="color: #000080; font-weight: bold">var</span> STRATEGIZING_STATUS = <span style="color: #0000FF">&quot;Your opponent is strategizing.&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> WAITING_STATUS = <span style="color: #0000FF">&quot;Waiting for an opponent.&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> YOUR_TURN_STATUS = <span style="color: #0000FF">&quot;It&#39;s your turn!&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> YOU_WIN_STATUS = <span style="color: #0000FF">&quot;You win!&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> TIED_STATUS = <span style="color: #0000FF">&quot;The game is tied.&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> WEBSOCKET_CLOSED_STATUS = <span style="color: #0000FF">&quot;The WebSocket Connection Has Been Closed.&quot;</span>;
-<span style="color: #008800; font-style: italic">// Constants - Game</span>
-<span style="color: #000080; font-weight: bold">var</span> PLAYER_O = <span style="color: #0000FF">&quot;O&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> PLAYER_X = <span style="color: #0000FF">&quot;X&quot;</span>;
-<span style="color: #008800; font-style: italic">// Constants - Incoming message types</span>
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_HANDSHAKE = <span style="color: #0000FF">&quot;handshake&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_OPPONENT_UPDATE = <span style="color: #0000FF">&quot;response&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_TURN_INDICATOR = <span style="color: #0000FF">&quot;turn&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_GAME_OVER = <span style="color: #0000FF">&quot;game_over&quot;</span>;
-<span style="color: #008800; font-style: italic">// Constants - Message turn indicator types</span>
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_TURN_INDICATOR_YOUR_TURN = <span style="color: #0000FF">&quot;YOUR_TURN&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_TURN_INDICATOR_WAITING = <span style="color: #0000FF">&quot;WAITING&quot;</span>;
-<span style="color: #008800; font-style: italic">// Constants - Game over message types</span>
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_GAME_OVER_YOU_WIN = <span style="color: #0000FF">&quot;YOU_WIN&quot;</span>;
-<span style="color: #000080; font-weight: bold">var</span> MESSAGE_GAME_OVER_TIED = <span style="color: #0000FF">&quot;TIED&quot;</span>;
-<span style="color: #008800; font-style: italic">// Constants - WebSocket URL</span>
-<span style="color: #000080; font-weight: bold">var</span> WEBSOCKET_URL = <span style="color: #0000FF">&quot;ws://localhost:9000/websocket&quot;</span>;
-<span style="color: #008800; font-style: italic">// Variables</span>
-<span style="color: #000080; font-weight: bold">var</span> player;
-<span style="color: #000080; font-weight: bold">var</span> opponent;
-<span style="color: #000080; font-weight: bold">var</span> gameId;
-<span style="color: #000080; font-weight: bold">var</span> yourTurn = <span style="color: #000080; font-weight: bold">false</span>;
-<span style="color: #008800; font-style: italic">// WebSocket connection</span>
-<span style="color: #000080; font-weight: bold">var</span> ws;
-$(document).ready(<span style="color: #000080; font-weight: bold">function</span>() {
-	<span style="color: #008800; font-style: italic">/* Bind to the click of all divs (tic tac toe cells) on the page</span>
-<span style="color: #008800; font-style: italic">	We would want to qualify this if we styled the game fancier! */</span>
-	$(<span style="color: #0000FF">&quot;div&quot;</span>).click(<span style="color: #000080; font-weight: bold">function</span> () {
-	    <span style="color: #008800; font-style: italic">// Only process clicks if it&#39;s your turn.</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (yourTurn == <span style="color: #000080; font-weight: bold">true</span>) {
-	        <span style="color: #008800; font-style: italic">// Stop processing clicks and invoke sendMessage().</span>
-	        yourTurn = <span style="color: #000080; font-weight: bold">false</span>;
-	        sendMessage(<span style="color: #000080; font-weight: bold">this</span>.id);
-	        <span style="color: #008800; font-style: italic">// Add the X or O to the game board and update status.</span>
-	        $(<span style="color: #0000FF">&quot;#&quot;</span> + <span style="color: #000080; font-weight: bold">this</span>.id).addClass(player);
-	        $(<span style="color: #0000FF">&quot;#&quot;</span> + <span style="color: #000080; font-weight: bold">this</span>.id).html(player);
-	        $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(STRATEGIZING_STATUS);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#080;font-style:italic">// Constants - Status Updates
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> STRATEGIZING_STATUS = <span style="color:#00f">&#34;Your opponent is strategizing.&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> WAITING_STATUS = <span style="color:#00f">&#34;Waiting for an opponent.&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> YOUR_TURN_STATUS = <span style="color:#00f">&#34;It&#39;s your turn!&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> YOU_WIN_STATUS = <span style="color:#00f">&#34;You win!&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> TIED_STATUS = <span style="color:#00f">&#34;The game is tied.&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> WEBSOCKET_CLOSED_STATUS = <span style="color:#00f">&#34;The WebSocket Connection Has Been Closed.&#34;</span>;
+<span style="color:#080;font-style:italic">// Constants - Game
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> PLAYER_O = <span style="color:#00f">&#34;O&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> PLAYER_X = <span style="color:#00f">&#34;X&#34;</span>;
+<span style="color:#080;font-style:italic">// Constants - Incoming message types
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> MESSAGE_HANDSHAKE = <span style="color:#00f">&#34;handshake&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> MESSAGE_OPPONENT_UPDATE = <span style="color:#00f">&#34;response&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> MESSAGE_TURN_INDICATOR = <span style="color:#00f">&#34;turn&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> MESSAGE_GAME_OVER = <span style="color:#00f">&#34;game_over&#34;</span>;
+<span style="color:#080;font-style:italic">// Constants - Message turn indicator types
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> MESSAGE_TURN_INDICATOR_YOUR_TURN = <span style="color:#00f">&#34;YOUR_TURN&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> MESSAGE_TURN_INDICATOR_WAITING = <span style="color:#00f">&#34;WAITING&#34;</span>;
+<span style="color:#080;font-style:italic">// Constants - Game over message types
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> MESSAGE_GAME_OVER_YOU_WIN = <span style="color:#00f">&#34;YOU_WIN&#34;</span>;
+<span style="color:#000080;font-weight:bold">var</span> MESSAGE_GAME_OVER_TIED = <span style="color:#00f">&#34;TIED&#34;</span>;
+<span style="color:#080;font-style:italic">// Constants - WebSocket URL
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> WEBSOCKET_URL = <span style="color:#00f">&#34;ws://localhost:9000/websocket&#34;</span>;
+<span style="color:#080;font-style:italic">// Variables
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> player;
+<span style="color:#000080;font-weight:bold">var</span> opponent;
+<span style="color:#000080;font-weight:bold">var</span> gameId;
+<span style="color:#000080;font-weight:bold">var</span> yourTurn = <span style="color:#000080;font-weight:bold">false</span>;
+<span style="color:#080;font-style:italic">// WebSocket connection
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">var</span> ws;
+$(document).ready(<span style="color:#000080;font-weight:bold">function</span>() {
+	<span style="color:#080;font-style:italic">/* Bind to the click of all divs (tic tac toe cells) on the page
+</span><span style="color:#080;font-style:italic">	We would want to qualify this if we styled the game fancier! */</span>
+	$(<span style="color:#00f">&#34;div&#34;</span>).click(<span style="color:#000080;font-weight:bold">function</span> () {
+	    <span style="color:#080;font-style:italic">// Only process clicks if it&#39;s your turn.
+</span><span style="color:#080;font-style:italic"></span>	    <span style="color:#000080;font-weight:bold">if</span> (yourTurn == <span style="color:#000080;font-weight:bold">true</span>) {
+	        <span style="color:#080;font-style:italic">// Stop processing clicks and invoke sendMessage().
+</span><span style="color:#080;font-style:italic"></span>	        yourTurn = <span style="color:#000080;font-weight:bold">false</span>;
+	        sendMessage(<span style="color:#000080;font-weight:bold">this</span>.id);
+	        <span style="color:#080;font-style:italic">// Add the X or O to the game board and update status.
+</span><span style="color:#080;font-style:italic"></span>	        $(<span style="color:#00f">&#34;#&#34;</span> + <span style="color:#000080;font-weight:bold">this</span>.id).addClass(player);
+	        $(<span style="color:#00f">&#34;#&#34;</span> + <span style="color:#000080;font-weight:bold">this</span>.id).html(player);
+	        $(<span style="color:#00f">&#39;#status&#39;</span>).text(STRATEGIZING_STATUS);
 	    }
 	});
-	<span style="color: #008800; font-style: italic">// On the intial page load we perform the handshake with the server.</span>
-	ws = <span style="color: #000080; font-weight: bold">new</span> WebSocket(WEBSOCKET_URL);
-	ws.onopen = <span style="color: #000080; font-weight: bold">function</span>(event) {
-	    $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(WAITING_STATUS);
+	<span style="color:#080;font-style:italic">// On the intial page load we perform the handshake with the server.
+</span><span style="color:#080;font-style:italic"></span>	ws = <span style="color:#000080;font-weight:bold">new</span> WebSocket(WEBSOCKET_URL);
+	ws.onopen = <span style="color:#000080;font-weight:bold">function</span>(event) {
+	    $(<span style="color:#00f">&#39;#status&#39;</span>).text(WAITING_STATUS);
 	}
-	<span style="color: #008800; font-style: italic">// Process turn message (&quot;push&quot;) from the server.</span>
-	ws.onmessage = <span style="color: #000080; font-weight: bold">function</span>(event) {
-	    <span style="color: #000080; font-weight: bold">var</span> message = jQuery.parseJSON(event.data);
-	    <span style="color: #008800; font-style: italic">// Process the handshake response when the page is opened</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (message.type === MESSAGE_HANDSHAKE) {
+	<span style="color:#080;font-style:italic">// Process turn message (&#34;push&#34;) from the server.
+</span><span style="color:#080;font-style:italic"></span>	ws.onmessage = <span style="color:#000080;font-weight:bold">function</span>(event) {
+	    <span style="color:#000080;font-weight:bold">var</span> message = jQuery.parseJSON(event.data);
+	    <span style="color:#080;font-style:italic">// Process the handshake response when the page is opened
+</span><span style="color:#080;font-style:italic"></span>	    <span style="color:#000080;font-weight:bold">if</span> (message.type === MESSAGE_HANDSHAKE) {
 	        gameId = message.gameId;
 	        player = message.player;
-	        <span style="color: #000080; font-weight: bold">if</span> (player === PLAYER_X) {
+	        <span style="color:#000080;font-weight:bold">if</span> (player === PLAYER_X) {
 	            opponent = PLAYER_O;
-	        } <span style="color: #000080; font-weight: bold">else</span> {
+	        } <span style="color:#000080;font-weight:bold">else</span> {
 	            opponent = PLAYER_X;
 	        }
 	    }
-	    <span style="color: #008800; font-style: italic">// Process your opponent&#39;s turn data.</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (message.type === MESSAGE_OPPONENT_UPDATE) {
-	        <span style="color: #008800; font-style: italic">// Show their turn info on the game board.</span>
-	        $(<span style="color: #0000FF">&quot;#&quot;</span> + message.gridId).addClass(message.opponent);
-	        $(<span style="color: #0000FF">&quot;#&quot;</span> + message.gridId).html(message.opponent);
-	        <span style="color: #008800; font-style: italic">// Switch to your turn.</span>
-	        <span style="color: #000080; font-weight: bold">if</span> (message.winner == <span style="color: #000080; font-weight: bold">true</span>) {
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(message.opponent + <span style="color: #0000FF">&quot; is the winner!&quot;</span>);
-	        } <span style="color: #000080; font-weight: bold">else</span> <span style="color: #000080; font-weight: bold">if</span> (message.tied == <span style="color: #000080; font-weight: bold">true</span>) {
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(TIED_STATUS);
-	        } <span style="color: #000080; font-weight: bold">else</span> {
-	            yourTurn = <span style="color: #000080; font-weight: bold">true</span>;
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(YOUR_TURN_STATUS);
+	    <span style="color:#080;font-style:italic">// Process your opponent&#39;s turn data.
+</span><span style="color:#080;font-style:italic"></span>	    <span style="color:#000080;font-weight:bold">if</span> (message.type === MESSAGE_OPPONENT_UPDATE) {
+	        <span style="color:#080;font-style:italic">// Show their turn info on the game board.
+</span><span style="color:#080;font-style:italic"></span>	        $(<span style="color:#00f">&#34;#&#34;</span> + message.gridId).addClass(message.opponent);
+	        $(<span style="color:#00f">&#34;#&#34;</span> + message.gridId).html(message.opponent);
+	        <span style="color:#080;font-style:italic">// Switch to your turn.
+</span><span style="color:#080;font-style:italic"></span>	        <span style="color:#000080;font-weight:bold">if</span> (message.winner == <span style="color:#000080;font-weight:bold">true</span>) {
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(message.opponent + <span style="color:#00f">&#34; is the winner!&#34;</span>);
+	        } <span style="color:#000080;font-weight:bold">else</span> <span style="color:#000080;font-weight:bold">if</span> (message.tied == <span style="color:#000080;font-weight:bold">true</span>) {
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(TIED_STATUS);
+	        } <span style="color:#000080;font-weight:bold">else</span> {
+	            yourTurn = <span style="color:#000080;font-weight:bold">true</span>;
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(YOUR_TURN_STATUS);
 	        }
 	    }
-	    <span style="color: #008800; font-style: italic">/* The initial turn indicator from the server. Determines who starts</span>
-<span style="color: #008800; font-style: italic">	    the game first. Both players wait until the server gives the OK</span>
-<span style="color: #008800; font-style: italic">	    to start a game. */</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (message.type === MESSAGE_TURN_INDICATOR) {
-	        <span style="color: #000080; font-weight: bold">if</span> (message.turn === MESSAGE_TURN_INDICATOR_YOUR_TURN) {
-	            yourTurn = <span style="color: #000080; font-weight: bold">true</span>;
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(YOUR_TURN_STATUS);
-	        } <span style="color: #000080; font-weight: bold">else</span> <span style="color: #000080; font-weight: bold">if</span> (message.turn === MESSAGE_TURN_INDICATOR_WAITING) {
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(STRATEGIZING_STATUS);
+	    <span style="color:#080;font-style:italic">/* The initial turn indicator from the server. Determines who starts
+</span><span style="color:#080;font-style:italic">	    the game first. Both players wait until the server gives the OK
+</span><span style="color:#080;font-style:italic">	    to start a game. */</span>
+	    <span style="color:#000080;font-weight:bold">if</span> (message.type === MESSAGE_TURN_INDICATOR) {
+	        <span style="color:#000080;font-weight:bold">if</span> (message.turn === MESSAGE_TURN_INDICATOR_YOUR_TURN) {
+	            yourTurn = <span style="color:#000080;font-weight:bold">true</span>;
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(YOUR_TURN_STATUS);
+	        } <span style="color:#000080;font-weight:bold">else</span> <span style="color:#000080;font-weight:bold">if</span> (message.turn === MESSAGE_TURN_INDICATOR_WAITING) {
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(STRATEGIZING_STATUS);
 	        }
 	    }
-	    <span style="color: #008800; font-style: italic">/* The server has determined you are the winner and sent you this message. */</span>
-	    <span style="color: #000080; font-weight: bold">if</span> (message.type === MESSAGE_GAME_OVER) {
-	        <span style="color: #000080; font-weight: bold">if</span> (message.result === MESSAGE_GAME_OVER_YOU_WIN) {
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(YOU_WIN_STATUS);
+	    <span style="color:#080;font-style:italic">/* The server has determined you are the winner and sent you this message. */</span>
+	    <span style="color:#000080;font-weight:bold">if</span> (message.type === MESSAGE_GAME_OVER) {
+	        <span style="color:#000080;font-weight:bold">if</span> (message.result === MESSAGE_GAME_OVER_YOU_WIN) {
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(YOU_WIN_STATUS);
 	        }
-	        <span style="color: #000080; font-weight: bold">else</span> <span style="color: #000080; font-weight: bold">if</span> (message.result === MESSAGE_GAME_OVER_TIED) {
-	            $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(TIED_STATUS);
+	        <span style="color:#000080;font-weight:bold">else</span> <span style="color:#000080;font-weight:bold">if</span> (message.result === MESSAGE_GAME_OVER_TIED) {
+	            $(<span style="color:#00f">&#39;#status&#39;</span>).text(TIED_STATUS);
 	        }
 	    }
 	}
-	ws.onclose = <span style="color: #000080; font-weight: bold">function</span>(event) {
-	    $(<span style="color: #0000FF">&#39;#status&#39;</span>).text(WEBSOCKET_CLOSED_STATUS);
+	ws.onclose = <span style="color:#000080;font-weight:bold">function</span>(event) {
+	    $(<span style="color:#00f">&#39;#status&#39;</span>).text(WEBSOCKET_CLOSED_STATUS);
 	}
 });
-<span style="color: #008800; font-style: italic">// Send your turn information to the server.</span>
-<span style="color: #000080; font-weight: bold">function</span> sendMessage(id) {
-	<span style="color: #000080; font-weight: bold">var</span> message = {gameId: gameId, player: player, gridId:id};
-	<span style="color: #000080; font-weight: bold">var</span> encoded = $.toJSON(message);
+<span style="color:#080;font-style:italic">// Send your turn information to the server.
+</span><span style="color:#080;font-style:italic"></span><span style="color:#000080;font-weight:bold">function</span> sendMessage(id) {
+	<span style="color:#000080;font-weight:bold">var</span> message = {gameId: gameId, player: player, gridId:id};
+	<span style="color:#000080;font-weight:bold">var</span> encoded = $.toJSON(message);
 	ws.send(encoded);
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>The bulk of the logic above deals with two distinct activities; maintaining state and processing messages. You&rsquo;ll notice that when the page first loads we&rsquo;ll use the documentReady function to initiate the WS handshake. You&rsquo;ll also notice that we use jQuery to bind different WebSocket events to code blocks.</p>
 
@@ -680,8 +673,7 @@ $(document).ready(<span style="color: #000080; font-weight: bold">function</span
         <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
     <div class="uk-container uk-container-small uk-text-center@m">
         <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
-        <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
-        <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+        <p>I'm Founder and Principal Consultant at RedElastic. RedElastic is a consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p><p>If you would like to chat, please <a href="https://redelastic.com/contact/">contact me here</a>.</p>
     </div>
 </div>
         

@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Kevin Webber</title>
-    <link>http://rocketpages.github.io/home/index.xml</link>
+    <link>http://rocketpages.github.io/home/</link>
     <description>Recent content in Homes on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Mar 2016 15:09:06 -0400</lastBuildDate>
-    <atom:link href="http://rocketpages.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://rocketpages.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Kevin Webber</title>
@@ -15,10 +17,8 @@
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;I currently work as Founder and Consultant at &lt;a href=&#34;https://redelastic.com&#34;&gt;RedElastic&lt;/a&gt;, a boutique consulting firm that equips organizations with the skills necessary to adopt modern architectural approaches. We specialize in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.&lt;/p&gt;
-
-&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m Founder and Principal Consultant at RedElastic, a consulting firm based out of Toronto, Canada, that equips organizations with the skills necessary to build event-driven, reactive systems. RedElastic specializes in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.
+Before starting Lightbend in 2016, I worked for Lightbend (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the Scala programming language, Akka distributed systems framework, Play web framework, and Lagom microservices framework.</description>
     </item>
     
   </channel>

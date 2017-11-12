@@ -83,7 +83,7 @@
     
     #kevin-webber {
         font-family: "Operator Mono SSm A", "Operator Mono SSm B";
-        font-style: italic;
+        font-style: normal;
         font-weight: 700;
         letter-spacing: -3px;
     }
@@ -296,34 +296,33 @@
 
 <p>Here&rsquo;s the (condensed version of) code for my behavior class that handles the repainting, callback, and post-callback JS invocation:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">final</span> IBehavior repaintBehavior = <span style="color: #000080; font-weight: bold">new</span> AbstractDefaultAjaxBehavior() {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000080;font-weight:bold">final</span> IBehavior repaintBehavior = <span style="color:#000080;font-weight:bold">new</span> AbstractDefaultAjaxBehavior() {
 	@Override
-	<span style="color: #000080; font-weight: bold">protected</span> <span style="color: #000080; font-weight: bold">void</span> respond(AjaxRequestTarget target)
+	<span style="color:#000080;font-weight:bold">protected</span> <span style="color:#000080;font-weight:bold">void</span> respond(AjaxRequestTarget target)
 	{
-	    ThingModel thingModel = <span style="color: #000080; font-weight: bold">new</span> ThingModel(thingId);
-	    UnprocessedPhotosModel photosModel = <span style="color: #000080; font-weight: bold">new</span> UnprocessedPhotosModel(getCurrentUser().<span style="color: #FF0000">getId</span>(), tokenId);
-	    List photos = photosModel.<span style="color: #FF0000">getObject</span>();
+	    ThingModel thingModel = <span style="color:#000080;font-weight:bold">new</span> ThingModel(thingId);
+	    UnprocessedPhotosModel photosModel = <span style="color:#000080;font-weight:bold">new</span> UnprocessedPhotosModel(getCurrentUser().<span style="color:#f00">getId</span>(), tokenId);
+	    List photos = photosModel.<span style="color:#f00">getObject</span>();
 	
-	    <span style="color: #000080; font-weight: bold">for</span> (Photo photo : photos)
+	    <span style="color:#000080;font-weight:bold">for</span> (Photo photo : photos)
 	    {
-	        photo.<span style="color: #FF0000">setThing</span>(thingModel.<span style="color: #FF0000">getObject</span>());
-	        ServiceFactory.<span style="color: #FF0000">getPhotoService</span>().<span style="color: #FF0000">savePhoto</span>(photo);
+	        photo.<span style="color:#f00">setThing</span>(thingModel.<span style="color:#f00">getObject</span>());
+	        ServiceFactory.<span style="color:#f00">getPhotoService</span>().<span style="color:#f00">savePhoto</span>(photo);
 	    }
 	
-	    target.<span style="color: #FF0000">addComponent</span>(photosPanel);
-	    target.<span style="color: #FF0000">appendJavascript</span>(<span style="color: #0000FF">&quot;$.fancyboxResetBusy(); reinitFancybox();&quot;</span>);
+	    target.<span style="color:#f00">addComponent</span>(photosPanel);
+	    target.<span style="color:#f00">appendJavascript</span>(<span style="color:#00f">&#34;$.fancyboxResetBusy(); reinitFancybox();&#34;</span>);
 	}
 	
 	@Override
-	<span style="color: #000080; font-weight: bold">public</span> <span style="color: #000080; font-weight: bold">void</span> renderHead(IHeaderResponse response)
+	<span style="color:#000080;font-weight:bold">public</span> <span style="color:#000080;font-weight:bold">void</span> renderHead(IHeaderResponse response)
 	{
-	    <span style="color: #000080; font-weight: bold">super</span>.<span style="color: #FF0000">renderHead</span>(response);
+	    <span style="color:#000080;font-weight:bold">super</span>.<span style="color:#f00">renderHead</span>(response);
 	    CharSequence callback = getCallbackScript();
-	    response.<span style="color: #FF0000">renderJavascript</span>(<span style="color: #0000FF">&quot;function uploadCompleted() { &quot;</span> + callback + <span style="color: #0000FF">&quot;}&quot;</span>, <span style="color: #0000FF">&quot;customUploadCompleted&quot;</span>);
+	    response.<span style="color:#f00">renderJavascript</span>(<span style="color:#00f">&#34;function uploadCompleted() { &#34;</span> + callback + <span style="color:#00f">&#34;}&#34;</span>, <span style="color:#00f">&#34;customUploadCompleted&#34;</span>);
 	}
-};
-</pre></div>
-
+};</code></pre>
+</div>
 
 <p>For those who aren&rsquo;t familiar with Wicket, the <strong>renderHead</strong> method is rendering a custom JavaScript function in the view. The multiple upload Flash component I use invokes the rendered JS function after it finishes processing the images. When the Flash uploader invokes <strong>uploadCompleted</strong>, Wicket handles all the AJAX plumbing and executes the Java code in the <strong>respond</strong> method above.</p>
 
@@ -331,49 +330,46 @@
 
 <p>Let&rsquo;s take a look at the <strong>reinitFancybox</strong> function which gets invoked after the panel is refreshed.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">function</span> reinitFancybox() {  
-    <span style="color: #008800; font-style: italic">// CSS</span>
-	$(<span style="color: #0000FF">&quot;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).css(<span style="color: #0000FF">&quot;opacity&quot;</span>, <span style="color: #0000FF">&quot;1&quot;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000080;font-weight:bold">function</span> reinitFancybox() {  
+    <span style="color:#080;font-style:italic">// CSS
+</span><span style="color:#080;font-style:italic"></span>	$(<span style="color:#00f">&#34;.gallery img, portfolio.list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&#34;</span>).css(<span style="color:#00f">&#34;opacity&#34;</span>, <span style="color:#00f">&#34;1&#34;</span>);
 	
-	<span style="color: #008800; font-style: italic">// ON MOUSE OVER</span>
-	$(<span style="color: #0000FF">&quot;.gallery img, .portfolio-list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&quot;</span>).hover(<span style="color: #000080; font-weight: bold">function</span> () {
-	    <span style="color: #008800; font-style: italic">// SET OPACITY TO 100%</span>
-	    $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">0.5</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
+	<span style="color:#080;font-style:italic">// ON MOUSE OVER
+</span><span style="color:#080;font-style:italic"></span>	$(<span style="color:#00f">&#34;.gallery img, .portfolio-list img, .portfolio.grid-2 div img, a.fancy, ul.screens img&#34;</span>).hover(<span style="color:#000080;font-weight:bold">function</span> () {
+	    <span style="color:#080;font-style:italic">// SET OPACITY TO 100%
+</span><span style="color:#080;font-style:italic"></span>	    $(<span style="color:#000080;font-weight:bold">this</span>).stop().animate({opacity: <span style="color:#00f">0.5</span>}, <span style="color:#00f">&#34;fast&#34;</span>);
 	},
-	<span style="color: #008800; font-style: italic">// ON MOUSE OUT</span>
-	<span style="color: #000080; font-weight: bold">function</span> () {
-	    <span style="color: #008800; font-style: italic">// SET OPACITY BACK TO 100%</span>
-	    $(<span style="color: #000080; font-weight: bold">this</span>).stop().animate({opacity: <span style="color: #0000FF">1</span>}, <span style="color: #0000FF">&quot;fast&quot;</span>);
+	<span style="color:#080;font-style:italic">// ON MOUSE OUT
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#000080;font-weight:bold">function</span> () {
+	    <span style="color:#080;font-style:italic">// SET OPACITY BACK TO 100%
+</span><span style="color:#080;font-style:italic"></span>	    $(<span style="color:#000080;font-weight:bold">this</span>).stop().animate({opacity: <span style="color:#00f">1</span>}, <span style="color:#00f">&#34;fast&#34;</span>);
 	});
-	<span style="color: #008800; font-style: italic">// INIT FANCYBOX</span>
-	$(<span style="color: #0000FF">&quot;li.image a, a.fancy, .portfolio.grid li a.folio-zoom, .portfolio-list.image a&quot;</span>).fancybox({
-	    <span style="color: #0000FF">&#39;titlePosition&#39;</span>     : <span style="color: #0000FF">&#39;over&#39;</span>
+	<span style="color:#080;font-style:italic">// INIT FANCYBOX
+</span><span style="color:#080;font-style:italic"></span>	$(<span style="color:#00f">&#34;li.image a, a.fancy, .portfolio.grid li a.folio-zoom, .portfolio-list.image a&#34;</span>).fancybox({
+	    <span style="color:#00f">&#39;titlePosition&#39;</span>     : <span style="color:#00f">&#39;over&#39;</span>
 	});
-}
-</pre></div>
-
+}</code></pre>
+</div>
 
 <p>Most of the code above re-initializes the CSS hover effects I use to pretty up my image panel. The last piece is responsible for re-initializing Fancybox itself. <em>At this point, we should be done, Fancybox should work perfectly again.</em> But there&rsquo;s a small catch, the Fancybox script includes a global variable named <strong>busy</strong> which is set to <em>true </em>at the beginning of almost every single function. If for any reason the script is interrupted before busy is set back to <em>false, </em>re-initialization will always abort. Here&rsquo;s a snippet of the Fancybox code below:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancybox = <span style="color: #000080; font-weight: bold">function</span>(obj) {
-	<span style="color: #000080; font-weight: bold">if</span> (busy) {
-	    <span style="color: #000080; font-weight: bold">return</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">$.fancybox = <span style="color:#000080;font-weight:bold">function</span>(obj) {
+	<span style="color:#000080;font-weight:bold">if</span> (busy) {
+	    <span style="color:#000080;font-weight:bold">return</span>;
 	}
 	
-	busy = <span style="color: #000080; font-weight: bold">true</span>;
+	busy = <span style="color:#000080;font-weight:bold">true</span>;
 	
-	<span style="color: #008800; font-style: italic">// ...</span>
-};
-</pre></div>
-
+	<span style="color:#080;font-style:italic">// ...
+</span><span style="color:#080;font-style:italic"></span>};</code></pre>
+</div>
 
 <p>It&rsquo;s pretty obvious that if busy is <em>true</em> Fancybox won&rsquo;t initialize. We need to make sure busy is set to false before attempting to re-initialize. Unfortunately, this requires a small <span style="text-decoration: line-through;">kludge</span> addition to the Fancybox script itself. I&rsquo;ve added the following public function:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>$.fancyboxResetBusy = <span style="color: #000080; font-weight: bold">function</span>() {
-	busy = <span style="color: #000080; font-weight: bold">false</span>;
-}
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">$.fancyboxResetBusy = <span style="color:#000080;font-weight:bold">function</span>() {
+	busy = <span style="color:#000080;font-weight:bold">false</span>;
+}</code></pre>
+</div>
 
 <p>Invoking this before the initialize function ensures the initialization doesn&rsquo;t return prematurely.</p>
 
@@ -383,8 +379,7 @@
         <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
     <div class="uk-container uk-container-small uk-text-center@m">
         <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
-        <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
-        <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+        <p>I'm Founder and Principal Consultant at RedElastic. RedElastic is a consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p><p>If you would like to chat, please <a href="https://redelastic.com/contact/">contact me here</a>.</p>
     </div>
 </div>
         

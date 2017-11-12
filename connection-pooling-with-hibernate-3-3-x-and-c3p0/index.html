@@ -83,7 +83,7 @@
     
     #kevin-webber {
         font-family: "Operator Mono SSm A", "Operator Mono SSm B";
-        font-style: italic;
+        font-style: normal;
         font-weight: 700;
         letter-spacing: -3px;
     }
@@ -292,10 +292,9 @@
 
 <p>Hibernate uses it&rsquo;s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not <span style="color: #000080; font-weight: bold">for</span> production use!)
-INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not <span style="color:#000080;font-weight:bold">for</span> production use!)
+INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: <span style="color:#00f">1</span></code></pre>
+</div>
 
 <p>A few minor problems creep up with this default configuration left alone, such as the inability for Hibernate to reconnect closed connections. MySQL closes unused connections after 8 hours by default, which causes problems for low-volume applications that may not experience any database usage overnight.</p>
 
@@ -311,45 +310,41 @@ INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1
 
 <p>Add the C3P0 jar to your classpath. If you&rsquo;re using Maven, simply add the following to your pom.xml file:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;dependency&gt;</span>
-	<span style="color: #000080; font-weight: bold">&lt;groupId&gt;</span>org.hibernate<span style="color: #000080; font-weight: bold">&lt;/groupId&gt;</span>
-	<span style="color: #000080; font-weight: bold">&lt;artifactId&gt;</span>hibernate-c3p0<span style="color: #000080; font-weight: bold">&lt;/artifactId&gt;</span>
-	<span style="color: #000080; font-weight: bold">&lt;version&gt;</span>3.3.2.GA<span style="color: #000080; font-weight: bold">&lt;/version&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;/dependency&gt;</span>
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#000080;font-weight:bold">&lt;dependency&gt;</span>
+	<span style="color:#000080;font-weight:bold">&lt;groupId&gt;</span>org.hibernate<span style="color:#000080;font-weight:bold">&lt;/groupId&gt;</span>
+	<span style="color:#000080;font-weight:bold">&lt;artifactId&gt;</span>hibernate-c3p0<span style="color:#000080;font-weight:bold">&lt;/artifactId&gt;</span>
+	<span style="color:#000080;font-weight:bold">&lt;version&gt;</span>3.3.2.GA<span style="color:#000080;font-weight:bold">&lt;/version&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;/dependency&gt;</span></code></pre>
+</div>
 
 <p>Make the following changes to your hibernate.cfg.xml file. Pay special attention to the <em>provider_class</em> property. Previous versions did not require this property, so most of the tutorials on the net are missing this key piece of info.</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.url&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>jdbc:mysql://127.0.0.1/your_db<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.username&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>your_username<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;connection.driver_class&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>com.mysql.jdbc.Driver<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;dialect&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>org.hibernate.dialect.MySQLDialect<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;hibernate.connection.provider_class&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>org.hibernate.connection.C3P0ConnectionProvider<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;connection.url&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>jdbc:mysql://127.0.0.1/your_db<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;connection.username&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>your_username<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;connection.driver_class&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>com.mysql.jdbc.Driver<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;dialect&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>org.hibernate.dialect.MySQLDialect<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;hibernate.connection.provider_class&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>org.hibernate.connection.C3P0ConnectionProvider<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
 
-<span style="color: #008800; font-style: italic">&lt;!-- JDBC connection pool (C3P0) --&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.min_size&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>5<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.max_size&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>20<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.timeout&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>1800<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-<span style="color: #000080; font-weight: bold">&lt;property</span> <span style="color: #FF0000">name=</span><span style="color: #0000FF">&quot;c3p0.max_statements&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>50<span style="color: #000080; font-weight: bold">&lt;/property&gt;</span>
-</pre></div>
-
+<span style="color:#080;font-style:italic">&lt;!-- JDBC connection pool (C3P0) --&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;c3p0.min_size&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>5<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;c3p0.max_size&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>20<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;c3p0.timeout&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>1800<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span>
+<span style="color:#000080;font-weight:bold">&lt;property</span> <span style="color:#f00">name=</span><span style="color:#00f">&#34;c3p0.max_statements&#34;</span><span style="color:#000080;font-weight:bold">&gt;</span>50<span style="color:#000080;font-weight:bold">&lt;/property&gt;</span></code></pre>
+</div>
 
 <p>In order to configure C3P0 for your specific needs, you&rsquo;ll need a <em>c3p0.properties</em> file on the classpath. Take a look <a href="http://www.mchange.com/projects/c3p0/index.html#configuration_files" title="here">here</a> for all the available settings you can tweak. Here&rsquo;s an example that ensures any closed connection is tested and re-opened rather than MySQL throwing an exception:</p>
 
-<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span><span style="color: #FF0000">c3p0.testConnectionOnCheckout</span>=<span style="color: #0000FF">true</span>
-</pre></div>
-</p>
+<p><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-properties" data-lang="properties">c3p0.testConnectionOnCheckout=true</code></pre>
+</div></p>
 
 <h2 id="verifying-it-worked">Verifying it worked</h2>
 
 <p>Configuring C3P0 is pretty simple! If everything works correctly, you&rsquo;ll see the following in your logs:</p>
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span></span>INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">INFO ConnectionProviderFactory:95 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
 INFO C3P0ConnectionProvider:103 - C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/your_db
-INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=****}
-</pre></div>
-
+INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=****}</code></pre>
+</div>
 
             </div>
         </div>    
@@ -357,8 +352,7 @@ INFO C3P0ConnectionProvider:104 - Connection properties: {user=****, password=**
         <div id="footer" class="uk-section uk-padding-large uk-margin-remove uk-section-secondary">
     <div class="uk-container uk-container-small uk-text-center@m">
         <a href="https://redelastic.com"><img style="width:350px" src="https://res.cloudinary.com/dxqjvpa0t/image/upload/v1491487727/redelastic-footer_ohmbb5.png"/></a>
-        <p>RedElastic is a boutique consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p>
-        <a class="uk-button uk-button-default uk-margin-small-top" href="https://redelastic.com/contact">Get in touch</a>   
+        <p>I'm Founder and Principal Consultant at RedElastic. RedElastic is a consulting firm based out of Toronto, Canada, that specializes in applying the principles of distributed computing to enterprise systems analysis and development.</p><p>If you would like to chat, please <a href="https://redelastic.com/contact/">contact me here</a>.</p>
     </div>
 </div>
         

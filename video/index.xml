@@ -2,12 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Videos on Kevin Webber</title>
-    <link>http://rocketpages.github.io/video/index.xml</link>
+    <link>http://rocketpages.github.io/video/</link>
     <description>Recent content in Videos on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rocketpages.github.io/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rocketpages.github.io/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>From Legacy to Reactive: The First Mile</title>
+      <link>http://rocketpages.github.io/video/from-legacy-to-reactive/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/from-legacy-to-reactive/</guid>
+      <description>This talk covers systems modernization from the very first step, paving a path towards the scope of initial work while also planting the seeds for cultural change within an organization. How do we integrate new microservices into an old, brittle legacy system? How do we handle new and old systems living alongside each other? After watching this talk, technology leaders will be equipped with everything needed to begin the process of re-inventing their legacy systems as reactive, event-driven systems for the modern era of computing.</description>
+    </item>
+    
+    <item>
+      <title>Scala Is The Next Scala</title>
+      <link>http://rocketpages.github.io/video/scala-is-the-next-scala/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/scala-is-the-next-scala/</guid>
+      <description>Drawing on almost ten years of Scala experience, along with meeting hundreds of technology leaders who are using Scala on mission-critical projects, Kevin will draw on these experiences to discuss the past of Scala and where the language and ecosystem may evolve to over the next decade.</description>
+    </item>
     
     <item>
       <title>The Enterprise Architect&#39;s Intro To Microservices</title>
@@ -15,8 +35,7 @@
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/enterprise-arch-msa/</guid>
-      <description>&lt;p&gt;We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).&lt;/p&gt;
-</description>
+      <description>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</description>
     </item>
     
     <item>
@@ -25,8 +44,7 @@
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/legacy-java-monolith/</guid>
-      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
-</description>
+      <description>We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.</description>
     </item>
     
     <item>
@@ -35,8 +53,7 @@
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</guid>
-      <description>&lt;p&gt;In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.&lt;/p&gt;
-</description>
+      <description>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</description>
     </item>
     
     <item>
@@ -45,8 +62,7 @@
       <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
-      <description>&lt;p&gt;The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -55,8 +71,7 @@
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/revitalized-with-microservices/</guid>
-      <description>&lt;p&gt;This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.&lt;/p&gt;
-</description>
+      <description>This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.</description>
     </item>
     
     <item>
@@ -65,8 +80,7 @@
       <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</guid>
-      <description>&lt;p&gt;The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.&lt;/p&gt;
-</description>
+      <description>The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.</description>
     </item>
     
     <item>
@@ -75,8 +89,7 @@
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/forrester-going-reactive/</guid>
-      <description>&lt;p&gt;A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.&lt;/p&gt;
-</description>
+      <description>A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.</description>
     </item>
     
     <item>
@@ -85,8 +98,7 @@
       <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/play-activator-deep-dive/</guid>
-      <description>&lt;p&gt;Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.&lt;/p&gt;
-</description>
+      <description>Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.</description>
     </item>
     
     <item>
@@ -95,8 +107,7 @@
       <pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/go-reactive-geecon/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.&lt;/p&gt;
-</description>
+      <description>We&amp;rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.</description>
     </item>
     
     <item>
@@ -105,8 +116,7 @@
       <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/what-is-reactive-programming/</guid>
-      <description>&lt;p&gt;Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.&lt;/p&gt;
-</description>
+      <description>Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.</description>
     </item>
     
     <item>
@@ -115,8 +125,7 @@
       <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/play-all-day/</guid>
-      <description>&lt;p&gt;The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.&lt;/p&gt;
-</description>
+      <description>The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.</description>
     </item>
     
   </channel>

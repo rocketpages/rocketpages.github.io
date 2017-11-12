@@ -2,12 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Webber</title>
-    <link>http://rocketpages.github.io/index.xml</link>
+    <link>http://rocketpages.github.io/</link>
     <description>Recent content on Kevin Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rocketpages.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>From Legacy to Reactive: The First Mile</title>
+      <link>http://rocketpages.github.io/talk/2017-10-19/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2017-10-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Legacy to Reactive: The First Mile</title>
+      <link>http://rocketpages.github.io/video/from-legacy-to-reactive/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/from-legacy-to-reactive/</guid>
+      <description>This talk covers systems modernization from the very first step, paving a path towards the scope of initial work while also planting the seeds for cultural change within an organization. How do we integrate new microservices into an old, brittle legacy system? How do we handle new and old systems living alongside each other? After watching this talk, technology leaders will be equipped with everything needed to begin the process of re-inventing their legacy systems as reactive, event-driven systems for the modern era of computing.</description>
+    </item>
+    
+    <item>
+      <title>Scala Is The Next Scala</title>
+      <link>http://rocketpages.github.io/video/scala-is-the-next-scala/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/scala-is-the-next-scala/</guid>
+      <description>Drawing on almost ten years of Scala experience, along with meeting hundreds of technology leaders who are using Scala on mission-critical projects, Kevin will draw on these experiences to discuss the past of Scala and where the language and ecosystem may evolve to over the next decade.</description>
+    </item>
     
     <item>
       <title>Scala is the Next Scala</title>
@@ -20,309 +49,12 @@
     
     <item>
       <title>How to Start a Consulting Company</title>
-      <link>http://rocketpages.github.io/how-to-start-a-consulting-company</link>
+      <link>http://rocketpages.github.io/how-to-start-a-consulting-company/</link>
       <pubDate>Mon, 01 May 2017 21:54:43 -0400</pubDate>
       
-      <guid>http://rocketpages.github.io/how-to-start-a-consulting-company</guid>
-      <description>
-
-&lt;p&gt;Last fall I decided to leave &lt;a href=&#34;http://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; to pursue a dream that I&amp;rsquo;ve had for the better part of a decade: starting a consulting company. So, in late 2016, RedElastic was born.&lt;/p&gt;
-
-&lt;p&gt;Starting RedElastic is the hardest, most rewarding, and most exciting things I&amp;rsquo;ve done in my life. Every experience that I&amp;rsquo;ve had up until now, both professionally and personally, has lead up to the point that starting RedElastic wasn&amp;rsquo;t even up for debate. I wouldn&amp;rsquo;t have slept at night if I didn&amp;rsquo;t make it happen.&lt;/p&gt;
-
-&lt;p&gt;The support from friends and colleagues has been overwhelming, which means a lot to me. Some of those friends have asked me for advice on how to start their own consulting company, so I decided to capture some thoughts here as a way to share what I&amp;rsquo;ve learned.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-don-t-start-a-consulting-company&#34;&gt;1. Don&amp;rsquo;t start a consulting company&lt;/h2&gt;
-
-&lt;p&gt;My best advice to anyone thinking of starting a consulting company is not to start a consulting company.&lt;/p&gt;
-
-&lt;p&gt;Anyone who has the mix of skills required to start a consulting company can find a much higher paying job as an executive, director, or analyst at a larger consulting firm with less hours and &lt;em&gt;far&lt;/em&gt; less stress. Working for a larger company will free you up from the administrative details I will cover below.&lt;/p&gt;
-
-&lt;p&gt;In my own case, I could have happily stayed at &lt;a href=&#34;http://lightbend.com&#34;&gt;Lightbend&lt;/a&gt;, a company that I not only loved working for but that I was previously a customer of. Before deciding to take on the level of commitment required to be successful in consulting you need to fully appreciate the other opportunities you&amp;rsquo;re passing up.&lt;/p&gt;
-
-&lt;h2 id=&#34;2-know-your-why&#34;&gt;2. Know your &lt;em&gt;&amp;ldquo;why&amp;rdquo;&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;Consulting in the true sense of the word is rare. Advisory-level consulting only &lt;em&gt;begins&lt;/em&gt; with performing as a subject-matter expert for your clients. People are entrusting you with their dreams and counting on you to deliver; it&amp;rsquo;s not something to take lightly, it&amp;rsquo;s servant leadership in the truest sense of the word. You must bring every ounce of empathy, compassion, and caring for the dreams of others with you to work every single day. Your success as a consultant is not gained through billable hours, billable hours keep you fed and the lights on in your office. Genuine success as a consultant is only realized when you unlock the potential in others.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s why, for the most part, there are very few consulting firms. Most &amp;ldquo;consulting&amp;rdquo; is better called &lt;em&gt;staff augmentation&lt;/em&gt; or &lt;em&gt;digital studio outsourcing&lt;/em&gt;.&lt;/p&gt;
-
-&lt;table class=&#34;uk-table&#34;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Staff augmentation firms&lt;/td&gt;
-            &lt;td&gt;Staff augmentation firms act as an on-tap bench for their clients. They&#39;re especially useful for large corporations who are feeling out &#34;skunkworks&#34; projects with new technologies that may never make it to production. Clients never deal directly with A-list talent through the big firms unless they&#39;re a Fortune 50 and have an 8-figure budget, so they&#39;ll need their own A-team to provide mentorship and quality control throughout an engagement. Augmentation firms are a &#34;lever&#34; to accelerate productivity, but they can&#39;t live in isolation. In many ways this is becoming a broken model as companies are able to do significantly more with significantly less; for example, WhatsApp had only 35 developers and supported 450 million users when it was acquired by Facebook for $19 billion dollars.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Digital studios&lt;/td&gt;
-            &lt;td&gt;Digital studios are somewhere between consulting firms and staff augmentation firms. They tend to have a small handful of senior-level employees who nurture clients during presales and the early phase of crafting a solution which provides a turn-key engagement model from design through delivery. Digital studios sometimes compete with the large augmentation firms on rates, but studios bring extra capabilities to the table such as design and marketing. The boundaries between the two are blurring, but can usually be determined based on the percentage of work that&#39;s off-shored versus done locally. A top-shelf studio competes on value, so they can charge a higher rate and provide top-notch local talent.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Consulting firms&lt;/td&gt;
-            &lt;td&gt;Advisory-level consulting firms are boutique agencies staffed by top-tier talent with pre-established reputations in the industry. The rates at consulting firms are high, the value is high, and the demand is typically higher than the supply. Experts in highly sought after domains such as AI, machine learning, InfoSec, and distributed systems can bill out at rates of anywhere from $2000-4000 USD per day, sometimes significantly higher depending on the nature and duration of the project. Boutique consulting firms don&#39;t compete with staff augmentation firms or digital studios; on the contrary, consulting firms often work closely with other consulting firms, digital studios, and staff augmentation firms. If a prospective client of a digital studio requires expert-level skills in an emerging technology they will partner with a consulting firm to deliver success.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If you plan to compete in the world of consulting, you&amp;rsquo;ll need to serve your clients at the highest levels of expectations. You&amp;rsquo;ll also need to work at such a high-level of skill and trust that other consulting firms are comfortable to recommend you to their clients.&lt;/p&gt;
-
-&lt;p&gt;Are you cut out to deal with sky-high expectations every single day you wake up? One of the best pieces of advice I was given in my career was from an early manager I had at CIBC:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s one thing to get excited about your own vision, but can you become excited about &lt;em&gt;my&lt;/em&gt; vision? If you&amp;rsquo;re able to embrace the dreams of others as passionately as your own, you&amp;rsquo;re ready to become a mentor.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Before that conversation I was able to demonstrate a huge amount of passion for my own ideas but I had a harder time getting behind the ideas of others. There&amp;rsquo;s nothing wrong with that! Often times product companies are best lead by founders who stick to their guns and disregard the advice of others by protecting their singular vision. The essence of consulting is the complete opposite. You must embrace your client&amp;rsquo;s vision while lending your expertise in order to make sure they&amp;rsquo;re completely successful.&lt;/p&gt;
-
-&lt;p&gt;Digging a little deeper, you need to understand why you want to enter a business domain to serve others.&lt;/p&gt;
-
-&lt;p&gt;My own &lt;em&gt;&amp;ldquo;why?&amp;rdquo;&lt;/em&gt; is simple:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I&amp;rsquo;m passionate about building a consulting company that I would have wanted to hire as a customer, and&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m passionate about building a consulting company that I would have wanted to work for.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;3-embrace-the-unknown&#34;&gt;3. Embrace the unknown&lt;/h2&gt;
-
-&lt;p&gt;The stress of sales, marketing, and business development, along with the pressure of delivering technical solutions at the highest levels of excellence, is far from trivial.&lt;/p&gt;
-
-&lt;p&gt;Everyone who has asked me for advice on starting their own company is a technical expert. Working in a technical capacity is &lt;em&gt;consistent&lt;/em&gt;: for instance, as an expert technologist, I have confidence that if I put in &lt;code&gt;X&lt;/code&gt; number of hours of hard work I will achieve the result of &lt;code&gt;Y&lt;/code&gt;, and the result will be proportional to my efforts. I will end the day (likely) feeling proud of my tangible accomplishments and inspired to build new things tomorrow.&lt;/p&gt;
-
-&lt;p&gt;As an entrepreneur you&amp;rsquo;ll be doing a lot of work that has no immediate correlation between effort and results. Sales and marketing is more like chaos theory, &lt;em&gt;&amp;ldquo;flap your wings today and it may rain in New York next year&amp;rdquo;&lt;/em&gt;. Spending a full day on marketing materials may yield a positive result, such as a viral blog post, or it may yield nothing more than the sound of crickets. You may put together an incredible sales presentation but ultimately lose an opportunity to a competitor because they played hockey together in high school. You may make the right decision for a client that involves withdrawing your interest from a high-paying contract because over the long term you&amp;rsquo;re simply not the right firm to deliver the work.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-master-the-basics&#34;&gt;4. Master the basics&lt;/h2&gt;
-
-&lt;p&gt;There are a handful of skills that anyone leading or working in a consulting firm needs to have. This applies to everyone:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Have expert-level technical skills to offer.&lt;/strong&gt; You&amp;rsquo;re at the top of your game. Others in the industry respect your opinion and abilities. This is arguably the starting point. If you don&amp;rsquo;t come from a technical background, you&amp;rsquo;ll need to find a co-founder, partner, confidant, and friend who brings this capability into the company. Non-technical staff will need to learn how to position technology to their clients. (Some of the sales people I&amp;rsquo;ve worked with are deeply technical and can easily rock a high-level technical presentation.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Listen first and speak second.&lt;/strong&gt; The core competency of consulting is &lt;em&gt;listening&lt;/em&gt;. I&amp;rsquo;m naturally a chatty person, so active listening is something I&amp;rsquo;ve worked at for years. There&amp;rsquo;s nothing wrong with processing the ideas of others before formulating an opinion. If you need to think about something overnight, be clear and confident that you need time to prepare. Set expectations clearly and come back prepared. There&amp;rsquo;s a balance here; if you &lt;em&gt;always&lt;/em&gt; need a weekend to prepare before answering a question, it&amp;rsquo;s a clear sign that you should hone your craft before attempting this adventure.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Know your limits.&lt;/strong&gt; Expertise doesn&amp;rsquo;t mean knowing &lt;em&gt;everything&lt;/em&gt;. Learn the delta between your abilities and your gaps and get to know that space well. Consulting requires understanding when you can deliver on a requirement in-house, or when a client has a requirement that&amp;rsquo;s not in your wheelhouse. You gain trust by promising only what you&amp;rsquo;re able to deliver. As a counterpoint, if you have knowledge in the general domain, you can be confident in your ability to understand the ideas quickly and find an optimum solution. You&amp;rsquo;ll have faith in your experience in unknown circumstances if you already have expert-level skills. The takeaway is that &amp;ldquo;fake it until you make it&amp;rdquo; does not apply to consulting.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Make alliances.&lt;/strong&gt; You will be successful with strong alliances. For instance, I&amp;rsquo;m not a machine learning expert, but I can refer experts in the field who I trust enough to stake my reputation on &lt;em&gt;their&lt;/em&gt; ability to deliver. The reverse also happens; RedElastic has not yet done any significant outbound sales yet. All of our work has come through referrals.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-become-well-rounded&#34;&gt;5. Become well-rounded&lt;/h2&gt;
-
-&lt;p&gt;In 2013 I finished my biggest project to date, which was helping to successfully deliver a new reactive platform for Walmart Canada on behalf of Nurun (well before Nurun was acquired by Razorfish, well before Razorfish was acquired by Publicis, and well before Publicis merged Sapient and Razorfish together &amp;ndash; the Nurun Toronto that exists today is a totally different team).&lt;/p&gt;
-
-&lt;p&gt;I was on the Walmart project from the technical selection to delivery, wrote the first line of code for the web-tier, worked day and night through launch, and ultimately helped to deliver the project successfully. I had some amazing mentors along the way who believed in my opinions such as Bob Seehra, Mark Aning, and Ankur Mathur. I learned a tremendous amount from all of them; not only technical skills, but also the skill of articulating solutions to some of the largest organizations in the world. I was also fortunate to learn from Simon Rodrigue, former SVP of eCommerce at Walmart Canada. We didn&amp;rsquo;t spend a huge amount of time together but I paid attention to absolutely everything he shared &amp;ndash; not only &lt;em&gt;what&lt;/em&gt; was shared but &lt;em&gt;how&lt;/em&gt; it was shared. This gave me genuine insight into what the value of consulting is and how it intersects with a client&amp;rsquo;s internal capabilities.&lt;/p&gt;
-
-&lt;p&gt;Delivering an optimum solution to a client requires understanding client&amp;rsquo;s requirements at &lt;em&gt;all levels&lt;/em&gt; over the entire lifecycle of a deliverable. Case in point: the first line of code anyone paid me for was written in COBOL, and rumour has it that it&amp;rsquo;s still in production today. What you leave behind needs to last. I worry that much of the code that I see today is throw-away. Writing throw-away code is a very low-leverage activity. The goal should be that everything you deliver will evolve over time, and it will only evolve if it&amp;rsquo;s both valuable and comprehensible. When delivering a solution for a client, keep in mind that:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Code always lives longer than you think it will&lt;/li&gt;
-&lt;li&gt;Code will be read many more times than it will be written&lt;/li&gt;
-&lt;li&gt;Existing code will be used as a blueprint for future code&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;What you deliver will have an impact well beyond your time on site. Optimize for the people reading your code, not for yourself as you write it. Building the most beautiful and optimal technical solution means very little if a client can&amp;rsquo;t find talent to support it in five years because you selected an exotic language or framework. Everything must be taken into consideration. Treat everyone&amp;rsquo;s money as if it were your own.&lt;/p&gt;
-
-&lt;p&gt;Being well rounded means knowing when to be opinionated and when to compromise.&lt;/p&gt;
-
-&lt;p&gt;I was tempted to use the momentum from the Walmart project to launch my firm, but I decided that I had more to learn. Though I was &lt;em&gt;technically&lt;/em&gt; well-rounded, I needed other skills in my wheelhouse that would take years to develop.&lt;/p&gt;
-
-&lt;h3 id=&#34;develop-your-sales-iq&#34;&gt;Develop your sales IQ&lt;/h3&gt;
-
-&lt;p&gt;Many of the open source technologies that developers love are funded through the efforts of sales teams at open source companies. Sales teams work &lt;em&gt;hard&lt;/em&gt; and they absolutely deserve more credit for moving the open source community forward. Everyone from a Junior Developer to the CEO of a large enterprise should have a keen sense of how their efforts fit into the goals of their business, and sales is the cornerstone of business.&lt;/p&gt;
-
-&lt;div class=&#34;uk-child-width-expand@s&#34; uk-grid&gt;
-    &lt;div&gt;
-        &lt;p&gt;A big part of my role at Lightbend was supporting the Lightbend sales team. Every single sales meeting that I participated in over the years was critical training for starting a business. Not only did those experiences better teach me how to define the business value of technology, but they gave me a better understanding of the entire open source software industry in general. If you don&#39;t have any hands-on sales experience, I highly recommend spending a few years in a sales engineer role before attempting to start your own business.&lt;/p&gt;
-        &lt;p&gt;There&#39;s no way to read about sales to understand how it works; you have to get out on the road and embrace the grind. You can&#39;t teach what it&#39;s like to go to sales meetings all day, then present at a Meetup, then drive overnight from Houston to Dallas through a rainstorm with someone who can barely see at night (Powell, I love you, but holy hell you need glasses). A sales meeting in open source software is vastly different than a sales meeting in insurance; it might involve walking into an unfamiliar building to have 30 strangers waiting for you, and within a few minutes you&#39;re in front of them on a whiteboard to dive into the deepest bits of an architectural approach or programming language.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div class=&#34;uk-inline&#34;&gt;
-            &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493920652/DSC02927_ajii0c.png&#34; alt=&#34;&#34;&gt;
-            &lt;div class=&#34;uk-overlay uk-light uk-position-bottom&#34;&gt;
-                &lt;p&gt;Hanging out with John Mayerhofer in 2015; learning everything I can.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;    
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Sales encompasses every aspect of building positive business relationships, from technical excellence like presenting a detailed delivery plan, to logistics like ordering lunch. Positive relationships are not forged on dollars and cents, they only develop when people are able to achieve mutual goals together in a caring and trustworthy way. Anyone who thinks sales is only about hustling deals is doing business with the wrong companies.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Don&amp;rsquo;t fuck up the salad!&amp;rdquo; &amp;ndash; Jason Goodwin&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;understand-the-role-of-marketing&#34;&gt;Understand the role of marketing&lt;/h3&gt;
-
-&lt;p&gt;One of the most influential experiences in my career was attending QCon in New York back in 2012. That&amp;rsquo;s when I came across two new subjects that would change my career:&lt;/p&gt;
-
-&lt;dl class=&#34;uk-description-list&#34;&gt;
-    &lt;dt&gt;The Play Framework&lt;/dt&gt;
-    &lt;dd&gt;I was hunting for a solution that I could recommend to clients as an alternative to my go-to recommendations at the time like JEE, Spring, Ruby on Rails, and Grails. While some of those are fine choices, for web-facing systems that receive millions of requests per minute are a whole different ballgame. I was so impressed with Play that not only did I use it for the Walmart Canada project, but I also wound up becoming an advocate at Lightbend. Sadek Drobi gave a detailed talk about Play at QCon, and while much of it was over my head at the time, thanks to the magic of WiFi I downloaded Play and began hacking before I even left his talk.&lt;/dd&gt;
-    &lt;dt&gt;The Business Value of Joy&lt;/dt&gt;
-    &lt;dd&gt;I heard Richard Sheridan of Menlo Innovations gave a talk about the &#34;business value of joy&#34;, and it was a transformative experience both professionally and personally. I realized that it&#39;s possible to start a company that&#39;s both profitable and also a joy to work with and do business with. This was the moment when I knew that I would start a consulting company in Canada.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Without marketing, I would never have had those transformative experiences. Professionals from all over North America took time out of their schedule to attend QCon to share their experience with others. Sure, there&amp;rsquo;s an upside for presenters &amp;ndash; an inspirational talk is a powerful business development tool &amp;ndash; but the upside is mutual.&lt;/p&gt;
-
-&lt;p&gt;Understanding how marketing affects your company, your opportunities, and the success of future clients is critical. Is your consulting company just about making money, or do you have inspirational experiences to share with the community? Are you willing to invest in open source software, not only releasing code but also sharing your knowledge and experience?&lt;/p&gt;
-
-&lt;p&gt;Marketing is &lt;strong&gt;not&lt;/strong&gt; advertising. Marketing done right should give back to the community more than it takes from the community. The delta between give and take is part of the contribution that your company makes to open source software.&lt;/p&gt;
-
-&lt;h3 id=&#34;practice-public-speaking&#34;&gt;Practice public speaking&lt;/h3&gt;
-
-&lt;p&gt;Before joining Lightbend I had never delivered even a single Meetup talk. It took me years of practice before becoming comfortable in front of a large audience. If you&amp;rsquo;re serious about developing your public speaking skills, start presenting at local Meetups.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, ask people for feedback after every single talk. Sometimes it&amp;rsquo;s amazing at how different your own opinion of your talk compared to how others experienced it. My very first conference talk was at GeeCON in Prague, and afterwards I asked Konrad Malawski of Akka fame for feedback. He shared the good, the bad, and the ugly, and I incorporated his advice into all of my future talks. If you&amp;rsquo;re not willing to be humbled you&amp;rsquo;ll never develop a connection with your audience, which defeats the entire purpose of speaking; after all, do you speak for yourself, or for others?&lt;/p&gt;
-
-&lt;h3 id=&#34;bringing-it-all-together&#34;&gt;Bringing it all together&lt;/h3&gt;
-
-&lt;p&gt;Once you have an idea of what you want to accomplish with your sales and marketing efforts, you need to tie them together and understand how they fit into the big picture.&lt;/p&gt;
-
-&lt;div class=&#34;uk-grid-match uk-child-width-expand@s&#34; uk-grid&gt;
-    &lt;div&gt;
-        &lt;div class=&#34;uk-padding uk-background-secondary uk-light&#34;&gt;
-            &lt;h4&gt;Marketing Communications&lt;/h4&gt;
-            &lt;p&gt;Marketing Communications involves content creation, presenting at conferences and meetups, and anything else that generates brand awareness in a positive way.&lt;/p&gt;
-            &lt;h4&gt;Sales&lt;/h4&gt;
-            &lt;p&gt;The sales process involves working with a prospective client to determine a mutual fit between requirements, capabilities, timing, and budget. If a fit doesn&#39;t exist, either you or your prospective client will need to find alternatives (such as recommending another firm).&lt;/p&gt;
-            &lt;h4&gt;Delivery&lt;/h4&gt;
-            &lt;p&gt;After a deal is won it needs to be delivered! This is the funnest part of consulting!&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;uk-visible@m&#34;&gt;
-        &lt;div class=&#34;uk-card&#34;&gt;
-            &lt;div style=&#34;z-index: 980;&#34; uk-sticky=&#34;bottom: true&#34;&gt;
-                &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493867443/Sales_Marketing_Funnel_4x_almfpo.png&#34;/&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Starting a consulting company looks easy, after all, &amp;ldquo;&lt;em&gt;I&amp;rsquo;m&lt;/em&gt; the person with the technical skills, so I&amp;rsquo;m the one making everything happen!&amp;rdquo; What most technologists don&amp;rsquo;t appreciate is everything that&amp;rsquo;s shielded from them day-to-day; the days of phone calls to qualify leads, the hours of content preparation to win a deal, the intricacies of negotiations during the legal process, and so forth. This is why you can&amp;rsquo;t do it alone.&lt;/p&gt;
-
-&lt;p&gt;Working &lt;strong&gt;for&lt;/strong&gt; a consulting company allows a technologist to &lt;em&gt;specialize&lt;/em&gt;. &lt;strong&gt;Starting&lt;/strong&gt; a consulting company requires a technologist to &lt;em&gt;generalize&lt;/em&gt;. As a generalist I love the new things that I learn every day, from the nuances of an errors &amp;amp; omissions insurance policy to the difference between a &amp;ldquo;zero rated&amp;rdquo; and &amp;ldquo;exempt&amp;rdquo; tax rate on an invoice. I also spend a portion of my day reading ACM articles and hacking on Akka.&lt;/p&gt;
-
-&lt;h2 id=&#34;6-find-a-partner&#34;&gt;6. Find a partner&lt;/h2&gt;
-
-&lt;p&gt;One of the most important decisions to make is whether or not to launch a company on your own or with a co-founder.&lt;/p&gt;
-
-&lt;div class=&#34;uk-child-width-expand@s&#34; uk-grid&gt;
-    &lt;div&gt;
-        &lt;p&gt;I would not have survived the first month – let alone the first six months – of business without my co-founder, Jason Goodwin. Although I&#39;m highly technical, I decided that it would be impossible to develop the business model of RedElastic while also keeping an eye on the fast-moving technology industry. I knew I needed someone to fill the visionary role of &lt;em&gt;Super Hacker&lt;/em&gt; (also known as &#34;CTO&#34;). Not only has Jason been invaluable from a technical perspective on client work, but the small conversations we have in the office every day refine my own approach to every aspect of RedElastic.&lt;/p&gt;
-        &lt;p&gt;I couldn&#39;t and wouldn&#39;t do this alone. If you can&#39;t find someone else who believes in your vision enough to take the plunge into entrepreneurship with you, look at it as a signal that you may need to refine your vision, develop your network, develop your skills, or all of the above. I would argue that this is the hardest part of starting any type of business and where most businesses fail before they even begin.&lt;/p&gt;
-        &lt;p&gt;In consulting specifically, one of the hardest parts of building a business is finding new work while currently working with customers. Without at least a two-person team this is virtually impossible without working part time, sacrificing the quality of your billable work, never sleeping, or all of the above.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div class=&#34;uk-inline&#34;&gt;
-            &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1493911811/16665101_1312553878782661_9119854844747736905_o_paondc.jpg&#34; alt=&#34;&#34;&gt;
-            &lt;div class=&#34;uk-overlay uk-light uk-position-bottom&#34;&gt;
-                &lt;p&gt;Jason and Kevin exploring Dubai; apparently we even dress the same. This was not planned.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I repeat, don&amp;rsquo;t start a consulting business on your own. Thar be dragons.&lt;/p&gt;
-
-&lt;h2 id=&#34;7-budget-budget-budget&#34;&gt;7. Budget, budget, budget&lt;/h2&gt;
-
-&lt;p&gt;Starting a consulting company is not as simple as finding a domain name and leaning in. Here are the approximate up-front costs in Canada. (If you&amp;rsquo;re not from Canada your milage may vary.)&lt;/p&gt;
-
-&lt;table class=&#34;uk-table&#34;&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Expense&lt;/td&gt;
-            &lt;td&gt;Cost&lt;/td&gt;
-            &lt;td&gt;Description&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tfoot&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Estimate&lt;/td&gt;
-        &lt;td&gt;$20,300-39,300&lt;/td&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Incorporation fees&lt;/td&gt;
-            &lt;td&gt;$300&lt;/td&gt;
-            &lt;td&gt;Canada is one of the easiest countries in the world to &lt;em&gt;start&lt;/em&gt; a business in. From start to finish incorporation took me about 5 days. Federal incorporation offers a few major benefits including (very limited) trade name protection. It&#39;s also possible to start a LLC (limited liability company). Different structures come with their own pros and cons, such as different tax treatments, so you&#39;ll need to spend some time investigating the right choice depending on your circumstances and locale. It&#39;s often a good idea to consult with a lawyer and accountant before making your decision as it&#39;s very time consuming to change your mind once things are in motion.
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Legal fees&lt;/td&gt;
-            &lt;td class=&#34;uk-text-nowrap&#34;&gt;$5,000-15,000&lt;/td&gt;
-            &lt;td&gt;Once you&#39;re incorporated you&#39;ll need to define the legal structure of your corporation. You&#39;ll likely need to set up a share structure, appoint the initial officers of the company, and finalize a shareholder agreement. Finding a good lawyer is absolutely critical at this stage. Budget up to $10,000 for initial legal fees and $5,000 for reviewing early client contracts. Your lawyer will draft all the off-the-shelf contracts you&#39;ll use with clients, such as NDAs (non disclosure agreements), MSAs (master service agreements), and SOWs (statements of work). Many clients will require that you use their in-house contracts, so your lawyer will need to review those in detail before you sign. &lt;strong&gt;Take your time to find a good lawyer.&lt;/strong&gt; Our lawyer has been so integral to our success that it would be impossible imagining sleeping soundly at night without his involvement.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Insurance&lt;/td&gt;
-            &lt;td class=&#34;uk-text-nowrap&#34;&gt;$8,000-11,000&lt;/td&gt;
-            &lt;td&gt;Your corporation will need to be insured against errors, omissions, general liability, and a host of other circumstances that can arise. Unlike full time employees, independant contractors have virtually no protection from a lawsuit if they screw up. Find a good insurance broker and plan to spend anywhere from $5,000 to $15,000 per year. You will not be able to sign any contracts with customers until you have insurance in place. There&#39;s virtually no company in the world that will deal with uninsured consulting firms.&lt;/td&gt;
-        &lt;/tr&gt; 
-        &lt;tr&gt;
-            &lt;td&gt;Benefits&lt;/td&gt;
-            &lt;td class=&#34;uk-text-nowrap&#34;&gt;$5,000-8,000&lt;/td&gt;
-            &lt;td&gt;If you plan on hiring anyone or covering the founders under a benefits plan, budget thousands of dollars for initial coverage. In Canada this is fairly straightforward as the government covers basic health care, but offering early employees things like life and dental insurance is important to attract top-talent.&lt;/td&gt;
-        &lt;/tr&gt;          
-        &lt;tr&gt;
-            &lt;td&gt;SaaS tools&lt;/td&gt;
-            &lt;td class=&#34;uk-text-nowrap&#34;&gt;$2,000-5,000&lt;/td&gt;
-            &lt;td&gt;This is one expense that you can spread out over the first year of operations. Budget at least 2-5k on all of the tools that you&#39;ll require to run your business. Sales tools (such as Salesforce) and HR tools (such as BambooHR) are not necessarily cheap, but automating everything possible is the only way to effectively run a consulting company.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Those are only the up-front expenses, and don&amp;rsquo;t factor in salaries for the founding team, equipment like laptops, and so forth. I&amp;rsquo;ll assume you already have a laptop and assume you&amp;rsquo;ll budget for the expenses above along with approximately 6 months of salary to live on while developing your clientele. It may take 9-12 months to become cash-flow positive, even at reduced founder salaries.&lt;/p&gt;
-
-&lt;p&gt;I also didn&amp;rsquo;t factor in office space to the above estimates. Working remotely is fine for an established company, but it&amp;rsquo;s pretty important to co-locate with your partner and founding employees to foster a culture and bond. Consulting is tough, so being there to provide emotional support, coaching, and mentoring is critical. It&amp;rsquo;s impossible to give an estimate on how much office space will run as it&amp;rsquo;s so location dependant, but in Toronto, the going rate for a decent turn-key office is $2,000-3,000 per month in the downtown core and slightly less in the inner suburbs. (If you move too far outside of the core it may become difficult to stay connected with your customers and recruit top talent.)&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t have $50,000-100,000 cash on hand that you are willing to part with, think carefully about how badly you believe in what you&amp;rsquo;re doing. Nothing is free, especially dreams.&lt;/p&gt;
-
-&lt;p&gt;Relationships, trust, and integrity are far more important than short-term profits. If you&amp;rsquo;re able to make tough decisions that are right for customers &lt;em&gt;first&lt;/em&gt; and yourself &lt;em&gt;second&lt;/em&gt;, even if it means weathering a short-term storm, you&amp;rsquo;re ready to give this a shot. If you want to make an impact in the industry there&amp;rsquo;s nothing better than staking your own claim and starting a business to serve others. If you want to make a lot of money, there are easier ways.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-canadian-economy-is-not-as-business-friendly-as-you-think&#34;&gt;The Canadian economy is not as business friendly as you think&lt;/h3&gt;
-
-&lt;p&gt;While there&amp;rsquo;s money and mentorship on-tap for product companies through angel investors and venture capital firms, starting a services business is a lonely experience.&lt;/p&gt;
-
-&lt;p&gt;Canada&amp;rsquo;s GDP is fueled by real estate, which is where most banks throw their money. I would have a much easier time borrowing the better part of $750,000 to buy a &lt;a href=&#34;https://www.realtor.ca/Residential/Single-Family/18110217/58-CEDARCREST-Boulevard-Toronto-Ontario-M4B2P2-OConnor-Parkview&#34;&gt;tiny bungalow&lt;/a&gt; (in the midst of a housing bubble) than borrowing $75,000 to help grow RedElastic.&lt;/p&gt;
-
-&lt;p&gt;According to a &lt;a href=&#34;https://www.thestar.com/business/economy/2017/05/01/real-estates-huge-role-in-canadian-economy-causing-worry.html&#34;&gt;recent article&lt;/a&gt; in the Toronto Star, in Canada &amp;ldquo;residential mortgages today make up about 52 per cent of all chartered bank loans, versus 21 per cent for business lending.&amp;rdquo;  And much of that business lending is for real estate.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Bank of Canada figures show 14 per cent of all private business loans from chartered banks are now bound for so-called real estate operator industries.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As an entrepreneur building a service-oriented business, the cards are stacked against you in our current business climate. Angels, VCs, and Banks want nothing to do with you; Banks are literally betting on real estate rather than any other type of business, and VCs aren&amp;rsquo;t interested in service companies because they don&amp;rsquo;t have the scale potential of a product company (although, technically speaking, while Uber is more valuable than RedElastic, RedElastic is more profitable than Uber).&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t underestimate:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The cost of starting a services company, even though major capital expenses like equipment is not required, and&lt;/li&gt;
-&lt;li&gt;The time required to become cash-flow positive&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You&amp;rsquo;re own your own, financially speaking. Don&amp;rsquo;t start a consulting company and buy a bungalow at the same time.&lt;/p&gt;
-
-&lt;h2 id=&#34;8-be-a-friend-to-yourself&#34;&gt;8. Be a friend to yourself&lt;/h2&gt;
-
-&lt;p&gt;Starting a business is stressful so it&amp;rsquo;s important to carve out some time for yourself. I make a habit of going to see live music whenever I have a chance. I also go to the gym once a week and lift weights until I fall over, no matter what else is happening.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also picked up a few bad habits, such as smoking (again) and ordering too much pizza. Nobody is perfect.&lt;/p&gt;
-
-&lt;p&gt;On that note&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;9-give-credit-and-take-blame&#34;&gt;9. Give credit and take blame&lt;/h2&gt;
-
-&lt;p&gt;In a full-time role, a big part of your job is to manage your own career. In consulting, a big part of your job is to manage the career of others. I&amp;rsquo;ve watched consulting companies walk into an office, proclaim everything the full-time team has accomplished to date as &amp;ldquo;shit&amp;rdquo;, and proceed to create chaos for the people in the trenches at every opportunity to further their own ends.&lt;/p&gt;
-
-&lt;p&gt;Consultants do not exist to crank out code. We exist to train, educate, and mentor. Coding is &lt;em&gt;fun&lt;/em&gt;, so it&amp;rsquo;s vital to spread your knowledge through a team so &lt;em&gt;they&lt;/em&gt; can deliver as much code as possible while providing mentorship and oversight. Helping other people to reach their full potential is a huge part of the job. That means leaving behind way more than code, it means leaving behind a piece of your knowledge and a piece of your culture.&lt;/p&gt;
-
-&lt;p&gt;With this in mind, it&amp;rsquo;s critical to embrace a simple philosophy that Mike Kelland, VP of Professional Services at Lightbend, first shared with me while he was the CEO of BoldRadius.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Give credit and take blame.&amp;rdquo; &amp;ndash; Mike Kelland&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is such an important piece of advice that I still repeat it to myself during tense times. If a mistake is made while you&amp;rsquo;re on-site, assume that it&amp;rsquo;s your mistake. Own it and identify the next steps required to improve the situation. When success is ultimately achieved, give the credit to others! There will be time for you to internalize your own impact on the success of a project, take a little piece of the credit for your company, and ultimately share your role in the achievement with others. Looking back on my career, the only way I was able to grow professionally is because other people subscribed to this philosophy and I benefitted from it. We all stand on the shoulders of giants.&lt;/p&gt;
-
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-
-&lt;p&gt;If you read this whole article and still want to start a consulting company, buckle up and go for it. If you go down this path and need any advice, feel free to reach out.&lt;/p&gt;
-
-&lt;p&gt;I hope this has been helpful in a general sense as well. Some of these lessons I learned the hard way and am happy if they provide anyone with a head start. Hopefully some of this advice will be of benefit you no matter what path you choose.&lt;/p&gt;
-</description>
+      <guid>http://rocketpages.github.io/how-to-start-a-consulting-company/</guid>
+      <description>Last fall I decided to leave Lightbend to pursue a dream that I&amp;rsquo;ve had for the better part of a decade: starting a consulting company. So, in late 2016, RedElastic was born.
+Starting RedElastic is the hardest, most rewarding, and most exciting things I&amp;rsquo;ve done in my life. Every experience that I&amp;rsquo;ve had up until now, both professionally and personally, has lead up to the point that starting RedElastic wasn&amp;rsquo;t even up for debate.</description>
     </item>
     
     <item>
@@ -336,39 +68,12 @@
     
     <item>
       <title>Goodbye, Lightbend</title>
-      <link>http://rocketpages.github.io/goodbye-lightbend</link>
+      <link>http://rocketpages.github.io/goodbye-lightbend/</link>
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/goodbye-lightbend</guid>
-      <description>&lt;p&gt;It’s been an incredible two-and-a-half years.&lt;/p&gt;
-
-&lt;p&gt;My journey to Lightbend began after an incredible experience as an early customer of Typesafe. I began using the Typesafe stack — &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt;, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt;, and &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; — in 2012 to help deliver the revamped &lt;a href=&#34;http://walmart.ca&#34;&gt;Walmart Canada&lt;/a&gt; consumer platform. It was a fantastic project that afforded our team a tremendous opportunity; to help bring the techniques of &lt;em&gt;reactive programming&lt;/em&gt; to one of the biggest companies in the world and to millions of customers. The incredible team I worked with at Nurun (since acquired by Razorfish) delivered the project in 2013 — you can read the case study &lt;a href=&#34;https://www.lightbend.com/resources/case-studies-and-stories/walmart-boosts-conversions-by-20-with-lightbend-reactive-platform&#34;&gt;here&lt;/a&gt; and my thoughts on transitioning an enterprise to Scala &lt;a href=&#34;https://medium.com/@kvnwbbr/transitioning-to-scala-d1818f25b2b7#.euk2348p7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After launch the Walmart project was remarkably stable and in very good hands, so I decided to leave Nurun in early 2014 to seek out a new adventure. Shortly after leaving Nurun a major opportunity presented itself — an invitation to join Typesafe as their Developer Advocate after one of my favourite technical bloggers, James Ward, &lt;a href=&#34;https://www.jamesward.com/2014/04/27/new-adventures-for-a-technology-adventurer&#34;&gt;left Typesafe for Salesforce&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The learning curve was tremendous. I’ve always been comfortable speaking in public on a limited scale, but there’s a massive difference between speaking in front of a trusted group of colleagues and a room full of hundreds of strangers. Over the months and years that followed, not only did I become comfortable in front of an audience but I began to look forward to it. Since July 2014 I’ve spoken at a wide range of events, including Gartner AADI, Gartner Catalyst, GeeCON, Scala Up North, and the list goes on. Traveling around the world to share my opinions on topics that I’m passionate about — topics like reactive programming, fast data, and transforming heritage architectures into scalable real-time systems — was a career-changing experience.&lt;/p&gt;
-
-&lt;p&gt;While contributions to open source projects are typically measured by lines of code, it’s also important to write and speak about our experiences with emerging technologies; both the success stories and the challenges, the pros and cons of different architectures based on real-world experiences, and do it all in an open and transparent way. I was able to do all of that while at Lightbend. Sharing experiences is a vital part of the open source ecosystem and one of the reasons I felt so strongly about spending so much time on the road away from my friends and family.&lt;/p&gt;
-
-&lt;p&gt;Over time I began meeting with companies using or evaluating our platform on major projects, which for over a year put me in the position of being the principle (and only) sales engineer and developer advocate in North America. To say this part of my career was exhausting is an understatement, but after meeting with hundreds of customers and prospective customers I’ve probably been exposed to more ways to leverage the Lightbend stack than most other developers in the world. This has given me a broad perspective on the problems we’re solving with technologies like Scala, both what works and what doesn&amp;rsquo;t. I wouldn&amp;rsquo;t trade these lessons for anything.&lt;/p&gt;
-
-&lt;div class=&#34;uk-inline&#34;&gt;
-    &lt;img src=&#34;http://res.cloudinary.com/dxqjvpa0t/image/upload/v1475992868/laguna-beach-2016_hmnkoi.jpg&#34; alt=&#34;&#34;&gt;
-    &lt;div class=&#34;uk-overlay uk-overlay-default uk-position-bottom photo-overlay&#34;&gt;
-        Laguna Beach, 2016. The Lightbend sales team, execs, and I (third from right). I&#39;m going to miss this crew!
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;My time with customers made me miss &lt;em&gt;being&lt;/em&gt; a customer. I crave the thought of getting out there and building something awesome. I miss hands-on architecture, I miss nurturing a team of developers, and I miss tackling the hard problems being solved in the business world.&lt;/p&gt;
-
-&lt;p&gt;So last week I made one of the biggest decisions of my career.&lt;/p&gt;
-
-&lt;p&gt;Effective October 31, I&amp;rsquo;m leaving Lightbend to seek out my next adventure. I&amp;rsquo;m planning to take some time off and recharge before diving back into the ridiculously fun world of building software.&lt;/p&gt;
-
-&lt;p&gt;To my colleagues at Lightbend, thank you for everything you’ve taught me over the years. To the new friends I’ve made on my travels over the years, I look forward to keeping in touch.&lt;/p&gt;
-
-&lt;p&gt;I don’t know where my career will take me next, but I&amp;rsquo;m excited to explore all of the possibilities.&lt;/p&gt;
-</description>
+      <guid>http://rocketpages.github.io/goodbye-lightbend/</guid>
+      <description>It’s been an incredible two-and-a-half years.
+My journey to Lightbend began after an incredible experience as an early customer of Typesafe. I began using the Typesafe stack — Scala, Play, and Akka — in 2012 to help deliver the revamped Walmart Canada consumer platform. It was a fantastic project that afforded our team a tremendous opportunity; to help bring the techniques of reactive programming to one of the biggest companies in the world and to millions of customers.</description>
     </item>
     
     <item>
@@ -422,67 +127,18 @@
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/enterprise-arch-msa/</guid>
-      <description>&lt;p&gt;We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).&lt;/p&gt;
-</description>
+      <description>We review the history of application development, from the early days of monoliths and SOA to the emergence of microservice architectures. Then we dive into microservices architecture (MSA) and compare it against service-oriented architectures (SOA).</description>
     </item>
     
     <item>
       <title>The Zen of Process</title>
-      <link>http://rocketpages.github.io/the-zen-of-process</link>
+      <link>http://rocketpages.github.io/the-zen-of-process/</link>
       <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rocketpages.github.io/the-zen-of-process</guid>
-      <description>
-
-&lt;p&gt;Process improvements are the most impactful way to rise above your individual work. All organizations live and die by the quality of their processes.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“Give me six hours to chop down a tree and I will spend the first four sharpening the axe.” 
-—  Abraham Lincoln&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Have you ever wondered how an organization with tens of thousands of people survives without collapsing under its own weight? It doesn&amp;rsquo;t survive by hiring &amp;ldquo;only hire the best&amp;rdquo;. Scaling a business from &lt;em&gt;tens&lt;/em&gt; to &lt;em&gt;tens of thousands&lt;/em&gt; depends on hiring motivated people and supporting them with solid processes.&lt;/p&gt;
-
-&lt;p&gt;The task of documenting and formalizing the way we work naturally within an organization can be thought of as a type of &lt;em&gt;corporate anthropology&lt;/em&gt;. At first blush even speaking about process improvements may sound impersonal, but studying how people work together within a company is the study of relationships within that company. Improvements can be made simply by documenting and formalizing those relationships, which makes it possible to study them and improve upon them over time.&lt;/p&gt;
-
-&lt;h2 id=&#34;give-credit-and-take-blame&#34;&gt;Give credit and take blame&lt;/h2&gt;
-
-&lt;p&gt;One of the most important aspects of a healthy process is that it can be &lt;em&gt;delegated&lt;/em&gt; to. The inverse of delegating to a process is delegating to an individual. This distinction has a profound impact on corporate culture, recognized by common vocabulary; “you” instead of “we”, “I” instead of “us”. It&amp;rsquo;s more humane to investigate the shortcomings of a process than a person. People within the organization are still accountable for individual performance, but with clearly defined expectations measuring individual performance becomes more fair and accountable.&lt;/p&gt;
-
-&lt;h2 id=&#34;anti-patterns&#34;&gt;Anti-patterns&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Red tape&lt;/em&gt; is the evil twin of process. Red tape is created when processes are dictated from above by those who don’t understand how people within the organization already work. We should attempt to document and formalize natural interactions well before attempting to improve upon them. Formalizing any working relationship by people who aren’t directly in the mix of the relationship can be well-meaning but ultimately doomed. Senior leadership should take an interest in how to improve upon relationships within the organization, but only after they&amp;rsquo;ve been formalized by the people working inside those relationships.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, senior leadership should show an unwavering dedication to practitioners who attempt to document the way they work. Supporting your anthropologists is a sure-fire way to capture the essence of how the company truly functions.&lt;/p&gt;
-
-&lt;h2 id=&#34;trust-is-the-fuel-for-healthy-processes&#34;&gt;Trust is the fuel for healthy processes&lt;/h2&gt;
-
-&lt;p&gt;Imagine we work together at the same company. Now imagine that I recommend a process to optimize how we prepare for meetings, perhaps even tracking the amount of time we spend preparing, and then a system for rating the quality of the meeting afterwards. If you distrust me or the company, this process would seem incredibly intrusive and perhaps even a little scary.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Why does my company want to measure the time I spend preparing for meetings? Does everyone hate my meetings? Are my co-workers complaining about me? Am I going to be fired?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;On top of being scary, you may also think that the process is an incredible waste of time, distrustful that anything useful would ever come out of such an exercise.&lt;/p&gt;
-
-&lt;p&gt;If you trust your company, you may feel optimistic that measuring meeting effort will result in &lt;em&gt;less meetings&lt;/em&gt; and &lt;em&gt;more time for interesting work&lt;/em&gt;. Perhaps you anticipate new guidelines coming out of this process to create a new process for formalizing meeting invites. Perhaps you envision this process eventually leading to more time for interesting work rather than being forced to sit through an endless stream of Powerpoint presentations all day. You likely assume your company is protecting your most valuable asset; time.&lt;/p&gt;
-
-&lt;p&gt;Trust is the currency of an organization. Documenting and formalizing the way people work together requires trust on all sides. If there&amp;rsquo;s major pushback from practitioners at an exercise like this, the root cause issue may be deeper than a simple distaste of standardization. It could signal a lack of trust.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-value-of-process&#34;&gt;The value of process&lt;/h2&gt;
-
-&lt;p&gt;Many technology startups ruthlessly optimize all processes related to code and infrastructure. Many of those same startups view non-code related processes as a burden. That’s because they’ve only seen red tape, which leaves a mark. If enough people in your company have been scarred by red tape in previous jobs you have a culture that resists optimization. This is a major barrier to unlocking the full potential within an organization.&lt;/p&gt;
-
-&lt;h2 id=&#34;find-your-sherpa&#34;&gt;Find your sherpa&lt;/h2&gt;
-
-&lt;p&gt;The only way to turn a formalized process into a de-facto company standard is through a process sponsor. I refer to this person as a &lt;em&gt;process sherpa&lt;/em&gt;. A process sherpa is like a super-mentor. They’re someone senior, someone you’ve accumulated trust with, and someone with the trust of the entire organization. Your process sherpa can take your ideas all the way to the top of the organization. If your ideas are good enough they may be communicated across the entire organization and perhaps become a standard way of working.&lt;/p&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;If you visualize the capacity of your company as a bubble, imagine the bubble expanding ever so slightly every time a process is standardized. Introduce enough process improvements and you’ll grow the capacity of your organization without hiring a single new employee. Hiring should be a last resort to expand capacity, and only done when backed up by data from a process. For instance, a development team following &lt;a href=&#34;https://en.wikipedia.org/wiki/Kanban&#34;&gt;Kanban&lt;/a&gt; may track the average amount of time that work waits to move from one stage to another, and then hire a new developer to improve this measurement. Without data that comes out of a process, hiring becomes a political game, usually driven by whoever yells the loudest for additional headcount. Don&amp;rsquo;t play this game.&lt;/p&gt;
-
-&lt;p&gt;Whether you&amp;rsquo;re a startup or part of the largest fortune 500 enterprise, &lt;em&gt;always be improving your processes&lt;/em&gt; and &lt;em&gt;always be working on your process to improve processes&lt;/em&gt;. An unwavering commitment to process improvement is the only way to reliably expand the capacity of your company over time.&lt;/p&gt;
-</description>
+      <guid>http://rocketpages.github.io/the-zen-of-process/</guid>
+      <description>Process improvements are the most impactful way to rise above your individual work. All organizations live and die by the quality of their processes.
+ “Give me six hours to chop down a tree and I will spend the first four sharpening the axe.” — Abraham Lincoln
+ Have you ever wondered how an organization with tens of thousands of people survives without collapsing under its own weight? It doesn&amp;rsquo;t survive by hiring &amp;ldquo;only hire the best&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -500,10 +156,8 @@
       <pubDate>Thu, 17 Mar 2016 15:09:06 -0400</pubDate>
       
       <guid>http://rocketpages.github.io/home/intro/</guid>
-      <description>&lt;p&gt;I currently work as Founder and Consultant at &lt;a href=&#34;https://redelastic.com&#34;&gt;RedElastic&lt;/a&gt;, a boutique consulting firm that equips organizations with the skills necessary to adopt modern architectural approaches. We specialize in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.&lt;/p&gt;
-
-&lt;p&gt;My previous role was at &lt;a href=&#34;https://lightbend.com&#34;&gt;Lightbend&lt;/a&gt; (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the &lt;a href=&#34;http://www.scala-lang.org/&#34;&gt;Scala&lt;/a&gt; programming language, &lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt; distributed systems framework, &lt;a href=&#34;https://www.playframework.com/&#34;&gt;Play&lt;/a&gt; web framework, and &lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lagom&lt;/a&gt; microservices framework.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m Founder and Principal Consultant at RedElastic, a consulting firm based out of Toronto, Canada, that equips organizations with the skills necessary to build event-driven, reactive systems. RedElastic specializes in training and consulting on subjects such as event-driven architeciture, microservices, and cloud-enablement.
+Before starting Lightbend in 2016, I worked for Lightbend (formerly Typesafe) as Developer Advocate and Enterprise Architect. Lightbend is the corporate steward behind the Scala programming language, Akka distributed systems framework, Play web framework, and Lagom microservices framework.</description>
     </item>
     
     <item>
@@ -512,8 +166,7 @@
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://rocketpages.github.io/video/legacy-java-monolith/</guid>
-      <description>&lt;p&gt;We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.&lt;/p&gt;
-</description>
+      <description>We walk through 6 key architectural concepts to understand before embarking on a microservices modernization project. No experience with microservices or distributed systems necessary.</description>
     </item>
     
     <item>
@@ -523,6 +176,486 @@
       
       <guid>http://rocketpages.github.io/talk/2016-03-10/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>How does a compiler, interpreter, and CPU work?</title>
+      <link>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/e2-compiler-interpreter-cpu/</guid>
+      <description>In this video we discuss how compilers, interpreters, and CPUs transform source code written by computers programmers into machine code, and how the CPU executes machine code.</description>
+    </item>
+    
+    <item>
+      <title>Software is Eating the World</title>
+      <link>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/e1-software-is-eating-the-world/</guid>
+      <description>The first video from All Aboot Software, a new non-profit educational channel about software and technology. In this video we discuss the profound change software is having on business and society, framed around Marc Andreeseen&amp;rsquo;s famous 2011 quote that &amp;ldquo;software is eating the world&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://rocketpages.github.io/talk/2016-01-20/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2016-01-20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Aging Architectures with Microservices</title>
+      <link>http://rocketpages.github.io/video/revitalized-with-microservices/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/revitalized-with-microservices/</guid>
+      <description>This is a long-version talk of my session at Gartner AADI in Las Vegas; Lessons Learned: Revitalizing Walmart&amp;rsquo;s Aging Architecture For Web Scale. It includes added content and runs at 60 minutes instead of 30, giving us time to elaborate on various architectural patterns and considerations.</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <link>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/gartner-aadi-walmart-web-scale/</guid>
+      <description>The story of how Walmart Canada revitalized its aging architecture with a microservices model built for speed and performance - that efficiently leveraged its JVM infrastructure - to achieve major e-commerce success in just 12 months: Conversions up 20%; Mobile orders up 98%; No downtime during Black Friday or Boxing Day.</description>
+    </item>
+    
+    <item>
+      <title>Revitalizing Walmart&#39;s Aging Architecture For Web Scale</title>
+      <link>http://rocketpages.github.io/talk/2015-12-01/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-12-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2015-10-22/</link>
+      <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-10-22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Reactive is Good</title>
+      <link>http://rocketpages.github.io/talk/2015-09-24/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-09-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Streams and Akka Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-09-09/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-09-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Why your company&#39;s big data is not nearly fast enough</title>
+      <link>http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/publication/techrepublic-your-data-is-not-fast/</guid>
+      <description>Stream-based processing is taking over big data. Matt Asay and I chatted about &amp;ldquo;fast data&amp;rdquo; to put some context around the value of data and why speed matters.</description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-08-06/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-08-06/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Journey into Reactive Streams</title>
+      <link>http://rocketpages.github.io/talk/2015-08-05/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-08-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forrester: What Architects Need To Know About Going Reactive</title>
+      <link>http://rocketpages.github.io/video/forrester-going-reactive/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/forrester-going-reactive/</guid>
+      <description>A joint webinar with Michael Facemire, Principal Analyst at Forrester Research. We discuss how to leverage a Reactive architectural model to ensure your back-end infrastructure isn’t the limiting factor for your business success.</description>
+    </item>
+    
+    <item>
+      <title>Exploring Reactive Streams with Akka</title>
+      <link>http://rocketpages.github.io/talk/2015-07-22/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-07-22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Reactive Streams with Akka</title>
+      <link>http://rocketpages.github.io/talk/2015-07-09/</link>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-07-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forrester: Modernizing Your Aging Architecture</title>
+      <link>http://rocketpages.github.io/talk/2015-06-24/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-06-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Going Reactive</title>
+      <link>http://rocketpages.github.io/talk/2015-05-31/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-31/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Web Development with Play</title>
+      <link>http://rocketpages.github.io/talk/2015-05-19/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Web Development with Play</title>
+      <link>http://rocketpages.github.io/talk/2015-05-14/</link>
+      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Web Development with Play</title>
+      <link>http://rocketpages.github.io/talk/2015-05-13/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-05-13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reflecting on Reactive Systems</title>
+      <link>http://rocketpages.github.io/reflecting-on-reactive-systems/</link>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/reflecting-on-reactive-systems/</guid>
+      <description>The past year has been a wonderful period of learning and reflection on this exciting new software architecture. I’ve written about reactive application development on Medium (What is Reactive Programming?), contributed to ReadWrite (&amp;ldquo;Reactive&amp;rdquo; Systems: Easy To Program, Now Easier To Manage), and contributed to InfoQ (Actor-based Concurrency for Reactive Systems).
+Another high note is that Reactive Programming Toronto is closing in on 300 members. New reactive programming groups are forming all over the world.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Distributed Systems</title>
+      <link>http://rocketpages.github.io/talk/2015-04-09/</link>
+      <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-04-09/</guid>
+      <description>In this talk, I introduced concepts of distributed system design to the faculty of Sheridan College department of Applied Computer Science. We covered concepts and implementation using Scala and Akka. The benefits of functional programming were also covered.</description>
+    </item>
+    
+    <item>
+      <title>Reactive Systems: Easy To Program, Now Easier To Manage</title>
+      <link>http://rocketpages.github.io/publication/read-write-web-conductr/</link>
+      <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/publication/read-write-web-conductr/</guid>
+      <description>On top of user expectations being significantly higher today than a decade ago, the pressures facing enterprise operations teams to manage resilient, responsive systems is brutal; most existing technologies available today are not designed to deploy and manage reactive systems running on clusters.</description>
+    </item>
+    
+    <item>
+      <title>Deep Dive into the Typesafe Reactive Platform</title>
+      <link>http://rocketpages.github.io/video/play-activator-deep-dive/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/play-activator-deep-dive/</guid>
+      <description>Getting started with the Play framework for web development. We cover Activator as a tool for learning, building, and exploring projects.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Play and Activator</title>
+      <link>http://rocketpages.github.io/talk/2015-01-14/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2015-01-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go Reactive! Reactive web application development with Scala, Play, and Akka</title>
+      <link>http://rocketpages.github.io/video/go-reactive-geecon/</link>
+      <pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/go-reactive-geecon/</guid>
+      <description>We&amp;rsquo;ll cover patterns and techniques for building responsive user interfaces, continuing down through an end-to-end reference web architecture in Scala and Play to demonstrate how to build responsive, resilient, and elastic web applications. In our demonstrations Akka will provide a message-driven core in order to support the entire stack by enabling the distribution of work to local and remote workers.</description>
+    </item>
+    
+    <item>
+      <title>Go Reactive! With Scala, Play, and Akka</title>
+      <link>http://rocketpages.github.io/talk/2014-10-23/</link>
+      <pubDate>Thu, 23 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2014-10-23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Actor-based Concurrency for Reactive Systems</title>
+      <link>http://rocketpages.github.io/publication/infoq-actor-based-concurrency/</link>
+      <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/publication/infoq-actor-based-concurrency/</guid>
+      <description>According to reactive manifesto, reactive applications are built on four guiding principles: responsiveness, resiliency, scalability, and message-driven architecture. In Kevin&amp;rsquo;s view, those four guiding principles are closely related in that both resiliency and scalability are necessary qualities to ensure that a system remains responsive, i.e., &amp;ldquo;quick to react to users,&amp;rdquo; under varying working conditions and loads.</description>
+    </item>
+    
+    <item>
+      <title>Reactive Programming at Microsoft</title>
+      <link>http://rocketpages.github.io/publication/microsoft-reactive-systems/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/publication/microsoft-reactive-systems/</guid>
+      <description>Typesafe has extended their Reactive Maps Activator template to Azure, which enables easy deployment of Java-based technologies such as Scala, the Play Framework and the Akka Toolkit on Microsoft Azure. MS Open Tech has also published a tutorial on using the Play Framework with Azure.</description>
+    </item>
+    
+    <item>
+      <title>Retrospective: A Night of Reactive Programming</title>
+      <link>http://rocketpages.github.io/retrospective-a-night-of-reactive-programming/</link>
+      <pubDate>Wed, 06 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/retrospective-a-night-of-reactive-programming/</guid>
+      <description>I hosted the first event for ReactiveTO on July 24th. It was fantastic evening filled with great talks on reactive programming principles, microservices, Akka, and ReactiveCocoa.
+Impressions It was wonderful to see so many folks show up with interest in such a wide variety of languages and toolkits. We had developers representing the communities of JavaScript (Node.js), Ruby (EventMachine), Objective-C (ReactiveCocoa), and Scala (Akka), among many other languages and toolkits.</description>
+    </item>
+    
+    <item>
+      <title>A Night of Reactive Programming</title>
+      <link>http://rocketpages.github.io/talk/2014-07-24/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2014-07-24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What is Reactive Programming?</title>
+      <link>http://rocketpages.github.io/video/what-is-reactive-programming/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/what-is-reactive-programming/</guid>
+      <description>Exploring the principles and history of reactive programming in order to frame it for a modern context. Presented at ReactiveTO on July 24, 2014. Inspired by talks by Joe Armstrong and Jonas Bonér.</description>
+    </item>
+    
+    <item>
+      <title>Enterprise Web Development with Play and Scala</title>
+      <link>http://rocketpages.github.io/talk/2014-05-05/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/talk/2014-05-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enterprise Web Development with Play and Scala</title>
+      <link>http://rocketpages.github.io/video/play-all-day/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/video/play-all-day/</guid>
+      <description>The talk will cover strategies to help integrate Play with complex ecosystems and other enterprise development challenges. The secondary objective is to assist designing Play applications that are developed by multiple, distributed, cross-functional teams.</description>
+    </item>
+    
+    <item>
+      <title>Agile and Waterfall can live together in harmony</title>
+      <link>http://rocketpages.github.io/agile-and-waterfall-together/</link>
+      <pubDate>Fri, 15 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/agile-and-waterfall-together/</guid>
+      <description>Agile is challenging to use on certain projects, like those bound by fixed-price, fixed-date contracts. Agencies, governments, and other organizations who are bound by contracts struggle to implement Agile effectively. Contracts force software developers to adopt less flexible approaches to development in order to satisfy negotiated requirements and deadlines. Even worse than taking an alternate approach is to use the wrong approach entirely. This can manifest itself as a completely bastardized version of Agile, which is unfortunately the most common version in use today.</description>
+    </item>
+    
+    <item>
+      <title>Migrating to Git, Part 3: Moving your code to Git</title>
+      <link>http://rocketpages.github.io/migrating-to-git-part-3-moving-your-code-to-git/</link>
+      <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/migrating-to-git-part-3-moving-your-code-to-git/</guid>
+      <description>This is the third and final part in a three part series about migrating to Git. I recommend reading part one and part two if you haven&amp;rsquo;t already. Migrating to Git is worth it, but it&amp;rsquo;s not a trivial decision.
+Migrating to Git, Part 1: Advantages
+Migrating to Git, Part 2: Prerequisites
+If you&amp;rsquo;re ready to proceed with a migration to Git, congratulations! You&amp;rsquo;re about to start using one of the best development tools available today.</description>
+    </item>
+    
+    <item>
+      <title>Migrating to Git, Part 2: Prerequisites</title>
+      <link>http://rocketpages.github.io/migrating-to-git-part-2-prerequisites/</link>
+      <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/migrating-to-git-part-2-prerequisites/</guid>
+      <description>This is the second part of a three part series about migrating to Git. If you haven&amp;rsquo;t read part one and are unfamiliar with the advantages of Git, you should check it out.
+Migrating to Git, Part 1: Advantages
+If you already understand the benefits of Git, or have already read part one, welcome to part two in the series! We&amp;rsquo;re going to discuss certain pre-conditions of a migration to Git and make sure your team is ready for the transition.</description>
+    </item>
+    
+    <item>
+      <title>Migrating to Git, Part 1: Advantages</title>
+      <link>http://rocketpages.github.io/migrating-to-git-part-1-advantages/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/migrating-to-git-part-1-advantages/</guid>
+      <description>Git is unlike typical version control systems. Sure, Git is used to version files, but how is that any different than SVN or SourceSafe or ClearCase?
+Git expects developers to understand how it works under the hood. It expects developers to be comfortable with the command line to get the most out of it. It provides very little in the way of convention and expects you to design your own workflow simply by using it as another tool in your arsenal.</description>
+    </item>
+    
+    <item>
+      <title>Joy at QCon New York</title>
+      <link>http://rocketpages.github.io/joy-at-qcon-new-york/</link>
+      <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/joy-at-qcon-new-york/</guid>
+      <description>I recently travelled to New York City to attend QCon.
+Joy isn&amp;rsquo;t the typical emotion that comes to mind when one pictures enterprise software and enterprise software developers, but technical culture is changing rapidly and more people are recognizing the business value of joy.
+It&amp;rsquo;s an exciting time to be a software developer.
+A decade ago we watched a grim-faced Peter Gibbons in the movie Office Space commiserate about his mind-numbing job of churning out Y2K patches for the cold and heartless Initech Corporation.</description>
+    </item>
+    
+    <item>
+      <title>Multiplayer tic-tac-toe in Java using the WebSocket API, Netty (NIO), and jQuery</title>
+      <link>http://rocketpages.github.io/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/multiplayer-tic-tac-toe-in-java-using-the-websocket-api-netty-nio-and-jquery/</guid>
+      <description>What does this game of tic-tac-toe and Twitter have in common? Both have been implemented using relatively the same technologies: Java and Netty. It was big news in 2010 when Twitter migrated their search from Ruby on Rails to Java-based Netty (read about it here). Not only was it big in the news department, but it was also big in the results department: Twitter reported their search performance increased by 3x.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Fancybox with AJAX (and Wicket)</title>
+      <link>http://rocketpages.github.io/fixing-fancybox-with-ajax-and-wicket/</link>
+      <pubDate>Tue, 28 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/fixing-fancybox-with-ajax-and-wicket/</guid>
+      <description>A personal project I&amp;rsquo;m working on uses the jQuery Fancybox library to display images. It&amp;rsquo;s a great lightbox, except for one small problem: AJAX refreshes break it.
+A page I&amp;rsquo;m working on accepts multiple image uploads. Once the images are successfully processed asynchronously on the server, an image panel on the same page is automatically refreshed. The AJAX callback works fine and updates the panel view with the newly uploaded photos, but the net result is that Fancybox stops working completely.</description>
+    </item>
+    
+    <item>
+      <title>Connection pooling with Hibernate 3.3.x and C3P0</title>
+      <link>http://rocketpages.github.io/connection-pooling-with-hibernate-3-3-x-and-c3p0/</link>
+      <pubDate>Sun, 26 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/connection-pooling-with-hibernate-3-3-x-and-c3p0/</guid>
+      <description>Hibernate uses it&amp;rsquo;s own built-in connection pool out of the box. There are some pretty heavy duty sites running with the default connection pool enabled in production despite the obvious warning against doing this.
+INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!) INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 1  A few minor problems creep up with this default configuration left alone, such as the inability for Hibernate to reconnect closed connections.</description>
+    </item>
+    
+    <item>
+      <title>Beyond Java</title>
+      <link>http://rocketpages.github.io/beyond-java/</link>
+      <pubDate>Mon, 13 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/beyond-java/</guid>
+      <description>A recent post by Mike Gualtieri of Forrester caught my attention. Mike strongly asserts that Java is a dead end for enterprises and business software should be built with something else. Mike mentions a few different options, but mainly promotes 4GL tools such as Powerbuilder and “all in one” business infrastructure software such as SoftwareAG webMethods. He also touches on BPM and event processing, and by event processing I&amp;rsquo;m pretty sure he means CEP tools such as Esper.</description>
+    </item>
+    
+    <item>
+      <title>The future of Java in the enterprise</title>
+      <link>http://rocketpages.github.io/the-future-of-java-in-the-enterprise/</link>
+      <pubDate>Mon, 15 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/the-future-of-java-in-the-enterprise/</guid>
+      <description>It’s been a busy few years in the Java world. Oracle’s acquisition of Sun is obviously the largest piece of news and has a significant impact on the future of Java. Oracle’s new position as owner and commander-in-chief now places Java squarely in the enterprise realm alongside Oracle’s other products. Java has always been an enterprise technology, but without the JCP promoting collaborative innovation, who knows what kind of traction Java would have made in the world?</description>
+    </item>
+    
+    <item>
+      <title>Desire paths</title>
+      <link>http://rocketpages.github.io/desire-paths/</link>
+      <pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/desire-paths/</guid>
+      <description>A desire path is what a person wants rather than what an architect builds. The term desire path originated from landscape architecture, but it&amp;rsquo;s an increasingly important concept for software architects to grasp. If you understand desire paths, you understand the future of software development.
+A desire path represents the evolutionary nature of how people interact with their environment. An engineer designs a concrete path, but people find it more convenient to create their own.</description>
+    </item>
+    
+    <item>
+      <title>The greatest line of code ever</title>
+      <link>http://rocketpages.github.io/the-greatest-line-of-code-ever/</link>
+      <pubDate>Sun, 22 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/the-greatest-line-of-code-ever/</guid>
+      <description>if (statusIsNotValid.compareTo( Boolean.FALSE ) != 0) skipValidation = false;  If you ever find yourself working in a team that doesn&amp;rsquo;t see the importance of code reviews, remind them that they could easily wind up with a few million lines of that.
+(Taken from The Daily WTF.)</description>
+    </item>
+    
+    <item>
+      <title>Integrating Uploadify with Java using Apache Wicket</title>
+      <link>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket/</link>
+      <pubDate>Fri, 30 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/integrating-uploadify-with-java-using-apache-wicket/</guid>
+      <description>One of the most requested features on any site that accepts file submissions is the ability to handle multiple uploads elegantly. The current HTML standard only permits one file upload at a time, which makes transferring a large number of files quite tedious.
+This tutorial will show how to painlessly integrate Uploadify and Java using Apache Wicket. You should have at least beginner-level knowledge of Wicket before moving forward, but feel free to dive right in even if you&amp;rsquo;ve never used Wicket before.</description>
+    </item>
+    
+    <item>
+      <title>Be a Revolutionary</title>
+      <link>http://rocketpages.github.io/be-a-revolutionary/</link>
+      <pubDate>Tue, 23 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/be-a-revolutionary/</guid>
+      <description>Good developers always strive to become better. We spend time searching for the perfect language, the perfect framework, the perfect IDE, the perfect testing tool, the perfect methodology.
+Building great software requires all of these things, albeit nothing is perfect. There is no perfect methodology, language, or tool. At times we focus so much on the most complex things that we forget how to do the most simple things, like designing software that people actually enjoy using.</description>
+    </item>
+    
+    <item>
+      <title>Apache Aries: OSGi for the Enterprise</title>
+      <link>http://rocketpages.github.io/apache-aries-osgi-for-the-enterprise/</link>
+      <pubDate>Wed, 18 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/apache-aries-osgi-for-the-enterprise/</guid>
+      <description>I recently came across a blog post about an Apache project called Aries, currently in incubator status. You can check out the details here. It looks like enterprise developers are in for a real treat: the missing secret sauce that allows enterprise application developers to harness the goodness of OSGi.
+ Aries will offer an enterprise OSGi application programming model that enables applications to leverage Java EE and other enterprise technologies and to benefit from the modularity, dynamism and versioning capabilities of OSGi.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t forget team structure</title>
+      <link>http://rocketpages.github.io/dont-forget-team-structure/</link>
+      <pubDate>Fri, 23 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/dont-forget-team-structure/</guid>
+      <description>In the summer I blogged about SOA and wondered out loud if true SOA was impossible to implement in some organizations due to the organizational structure itself. Janie Chang at Microsoft Research wrote an excellent article that touched on the subject. To quote Janie:
+ The system will resemble the organization building the system.
+ I agree with this assertion completely. Team culture and structure can vary widely even within the same organization.</description>
+    </item>
+    
+    <item>
+      <title>Is SOA doomed?</title>
+      <link>http://rocketpages.github.io/is-soa-doomed/</link>
+      <pubDate>Mon, 10 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://rocketpages.github.io/is-soa-doomed/</guid>
+      <description>Don&amp;rsquo;t get me wrong, I think the spirit of SOA is fantastic. Adaptable, flexible, maintainable, loosely-coupled applications supported by open governance, strong relationships between business and technology folks, and co-operation across all silos and levels of an organization. What&amp;rsquo;s not to love?
+SOA has become one of the most commonly-heard buzzwords around the water-cooler over the past few years. It seems like everyone is talking about SOA these days. Architects, developers, business folks, management, non-management, and everyone in-between.</description>
     </item>
     
   </channel>
